@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowledgeNest - Instant Financial Aid Compliance Answers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(to right, #3b82f6, #1e40af); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-bg { background-color: #f8fafc; }
+        .section-title { font-size: 2.25rem; font-weight: 800; line-height: 2.5rem; }
+        .section-subtitle { font-size: 1.125rem; line-height: 1.75rem; color: #4b5563; }
+        .pricing-card { border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 2rem; display: flex; flex-direction: column; height: 100%; }
+        .pricing-card-popular { border: 2px solid #3b82f6; position: relative; }
+        .popular-badge { position: absolute; top: -1rem; left: 50%; transform: translateX(-50%); background-color: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+        .feature-image { border: 1px solid #e2e8f0; border-radius: 0.75rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); overflow: hidden; }
+        .calculator-result { transition: all 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <main>
+        <section class="hero-bg py-24 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight">Instant, Accurate Answers to Your Toughest <span class="gradient-text">Financial Aid Compliance Questions.</span></h2>
+                <p class="mt-8 max-w-3xl mx-auto text-lg md:text-xl text-gray-600 leading-relaxed">Our AI platform analyzes support calls in real-time, providing your team with verified answers from The Student Financial Aid Handbook, Codified Federal Regulations (CFR), The FAFSA guide and much more when they need them. Also, the system will incorporate your own university data to personalize your responses.</p>
+                <div class="mt-12 flex flex-wrap justify-center items-center gap-4"><a href="#contact" class="bg-blue-600 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-700 transition-transform transform hover:scale-105 shadow-lg">See Real-Time Answers in Action</a><a href="#how-it-works" class="bg-white text-blue-600 font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-transform transform hover:scale-105 border border-gray-300 shadow-lg">Learn More <i data-lucide="arrow-right" class="inline h-5 w-5 ml-1"></i></a></div>
+            </div>
+        </section>
+        <section id="how-it-works" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-20">
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Stop Searching. Start Solving.</h3>
+                    <p class="mt-6 max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">In three simple steps, transform your team's efficiency and eliminate compliance error risks.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-x-12 gap-y-16 text-center">
+                    <div class="flex flex-col items-center"><div class="bg-blue-100 text-blue-600 rounded-full p-6 mb-8"><i data-lucide="phone-call" class="w-10 h-10"></i></div><h4 class="text-xl font-bold mb-3">1. A Question Arises</h4><p class="text-gray-600 leading-relaxed">Your agent is on a live call with a student facing a complex FAFSA application question or compliance issue. No more putting students on hold to find answers.</p></div>
+                    <div class="flex flex-col items-center"><div class="bg-blue-100 text-blue-600 rounded-full p-6 mb-8"><i data-lucide="bot" class="w-10 h-10"></i></div><h4 class="text-xl font-bold mb-3">2. KnowledgeNest Analyzes</h4><p class="text-gray-600 leading-relaxed">Our system listens, transcribes, and instantly searches all relevant regulations and institutional knowledge in real-time.</p></div>
+                    <div class="flex flex-col items-center"><div class="bg-blue-100 text-blue-600 rounded-full p-6 mb-8"><i data-lucide="check-circle-2" class="w-10 h-10"></i></div><h4 class="text-xl font-bold mb-3">3. The Answer is Delivered</h4><p class="text-gray-600 leading-relaxed">The correct, verified answer appears on your agent's screen with source citations, allowing them to resolve the issue on the first call.</p></div>
+                </div>
+            </div>
+        </section>
+        <section id="features" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-20"><h3 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">A Unified Platform for Compliance</h3><p class="mt-6 max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">From live call analysis to knowledge management, KnowledgeNest provides a complete, auditable solution for your entire financial aid office.</p></div>
+                <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center mb-24">
+                    <div><span class="text-blue-600 font-semibold tracking-wide uppercase">Live Intelligence</span><h4 class="text-3xl font-bold mt-3">Analyze Every Conversation</h4><p class="mt-4 text-gray-600 text-lg leading-relaxed">Automatically record, transcribe, and summarize every support call. Our AI identifies key topics and provides an actionable summary, creating a searchable history of every interaction.</p><ul class="mt-8 space-y-4"><li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0"></i><span class="text-gray-700 leading-relaxed">Full transcription and AI-powered call summaries.</span></li><li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0"></i><span class="text-gray-700 leading-relaxed">Searchable, auditable archive of all recordings.</span></li><li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0"></i><span class="text-gray-700 leading-relaxed">Use call data to generate reports and identify trends.</span></li></ul></div>
+                    <div class="feature-image"><img src="images/feature1.jpeg" alt="KnowledgeNest call recording and transcription interface"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center mb-24">
+                    <div class="feature-image md:order-last"><img src="images/feature2.jpeg" alt="KnowledgeNest live agent assistance interface"></div>
+                    <div class="md:order-first"><span class="text-blue-600 font-semibold tracking-wide uppercase">Agent Co-Pilot</span><h4 class="text-3xl font-bold mt-3">Get Instant, Sourced Answers</h4><p class="mt-4 text-gray-600 text-lg leading-relaxed">Empower your agents to ask complex questions and receive immediate answers during live calls or chats. KnowledgeNest cites the exact source from your knowledge base, ensuring every answer is accurate and defensible.</p><ul class="mt-8 space-y-4"><li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0"></i><span class="text-gray-700 leading-relaxed">Real-time assistance for both phone calls and live chats.</span></li><li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0"></i><span class="text-gray-700 leading-relaxed">Every answer cites the specific source document and section.</span></li><li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0"></i><span class="text-gray-700 leading-relaxed">Handles complex, multi-part questions with ease.</span></li></ul></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+                    <div><span class="text-blue-600 font-semibold tracking-wide uppercase">Knowledge Hub</span><h4 class="text-3xl font-bold mt-3">Build Your Single Source of Truth</h4><p class="mt-4 text-gray-600 text-lg leading-relaxed">During your System setup, we will import the full text from the Student Financial Aid Handbook, Codified Federal Regulations (CFR), The FAFSA Guide, Dear Colleague Letters and other relevant source materials. All documents in your KnowledgeNest Data Base will be updated and expanded on a regular basis.</p></div>
+                    <div class="feature-image"><img src="images/feature3.jpeg" alt="KnowledgeNest knowledge base import interface"></div>
+                </div>
+            </div>
+        </section>
+        <section id="roi-calculator" class="py-24 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Calculate Your Potential Savings</h3>
+                    <p class="mt-6 max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+                        See how much time and money KnowledgeNest can save your institution. On average, our partners save 30% of time previously spent on research and administrative tasks.
+                    </p>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 space-y-6">
+                        <div>
+                            <label for="hourlyRate" class="block text-sm font-medium text-gray-700">Average Rep Hourly Rate</label>
+                            <div class="mt-1 relative rounded-md shadow-sm">
+                                <div class="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center"><span class="text-gray-500 sm:text-sm">$</span></div>
+                                <input type="number" name="hourlyRate" id="hourlyRate" class="block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="25.00" value="25">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="staffCount" class="block text-sm font-medium text-gray-700">Number of Financial Aid Staff</label>
+                            <input type="number" name="staffCount" id="staffCount" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="10" value="10">
+                        </div>
+                        <div class="pt-2">
+                             <button id="calculateBtn" class="w-full justify-center rounded-md border border-transparent bg-blue-600 py-3 px-4 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Calculate Savings</button>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-4">Your Estimated ROI</h4>
+                        <div id="results" class="space-y-4 calculator-result opacity-0">
+                            <div class="flex justify-between items-baseline p-4 bg-gray-100 rounded-lg">
+                                <p class="text-gray-600">Hourly Savings</p>
+                                <p id="hourlySavings" class="text-2xl font-bold text-green-600">$0.00</p>
+                            </div>
+                            <div class="flex justify-between items-baseline p-4 bg-gray-100 rounded-lg">
+                                <p class="text-gray-600">Monthly Savings</p>
+                                <p id="monthlySavings" class="text-2xl font-bold text-green-600">$0.00</p>
+                            </div>
+                            <div class="flex justify-between items-baseline p-4 bg-gray-100 rounded-lg">
+                                <p class="text-gray-600">Yearly Savings</p>
+                                <p id="yearlySavings" class="text-2xl font-bold text-green-600">$0.00</p>
+                            </div>
+                            <p class="text-xs text-gray-500 pt-2">* Knowledge Nest saves 30% of Financial Aid Staff time lost to administrative searching, writing, and compliance resolution.</p>
+                        </div>
+                         <div id="initial-message" class="text-center py-10 text-gray-500">
+                            <p>Enter your details to see your potential savings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pricing" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-20"><h3 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Flexible Plans for Every Institution</h3><p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-600 leading-relaxed">Our pricing is tailored to the unique size and needs of your team. Contact us for a personalized quote and a demo customized for your institution.</p></div>
+                <div class="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
+                    <div class="flex flex-col p-8 rounded-xl border bg-gray-50 hover:shadow-lg transition-shadow"><h4 class="text-xl font-semibold text-gray-900">Professional</h4><p class="text-gray-600 mt-2 leading-relaxed">For growing teams and departments.</p><div class="my-8 text-center"><span class="text-5xl font-extrabold text-gray-900">Custom</span></div><ul class="space-y-5 text-gray-700 mb-10 flex-grow"><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Up to 25 agents</span></li><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Real-time Call Analysis</span></li><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Federal & State Regulation Library</span></li><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Institutional Policy Integration</span></li></ul><a href="#contact" class="mt-auto w-full text-center bg-white border border-blue-600 text-blue-600 font-semibold py-3 rounded-lg hover:bg-blue-50 transition-colors">Request a Quote</a></div>
+                    <div class="flex flex-col p-8 rounded-xl border-2 border-blue-600 shadow-2xl relative bg-white"><div class="popular-badge">Most Popular</div><h4 class="text-xl font-semibold text-gray-900">Enterprise</h4><p class="text-gray-600 mt-2 leading-relaxed">For large institutions and university-wide call centers.</p><div class="my-8 text-center"><span class="text-5xl font-extrabold text-gray-900">Custom</span></div><ul class="space-y-5 text-gray-700 mb-10 flex-grow"><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Unlimited agents</span></li><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">All Professional features, plus:</span></li><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Advanced Analytics & Reporting</span></li><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">CRM & SIS Integration</span></li><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Dedicated Account Manager</span></li></ul><a href="#contact" class="mt-auto w-full text-center bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors">Request a Quote</a></div>
+                    <div class="flex flex-col p-8 rounded-xl border bg-gray-50 hover:shadow-lg transition-shadow"><h4 class="text-xl font-semibold text-gray-900">Custom</h4><p class="text-gray-600 mt-2 leading-relaxed">Tailored solutions for unique compliance & workflow needs.</p><div class="my-8 text-center"><span class="text-5xl font-extrabold text-gray-900">Let's Talk</span></div><ul class="space-y-5 text-gray-700 mb-10 flex-grow"><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Custom Agent Counts</span></li><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Full API Access</span></li><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Bespoke Integrations</span></li><li class="flex items-start gap-x-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0"></i><span class="leading-relaxed">Custom Compliance Libraries</span></li></ul><a href="#contact" class="mt-auto w-full text-center bg-white border border-blue-600 text-blue-600 font-semibold py-3 rounded-lg hover:bg-blue-50 transition-colors">Request a Quote</a></div>
+                </div>
+            </div>
+        </section>
+        <section id="demo" class="bg-blue-700">
+            <div class="container mx-auto px-6 py-24 text-center">
+                <h3 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Ready to Eliminate Compliance Guesswork?</h3>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-blue-200 leading-relaxed">Schedule a personalized demo today and we'll show you how KnowledgeNest can transform your financial aid office in under 30 minutes.</p>
+                <div class="mt-12"><a href="#contact" class="inline-block bg-white text-blue-600 font-bold px-8 py-3 rounded-lg text-base md:text-lg md:px-10 md:py-4 hover:bg-gray-200 transition-transform transform hover:scale-105 shadow-2xl">Challenge Us With Your Toughest Question</a></div>
+            </div>
+        </section>
+        <section id="contact" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-20"><h3 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Get in Touch</h3><p class="mt-6 max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">Have a question or want to see a live demo? Fill out the form below or reach out to us directly. Our team will get back to you within 24 hours.</p></div>
+                <div class="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto items-start">
+                    <div class="bg-white p-8 md:p-10 rounded-lg shadow-lg border border-gray-200"><h4 class="text-2xl font-bold mb-6">Send us a message</h4>
+                        <form action="https://formspree.io/f/YOUR_UNIQUE_CODE" method="POST" class="space-y-6">
+                            <div><label for="name" class="block text-sm font-medium text-gray-700">Full Name</label><input type="text" name="name" id="name" autocomplete="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3"></div>
+                            <div><label for="email" class="block text-sm font-medium text-gray-700">Email Address</label><input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3"></div>
+                            <div><label for="institution" class="block text-sm font-medium text-gray-700">Institution Name</label><input type="text" name="institution" id="institution" autocomplete="organization" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3"></div>
+                            <div><label for="message" class="block text-sm font-medium text-gray-700">Message</label><textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3"></textarea></div>
+                            <div><button type="submit" class="w-full justify-center rounded-md border border-transparent bg-blue-600 py-3 px-4 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Send Message</button></div>
+                        </form>
+                    </div>
+                    <div class="pt-8 space-y-12"><div class="flex items-start"><i data-lucide="mail" class="w-8 h-8 text-blue-600 mr-6 mt-1 flex-shrink-0"></i><div><h4 class="text-lg font-semibold">Email Us</h4><p class="text-gray-600 leading-relaxed">Our team will get back to you within one business day.</p><a href="mailto:info@knowledgenest.io" class="text-blue-600 font-semibold hover:underline">info@knowledgenest.io</a></div></div><div class="flex items-start"><i data-lucide="phone" class="w-8 h-8 text-blue-600 mr-6 mt-1 flex-shrink-0"></i><div><h4 class="text-lg font-semibold">Call Us</h4><p class="text-gray-600 leading-relaxed">Speak directly with our sales and support team.</p><a href="tel:408-828-7048" class="text-blue-600 font-semibold hover:underline">(408) 828-7048</a></div></div><div class="flex items-start"><i data-lucide="map-pin" class="w-8 h-8 text-blue-600 mr-6 mt-1 flex-shrink-0"></i><div><h4 class="text-lg font-semibold">Visit Us</h4><p class="text-gray-600 leading-relaxed">999 18th Street,<br>Denver, CO 80202</p></div></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div><h4 class="text-xl font-bold mb-4">KnowledgeNest</h4><p class="text-gray-400 leading-relaxed">The intelligence layer for financial aid compliance.</p></div>
+                <div><h5 class="font-semibold mb-4 tracking-wider uppercase text-gray-400">Product</h5><ul class="space-y-3"><li><a href="#features" class="text-gray-300 hover:text-white">Features</a></li><li><a href="#how-it-works" class="text-gray-300 hover:text-white">How it Works</a></li><li><a href="#pricing" class="text-gray-300 hover:text-white">Pricing</a></li></ul></div>
+                <div><h5 class="font-semibold mb-4 tracking-wider uppercase text-gray-400">Company</h5><ul class="space-y-3"><li><a href="#" class="text-gray-300 hover:text-white">About Us</a></li><li><a href="#" class="text-gray-300 hover:text-white">Careers</a></li><li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li></ul></div>
+                <div><h5 class="font-semibold mb-4 tracking-wider uppercase text-gray-400">Legal</h5><ul class="space-y-3"><li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li><li><a href="#" class="text-gray-300 hover:text-white">Terms of Service</a></li></ul></div>
+            </div>
+            <div class="mt-16 border-t border-gray-700 pt-8 text-center text-gray-500"><p>&copy; 2024 KnowledgeNest. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+
+        const calculateBtn = document.getElementById('calculateBtn');
+        const hourlyRateEl = document.getElementById('hourlyRate');
+        const staffCountEl = document.getElementById('staffCount');
+        const resultsEl = document.getElementById('results');
+        const initialMessageEl = document.getElementById('initial-message');
+
+        const hourlySavingsEl = document.getElementById('hourlySavings');
+        const monthlySavingsEl = document.getElementById('monthlySavings');
+        const yearlySavingsEl = document.getElementById('yearlySavings');
+
+        function calculateROI() {
+            const hourlyRate = parseFloat(hourlyRateEl.value) || 0;
+            const staffCount = parseInt(staffCountEl.value) || 0;
+            
+            if (hourlyRate > 0 && staffCount > 0) {
+                const loadedHourlyRate = hourlyRate * 1.30;
+                const totalHourlyCost = loadedHourlyRate * staffCount;
+                const hourlySavings = totalHourlyCost * 0.30;
+                const monthlySavings = hourlySavings * (40 * 4.33); 
+                const yearlySavings = hourlySavings * 2080;
+
+                const currency = (num) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(num);
+
+                hourlySavingsEl.textContent = currency(hourlySavings);
+                monthlySavingsEl.textContent = currency(monthlySavings);
+                yearlySavingsEl.textContent = currency(yearlySavings);
+
+                initialMessageEl.classList.add('hidden');
+                resultsEl.classList.remove('opacity-0');
+            }
+        }
+
+        calculateBtn.addEventListener('click', calculateROI);
+        document.addEventListener('DOMContentLoaded', calculateROI);
+    </script>
+</body>
+</html>
