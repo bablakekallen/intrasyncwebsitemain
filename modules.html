@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CastLogic Modules - Complete ERP Suite for Precast Manufacturing</title>
+    <meta name="description" content="Explore all 11 CastLogic modules: Accounting, HR, Scheduling, Inventory, Production Tracking, and more. Choose the modules you need for complete operational control.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+
+        .module-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .module-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .module-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .module-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .module-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .module-card:hover .module-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .cta-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .cta-button {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Sticky Demo CTA Button -->
+    <a href="contact.html" class="cta-button bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
+        📅 Schedule Demo
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-12">
+                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-12 w-auto">
+                    <nav class="hidden md:flex gap-8 text-base font-semibold">
+                        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="modules.html" class="text-blue-700 hover:text-blue-800 transition">Modules</a>
+                        <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="contact.html" class="hidden md:inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="gradient-bg text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-6">CastLogic Modules</h1>
+                <p class="text-xl md:text-2xl mb-4 max-w-4xl mx-auto text-blue-100">
+                    11 Powerful Modules. One Integrated Platform.
+                </p>
+                <p class="text-lg max-w-3xl mx-auto text-blue-100 mb-8">
+                    Choose the modules you need. Everything works together seamlessly to give you complete operational control from quote to cash.
+                </p>
+
+                <!-- Flexible Options Banner -->
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-4 mt-8">
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+                        <div class="text-2xl mb-2">🧩</div>
+                        <h3 class="font-bold text-lg mb-1">Buy What You Need</h3>
+                        <p class="text-sm text-blue-100">Start with one module or get the full suite. Add more anytime.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+                        <div class="text-2xl mb-2">⚙️</div>
+                        <h3 class="font-bold text-lg mb-1">Custom Development</h3>
+                        <p class="text-sm text-blue-100">Need unique features? We build custom modules for your operation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Module Filter -->
+        <section class="py-8 bg-gray-50 border-b border-gray-200">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button data-filter="all" class="filter-btn px-6 py-2 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition">All Modules</button>
+                    <button data-filter="financial" class="filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Financial</button>
+                    <button data-filter="operations" class="filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Operations</button>
+                    <button data-filter="production" class="filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Production</button>
+                    <button data-filter="engineering" class="filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Engineering</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modules Grid -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+                    <!-- Accounting Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="financial">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            💰
+                        </div>
+                        <div class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold mb-3">FINANCIAL</div>
+                        <h2 class="text-2xl font-bold mb-3">Accounting</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Complete ERP financials with GL, AP/AR, project accounting, revenue recognition, and AI-powered automation. Features comparable to Sage Intacct.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Multi-entity consolidations</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>AI-powered bill entry</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Real-time job costing</span>
+                            </li>
+                        </ul>
+                        <a href="accounting.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition w-full text-center">
+                            Explore Accounting →
+                        </a>
+                    </div>
+
+                    <!-- HR Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="financial">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-green-100 to-green-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            👥
+                        </div>
+                        <div class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold mb-3">FINANCIAL</div>
+                        <h2 class="text-2xl font-bold mb-3">HR & Payroll</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Flexible payroll, compliance automation, time tracking, and workforce management. Powered by Everee integration with same-day payment capability.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>50-state compliance</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Certified payroll reporting</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Automatic tax filing</span>
+                            </li>
+                        </ul>
+                        <a href="hr.html" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition w-full text-center">
+                            Explore HR & Payroll →
+                        </a>
+                    </div>
+
+                    <!-- Schedule Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="production">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            📅
+                        </div>
+                        <div class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold mb-3">PRODUCTION</div>
+                        <h2 class="text-2xl font-bold mb-3">Schedule</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">AI-powered production scheduling optimizes mold capacity, labor allocation, and resource sequencing. Reduce lead times by 20%.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>AI optimization engine</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Capacity planning</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Demand forecasting</span>
+                            </li>
+                        </ul>
+                        <a href="schedule.html" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition w-full text-center">
+                            Explore Schedule →
+                        </a>
+                    </div>
+
+                    <!-- Stock Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="operations">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            📦
+                        </div>
+                        <div class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold mb-3">OPERATIONS</div>
+                        <h2 class="text-2xl font-bold mb-3">Stock</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">GPS yard mapping, real-time inventory tracking, component location management. Perpetually synced with COGS and financial systems.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>GPS yard mapping</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Real-time inventory sync</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Barcode/RFID tracking</span>
+                            </li>
+                        </ul>
+                        <a href="stock.html" class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-700 transition w-full text-center">
+                            Explore Stock →
+                        </a>
+                    </div>
+
+                    <!-- Flow Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="production">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-red-100 to-red-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            ⚙️
+                        </div>
+                        <div class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold mb-3">PRODUCTION</div>
+                        <h2 class="text-2xl font-bold mb-3">Flow</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Real-time production tracking, progress monitoring, shop floor IoT integration. Updates WIP and job costs automatically as work progresses.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>IoT shop floor integration</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Real-time WIP updates</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Mobile progress reporting</span>
+                            </li>
+                        </ul>
+                        <a href="flow.html" class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition w-full text-center">
+                            Explore Flow →
+                        </a>
+                    </div>
+
+                    <!-- Engage Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="engineering">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-indigo-100 to-indigo-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            📐
+                        </div>
+                        <div class="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-bold mb-3">ENGINEERING</div>
+                        <h2 class="text-2xl font-bold mb-3">Engage</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Centralized engineering data, CAD/BIM integration, digital twins, and documentation management. Creates project budgets from designs automatically.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>CAD/BIM integration</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Digital twins</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Automated BOM creation</span>
+                            </li>
+                        </ul>
+                        <a href="engage.html" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition w-full text-center">
+                            Explore Engage →
+                        </a>
+                    </div>
+
+                    <!-- Dispatch Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="operations">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-pink-100 to-pink-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            🚚
+                        </div>
+                        <div class="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-bold mb-3">OPERATIONS</div>
+                        <h2 class="text-2xl font-bold mb-3">Dispatch</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Delivery scheduling, load optimization, truck routing, and real-time GPS tracking. BOL creation triggers final billing automatically.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>AI route optimization</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>GPS tracking</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Load optimization</span>
+                            </li>
+                        </ul>
+                        <a href="dispatch.html" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-pink-700 transition w-full text-center">
+                            Explore Dispatch →
+                        </a>
+                    </div>
+
+                    <!-- Site Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="operations">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-teal-100 to-teal-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            🏗️
+                        </div>
+                        <div class="inline-block bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-xs font-bold mb-3">OPERATIONS</div>
+                        <h2 class="text-2xl font-bold mb-3">Site</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Field progress tracking, jobsite status updates, issue reporting, and milestone tracking. Real-time visibility into installation progress.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Mobile field reporting</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Photo documentation</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Issue tracking</span>
+                            </li>
+                        </ul>
+                        <a href="site.html" class="inline-block bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition w-full text-center">
+                            Explore Site →
+                        </a>
+                    </div>
+
+                    <!-- Insights Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="analytics">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            📊
+                        </div>
+                        <div class="inline-block bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-bold mb-3">ANALYTICS</div>
+                        <h2 class="text-2xl font-bold mb-3">Insights</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Custom dashboards, KPIs, cost analysis, and advanced data visualization. Real-time insights across all operational and financial metrics.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Custom dashboards</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Real-time KPIs</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Predictive analytics</span>
+                            </li>
+                        </ul>
+                        <a href="insights.html" class="inline-block bg-cyan-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-cyan-700 transition w-full text-center">
+                            Explore Insights →
+                        </a>
+                    </div>
+
+                    <!-- Verify Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="production">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            ✅
+                        </div>
+                        <div class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold mb-3">PRODUCTION</div>
+                        <h2 class="text-2xl font-bold mb-3">Verify</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Automated quality checks, defect detection, compliance tracking, and audit trails. Reduces inspection time by 50% while improving accuracy.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Automated inspections</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Defect tracking</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Compliance reporting</span>
+                            </li>
+                        </ul>
+                        <a href="verify.html" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition w-full text-center">
+                            Explore Verify →
+                        </a>
+                    </div>
+
+                    <!-- AI Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="ai">
+                        <div class="module-icon w-20 h-20 bg-gradient-to-br from-violet-100 to-violet-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
+                            🤖
+                        </div>
+                        <div class="inline-block bg-violet-100 text-violet-700 px-3 py-1 rounded-full text-xs font-bold mb-3">AI & AUTOMATION</div>
+                        <h2 class="text-2xl font-bold mb-3">AI</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">AI/ML for predictive maintenance, demand forecasting, intelligent chatbots, and automated decision-making across all modules.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Predictive maintenance</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Demand forecasting</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Intelligent chatbot</span>
+                            </li>
+                        </ul>
+                        <a href="ai.html" class="inline-block bg-violet-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-violet-700 transition w-full text-center">
+                            Explore AI →
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Integration Section -->
+        <section class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Everything Works Together</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Unlike standalone tools, all CastLogic modules share data seamlessly—eliminating manual entry and ensuring real-time accuracy.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-12">
+                    <div class="text-center mb-8">
+                        <div class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-bold text-lg mb-4">
+                            Single Source of Truth
+                        </div>
+                        <p class="text-gray-600">Data flows automatically between modules with zero manual intervention</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-6 rounded-xl">
+                            <h3 class="font-bold text-lg mb-3">📐 Engage → 📅 Schedule</h3>
+                            <p class="text-sm text-gray-700">Engineering designs create production requirements automatically</p>
+                        </div>
+                        <div class="bg-purple-50 p-6 rounded-xl">
+                            <h3 class="font-bold text-lg mb-3">👥 HR → 💰 Accounting</h3>
+                            <p class="text-sm text-gray-700">Payroll posts to GL with full job distribution—zero manual entries</p>
+                        </div>
+                        <div class="bg-green-50 p-6 rounded-xl">
+                            <h3 class="font-bold text-lg mb-3">⚙️ Flow → 📦 Stock</h3>
+                            <p class="text-sm text-gray-700">Production updates inventory and COGS in real-time</p>
+                        </div>
+                        <div class="bg-yellow-50 p-6 rounded-xl">
+                            <h3 class="font-bold text-lg mb-3">🚚 Dispatch → 💰 Accounting</h3>
+                            <p class="text-sm text-gray-700">Bill of lading triggers final billing and revenue recognition</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to See CastLogic in Action?</h2>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Schedule a personalized demo to see how these modules work together to transform your operations.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition">
+                        Schedule Your Demo →
+                    </a>
+                    <a href="index.html" class="bg-white border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-bold text-lg hover:border-blue-600 hover:text-blue-600 transition">
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rich Footer -->
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="case-studies/case-study-midwest-manufacturer.html" class="hover:text-blue-600 transition">Case Studies</a></li>
+                        <li><a href="documentation.html" class="hover:text-blue-600 transition">Documentation</a></li>
+                        <li><a href="api.html" class="hover:text-blue-600 transition">API Reference</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Industry Certifications -->
+            <div class="border-t border-gray-300 pt-8 pb-6">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-700 font-semibold text-sm uppercase tracking-wide">Proud Members Of:</p>
+                    </div>
+                    <div class="flex items-center gap-8 md:gap-12">
+                        <a href="https://precast.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="National Precast Concrete Association Member">
+                            <img src="npca-logo.png" alt="NPCA Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                        <a href="https://pci.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="Precast/Prestressed Concrete Institute Member">
+                            <img src="pci-logo.jpg" alt="PCI Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const moduleCards = document.querySelectorAll('.module-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+
+            // Update button styles
+            filterBtns.forEach(b => {
+                b.classList.remove('bg-blue-600', 'text-white');
+                b.classList.add('bg-white', 'text-gray-700', 'border', 'border-gray-300');
+            });
+            this.classList.remove('bg-white', 'text-gray-700', 'border', 'border-gray-300');
+            this.classList.add('bg-blue-600', 'text-white');
+
+            // Filter cards
+            moduleCards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.3s';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+
+</body>
+</html>

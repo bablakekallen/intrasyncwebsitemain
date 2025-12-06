@@ -21,6 +21,12 @@
     </style>
 </head>
 <body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-4" style="max-height:56px;">
+            <!-- Optionally, add navigation here in the future -->
+        </div>
+    </header>
 
     <main>
         <section class="hero-bg py-24 md:py-32">

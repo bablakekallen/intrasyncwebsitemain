@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Inventory Valuation and COGS Tracking | IntraSync Blog</title>
+    <meta name="description" content="Accurate financial reporting requires precise inventory tracking and cost of goods sold calculation. Learn real-time valuation strategies for precast manufacturers.">
+
+    <!-- Article Schema for SEO & AI Understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "author": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder",
+        "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg"
+        }
+      }
+    }
+    </script>
+    <meta name="keywords" content="inventory valuation, COGS tracking, cost accounting, precast manufacturing, financial reporting, inventory costing">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="../index.html" class="hover:text-blue-700">Home</a>
+                <a href="../modules.html" class="hover:text-blue-700">Modules</a>
+                <a href="../blog.html" class="text-blue-700">Blog</a>
+                <a href="../contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-8">
+                <a href="../blog.html" class="text-blue-600 font-semibold hover:underline mb-4 inline-block">← Back to Blog</a>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">Inventory & Materials</span>
+                    <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold">Financial Management</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Real-Time Inventory Valuation and COGS Tracking</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <span>December 3, 2024</span>
+                    <span>•</span>
+                    <span>9 min read</span>
+                    <span>•</span>
+                    <span class="font-semibold">By IntraSync Engineering Team</span>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl h-96 mb-8 flex items-center justify-center text-white">
+                <div class="text-center">
+                    <svg class="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                    </svg>
+                    <p class="text-xl font-semibold">Inventory & COGS</p>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">Your financial statements claim $850,000 in inventory. Your yard contains roughly that much material. But can you prove the valuation is accurate? Do you know your true cost of goods sold this month? Can you calculate profit by project in real-time? For most precast manufacturers relying on periodic physical counts and spreadsheet estimates, the honest answer is no—creating financial blind spots that mask profitability problems and erode margins.</p>
+
+                <p class="mb-6">Real-time inventory valuation and COGS tracking transforms financial management from historical guesswork into forward-looking precision. When integrated with production systems, modern ERP platforms track every pound of material from receipt through production to shipment, calculating accurate inventory values and cost of goods sold continuously. This visibility enables proactive management decisions rather than reactive responses to problems discovered months later.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Why Real-Time Accuracy Matters</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Financial Reporting Requirements</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Monthly financial statements:</strong> Accurate inventory valuation essential for balance sheet accuracy</li>
+                    <li><strong>COGS calculation:</strong> Determines gross profit and operating margins</li>
+                    <li><strong>GAAP compliance:</strong> Generally accepted accounting principles require systematic inventory accounting</li>
+                    <li><strong>Tax reporting:</strong> Inventory values impact taxable income</li>
+                    <li><strong>Banking covenants:</strong> Loan agreements often specify inventory reporting requirements</li>
+                    <li><strong>Audit requirements:</strong> Annual audits scrutinize inventory valuation methodologies</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Operational Decision Making</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Pricing decisions:</strong> Accurate costs enable profitable pricing</li>
+                    <li><strong>Product mix optimization:</strong> Understanding true profitability by product line</li>
+                    <li><strong>Make vs. buy decisions:</strong> Real costs inform outsourcing analysis</li>
+                    <li><strong>Capacity planning:</strong> True profitability data drives investment decisions</li>
+                    <li><strong>Performance management:</strong> Accurate margins reveal efficiency trends</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Cost of Inaccuracy</h3>
+                <p class="mb-6">Poor inventory accounting creates serious problems:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Margin erosion:</strong> Unknown cost increases reducing profitability invisibly</li>
+                    <li><strong>Pricing errors:</strong> Bidding jobs based on outdated or incorrect cost assumptions</li>
+                    <li><strong>Cash flow surprises:</strong> Unexpected inventory write-downs impacting liquidity</li>
+                    <li><strong>Tax inefficiency:</strong> Over or understating inventory affecting tax obligations</li>
+                    <li><strong>Lost optimization opportunities:</strong> Can't improve what you can't measure accurately</li>
+                </ul>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">The Accuracy Gap</h4>
+                    <p class="text-gray-700">Studies show that precast manufacturers using periodic physical counts typically have inventory record accuracy of only 60-75%. Leading operations with real-time perpetual systems achieve 95-99% accuracy, revealing the dramatic difference systematic tracking makes.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Inventory Valuation Methods</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Standard Cost vs. Actual Cost</h3>
+                
+                <h4 class="text-xl font-bold mt-6 mb-3">Standard Costing</h4>
+                <p class="mb-6"><strong>Method:</strong> Establish predetermined costs for materials, labor, and overhead. Track variances between standard and actual.</p>
+                <p class="mb-6"><strong>Advantages:</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Simplified cost accounting and calculations</li>
+                    <li>Facilitates variance analysis and exception management</li>
+                    <li>Consistent product costs enabling straightforward pricing</li>
+                    <li>Less complex system requirements</li>
+                </ul>
+                <p class="mb-6"><strong>Disadvantages:</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Standards become outdated quickly in volatile cost environment</li>
+                    <li>Large variances can distort profitability</li>
+                    <li>Requires discipline to update standards regularly</li>
+                    <li>May hide true product costs</li>
+                </ul>
+
+                <h4 class="text-xl font-bold mt-6 mb-3">Actual Costing</h4>
+                <p class="mb-6"><strong>Method:</strong> Track actual costs for materials, labor, and overhead. Calculate true cost per unit produced.</p>
+                <p class="mb-6"><strong>Advantages:</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Reflects true costs accurately</li>
+                    <li>No variance accounting required</li>
+                    <li>Better for job costing and custom manufacturing</li>
+                    <li>Accurate project profitability</li>
+                </ul>
+                <p class="mb-6"><strong>Disadvantages:</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>More complex cost accounting</li>
+                    <li>Requires sophisticated ERP capabilities</li>
+                    <li>Costs vary period-to-period making pricing challenging</li>
+                    <li>Overhead allocation methodologies can be contentious</li>
+                </ul>
+
+                <p class="mb-6">Most precast manufacturers benefit from <strong>hybrid approach</strong>: standard costs for high-volume standard products, actual costs for custom project-specific work.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Inventory Costing Methods: FIFO, LIFO, Average</h3>
+
+                <h4 class="text-xl font-bold mt-6 mb-3">FIFO (First In, First Out)</h4>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Assumes oldest inventory used first</li>
+                    <li>Inventory valued at most recent purchase prices</li>
+                    <li>Best matches physical flow in precast operations</li>
+                    <li>Higher taxable income in inflationary environments</li>
+                    <li>Most common method for precast industry</li>
+                </ul>
+
+                <h4 class="text-xl font-bold mt-6 mb-3">LIFO (Last In, First Out)</h4>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Assumes newest inventory used first</li>
+                    <li>COGS reflects most recent prices</li>
+                    <li>Lower taxable income in inflation (tax benefit)</li>
+                    <li>Inventory understated on balance sheet</li>
+                    <li>Complex accounting, less common in construction</li>
+                </ul>
+
+                <h4 class="text-xl font-bold mt-6 mb-3">Weighted Average Cost</h4>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Calculates average cost of all inventory</li>
+                    <li>Smooths price fluctuations</li>
+                    <li>Simple to administer</li>
+                    <li>Good for commodity materials</li>
+                    <li>Doesn't match physical flow precisely</li>
+                </ul>
+
+                <p class="mb-6">Learn how <a href="job-costing-precast-project-profitability.html" class="text-blue-600 hover:underline">project-level job costing</a> integrates with inventory valuation for complete financial visibility.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Implementing Perpetual Inventory Systems</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Material Receipt Tracking</h3>
+                <p class="mb-6">Accurate receiving is the foundation:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>PO matching:</strong> Link receipts to purchase orders automatically</li>
+                    <li><strong>Weight/quantity verification:</strong> Confirm delivery matches order</li>
+                    <li><strong>Quality inspection:</strong> Accept or reject based on specifications</li>
+                    <li><strong>Cost capture:</strong> Record actual invoice cost per unit</li>
+                    <li><strong>Lot tracking:</strong> Maintain traceability for quality issues</li>
+                    <li><strong>Immediate posting:</strong> Update inventory and accounts payable in real-time</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Production Consumption Tracking</h3>
+                <p class="mb-6">Track material usage at point of consumption:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Batch-level tracking:</strong> Record materials used in each concrete batch</li>
+                    <li><strong>BOM explosion:</strong> Automatically calculate material requirements per product</li>
+                    <li><strong>Variance tracking:</strong> Compare actual vs. theoretical consumption</li>
+                    <li><strong>Work order costing:</strong> Accumulate costs by production run or project</li>
+                    <li><strong>Waste recording:</strong> Separately track scrap and waste for analysis</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Finished Goods Valuation</h3>
+                <p class="mb-6">Calculate value of completed products:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Material cost:</strong> Actual materials consumed in production</li>
+                    <li><strong>Direct labor:</strong> Production crew time allocated to products</li>
+                    <li><strong>Manufacturing overhead:</strong> Facilities, equipment, indirect labor allocated</li>
+                    <li><strong>Cost per unit calculation:</strong> Total costs divided by units produced</li>
+                    <li><strong>Inventory transfer:</strong> Move from work-in-process to finished goods</li>
+                </ul>
+
+                <p class="mb-6">Understand <a href="work-in-progress-wip-accounting.html" class="text-blue-600 hover:underline">WIP accounting methods</a> for products in various stages of completion.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Shipment and COGS Recognition</h3>
+                <p class="mb-6">Recognize costs when revenue earned:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Bill of lading creation:</strong> Document shipment to customer</li>
+                    <li><strong>Inventory relief:</strong> Reduce finished goods inventory</li>
+                    <li><strong>COGS posting:</strong> Recognize cost of goods sold in P&L</li>
+                    <li><strong>Revenue recognition:</strong> Record sales in accordance with contract terms</li>
+                    <li><strong>Gross profit calculation:</strong> Automatic calculation of margin per shipment</li>
+                </ul>
+
+                <div class="bg-gray-50 p-8 rounded-xl my-8">
+                    <h3 class="text-2xl font-bold mb-4">Optimize Yard Inventory Tracking</h3>
+                    <p class="text-gray-700 mb-4">Physical inventory accuracy requires knowing exactly what's in your yard and where. GPS tracking and mobile technology enable real-time perpetual inventory.</p>
+                    <a href="yard-management-gps-tracking.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Read Yard Management Guide →</a>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Overhead Allocation Strategies</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Types of Manufacturing Overhead</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Facility costs:</strong> Rent/depreciation, utilities, property taxes, insurance</li>
+                    <li><strong>Indirect labor:</strong> Supervisors, maintenance, quality control, material handlers</li>
+                    <li><strong>Equipment costs:</strong> Depreciation, maintenance, repairs</li>
+                    <li><strong>Support functions:</strong> Production scheduling, engineering, testing</li>
+                    <li><strong>Supplies:</strong> Form release, maintenance supplies, safety equipment</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Allocation Methods</h3>
+
+                <h4 class="text-xl font-bold mt-6 mb-3">Direct Labor Hours</h4>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Allocate overhead based on labor hours per product</li>
+                    <li>Simple to implement and explain</li>
+                    <li>Appropriate when labor intensity varies by product</li>
+                    <li>Less accurate for highly automated operations</li>
+                </ul>
+
+                <h4 class="text-xl font-bold mt-6 mb-3">Machine Hours</h4>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Allocate based on equipment usage time</li>
+                    <li>Better for automated operations</li>
+                    <li>Requires accurate machine time tracking</li>
+                    <li>Reflects true equipment cost driver</li>
+                </ul>
+
+                <h4 class="text-xl font-bold mt-6 mb-3">Material Cost</h4>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Overhead as percentage of material cost</li>
+                    <li>Simple calculation</li>
+                    <li>Appropriate when overhead correlates with material usage</li>
+                    <li>Can distort costs for material-intensive vs. labor-intensive products</li>
+                </ul>
+
+                <h4 class="text-xl font-bold mt-6 mb-3">Activity-Based Costing (ABC)</h4>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Allocate based on cost drivers for specific activities</li>
+                    <li>Most accurate but most complex</li>
+                    <li>Different overhead rates for different cost pools</li>
+                    <li>Better for diverse product portfolios</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Technology Requirements</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Integrated ERP Capabilities</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Perpetual inventory module:</strong> Real-time tracking of all inventory movements</li>
+                    <li><strong>Cost accounting:</strong> Automated cost calculations and allocations</li>
+                    <li><strong>BOM management:</strong> Accurate bills of material for all products</li>
+                    <li><strong>Work order costing:</strong> Job-level cost accumulation</li>
+                    <li><strong>GL integration:</strong> Automatic posting to general ledger accounts</li>
+                    <li><strong>Multi-location support:</strong> Separate tracking for multiple facilities</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Data Collection Points</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Receiving scales:</strong> Digital weight capture at receipt</li>
+                    <li><strong>Batch plant integration:</strong> Automatic recording of concrete batches</li>
+                    <li><strong>Production terminals:</strong> Work order completion and quantity reporting</li>
+                    <li><strong>Barcode scanners:</strong> Product identification and movement tracking</li>
+                    <li><strong>Mobile devices:</strong> Field data collection for quality, shipments, yard moves</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Reporting and Analytics</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Inventory valuation reports:</strong> Current value by location and category</li>
+                    <li><strong>COGS analysis:</strong> Cost breakdown by product, project, period</li>
+                    <li><strong>Gross margin reports:</strong> Profitability by customer, product line, project</li>
+                    <li><strong>Inventory turnover:</strong> Days on hand and velocity metrics</li>
+                    <li><strong>Variance analysis:</strong> Actual vs. standard cost comparisons</li>
+                    <li><strong>Trend analysis:</strong> Historical cost and margin trends</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Ensuring Data Accuracy</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Process Discipline</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Transaction timeliness:</strong> Post inventory movements within same shift</li>
+                    <li><strong>Complete documentation:</strong> All required fields captured accurately</li>
+                    <li><strong>Approval workflows:</strong> Management review of exception transactions</li>
+                    <li><strong>Error correction procedures:</strong> Systematic process for fixing mistakes</li>
+                    <li><strong>No manual overrides:</strong> System-enforced data validation</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Cycle Counting</h3>
+                <p class="mb-6">Continuous verification instead of annual physicals:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Daily counts:</strong> Small quantity of high-value or fast-moving items</li>
+                    <li><strong>ABC classification:</strong> Count A items monthly, B quarterly, C annually</li>
+                    <li><strong>Exception investigation:</strong> Research and correct discrepancies immediately</li>
+                    <li><strong>Root cause analysis:</strong> Fix process issues causing variances</li>
+                    <li><strong>Performance tracking:</strong> Measure and improve accuracy over time</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Internal Controls</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Segregation of duties:</strong> Different people receiving, recording, approving</li>
+                    <li><strong>Physical security:</strong> Controlled access to inventory storage areas</li>
+                    <li><strong>System access controls:</strong> User permissions appropriate to roles</li>
+                    <li><strong>Reconciliation procedures:</strong> Regular inventory to GL account reconciliation</li>
+                    <li><strong>Audit trails:</strong> Complete transaction history for forensic review</li>
+                </ul>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">Accuracy Targets</h4>
+                    <p class="text-gray-700">World-class inventory operations achieve 95%+ accuracy (value within 2% of actual), with A items at 99%+ accuracy. This precision requires systematic processes, appropriate technology, and organizational commitment.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Financial Benefits</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Improved Cash Flow Management</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Accurate inventory values for better working capital planning</li>
+                    <li>Reduced excess inventory tying up cash</li>
+                    <li>Earlier identification of cost overruns</li>
+                    <li>Better supplier payment timing decisions</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Enhanced Profitability</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Accurate costs enabling profitable pricing</li>
+                    <li>Early warning of margin erosion</li>
+                    <li>Product mix optimization based on true profitability</li>
+                    <li>Cost reduction opportunities identified through variance analysis</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Reduced Accounting Costs</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Eliminate manual inventory calculations and adjustments</li>
+                    <li>Faster month-end close processes</li>
+                    <li>Reduced audit fees due to better documentation</li>
+                    <li>Less time spent researching and correcting errors</li>
+                </ul>
+
+                <p class="mb-6">Discover how <a href="cash-flow-management-precast-companies.html" class="text-blue-600 hover:underline">integrated cash flow management</a> builds on accurate inventory and COGS data.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Implementation Roadmap</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Phase 1: Current State Assessment (2-4 weeks)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Document existing inventory accounting processes</li>
+                    <li>Assess current accuracy levels</li>
+                    <li>Identify pain points and improvement opportunities</li>
+                    <li>Define target state and success metrics</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Phase 2: System Configuration (4-6 weeks)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Configure ERP inventory and costing modules</li>
+                    <li>Set up cost accounting rules and overhead rates</li>
+                    <li>Build accurate bills of material for all products</li>
+                    <li>Define inventory locations and storage structure</li>
+                    <li>Configure interfaces to batch plant and other systems</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Phase 3: Data Cleansing (2-4 weeks)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Complete physical inventory count</li>
+                    <li>Reconcile to accounting records</li>
+                    <li>Correct discrepancies and write-offs</li>
+                    <li>Load accurate starting balances</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Phase 4: Go-Live and Stabilization (4-8 weeks)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Begin perpetual inventory tracking</li>
+                    <li>Daily monitoring and error correction</li>
+                    <li>Process refinement based on operational feedback</li>
+                    <li>Training and support for all users</li>
+                    <li>Cycle counting program initiation</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Conclusion</h2>
+                <p class="mb-6">Real-time inventory valuation and COGS tracking transforms financial management from periodic approximation into continuous precision. The visibility provided by perpetual inventory systems enables proactive decision-making about pricing, product mix, cost control, and investment that simply isn't possible with periodic physical counts and spreadsheet-based estimates.</p>
+
+                <p class="mb-6">The manufacturers that invest in systematic inventory accounting achieve multiple benefits: accurate financial statements, profitable pricing, optimized working capital, faster month-end closes, and reduced audit costs. Beyond these tangible benefits, they gain something even more valuable—confidence in their numbers and the ability to make data-driven decisions about their business.</p>
+
+                <p class="mb-6">Implementation requires commitment: appropriate ERP technology, process discipline, training, and continuous improvement. But the investment pays for itself quickly through reduced carrying costs, improved margins, and better financial control. In today's competitive environment, flying blind with inaccurate inventory data isn't just inefficient—it's a competitive disadvantage that threatens long-term viability.</p>
+
+                <p class="mb-6">The path forward starts with recognizing that inventory and COGS accuracy isn't just an accounting requirement—it's a strategic imperative that enables profitable growth. Companies that master this fundamental discipline position themselves to outperform competitors who continue struggling with monthly adjustments, surprise write-offs, and persistent uncertainty about true profitability.</p>
+            </div>
+
+            <div class="border-t border-b border-gray-200 py-8 my-12">
+                <div class="flex items-start gap-6">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold flex-shrink-0">I</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">IntraSync Team</h4>
+                        <p class="text-gray-600">The IntraSync team brings together experts in precast manufacturing, software engineering, and AI technology to deliver insights that help manufacturers optimize their operations and drive business growth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="job-costing-precast-project-profitability.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-indigo-600 font-semibold text-sm">Financial Management</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Job Costing for Precast: Tracking Profitability by Project</h4>
+                        <p class="text-gray-600 text-sm">Project-level costing reveals which jobs drive profitability and which erode margins.</p>
+                    </a>
+                    <a href="work-in-progress-wip-accounting.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-indigo-600 font-semibold text-sm">Financial Management</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Work-in-Progress (WIP) Accounting for Manufacturers</h4>
+                        <p class="text-gray-600 text-sm">Accurate WIP valuation is essential for financial reporting and profitability analysis.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 mt-12 text-center text-white">
+                <h3 class="text-2xl font-bold mb-3">Gain Financial Visibility</h3>
+                <p class="mb-6 text-blue-100">CastLogic's integrated inventory and costing modules deliver real-time financial accuracy from production floor to financial statements.</p>
+                <a href="../contact.html" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Schedule a Demo</a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="../accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="../hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="../schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="../careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="../privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="../terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

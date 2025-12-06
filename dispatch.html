@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatch & Delivery Management | CastLogic by IntraSync</title>
+    <meta name="description" content="AI-powered delivery scheduling, route optimization, and GPS tracking. Manage your precast logistics from yard to jobsite with complete ERP integration.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="index.html" class="hover:text-blue-700">Home</a>
+                <a href="modules.html" class="text-blue-700">Modules</a>
+                <a href="blog.html" class="hover:text-blue-700">Blog</a>
+                <a href="contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-pink-600 to-pink-800 text-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-4xl">🚚</div>
+                        <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-bold">OPERATIONS</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Dispatch & Delivery Management</h1>
+                    <p class="text-2xl mb-8 text-pink-100">AI-powered route optimization, real-time GPS tracking, and seamless delivery execution integrated with your entire precast operation.</p>
+                    <div class="flex gap-4">
+                        <a href="contact.html" class="bg-white text-pink-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-pink-50 transition">Schedule Demo</a>
+                        <a href="#features" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Standalone vs. Integrated Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">The Power of Integrated Dispatch in Your ERP</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">Most delivery systems operate in isolation. CastLogic Dispatch connects your logistics directly to production, inventory, and accounting.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-red-900">❌ Standalone Delivery Software</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Manual data entry from production schedules</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>No visibility into inventory availability</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>BOLs created separately from invoicing</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Delivery costs tracked in spreadsheets</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Customer notifications sent manually</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Delays in billing after delivery completion</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-green-50 border-2 border-green-200 rounded-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-green-900">✅ CastLogic Integrated Dispatch</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Delivery schedules auto-populate from production</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Real-time yard inventory and GPS location data</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>BOL creation triggers automatic final invoicing</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Transportation costs flow to job costing & GL</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Automated customer delivery notifications</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Revenue recognized at delivery confirmation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dispatch Feature Modules -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold mb-4">Complete Dispatch & Logistics Management</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Every tool you need to manage deliveries from planning through execution.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <!-- Route Optimization -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-100 to-pink-50 rounded-xl flex items-center justify-center text-3xl mb-4">🗺️</div>
+                        <h3 class="text-2xl font-bold mb-3">AI Route Optimization</h3>
+                        <p class="text-gray-600 mb-4">Intelligent algorithms plan the most efficient routes considering traffic, delivery windows, truck capacity, and driver hours.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Multi-stop route sequencing</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Live traffic integration</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Delivery window compliance</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>HOS compliance tracking</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Load Planning -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-100 to-pink-50 rounded-xl flex items-center justify-center text-3xl mb-4">📋</div>
+                        <h3 class="text-2xl font-bold mb-3">Load Planning</h3>
+                        <p class="text-gray-600 mb-4">Optimize truck capacity and configure loads based on component dimensions, weight limits, and delivery sequence.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Weight & dimension validation</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Truck capacity optimization</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>3D load visualization</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Multi-project consolidation</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- GPS Tracking -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-100 to-pink-50 rounded-xl flex items-center justify-center text-3xl mb-4">📍</div>
+                        <h3 class="text-2xl font-bold mb-3">Real-Time GPS Tracking</h3>
+                        <p class="text-gray-600 mb-4">Live visibility into every truck's location with automatic customer notifications and ETA updates.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Live truck location mapping</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Automatic ETA calculation</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Customer delivery notifications</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Geofence alerts</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- BOL & Documentation -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-100 to-pink-50 rounded-xl flex items-center justify-center text-3xl mb-4">📄</div>
+                        <h3 class="text-2xl font-bold mb-3">BOL & Documentation</h3>
+                        <p class="text-gray-600 mb-4">Digital bill of lading creation, electronic signatures, and delivery documentation that triggers billing automatically.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Digital BOL creation</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Electronic signature capture</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Photo documentation</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Instant PDF generation</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Driver Management -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-100 to-pink-50 rounded-xl flex items-center justify-center text-3xl mb-4">👨‍✈️</div>
+                        <h3 class="text-2xl font-bold mb-3">Driver Management</h3>
+                        <p class="text-gray-600 mb-4">Manage driver schedules, certifications, performance metrics, and mobile app access for field operations.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Driver scheduling & dispatch</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>CDL & certification tracking</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Performance analytics</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Mobile driver app</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Fleet Management -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-100 to-pink-50 rounded-xl flex items-center justify-center text-3xl mb-4">🚛</div>
+                        <h3 class="text-2xl font-bold mb-3">Fleet Management</h3>
+                        <p class="text-gray-600 mb-4">Track truck availability, maintenance schedules, and fleet utilization to maximize efficiency and reduce downtime.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Vehicle availability tracking</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Maintenance scheduling</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Fuel tracking & analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Utilization reporting</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complete ERP Integration -->
+        <section class="py-20 bg-gradient-to-br from-pink-50 to-purple-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Complete ERP Integration</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">CastLogic Dispatch doesn't just manage deliveries—it connects your logistics to every part of your operation.</p>
+                </div>
+
+                <div class="max-w-6xl mx-auto space-y-6">
+                    <!-- Integration 1: Stock -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">1</span>
+                            <h3 class="text-xl font-bold">Stock & Inventory Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Delivery schedules auto-populate from yard inventory GPS locations</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Component status updates to "In Transit" when loaded on truck</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Inventory decremented automatically upon BOL confirmation</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Real-time visibility into what's available to ship vs. in-transit</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 2: Schedule -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">2</span>
+                            <h3 class="text-xl font-bold">Production Schedule Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Requested delivery dates visible during production planning</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Production milestones trigger dispatch preparation alerts</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Customer delivery commitments drive production priorities</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Delivery capacity constraints inform production forecasting</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 3: Accounting -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">3</span>
+                            <h3 class="text-xl font-bold">Accounting & Revenue Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>BOL creation triggers final invoice generation automatically</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Revenue recognized at delivery confirmation (supports ASC 606 compliance)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Freight and delivery costs flow to job costing in real-time</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Transportation GL accounts updated automatically</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 4: Site -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">4</span>
+                            <h3 class="text-xl font-bold">Jobsite Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Delivery confirmation updates Site module installation status</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Jobsite photos and notes attached to delivery records</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Installation crews notified of incoming deliveries automatically</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Project completion % updated based on delivered components</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 5: CRM -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">5</span>
+                            <h3 class="text-xl font-bold">Customer Communication</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Automated delivery notifications with live tracking links</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>SMS/Email alerts for dispatch, en-route, and arrival milestones</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Customer portal shows real-time delivery status</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Digital BOL copies sent automatically upon completion</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry-Specific Features -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold mb-4">Built for Precast & Heavy Manufacturing</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Dispatch challenges unique to large, heavy components require specialized solutions.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-pink-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Oversized Load Management:</strong> Automated permitting workflows, pilot car coordination, and route restrictions for wide/heavy loads.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-pink-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Crane & Rigging Coordination:</strong> Schedule crane availability, track lifting equipment requirements, and coordinate with installation crews.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-pink-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Jobsite Constraints:</strong> Track delivery access restrictions, working hours, staging area availability, and site-specific safety requirements.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-pink-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Sequence-Dependent Delivery:</strong> Ensure components arrive in installation order—critical for erection schedules and project efficiency.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-pink-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Multi-Project Load Consolidation:</strong> Intelligently combine deliveries from multiple projects on the same route to maximize truck utilization.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-gradient-to-r from-pink-600 to-pink-800 text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Transform Your Delivery Operations</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto text-pink-100">See how CastLogic Dispatch integrates with your entire operation to eliminate manual processes, reduce delivery costs, and improve customer satisfaction.</p>
+                <a href="contact.html" class="inline-block bg-white text-pink-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-pink-50 transition">Schedule Your Demo →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Industry Certifications -->
+            <div class="border-t border-gray-300 pt-8 pb-6">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-700 font-semibold text-sm uppercase tracking-wide">Proud Members Of:</p>
+                    </div>
+                    <div class="flex items-center gap-8 md:gap-12">
+                        <a href="https://precast.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="National Precast Concrete Association Member">
+                            <img src="npca-logo.png" alt="NPCA Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                        <a href="https://pci.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="Precast/Prestressed Concrete Institute Member">
+                            <img src="pci-logo.jpg" alt="PCI Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Quality Control: The Future of Precast | IntraSync Blog</title>
+    <meta name="description" content="How automated defect detection and compliance tracking are transforming quality assurance in precast manufacturing facilities.">
+
+    <!-- Article Schema for SEO & AI Understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "author": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder",
+        "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg"
+        }
+      }
+    }
+    </script>
+    <meta name="keywords" content="quality control automation, automated inspections, defect detection, QC automation, manufacturing quality, precast quality">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="../index.html" class="hover:text-blue-700">Home</a>
+                <a href="../modules.html" class="hover:text-blue-700">Modules</a>
+                <a href="../blog.html" class="text-blue-700">Blog</a>
+                <a href="../contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <!-- Article Header -->
+            <div class="mb-8">
+                <a href="../blog.html" class="text-blue-600 font-semibold hover:underline mb-4 inline-block">← Back to Blog</a>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">Production</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Automated Quality Control: The Future of Precast</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <span>November 15, 2024</span>
+                    <span>•</span>
+                    <span>6 min read</span>
+                    <span>•</span>
+                    <span class="font-semibold">By IntraSync Engineering Team</span>
+                </div>
+            </div>
+
+            <!-- Featured Image Placeholder -->
+            <div class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl h-96 mb-8 flex items-center justify-center text-white">
+                <div class="text-center">
+                    <svg class="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                    </svg>
+                    <p class="text-xl font-semibold">Quality at Speed</p>
+                </div>
+            </div>
+
+            <!-- Author Authority Signal -->
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-600 p-6 mb-8 rounded-r-lg">
+                <div class="flex items-center gap-3">
+                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text-gray-700">
+                        <span class="font-semibold">Written by the IntraSync Engineering Team</span> | 
+                        <span>Reviewed by <a href="../about.html" class="text-blue-600 font-semibold hover:underline">Zachary Frye</a>, CTO & Founder (7+ years precast industry experience)</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Article Content -->
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">Quality control has traditionally been a manual, time-intensive process in precast manufacturing. Inspectors visually examine each component, document findings on paper checklists, and make subjective judgments about defects. This approach is slow, inconsistent, and creates production bottlenecks. Today, automated quality control systems powered by AI and computer vision are revolutionizing how manufacturers ensure product quality while accelerating production flow.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">The Limitations of Manual Quality Control</h2>
+                <p class="mb-6">Traditional quality inspection processes face inherent challenges:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Inconsistency:</strong> Different inspectors apply different standards, leading to variability in accept/reject decisions</li>
+                    <li><strong>Fatigue:</strong> Human visual inspection accuracy degrades over time, especially during long shifts</li>
+                    <li><strong>Speed vs. Thoroughness:</strong> Pressure to maintain production flow incentivizes rushed inspections</li>
+                    <li><strong>Documentation Burden:</strong> Paper-based recording is slow and creates opportunities for errors and omissions</li>
+                    <li><strong>Limited Traceability:</strong> Difficult to track quality trends or correlate defects with production variables</li>
+                    <li><strong>Training Dependency:</strong> Effective inspection requires extensive training and experience</li>
+                </ul>
+
+                <p class="mb-6">These limitations don't just affect quality—they impact delivery schedules, labor costs, and customer satisfaction.</p>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">The Cost of Quality Issues</h4>
+                    <p class="text-gray-700">Industry data shows that catching defects after shipment costs 10-100x more than identifying them during production. A $50 repair in the yard becomes a $5,000 field repair when crews, equipment, and site access are required.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">AI-Powered Visual Inspection</h2>
+                <p class="mb-6">Computer vision and machine learning have reached the point where automated systems can match or exceed human inspection capabilities for many types of defects.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">How Automated Visual Inspection Works</h3>
+                <p class="mb-6">Modern systems use high-resolution cameras and AI algorithms to inspect components:</p>
+
+                <ol class="list-decimal pl-6 mb-6 text-gray-700">
+                    <li class="mb-3"><strong>Image Capture:</strong> Multiple cameras photograph components from various angles, capturing surface details at high resolution</li>
+                    <li class="mb-3"><strong>AI Analysis:</strong> Machine learning models trained on thousands of examples analyze images to identify defects like cracks, voids, surface imperfections, or dimensional variations</li>
+                    <li class="mb-3"><strong>Classification:</strong> The system categorizes defects by type and severity based on predefined acceptance criteria</li>
+                    <li class="mb-3"><strong>Documentation:</strong> Defect images and locations are automatically recorded and linked to component records</li>
+                    <li class="mb-3"><strong>Routing:</strong> Components with defects are flagged for repair, while conforming pieces proceed to next production stage</li>
+                </ol>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Types of Defects Detected</h3>
+                <p class="mb-6">Automated visual inspection excels at identifying:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Surface Defects:</strong> Cracks, scaling, spalling, honeycombing, color variations</li>
+                    <li><strong>Dimensional Issues:</strong> Out-of-tolerance measurements, warping, misalignment</li>
+                    <li><strong>Embedded Item Verification:</strong> Missing, misplaced, or damaged embeds and inserts</li>
+                    <li><strong>Finish Quality:</strong> Surface texture inconsistencies, patching quality, coating uniformity</li>
+                    <li><strong>Rebar Exposure:</strong> Insufficient concrete cover over reinforcement</li>
+                    <li><strong>Void Detection:</strong> Air pockets or consolidation issues</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Advantages Over Manual Inspection</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Consistency:</strong> The same defect is identified the same way every time, regardless of shift or operator</li>
+                    <li><strong>Speed:</strong> Inspection occurs in seconds rather than minutes per component</li>
+                    <li><strong>No Fatigue:</strong> Performance doesn't degrade over time or across shifts</li>
+                    <li><strong>Objectivity:</strong> Decisions based on data and algorithms, not subjective judgment</li>
+                    <li><strong>24/7 Operation:</strong> Systems work continuously without breaks</li>
+                    <li><strong>Micro-Defect Detection:</strong> Can identify defects too small or subtle for human visual inspection</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Digital Quality Checklists and Workflows</h2>
+                <p class="mb-6">Beyond automated defect detection, digital systems transform the entire quality assurance process.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Replacing Paper with Digital Tools</h3>
+                <p class="mb-6">Digital checklists provide significant advantages over paper-based inspection forms:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Real-Time Data Entry:</strong> Inspectors use tablets or mobile devices to record findings immediately</li>
+                    <li><strong>Photo Documentation:</strong> Capture images of defects directly in the quality record</li>
+                    <li><strong>GPS Location Stamps:</strong> Automatically record where inspections occur for yard tracking</li>
+                    <li><strong>Required Fields:</strong> Prevent incomplete inspections by requiring all checklist items</li>
+                    <li><strong>Dynamic Workflows:</strong> Checklist adapts based on component type, project, or previous findings</li>
+                    <li><strong>Instant Visibility:</strong> Quality data available to production, scheduling, and customer service in real-time</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Automated Routing and Hold Management</h3>
+                <p class="mb-6">When defects are identified, digital systems automatically manage the resolution process:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Component status changes to "Quality Hold" preventing accidental shipment</li>
+                    <li>Work orders generated for repair crews with defect details and photos</li>
+                    <li>Scheduling systems adjust to account for components in rework</li>
+                    <li>Re-inspection workflows trigger after repairs are complete</li>
+                    <li>Full audit trail documenting original defect, repair actions, and final approval</li>
+                </ul>
+
+                <div class="bg-gray-50 p-8 rounded-xl my-8">
+                    <h3 class="text-2xl font-bold mb-4">Integrated Quality Management</h3>
+                    <p class="text-gray-700 mb-4">CastLogic Verify provides comprehensive quality control with digital checklists, photo documentation, defect tracking, and compliance reporting—all integrated with production and shipping systems to ensure quality never slows delivery.</p>
+                    <a href="../verify.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Learn More About CastLogic Verify →</a>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Compliance and Certification Tracking</h2>
+                <p class="mb-6">Many precast projects require third-party certifications (PCI, ACI, etc.) and compliance with specific quality standards. Automated systems ensure nothing falls through the cracks.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Automated Compliance Verification</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Standard-Based Checklists:</strong> Inspection protocols automatically aligned with project specifications and applicable standards</li>
+                    <li><strong>Testing Requirements:</strong> Track required tests (concrete strength, embed pull tests, etc.) and prevent shipment until complete</li>
+                    <li><strong>Document Management:</strong> Store and retrieve mill certs, test reports, and inspection records linked to specific components</li>
+                    <li><strong>Certification Tracking:</strong> Monitor inspector certifications and credentials, preventing non-certified personnel from performing critical inspections</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Automated Reporting</h3>
+                <p class="mb-6">Generate compliance documentation automatically:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Quality reports by project, customer, or time period</li>
+                    <li>Certification packages including all required test results and inspection records</li>
+                    <li>Defect rate trending and Pareto analysis</li>
+                    <li>Compliance dashboards showing project status vs. requirements</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Data-Driven Quality Improvement</h2>
+                <p class="mb-6">Perhaps the greatest benefit of automated quality control is the data it generates for continuous improvement.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Root Cause Analysis</h3>
+                <p class="mb-6">Digital quality data enables sophisticated analysis:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Correlate defects with production variables (crew, time of day, concrete mix, weather conditions)</li>
+                    <li>Identify patterns in defect occurrence across products or projects</li>
+                    <li>Track whether process changes reduce specific defect types</li>
+                    <li>Pinpoint training opportunities based on crew-specific quality trends</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Predictive Quality</h3>
+                <p class="mb-6">Advanced systems use machine learning to predict quality issues before they occur:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Identify production conditions associated with higher defect rates</li>
+                    <li>Alert supervisors when real-time conditions indicate increased quality risk</li>
+                    <li>Recommend process adjustments based on historical performance data</li>
+                    <li>Optimize preventive maintenance schedules for equipment affecting quality</li>
+                </ul>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">Continuous Improvement Culture</h4>
+                    <p class="text-gray-700">A precast plant reduced surface defects by 34% over six months by using quality data to identify that specific concrete mix designs correlated with higher defect rates during rapid temperature changes. Process adjustments eliminated the issue.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Implementation Considerations</h2>
+                <p class="mb-6">Successfully implementing automated quality control requires careful planning:</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Technology Selection</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Scalability:</strong> Start with digital checklists and expand to automated vision systems as ROI justifies</li>
+                    <li><strong>Integration:</strong> Ensure quality systems connect with production, scheduling, and shipping</li>
+                    <li><strong>Flexibility:</strong> Systems must accommodate different product types, projects, and specifications</li>
+                    <li><strong>User-Friendly:</strong> Interfaces that production workers and inspectors can use without extensive training</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Change Management</h3>
+                <p class="mb-6">Transitioning from manual to automated quality control requires cultural change:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Address concerns that automation threatens inspector jobs (position it as augmentation, not replacement)</li>
+                    <li>Train teams on new tools and processes thoroughly</li>
+                    <li>Demonstrate value through pilot programs before full rollout</li>
+                    <li>Involve quality staff in system design and configuration</li>
+                    <li>Celebrate early wins and quality improvements</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">ROI Considerations</h3>
+                <p class="mb-6">Automated quality control delivers ROI through multiple channels:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Reduced Rework:</strong> Earlier defect detection prevents compounding issues</li>
+                    <li><strong>Labor Efficiency:</strong> Faster inspection processes reduce bottlenecks</li>
+                    <li><strong>Field Issue Reduction:</strong> Better quality prevents expensive post-delivery problems</li>
+                    <li><strong>Customer Satisfaction:</strong> Fewer defects strengthen relationships and reputation</li>
+                    <li><strong>Insurance Benefits:</strong> Some carriers offer premium reductions for documented quality programs</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">The Future of Quality Control</h2>
+                <p class="mb-6">Quality control automation continues to evolve rapidly:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>3D Scanning:</strong> Automated dimensional verification using laser scanning and photogrammetry</li>
+                    <li><strong>Embedded Sensors:</strong> IoT devices in components tracking curing conditions, stress, and performance</li>
+                    <li><strong>Augmented Reality:</strong> AR glasses showing inspectors where to check and overlaying historical defect locations</li>
+                    <li><strong>Collaborative Robots:</strong> Automated systems performing physical tests and measurements</li>
+                    <li><strong>Blockchain Verification:</strong> Immutable quality records for enhanced traceability and certification</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Conclusion</h2>
+                <p class="mb-6">Automated quality control represents a fundamental shift in how precast manufacturers ensure product quality. By combining AI-powered visual inspection, digital checklists, automated compliance tracking, and data-driven continuous improvement, manufacturers achieve higher quality, faster production, and better documentation than manual processes ever could.</p>
+
+                <p class="mb-6">The manufacturers who embrace quality automation gain multiple competitive advantages: reputation for consistent quality, faster delivery through reduced bottlenecks, lower warranty and rework costs, and data-driven process improvement capabilities. In an industry where quality reputation is critical and margins are tight, automated quality control isn't a luxury—it's an essential competitive requirement.</p>
+
+                <p class="mb-6">The technology is proven, affordable, and delivering results today. The question isn't whether to automate quality control, but how quickly you can implement these systems to gain the benefits while competitors are still struggling with clipboards and inconsistent manual inspections. The future of precast quality is automated, and that future is now.</p>
+            </div>
+
+            <!-- Author Bio -->
+            <div class="border-t border-b border-gray-200 py-8 my-12">
+                <div class="flex items-start gap-6">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold flex-shrink-0">I</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">IntraSync Team</h4>
+                        <p class="text-gray-600">The IntraSync team brings together experts in precast manufacturing, software engineering, and quality management to deliver insights that help manufacturers optimize their operations and drive business growth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="reduce-production-lead-times.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">Production</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">5 Proven Ways to Reduce Production Lead Times</h4>
+                        <p class="text-gray-600 text-sm">Explore data-driven strategies to streamline production and deliver faster.</p>
+                    </a>
+                    <a href="inventory-management-precast.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">Best Practices</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Smart Inventory Management for Precast Yards</h4>
+                        <p class="text-gray-600 text-sm">Master yard management with GPS mapping and real-time tracking.</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 mt-12 text-center text-white">
+                <h3 class="text-2xl font-bold mb-3">Want to Learn More?</h3>
+                <p class="mb-6 text-blue-100">Schedule a demo to see how CastLogic can transform your precast operations.</p>
+                <a href="../contact.html" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Contact Us</a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="../accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="../hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="../schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="../careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="../privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="../terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

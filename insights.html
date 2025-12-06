@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights & Analytics for Precast Manufacturing | CastLogic ERP</title>
+    <meta name="description" content="Custom dashboards, KPIs, cost analysis, and advanced data visualization. Real-time insights across all operational and financial metrics for data-driven decisions.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="index.html" class="hover:text-blue-700">Home</a>
+                <a href="modules.html" class="text-blue-700">Modules</a>
+                <a href="blog.html" class="hover:text-blue-700">Blog</a>
+                <a href="contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-cyan-600 to-cyan-800 text-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-4xl">📊</div>
+                        <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-bold">ANALYTICS</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Insights & Analytics</h1>
+                    <p class="text-2xl mb-8 text-cyan-100">Custom dashboards, real-time KPIs, cost analysis, and advanced data visualization. Transform your data into actionable insights across all operational and financial metrics.</p>
+                    <div class="flex gap-4">
+                        <a href="contact.html" class="bg-white text-cyan-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-cyan-50 transition">Schedule Demo</a>
+                        <a href="#features" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Standalone vs. Integrated Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">The Power of Integrated Analytics in Your ERP</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">Most BI tools require data extraction and transformation. CastLogic Insights connects directly to your live operational data.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-red-900">❌ Standalone BI Tools</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Daily data exports from multiple systems</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Hours spent on ETL and data cleaning</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Reports outdated by time they're generated</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Data accuracy issues from manual processes</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Separate tools for each department</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>No drill-down to source transactions</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-green-50 border-2 border-green-200 rounded-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-green-900">✅ CastLogic Integrated Insights</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Real-time dashboards update as transactions occur</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Zero data extraction - analytics built on live data</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Instant KPIs reflecting current operations</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>100% data accuracy from single source of truth</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Unified analytics across all modules & departments</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Click-through to source records for full context</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Feature Modules -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold mb-4">Comprehensive Analytics & Reporting Platform</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Every metric you need to monitor performance, identify trends, and make data-driven decisions.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <!-- Custom Dashboards -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-xl flex items-center justify-center text-3xl mb-4">📈</div>
+                        <h3 class="text-2xl font-bold mb-3">Custom Dashboards</h3>
+                        <p class="text-gray-600 mb-4">Build personalized dashboards with drag-and-drop widgets, save custom views, and share across teams for unified visibility.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Drag-and-drop dashboard builder</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Role-based dashboard templates</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Save & share custom views</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Mobile-responsive layouts</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Real-Time KPIs -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-xl flex items-center justify-center text-3xl mb-4">⚡</div>
+                        <h3 class="text-2xl font-bold mb-3">Real-Time KPIs</h3>
+                        <p class="text-gray-600 mb-4">Monitor critical performance indicators updated in real-time with threshold alerts and trend analysis across all operations.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Live metric updates</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Threshold-based alerts</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Historical trend analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Goal tracking & benchmarks</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Predictive Analytics -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-xl flex items-center justify-center text-3xl mb-4">🔮</div>
+                        <h3 class="text-2xl font-bold mb-3">Predictive Analytics</h3>
+                        <p class="text-gray-600 mb-4">Leverage machine learning models to forecast trends, predict bottlenecks, and optimize resource allocation before issues arise.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Demand forecasting models</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Bottleneck prediction</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Resource optimization suggestions</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Cost projection analysis</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Production Analytics -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-xl flex items-center justify-center text-3xl mb-4">🏭</div>
+                        <h3 class="text-2xl font-bold mb-3">Production Analytics</h3>
+                        <p class="text-gray-600 mb-4">Deep dive into production efficiency, cycle times, capacity utilization, and quality metrics with detailed variance analysis.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>OEE & efficiency tracking</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Cycle time analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Capacity utilization reports</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Quality metric dashboards</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Financial Analytics -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-xl flex items-center justify-center text-3xl mb-4">💰</div>
+                        <h3 class="text-2xl font-bold mb-3">Financial Analytics</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive cost analysis, profitability tracking, margin analysis, and variance reporting across projects and products.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Job costing & profitability</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Margin analysis by product</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Budget vs. actual variance</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Cash flow projections</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Visualization -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-xl flex items-center justify-center text-3xl mb-4">📉</div>
+                        <h3 class="text-2xl font-bold mb-3">Advanced Visualization</h3>
+                        <p class="text-gray-600 mb-4">Transform complex data into clear, interactive charts, graphs, and heat maps with drill-down capabilities and export options.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Interactive charts & graphs</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Heat maps & trend lines</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Drill-down to source data</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Export to PDF, Excel, CSV</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complete ERP Integration -->
+        <section class="py-20 bg-gradient-to-br from-cyan-50 to-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Complete ERP Integration</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">CastLogic Insights doesn't just report on data—it connects analytics across every operational and financial dimension of your business.</p>
+                </div>
+
+                <div class="max-w-6xl mx-auto space-y-6">
+                    <!-- Integration 1: Production -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-cyan-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">1</span>
+                            <h3 class="text-xl font-bold">Production & Schedule Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Real-time production efficiency metrics updated with every milestone</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Capacity utilization dashboards reflect current schedule status</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Cycle time analysis across all production stages</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Schedule adherence KPIs with variance alerts</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 2: Quality -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-cyan-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">2</span>
+                            <h3 class="text-xl font-bold">Quality & Verify Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Defect rate tracking and trend analysis across products</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Quality score dashboards updated from inspection results</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Non-conformance reporting with root cause analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Compliance metrics and audit readiness scorecards</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 3: Financial -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-cyan-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">3</span>
+                            <h3 class="text-xl font-bold">Financial & Accounting Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Job costing profitability automatically calculated from actual costs</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Margin analysis reflects real-time material and labor costs</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Cash flow projections based on order pipeline and receivables</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Revenue recognition metrics aligned with delivery confirmations</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 4: Operations -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-cyan-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">4</span>
+                            <h3 class="text-xl font-bold">Dispatch & Site Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Delivery performance metrics from GPS tracking and confirmations</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Installation progress dashboards across all active jobsites</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Fleet utilization and transportation cost analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>On-time delivery rates and customer satisfaction metrics</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 5: Inventory -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-cyan-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">5</span>
+                            <h3 class="text-xl font-bold">Stock & Inventory Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Real-time inventory levels and aging analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Work-in-progress value tracking across production stages</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Material consumption patterns and waste analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Turnover rates and carrying cost optimization</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry-Specific Features -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold mb-4">Built for Precast & Heavy Manufacturing Analytics</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Reporting and analytics designed for the unique metrics and KPIs critical to precast operations.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-cyan-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Project-Based Profitability Analysis:</strong> Track costs, margins, and profitability at the project level with variance analysis against estimates and budgets.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-cyan-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Concrete Mix Performance Metrics:</strong> Analyze material costs, strength test results, and mix design efficiency across batches and products.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-cyan-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Bed & Mold Utilization Tracking:</strong> Measure production bed efficiency, mold cycle times, and equipment utilization to maximize throughput.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-cyan-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Labor Productivity Analysis:</strong> Track labor hours per unit, crew efficiency, and labor cost as percentage of revenue by product type and project.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-cyan-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Order-to-Installation Cycle Analysis:</strong> Monitor end-to-end cycle times from order placement through production, delivery, and installation completion.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-gradient-to-r from-cyan-600 to-cyan-800 text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Transform Data Into Actionable Insights</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto text-cyan-100">See how CastLogic Insights gives you real-time visibility across every metric that matters, enabling data-driven decisions that drive profitability.</p>
+                <a href="contact.html" class="inline-block bg-white text-cyan-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-cyan-50 transition">Schedule Your Demo →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Industry Certifications -->
+            <div class="border-t border-gray-300 pt-8 pb-6">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-700 font-semibold text-sm uppercase tracking-wide">Proud Members Of:</p>
+                    </div>
+                    <div class="flex items-center gap-8 md:gap-12">
+                        <a href="https://precast.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="National Precast Concrete Association Member">
+                            <img src="npca-logo.png" alt="NPCA Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                        <a href="https://pci.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="Precast/Prestressed Concrete Institute Member">
+                            <img src="pci-logo.jpg" alt="PCI Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

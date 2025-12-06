@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Production Scheduling | CastLogic by IntraSync</title>
+    <meta name="description" content="Optimize mold capacity, labor allocation, and resource sequencing with machine learning. Reduce lead times by 20% with intelligent production planning.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="index.html" class="hover:text-blue-700">Home</a>
+                <a href="modules.html" class="text-blue-700">Modules</a>
+                <a href="blog.html" class="hover:text-blue-700">Blog</a>
+                <a href="contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-4xl">📅</div>
+                        <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-bold">PRODUCTION</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-extrabold mb-6">AI-Powered Production Scheduling</h1>
+                    <p class="text-2xl mb-4 text-purple-100">The <strong>core engine</strong> of CastLogic. Everything in your ERP flows from the production schedule—from material purchasing to job costing to delivery commitments.</p>
+                    <p class="text-xl mb-8 text-purple-100">Optimize mold capacity, labor allocation, and resource sequencing with machine learning. Reduce lead times by 20% with intelligent production planning.</p>
+                    <div class="flex gap-4">
+                        <a href="contact.html" class="bg-white text-purple-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-purple-50 transition">Schedule Demo</a>
+                        <a href="#features" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitive Comparison Table -->
+        <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">How CastLogic Schedule Compares</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">See why leading precast manufacturers are switching from spreadsheets and legacy systems to AI-powered scheduling</p>
+                </div>
+
+                <!-- Comparison Table -->
+                <div class="max-w-7xl mx-auto overflow-x-auto">
+                    <table class="w-full bg-white rounded-2xl shadow-2xl overflow-hidden">
+                        <!-- Header Row -->
+                        <thead class="bg-gradient-to-r from-purple-600 to-purple-800 text-white">
+                            <tr>
+                                <th class="p-6 text-left text-lg font-bold w-1/4">Feature</th>
+                                <th class="p-6 text-center text-lg font-bold w-1/4">
+                                    <div class="flex flex-col items-center">
+                                        <div class="text-2xl mb-2">📊</div>
+                                        <div>Paper + Excel</div>
+                                    </div>
+                                </th>
+                                <th class="p-6 text-center text-lg font-bold w-1/4">
+                                    <div class="flex flex-col items-center">
+                                        <div class="text-2xl mb-2">🏢</div>
+                                        <div>Concrete Vision<br/>& Titan</div>
+                                    </div>
+                                </th>
+                                <th class="p-6 text-center text-lg font-bold w-1/4 bg-purple-700">
+                                    <div class="flex flex-col items-center">
+                                        <div class="text-2xl mb-2">🚀</div>
+                                        <div>CastLogic Schedule</div>
+                                        <div class="text-xs font-normal mt-1 text-purple-200">AI-Powered</div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <!-- AI-Powered Optimization -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">AI-Powered Optimization</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">Machine learning optimizes across all constraints</div></td>
+                            </tr>
+                            <!-- Real-Time Updates -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">Real-Time Schedule Updates</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span><div class="text-sm text-gray-500 mt-1">Manual updates only</div></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-yellow-500">⚠️</span><div class="text-sm text-gray-500 mt-1">Limited automation</div></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">Auto-updates from production floor</div></td>
+                            </tr>
+                            <!-- Integrated ERP -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">Fully Integrated ERP</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-yellow-500">⚠️</span><div class="text-sm text-gray-500 mt-1">Requires integrations</div></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">Native ERP integration</div></td>
+                            </tr>
+                            <!-- Capacity Planning -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">Visual Capacity Planning</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span><div class="text-sm text-gray-500 mt-1">Spreadsheet only</div></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-green-600">✅</span></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">+ AI-optimized</div></td>
+                            </tr>
+                            <!-- Mold Management -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">Intelligent Mold Allocation</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-yellow-500">⚠️</span><div class="text-sm text-gray-500 mt-1">Basic tracking</div></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">Auto-assigns optimal molds</div></td>
+                            </tr>
+                            <!-- Predictive Analytics -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">Predictive Delivery Dates</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span><div class="text-sm text-gray-500 mt-1">Manual estimation</div></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span><div class="text-sm text-gray-500 mt-1">No predictive analytics</div></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">95% accuracy with ML</div></td>
+                            </tr>
+                            <!-- Labor Optimization -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">Labor Load Balancing</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-yellow-500">⚠️</span></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">Auto-balances crew workload</div></td>
+                            </tr>
+                            <!-- Material Synchronization -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">Material Availability Sync</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span><div class="text-sm text-gray-500 mt-1">Manual checks</div></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-yellow-500">⚠️</span><div class="text-sm text-gray-500 mt-1">Basic integration</div></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">Real-time inventory check</div></td>
+                            </tr>
+                            <!-- What-If Scenarios -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">What-If Scenario Planning</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span><div class="text-sm text-gray-500 mt-1">Not available</div></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">Instant impact analysis</div></td>
+                            </tr>
+                            <!-- Mobile Access -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">Mobile Access for Shop Floor</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span><div class="text-sm text-gray-500 mt-1">Desktop only</div></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">Full mobile app</div></td>
+                            </tr>
+                            <!-- Cost to Job Costing -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">Schedule → Job Costing Flow</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-yellow-500">⚠️</span><div class="text-sm text-gray-500 mt-1">Requires export</div></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">Automatic cost capture</div></td>
+                            </tr>
+                            <!-- Continuous Learning -->
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="p-6 font-semibold text-gray-900">Learns from Historical Data</td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span></td>
+                                <td class="p-6 text-center"><span class="text-3xl text-red-500">❌</span></td>
+                                <td class="p-6 text-center bg-green-50"><span class="text-3xl text-green-600">✅</span><div class="text-sm text-gray-600 mt-1">Improves over time</div></td>
+                            </tr>
+                        </tbody>
+                        <!-- Results Row -->
+                        <tfoot class="bg-gradient-to-r from-gray-100 to-gray-200">
+                            <tr>
+                                <td class="p-6 font-bold text-gray-900 text-lg">Typical Lead Time Reduction</td>
+                                <td class="p-6 text-center"><span class="text-2xl font-bold text-gray-500">—</span></td>
+                                <td class="p-6 text-center"><span class="text-2xl font-bold text-gray-700">5-10%</span></td>
+                                <td class="p-6 text-center bg-purple-100"><span class="text-3xl font-bold text-purple-700">15-20%</span></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <!-- Key Differentiators -->
+                <div class="mt-12 max-w-5xl mx-auto">
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-2xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Why CastLogic Schedule Wins</h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <div class="text-4xl mb-3">🧠</div>
+                                <h4 class="font-bold mb-2">True AI</h4>
+                                <p class="text-purple-100 text-sm">Not just rules-based logic. Real machine learning that gets smarter with every schedule.</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl mb-3">🔗</div>
+                                <h4 class="font-bold mb-2">Native ERP</h4>
+                                <p class="text-purple-100 text-sm">Scheduling isn't bolted on—it's built into the same database as your financials, inventory, and HR.</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl mb-3">📈</div>
+                                <h4 class="font-bold mb-2">Proven Results</h4>
+                                <p class="text-purple-100 text-sm">Our customers report 15-20% lead time reduction and 95% on-time delivery within 90 days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scheduling as the Core -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Scheduling: The Core of Your Entire Operation</h2>
+                        <p class="text-xl text-gray-600 max-w-4xl mx-auto">CastLogic Schedule isn't just another module—it's the <strong>foundation that drives every other part of your business</strong>. When your production schedule changes, everything else updates automatically.</p>
+                    </div>
+
+                    <!-- Core Diagram -->
+                    <div class="relative max-w-4xl mx-auto">
+                        <!-- Center Circle - Schedule -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                            <div class="bg-gradient-to-br from-purple-600 to-purple-800 text-white rounded-full w-56 h-56 flex flex-col items-center justify-center shadow-2xl border-4 border-white">
+                                <div class="text-5xl mb-2">📅</div>
+                                <div class="text-2xl font-extrabold">SCHEDULE</div>
+                                <div class="text-sm text-purple-200">AI-Powered Core</div>
+                            </div>
+                        </div>
+
+                        <!-- Surrounding Modules -->
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 pt-32 pb-32">
+                            <!-- Stock (Inventory) -->
+                            <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-2 border-green-200 shadow-lg">
+                                <div class="text-3xl mb-2">📦</div>
+                                <h3 class="font-bold text-lg mb-2">Stock</h3>
+                                <p class="text-sm text-gray-600">Schedule triggers material orders based on production needs</p>
+                            </div>
+
+                            <!-- Accounting -->
+                            <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200 shadow-lg">
+                                <div class="text-3xl mb-2">💰</div>
+                                <h3 class="font-bold text-lg mb-2">Accounting</h3>
+                                <p class="text-sm text-gray-600">Costs flow from schedule to job costing automatically</p>
+                            </div>
+
+                            <!-- HR & Payroll -->
+                            <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-6 border-2 border-yellow-200 shadow-lg">
+                                <div class="text-3xl mb-2">👥</div>
+                                <h3 class="font-bold text-lg mb-2">HR & Payroll</h3>
+                                <p class="text-sm text-gray-600">Labor allocations drive crew assignments and time tracking</p>
+                            </div>
+
+                            <!-- Dispatch -->
+                            <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-2 border-red-200 shadow-lg">
+                                <div class="text-3xl mb-2">🚚</div>
+                                <h3 class="font-bold text-lg mb-2">Dispatch</h3>
+                                <p class="text-sm text-gray-600">Delivery dates come directly from production completion</p>
+                            </div>
+
+                            <!-- Engage (Sales) -->
+                            <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border-2 border-purple-200 shadow-lg">
+                                <div class="text-3xl mb-2">🤝</div>
+                                <h3 class="font-bold text-lg mb-2">Engage</h3>
+                                <p class="text-sm text-gray-600">Promise dates to customers based on real capacity</p>
+                            </div>
+
+                            <!-- Flow (Production) -->
+                            <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-6 border-2 border-indigo-200 shadow-lg">
+                                <div class="text-3xl mb-2">🏭</div>
+                                <h3 class="font-bold text-lg mb-2">Flow</h3>
+                                <p class="text-sm text-gray-600">Shop floor executes what the schedule prioritizes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Message -->
+                    <div class="mt-12 max-w-4xl mx-auto">
+                        <div class="bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-2xl p-8 text-center shadow-xl">
+                            <h3 class="text-3xl font-bold mb-4">One Schedule. One Truth.</h3>
+                            <p class="text-xl text-purple-100 mb-4">Unlike disconnected systems where different departments have different versions of reality, CastLogic has <strong>one production schedule</strong> that every module references in real-time.</p>
+                            <p class="text-lg text-purple-200">Change the schedule once → Inventory, accounting, labor, delivery, and sales all update automatically. No spreadsheets. No manual syncing. No version conflicts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Standalone vs. Integrated Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">The Power of Integrated Scheduling in Your ERP</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">Most scheduling systems operate in spreadsheets. CastLogic Schedule connects AI-driven planning directly to inventory, labor, and financial systems.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-red-900">❌ Manual Spreadsheet Scheduling</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Manual spreadsheet scheduling with no real-time updates</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Frequent rescheduling due to poor optimization</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>No capacity visibility across molds and labor</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Late deliveries from capacity misjudgment</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Inefficient resource use and overtime costs</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span>Customer promise dates not linked to planning</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-green-50 border-2 border-green-200 rounded-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-green-900">✅ CastLogic AI Scheduling</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>AI-optimized schedules updated in real-time</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Automated capacity planning across all constraints</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Constraint-based scheduling with mold/labor visibility</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Predictive lead times with 95% accuracy</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>20% faster production through optimization</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Delivery commitments drive production priorities</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Feature Modules -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold mb-4">Complete Production Scheduling Management</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Every tool you need to plan, optimize, and execute production schedules.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <!-- AI Optimization Engine -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-50 rounded-xl flex items-center justify-center text-3xl mb-4">🧠</div>
+                        <h3 class="text-2xl font-bold mb-3">AI Optimization Engine</h3>
+                        <p class="text-gray-600 mb-4">Machine learning analyzes historical data, predicts completion times, and optimizes across multiple constraints including mold availability, labor, materials, and delivery dates.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Historical performance analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Multi-constraint optimization</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Predictive completion times</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Continuous learning from actuals</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Capacity Planning -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-50 rounded-xl flex items-center justify-center text-3xl mb-4">📊</div>
+                        <h3 class="text-2xl font-bold mb-3">Capacity Planning</h3>
+                        <p class="text-gray-600 mb-4">Visual mold calendar, labor load balancing, equipment scheduling, bottleneck identification, and future demand forecasting all in one system.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Visual mold calendar</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Labor load balancing</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Bottleneck identification</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Future demand forecasting</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Constraint-Based Scheduling -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-50 rounded-xl flex items-center justify-center text-3xl mb-4">🔗</div>
+                        <h3 class="text-2xl font-bold mb-3">Constraint-Based Scheduling</h3>
+                        <p class="text-gray-600 mb-4">Respects cure times, mold compatibility, crane availability, delivery windows, crew certifications, and material lead times automatically.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Cure time management</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Mold compatibility rules</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Delivery window compliance</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Crew certification matching</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- What-If Scenarios -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-50 rounded-xl flex items-center justify-center text-3xl mb-4">🔮</div>
+                        <h3 class="text-2xl font-bold mb-3">What-If Scenarios</h3>
+                        <p class="text-gray-600 mb-4">Test different schedule options, compare delivery dates, evaluate new order impact, and plan capacity expansion with simulation tools.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Schedule option testing</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Delivery date comparison</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>New order impact analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Capacity expansion planning</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Demand Forecasting -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-50 rounded-xl flex items-center justify-center text-3xl mb-4">📈</div>
+                        <h3 class="text-2xl font-bold mb-3">Demand Forecasting</h3>
+                        <p class="text-gray-600 mb-4">Historical pattern analysis, seasonal adjustments, market trend integration, proactive capacity planning, and early bottleneck warnings.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Historical pattern analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Seasonal adjustments</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Market trend integration</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Early bottleneck warnings</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Real-Time Adjustments -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-50 rounded-xl flex items-center justify-center text-3xl mb-4">⚡</div>
+                        <h3 class="text-2xl font-bold mb-3">Real-Time Adjustments</h3>
+                        <p class="text-gray-600 mb-4">Instant rescheduling on equipment failure, automatic resequencing for rush orders, material delay compensation, and crew absence handling.</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Equipment failure rescheduling</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Rush order resequencing</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Material delay compensation</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Crew absence handling</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complete ERP Integration -->
+        <section class="py-20 bg-gradient-to-br from-purple-50 to-indigo-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Complete ERP Integration</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">CastLogic Schedule doesn't just plan production—it connects intelligent scheduling to every part of your operation.</p>
+                </div>
+
+                <div class="max-w-6xl mx-auto space-y-6">
+                    <!-- Integration 1: Engage -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">1</span>
+                            <h3 class="text-xl font-bold">Engage Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Engineering designs auto-create production requirements</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>BOM flows to material planning and procurement scheduling</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Custom specifications drive schedule constraints</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Component complexity impacts duration estimates</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 2: Flow -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">2</span>
+                            <h3 class="text-xl font-bold">Flow Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Actual production times update AI scheduling models</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Progress milestones trigger next scheduled operations</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Production delays automatically reschedule downstream work</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Real-time capacity utilization updates planning dashboard</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 3: Stock -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">3</span>
+                            <h3 class="text-xl font-bold">Stock Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Material availability constrains production scheduling</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Production schedules trigger automatic material orders</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Yard space availability considered in planning</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Component aging tracked for FIFO scheduling</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 4: HR -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">4</span>
+                            <h3 class="text-xl font-bold">HR Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Crew schedules sync with production plan</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Skill requirements match available labor automatically</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Overtime predicted and flagged before it occurs</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Training needs identified from scheduling gaps</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration 5: Accounting -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">5</span>
+                            <h3 class="text-xl font-bold">Accounting Integration</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Scheduled completion triggers progress billing milestones</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Labor budgets flow from production plan</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>WIP values calculated from schedule status</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Revenue recognition timing driven by completion dates</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry-Specific Features -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold mb-4">Built for Precast Manufacturing</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Production scheduling challenges unique to precast concrete require specialized solutions.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Cure Time Management:</strong> Automated scheduling respects concrete cure times, optimizes steam cure vs. ambient cure, and adjusts for weather impact on cure schedules.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Mold & Bed Optimization:</strong> Maximize bed utilization, minimize mold changeovers, prioritize complex shapes, and optimize multi-cavity bed planning.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Delivery Date Commitment:</strong> Customer promise dates drive schedule priorities, transportation time included in planning, and crane availability at jobsite considered.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Multi-Project Balancing:</strong> Optimize across all active projects, prevent single-project bottlenecks, and balance workload for steady crew utilization.
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
+                        <svg class="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Seasonal Demand Planning:</strong> Construction season forecasting, winter capacity planning, holiday shutdown scheduling, and weather delay buffers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Optimize Your Production Scheduling</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto text-purple-100">See how CastLogic Schedule uses AI to reduce lead times by 20% while integrating with your entire precast operation.</p>
+                <a href="contact.html" class="inline-block bg-white text-purple-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-purple-50 transition">Schedule Your Demo →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Industry Certifications -->
+            <div class="border-t border-gray-300 pt-8 pb-6">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-700 font-semibold text-sm uppercase tracking-wide">Proud Members Of:</p>
+                    </div>
+                    <div class="flex items-center gap-8 md:gap-12">
+                        <a href="https://precast.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="National Precast Concrete Association Member">
+                            <img src="npca-logo.png" alt="NPCA Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                        <a href="https://pci.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="Precast/Prestressed Concrete Institute Member">
+                            <img src="pci-logo.jpg" alt="PCI Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

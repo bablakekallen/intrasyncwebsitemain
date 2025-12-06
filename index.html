@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntraSync CastLogic - Complete ERP for Precast Manufacturing</title>
+    <meta name="description" content="The only ERP built specifically for precast manufacturing. Automate production scheduling, inventory, accounting, HR, and more in one integrated platform.">
+
+    <!-- Schema.org markup for better SEO and AI/LLM understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CastLogic",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "ERP Software",
+      "operatingSystem": "Web-based, Cloud",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "Contact for pricing",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "USD",
+          "price": "0",
+          "eligibleQuantity": {
+            "@type": "QuantitativeValue",
+            "value": "Custom pricing based on company size"
+          }
+        }
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "url": "https://intrasyncindustrial.com",
+        "logo": "https://intrasyncindustrial.com/Intrasync Industrial Logo 1.19.24.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/company/intrasync-industrial"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Sales",
+          "url": "https://intrasyncindustrial.com/contact.html"
+        }
+      },
+      "description": "Complete ERP platform built specifically for precast concrete manufacturing. CastLogic automates production scheduling, inventory management, accounting, HR, quality control, and more in one integrated system.",
+      "featureList": [
+        "AI-Powered Production Scheduling",
+        "Real-time Inventory Management",
+        "Integrated Accounting & Job Costing",
+        "HR & Payroll Management",
+        "Quality Control & Compliance Tracking",
+        "Dispatch & Logistics Management",
+        "BIM/CAD Integration",
+        "Mobile Access",
+        "Real-time Analytics & Insights",
+        "GPS Yard Management",
+        "Automated Progress Billing"
+      ],
+      "screenshot": "https://intrasyncindustrial.com/assets/screenshot.png",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "47",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "IntraSync Industrial",
+      "alternateName": "IntraSync",
+      "url": "https://intrasyncindustrial.com",
+      "logo": "https://intrasyncindustrial.com/Intrasync Industrial Logo 1.19.24.jpg",
+      "description": "Provider of CastLogic ERP software for precast concrete manufacturing companies",
+      "foundingDate": "2020",
+      "sameAs": [
+        "https://www.linkedin.com/company/intrasync-industrial"
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "National Precast Concrete Association",
+          "url": "https://precast.org"
+        },
+        {
+          "@type": "Organization",
+          "name": "Precast/Prestressed Concrete Institute",
+          "url": "https://pci.org"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-XXX-XXX-XXXX",
+        "contactType": "Sales",
+        "areaServed": "US",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://intrasyncindustrial.com/"
+      }]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .module-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .module-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .cta-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .feature-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Sticky Demo CTA Button -->
+    <a href="contact.html" class="cta-button bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
+        📅 Schedule Demo
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-12">
+                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-12 w-auto">
+                    <nav class="hidden md:flex gap-8 text-base font-semibold">
+                        <a href="index.html" class="text-blue-700 hover:text-blue-800 transition">Home</a>
+                        <a href="modules.html" class="text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="contact.html" class="hidden md:inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="animate-fadeInUp">
+                        <div class="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                            🚀 The Only ERP Built for Precast Manufacturing
+                        </div>
+                        <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                            Stop Managing <span class="gradient-text">Spreadsheets.</span><br/>Start Running Your Business.
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                            CastLogic connects your entire operation—from production floor to financial statements—in one intelligent ERP platform. Eliminate manual data entry, reduce errors, and gain real-time visibility.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                            <a href="contact.html" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition text-center">
+                                Schedule a Demo →
+                            </a>
+                            <a href="#how-it-works" class="bg-white border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-bold text-lg hover:border-blue-600 hover:text-blue-600 transition text-center">
+                                See How It Works
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-6 text-sm text-gray-600">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>No credit card required</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Setup in weeks, not months</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual -->
+                    <div class="relative animate-float">
+                        <div class="bg-white rounded-2xl shadow-2xl p-8 border border-gray-200">
+                            <div class="flex items-center gap-2 mb-6">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="bg-gradient-to-r from-blue-100 to-purple-100 h-12 rounded-lg flex items-center px-4">
+                                    <span class="text-sm font-semibold text-gray-700">📊 Production Dashboard</span>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="bg-green-50 p-4 rounded-lg text-center">
+                                        <div class="text-2xl font-bold text-green-700">24</div>
+                                        <div class="text-xs text-gray-600">Jobs Active</div>
+                                    </div>
+                                    <div class="bg-blue-50 p-4 rounded-lg text-center">
+                                        <div class="text-2xl font-bold text-blue-700">98%</div>
+                                        <div class="text-xs text-gray-600">On Time</div>
+                                    </div>
+                                    <div class="bg-purple-50 p-4 rounded-lg text-center">
+                                        <div class="text-2xl font-bold text-purple-700">$2.4M</div>
+                                        <div class="text-xs text-gray-600">Revenue</div>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-100 h-32 rounded-lg"></div>
+                            </div>
+                        </div>
+
+                        <!-- Floating cards -->
+                        <div class="absolute -right-4 top-20 bg-white rounded-lg shadow-lg p-4 border border-gray-200" style="animation: float 4s ease-in-out infinite;">
+                            <div class="text-sm font-semibold text-gray-700">✅ Payroll Posted</div>
+                            <div class="text-xs text-gray-500">All jobs updated</div>
+                        </div>
+                        <div class="absolute -left-4 bottom-20 bg-white rounded-lg shadow-lg p-4 border border-gray-200" style="animation: float 5s ease-in-out infinite;">
+                            <div class="text-sm font-semibold text-gray-700">📦 Inventory Synced</div>
+                            <div class="text-xs text-gray-500">Real-time COGS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust & Credibility Bar -->
+        <section class="py-8 bg-gray-50 border-y border-gray-200">
+            <div class="container mx-auto px-6">
+                <div class="flex items-center justify-center gap-4">
+                        <span class="text-gray-600 text-sm">Proud Members of:</span>
+                        <a href="https://precast.org" target="_blank" rel="noopener noreferrer" title="National Precast Concrete Association Member">
+                            <img src="npca-logo.png" alt="NPCA Member" class="h-10 w-auto opacity-75 hover:opacity-100 transition">
+                        </a>
+                        <a href="https://pci.org" target="_blank" rel="noopener noreferrer" title="Precast/Prestressed Concrete Institute Member">
+                            <img src="pci-logo.jpg" alt="PCI Member" class="h-10 w-auto opacity-75 hover:opacity-100 transition">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem/Solution Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">The Problem with Disconnected Systems</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Most precast manufacturers are stuck managing multiple software tools that don't talk to each other</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 mb-16">
+                    <!-- Problem Side -->
+                    <div class="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-red-900">Without CastLogic</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">×</span>
+                                <span class="text-gray-700">Manual data entry between 5+ different systems</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">×</span>
+                                <span class="text-gray-700">Week-long month-end close with constant reconciliation</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">×</span>
+                                <span class="text-gray-700">No real-time visibility into job profitability</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">×</span>
+                                <span class="text-gray-700">Production delays from poor scheduling coordination</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">×</span>
+                                <span class="text-gray-700">Inventory counts don't match financial records</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Solution Side -->
+                    <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-8">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-green-900">With CastLogic</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl">✓</span>
+                                <span class="text-gray-700"><strong>Zero manual data entry</strong> - everything flows automatically</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl">✓</span>
+                                <span class="text-gray-700"><strong>Close books in hours</strong> with automated reconciliations</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl">✓</span>
+                                <span class="text-gray-700"><strong>Live profitability dashboards</strong> by project, product, customer</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl">✓</span>
+                                <span class="text-gray-700"><strong>AI-optimized scheduling</strong> reduces lead times by 20%</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl">✓</span>
+                                <span class="text-gray-700"><strong>Perpetual inventory sync</strong> with GL and COGS</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="contact.html" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition">
+                        See CastLogic in Action →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">How CastLogic Works</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">One integrated platform connects your entire operation from quote to cash</p>
+                </div>
+
+                <div class="max-w-5xl mx-auto">
+                    <div class="relative">
+                        <!-- Connection Line -->
+                        <div class="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-purple-500 hidden md:block"></div>
+
+                        <!-- Steps -->
+                        <div class="space-y-16">
+                            <!-- Step 1 -->
+                            <div class="relative grid md:grid-cols-2 gap-8 items-center">
+                                <div class="md:text-right">
+                                    <div class="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-bold mb-4">STEP 1</div>
+                                    <h3 class="text-2xl font-bold mb-3">Quote & Engineering</h3>
+                                    <p class="text-gray-600">Sales creates quote → Engineering designs in CAD/BIM → System automatically creates project budget, BOM, and production requirements</p>
+                                </div>
+                                <div class="md:pl-12">
+                                    <div class="bg-gradient-to-br from-blue-100 to-blue-50 p-6 rounded-xl border-2 border-blue-200">
+                                        <div class="text-4xl mb-2">📐</div>
+                                        <div class="font-semibold">CastLogic Engage</div>
+                                        <div class="text-sm text-gray-600">Digital twins, CAD integration</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="relative grid md:grid-cols-2 gap-8 items-center">
+                                <div class="md:order-2">
+                                    <div class="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-bold mb-4">STEP 2</div>
+                                    <h3 class="text-2xl font-bold mb-3">AI-Optimized Scheduling</h3>
+                                    <p class="text-gray-600">AI analyzes mold capacity, labor, materials → Creates optimized production schedule → Updates job costs in real-time</p>
+                                </div>
+                                <div class="md:order-1 md:pr-12 md:text-right">
+                                    <div class="bg-gradient-to-br from-green-100 to-green-50 p-6 rounded-xl border-2 border-green-200 inline-block">
+                                        <div class="text-4xl mb-2">📅</div>
+                                        <div class="font-semibold">CastLogic Schedule</div>
+                                        <div class="text-sm text-gray-600">AI scheduling, capacity planning</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="relative grid md:grid-cols-2 gap-8 items-center">
+                                <div class="md:text-right">
+                                    <div class="inline-block bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-bold mb-4">STEP 3</div>
+                                    <h3 class="text-2xl font-bold mb-3">Production & Tracking</h3>
+                                    <p class="text-gray-600">Workers clock in by job → Material requisitions auto-post to COGS → WIP values update as production progresses</p>
+                                </div>
+                                <div class="md:pl-12">
+                                    <div class="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-xl border-2 border-purple-200">
+                                        <div class="text-4xl mb-2">⚙️</div>
+                                        <div class="font-semibold">CastLogic Flow + Stock</div>
+                                        <div class="text-sm text-gray-600">Real-time tracking, inventory</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="relative grid md:grid-cols-2 gap-8 items-center">
+                                <div class="md:order-2">
+                                    <div class="inline-block bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-bold mb-4">STEP 4</div>
+                                    <h3 class="text-2xl font-bold mb-3">Financial Integration</h3>
+                                    <p class="text-gray-600">Payroll posts to GL with job distribution → Progress billing triggers based on milestones → Real-time P&L by project</p>
+                                </div>
+                                <div class="md:order-1 md:pr-12 md:text-right">
+                                    <div class="bg-gradient-to-br from-yellow-100 to-yellow-50 p-6 rounded-xl border-2 border-yellow-200 inline-block">
+                                        <div class="text-4xl mb-2">💰</div>
+                                        <div class="font-semibold">CastLogic Accounting + HR</div>
+                                        <div class="text-sm text-gray-600">Integrated financials, payroll</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 5 -->
+                            <div class="relative grid md:grid-cols-2 gap-8 items-center">
+                                <div class="md:text-right">
+                                    <div class="inline-block bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-bold mb-4">STEP 5</div>
+                                    <h3 class="text-2xl font-bold mb-3">Delivery & Insights</h3>
+                                    <p class="text-gray-600">Optimized delivery routing → BOL triggers final billing → Executive dashboards show complete operational & financial metrics</p>
+                                </div>
+                                <div class="md:pl-12">
+                                    <div class="bg-gradient-to-br from-red-100 to-red-50 p-6 rounded-xl border-2 border-red-200">
+                                        <div class="text-4xl mb-2">📊</div>
+                                        <div class="font-semibold">CastLogic Dispatch + Insights</div>
+                                        <div class="text-sm text-gray-600">Logistics, analytics</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-16">
+                    <a href="modules.html" class="inline-block bg-white border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition">
+                        Explore All Modules →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Modules Section -->
+        <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">11 Powerful Modules. One Integrated Platform.</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose the modules you need. Everything works together seamlessly.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Module Cards -->
+                    <div class="module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                        <div class="feature-icon w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center text-3xl mb-4">💰</div>
+                        <h3 class="text-xl font-bold mb-2">Accounting</h3>
+                        <p class="text-gray-600 text-sm mb-4">Full ERP financials with GL, AP/AR, project accounting, and AI automation</p>
+                        <a href="accounting.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
+                    </div>
+
+                    <div class="module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                        <div class="feature-icon w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center text-3xl mb-4">👥</div>
+                        <h3 class="text-xl font-bold mb-2">HR & Payroll</h3>
+                        <p class="text-gray-600 text-sm mb-4">Flexible payroll, compliance, time tracking—powered by Everee</p>
+                        <a href="hr.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
+                    </div>
+
+                    <div class="module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                        <div class="feature-icon w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center text-3xl mb-4">📅</div>
+                        <h3 class="text-xl font-bold mb-2">Schedule</h3>
+                        <p class="text-gray-600 text-sm mb-4">AI-powered production scheduling reduces lead times by 20%</p>
+                        <a href="schedule.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
+                    </div>
+
+                    <div class="module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                        <div class="feature-icon w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center text-3xl mb-4">📦</div>
+                        <h3 class="text-xl font-bold mb-2">Stock</h3>
+                        <p class="text-gray-600 text-sm mb-4">GPS yard mapping, inventory tracking, perpetual COGS sync</p>
+                        <a href="stock.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
+                    </div>
+
+                    <div class="module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                        <div class="feature-icon w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center text-3xl mb-4">⚙️</div>
+                        <h3 class="text-xl font-bold mb-2">Flow</h3>
+                        <p class="text-gray-600 text-sm mb-4">Real-time production tracking with shop floor IoT integration</p>
+                        <a href="flow.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
+                    </div>
+
+                    <div class="module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                        <div class="feature-icon w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center text-3xl mb-4">📐</div>
+                        <h3 class="text-xl font-bold mb-2">Engage</h3>
+                        <p class="text-gray-600 text-sm mb-4">CAD/BIM integration, digital twins, engineering data hub</p>
+                        <a href="engage.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="modules.html" class="inline-block text-blue-600 font-semibold text-lg hover:underline">
+                        View all 11 modules →
+                    </a>
+                </div>
+
+                <!-- Flexible Pricing & Custom Solutions -->
+                <div class="mt-16 max-w-5xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-xl p-8 shadow-lg">
+                            <div class="w-14 h-14 bg-white/20 rounded-lg flex items-center justify-center text-3xl mb-4">
+                                🧩
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Choose What You Need</h3>
+                            <p class="text-blue-100 mb-4">
+                                Start with just the modules that solve your biggest pain points today. Add more as you grow. No forced bundles, no wasted features.
+                            </p>
+                            <ul class="space-y-2 text-blue-100 text-sm">
+                                <li>✓ Purchase individual modules</li>
+                                <li>✓ Add modules anytime</li>
+                                <li>✓ Pay only for what you use</li>
+                                <li>✓ Seamless integration guaranteed</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-purple-600 to-purple-700 text-white rounded-xl p-8 shadow-lg">
+                            <div class="w-14 h-14 bg-white/20 rounded-lg flex items-center justify-center text-3xl mb-4">
+                                ⚙️
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Custom Built for You</h3>
+                            <p class="text-purple-100 mb-4">
+                                Need something unique to your operation? We build custom modules and workflows tailored to your specific manufacturing processes.
+                            </p>
+                            <ul class="space-y-2 text-purple-100 text-sm">
+                                <li>✓ Custom module development</li>
+                                <li>✓ Unique workflow automation</li>
+                                <li>✓ Industry-specific features</li>
+                                <li>✓ Dedicated engineering support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="contact.html" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold shadow-lg hover:shadow-xl transition">
+                            Discuss Your Requirements →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="stat-number mb-2">20%</div>
+                        <div class="text-blue-100">Faster Lead Times</div>
+                    </div>
+                    <div>
+                        <div class="stat-number mb-2">80%</div>
+                        <div class="text-blue-100">Less Manual Entry</div>
+                    </div>
+                    <div>
+                        <div class="stat-number mb-2">10x</div>
+                        <div class="text-blue-100">Faster Month-End Close</div>
+                    </div>
+                    <div>
+                        <div class="stat-number mb-2">100%</div>
+                        <div class="text-blue-100">Real-Time Visibility</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Built by Industry Experts -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 md:p-12 border-2 border-blue-100 shadow-lg">
+                        <div class="text-center mb-6">
+                            <div class="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                🏆 Built by Industry Experts
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Software Built By People Who Know Precast</h2>
+                            <p class="text-xl text-gray-600 leading-relaxed">
+                                CastLogic wasn't created by generic software developers. It was built by <a href="about.html" class="text-blue-600 font-bold hover:underline">Zachary Frye</a>, our CTO & Founder, who brings a <strong>Mechanical Engineering background</strong> and <strong>7+ years of hands-on precast manufacturing experience</strong>.
+                            </p>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-6 mt-8">
+                            <div class="text-center p-4 bg-white rounded-xl shadow-sm">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                                <div class="text-sm text-gray-600">Years Combined Industry Experience</div>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-xl shadow-sm">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">100%</div>
+                                <div class="text-sm text-gray-600">Team with Precast Background</div>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-xl shadow-sm">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">NPCA/PCI</div>
+                                <div class="text-sm text-gray-600">Active Industry Members</div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-6">
+                            <a href="about.html" class="inline-block text-blue-600 font-semibold hover:underline">
+                                Learn more about our team →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to Transform Your Operations?</h2>
+                    <p class="text-xl text-gray-600 mb-8">Join leading precast manufacturers who have eliminated manual processes and gained complete operational visibility.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                        <a href="contact.html" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition">
+                            Schedule Your Demo →
+                        </a>
+                        <a href="modules.html" class="bg-white border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-bold text-lg hover:border-blue-600 hover:text-blue-600 transition">
+                            Explore Modules
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-center gap-6 text-sm text-gray-600">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Free consultation</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Customized demo</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>ROI analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rich Footer -->
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Industry Certifications -->
+            <div class="border-t border-gray-300 pt-8 pb-6">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-700 font-semibold text-sm uppercase tracking-wide">Proud Members Of:</p>
+                    </div>
+                    <div class="flex items-center gap-8 md:gap-12">
+                        <a href="https://precast.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="National Precast Concrete Association Member">
+                            <img src="npca-logo.png" alt="NPCA Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                        <a href="https://pci.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="Precast/Prestressed Concrete Institute Member">
+                            <img src="pci-logo.jpg" alt="PCI Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

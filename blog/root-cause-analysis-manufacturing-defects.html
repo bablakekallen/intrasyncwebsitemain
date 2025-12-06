@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master root cause analysis techniques to identify and eliminate manufacturing defects in precast production using systematic problem-solving methods.">
+
+    <!-- Article Schema for SEO & AI Understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "author": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder",
+        "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg"
+        }
+      }
+    }
+    </script>
+    <meta name="keywords" content="root cause analysis, manufacturing defects, 5 whys, fishbone diagram, precast quality, problem solving, continuous improvement">
+    <meta name="author" content="IntraSync Industrial">
+    <title>Root Cause Analysis for Manufacturing Defects | IntraSync Industrial</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-header { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .content-section { line-height: 1.8; }
+        .content-section h2 { color: #1e40af; margin-top: 2rem; margin-bottom: 1rem; }
+        .content-section h3 { color: #2563eb; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .highlight-box { background: linear-gradient(to right, #eff6ff, #dbeafe); border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2"><img src="../images/logo.png" alt="IntraSync Industrial Logo" class="h-10"></div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="../index.html#features" class="text-gray-700 hover:text-blue-600 transition">Features</a>
+                    <a href="../index.html#modules" class="text-gray-700 hover:text-blue-600 transition">Modules</a>
+                    <a href="../index.html#pricing" class="text-gray-700 hover:text-blue-600 transition">Pricing</a>
+                    <a href="../blog.html" class="text-gray-700 hover:text-blue-600 transition">Blog</a>
+                    <a href="../contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <a href="https://app.intrasync.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="gradient-header text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Root Cause Analysis for Manufacturing Defects</h1>
+                <p class="text-xl mb-6 text-blue-100">Systematic methods to identify and eliminate quality issues permanently</p>
+                <div class="flex items-center justify-center space-x-6 text-blue-100">
+                    <span><i class="far fa-calendar"></i> December 3, 2025</span>
+                    <span><i class="far fa-clock"></i> 13 min read</span>
+                    <span><i class="fas fa-tag"></i> Quality Control</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8 content-section">
+
+                    <p class="text-lg text-gray-700 mb-6">
+                        When defects occur in precast manufacturing, the natural tendency is to fix the immediate problem and move on. But without understanding why the defect occurred, you're virtually guaranteed to see it again. Root cause analysis (RCA) is the systematic process of identifying the fundamental reasons behind problems, enabling permanent solutions rather than temporary fixes.
+                    </p>
+
+                    <div class="highlight-box">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The 80/20 Rule of Quality Problems</h3>
+                        <p class="text-gray-700">
+                            Typically, 80% of quality problems stem from 20% of root causes. Identifying and eliminating these critical few causes delivers disproportionate improvements in overall quality.
+                        </p>
+                    </div>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Why Root Cause Analysis Matters</h2>
+
+                    <p class="text-gray-700 mb-4">Without systematic RCA, manufacturers waste resources treating symptoms:</p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li><strong>Recurring defects:</strong> Same problems repeat because underlying causes unaddressed</li>
+                        <li><strong>Escalating costs:</strong> Continuous rework without improvement</li>
+                        <li><strong>Demoralized teams:</strong> Frustration from fighting same fires repeatedly</li>
+                        <li><strong>Lost credibility:</strong> Customers lose confidence when issues persist</li>
+                        <li><strong>Missed opportunities:</strong> Resources consumed by recurring problems could drive innovation</li>
+                    </ul>
+
+                    <p class="text-gray-700 mb-6">
+                        Effective RCA breaks this cycle by identifying and eliminating root causes, preventing recurrence and freeing resources for value-added activities.
+                    </p>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">The Five Whys Technique</h2>
+
+                    <p class="text-gray-700 mb-4">
+                        The simplest and most accessible RCA method, the Five Whys involves asking "why" repeatedly until reaching the root cause:
+                    </p>
+
+                    <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3">Example: Honeycombing Defect</h4>
+                        <ol class="list-decimal pl-6 text-gray-700 space-y-3">
+                            <li><strong>Problem:</strong> Panel has honeycombing (voids in concrete)
+                                <br><em>Why?</em> Concrete wasn't properly consolidated</li>
+                            <li><em>Why wasn't it consolidated?</em> Vibrator wasn't inserted deep enough
+                                <br><em>Why not?</em> Operator didn't follow procedure</li>
+                            <li><em>Why didn't operator follow procedure?</em> New employee not fully trained
+                                <br><em>Why not trained?</em> Training program doesn't cover vibration technique adequately</li>
+                            <li><em>Why doesn't training cover it?</em> No standard operating procedure exists for vibration
+                                <br><strong>Root Cause:</strong> Lack of documented vibration procedures and comprehensive training</li>
+                        </ol>
+                        <p class="text-gray-700 mt-4"><strong>Solution:</strong> Create detailed vibration procedures with visual guides, incorporate into training program, verify competency before independent work.</p>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Five Whys Best Practices</h3>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Focus on processes and systems, not individuals</li>
+                        <li>Use facts and data, not assumptions</li>
+                        <li>Five is a guide—may need more or fewer iterations</li>
+                        <li>Involve people close to the problem</li>
+                        <li>Verify root cause before implementing solutions</li>
+                        <li>Document the analysis for future reference</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Fishbone (Ishikawa) Diagrams</h2>
+
+                    <p class="text-gray-700 mb-4">
+                        For complex problems with multiple potential causes, fishbone diagrams provide structured brainstorming. The diagram resembles a fish skeleton with the problem at the head and potential causes branching off as "bones."
+                    </p>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Six Major Categories (6 Ms)</h3>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-3">1. Man (People)</h4>
+                            <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                                <li>Training and skills</li>
+                                <li>Experience level</li>
+                                <li>Fatigue or distraction</li>
+                                <li>Communication issues</li>
+                                <li>Workload and staffing</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-3">2. Machine (Equipment)</h4>
+                            <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                                <li>Equipment malfunction</li>
+                                <li>Calibration issues</li>
+                                <li>Maintenance status</li>
+                                <li>Age and condition</li>
+                                <li>Proper setup</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-3">3. Material</h4>
+                            <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                                <li>Material quality</li>
+                                <li>Specification compliance</li>
+                                <li>Storage conditions</li>
+                                <li>Handling damage</li>
+                                <li>Supplier variation</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-3">4. Method (Process)</h4>
+                            <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                                <li>Procedure adequacy</li>
+                                <li>Process design</li>
+                                <li>Work instructions clarity</li>
+                                <li>Process control</li>
+                                <li>Sequencing issues</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-3">5. Measurement</h4>
+                            <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                                <li>Instrument accuracy</li>
+                                <li>Calibration status</li>
+                                <li>Measurement technique</li>
+                                <li>Data recording</li>
+                                <li>Inspection frequency</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-3">6. Environment</h4>
+                            <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                                <li>Temperature/humidity</li>
+                                <li>Workspace organization</li>
+                                <li>Lighting conditions</li>
+                                <li>Cleanliness</li>
+                                <li>Seasonal variations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Creating a Fishbone Diagram</h3>
+
+                    <ol class="list-decimal pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Draw diagram with problem statement at the head</li>
+                        <li>Create main branches for each of the 6 Ms</li>
+                        <li>Brainstorm potential causes within each category</li>
+                        <li>Add sub-branches for detailed causes</li>
+                        <li>Analyze to identify most likely root causes</li>
+                        <li>Investigate prioritized causes with data</li>
+                        <li>Implement corrective actions for verified root causes</li>
+                    </ol>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Pareto Analysis</h2>
+
+                    <p class="text-gray-700 mb-4">
+                        Pareto charts help prioritize which problems to analyze first by identifying the "vital few" defects causing most issues.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Creating a Pareto Chart</h3>
+
+                    <ul class="list-decimal pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Categorize all defects by type over a specific period</li>
+                        <li>Count frequency or cost impact of each defect type</li>
+                        <li>Rank defects from highest to lowest frequency/cost</li>
+                        <li>Create bar chart showing defect types and cumulative percentage</li>
+                        <li>Focus RCA efforts on top 20% of defects causing 80% of problems</li>
+                    </ul>
+
+                    <p class="text-gray-700 mb-6">
+                        Digital <a href="../index.html#modules" class="text-blue-600 hover:underline">quality management systems</a> automatically generate Pareto charts from defect data, making it easy to identify priorities.
+                    </p>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Conducting Effective RCA Sessions</h2>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Team Selection</h3>
+
+                    <p class="text-gray-700 mb-4">Include diverse perspectives:</p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li><strong>Process operators:</strong> Frontline workers who see problems firsthand</li>
+                        <li><strong>Quality personnel:</strong> Specialists in defect identification and testing</li>
+                        <li><strong>Engineering:</strong> Technical expertise on design and specifications</li>
+                        <li><strong>Maintenance:</strong> Equipment knowledge</li>
+                        <li><strong>Management:</strong> Authority to implement solutions</li>
+                        <li><strong>Facilitator:</strong> Guide process without dominating discussion</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Gathering Evidence</h3>
+
+                    <p class="text-gray-700 mb-4">Base analysis on facts, not assumptions:</p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Review production records for affected batches</li>
+                        <li>Examine material certifications and test results</li>
+                        <li>Interview operators and inspect equipment</li>
+                        <li>Photograph defects and conditions</li>
+                        <li>Collect samples for testing if needed</li>
+                        <li>Review historical data for patterns</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Verifying Root Causes</h3>
+
+                    <p class="text-gray-700 mb-4">Confirm suspected root causes before implementing solutions:</p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li><strong>Reproduce the problem:</strong> Can you create defect by recreating suspected cause?</li>
+                        <li><strong>Statistical correlation:</strong> Does data show relationship between cause and effect?</li>
+                        <li><strong>Expert validation:</strong> Do subject matter experts agree with analysis?</li>
+                        <li><strong>Controlled testing:</strong> Small-scale trials to verify cause-effect relationship</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">From Analysis to Action</h2>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Developing Corrective Actions</h3>
+
+                    <p class="text-gray-700 mb-4">Effective corrective actions address root causes, not symptoms:</p>
+
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3">Levels of Corrective Action</h4>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-3">
+                            <li><strong>Containment:</strong> Immediate action to prevent shipping defective products (inspect all, segregate suspect items)</li>
+                            <li><strong>Correction:</strong> Fix the specific problem (repair defective products)</li>
+                            <li><strong>Corrective Action:</strong> Eliminate root cause to prevent recurrence (modify process, improve training, upgrade equipment)</li>
+                            <li><strong>Preventive Action:</strong> Identify and address potential problems before they occur (apply learnings to similar processes)</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Implementation and Verification</h3>
+
+                    <ul class="list-decimal pl-6 text-gray-700 space-y-2 mb-6">
+                        <li><strong>Action planning:</strong> Define specific actions, responsibilities, and deadlines</li>
+                        <li><strong>Communication:</strong> Inform all affected personnel of changes</li>
+                        <li><strong>Training:</strong> Ensure everyone understands new procedures</li>
+                        <li><strong>Monitoring:</strong> Track defect rates after implementation</li>
+                        <li><strong>Verification:</strong> Confirm defect eliminated or significantly reduced</li>
+                        <li><strong>Standardization:</strong> Update procedures and work instructions</li>
+                        <li><strong>Horizontal deployment:</strong> Apply learnings to other areas</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Common RCA Pitfalls to Avoid</h2>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-6">
+                        <ul class="list-disc pl-6 text-gray-700 space-y-3">
+                            <li><strong>Stopping at symptoms:</strong> Accepting surface explanations instead of digging deeper</li>
+                            <li><strong>Blaming people:</strong> Focusing on "who" rather than "why" creates defensiveness</li>
+                            <li><strong>Jumping to solutions:</strong> Implementing fixes before understanding root causes</li>
+                            <li><strong>Analysis paralysis:</strong> Over-analyzing simple problems instead of taking action</li>
+                            <li><strong>Lack of follow-through:</strong> Completing analysis but not implementing or verifying solutions</li>
+                            <li><strong>Working in silos:</strong> Excluding key perspectives from analysis</li>
+                            <li><strong>No documentation:</strong> Failing to record learnings for future reference</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Digital Tools for RCA</h2>
+
+                    <p class="text-gray-700 mb-4">
+                        Modern manufacturing software enhances RCA effectiveness:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-3 mb-6">
+                        <li><strong>Automated data collection:</strong> Comprehensive production data available instantly</li>
+                        <li><strong>Pattern recognition:</strong> Analytics identify correlations humans might miss</li>
+                        <li><strong>Visual tools:</strong> Built-in fishbone and Pareto chart generation</li>
+                        <li><strong>Collaborative platforms:</strong> Team members contribute remotely to analysis</li>
+                        <li><strong>Action tracking:</strong> Monitor corrective action implementation and deadlines</li>
+                        <li><strong>Knowledge base:</strong> Searchable repository of past RCAs and solutions</li>
+                        <li><strong>Effectiveness verification:</strong> Statistical analysis confirms problem elimination</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Building RCA Capability</h2>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Training and Skill Development</h3>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Formal training in RCA methods for quality personnel</li>
+                        <li>Basic problem-solving skills for all employees</li>
+                        <li>Regular practice through structured RCA sessions</li>
+                        <li>Mentoring by experienced practitioners</li>
+                        <li>Case study reviews of successful analyses</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Cultural Prerequisites</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        RCA thrives in specific organizational cultures:
+                    </p>
+
+                    <div class="highlight-box">
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li><strong>Psychological safety:</strong> People comfortable raising issues without fear of blame</li>
+                            <li><strong>Management commitment:</strong> Leaders value thorough analysis over quick fixes</li>
+                            <li><strong>Time allocation:</strong> Sufficient time provided for proper investigation</li>
+                            <li><strong>Action orientation:</strong> Findings result in real changes, not just reports</li>
+                            <li><strong>Learning focus:</strong> Problems viewed as improvement opportunities</li>
+                            <li><strong>Cross-functional cooperation:</strong> Willingness to work together across departments</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Measuring RCA Effectiveness</h2>
+
+                    <p class="text-gray-700 mb-4">
+                        Track these metrics to evaluate RCA program success:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li><strong>Recurrence rate:</strong> Percentage of problems that recur after RCA</li>
+                        <li><strong>Time to resolution:</strong> Speed from problem identification to permanent fix</li>
+                        <li><strong>Defect reduction:</strong> Decrease in overall defect rates</li>
+                        <li><strong>Cost savings:</strong> Reduction in rework, scrap, and warranty costs</li>
+                        <li><strong>RCA completion rate:</strong> Percentage of significant problems receiving thorough analysis</li>
+                        <li><strong>Horizontal deployment:</strong> Application of learnings to other areas</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Conclusion</h2>
+
+                    <p class="text-gray-700 mb-4">
+                        Root cause analysis is the cornerstone of continuous quality improvement. By systematically identifying and eliminating the fundamental causes of defects, manufacturers break the cycle of recurring problems and achieve sustainable quality excellence.
+                    </p>
+
+                    <p class="text-gray-700 mb-4">
+                        The techniques—Five Whys, fishbone diagrams, Pareto analysis—are straightforward. The challenge lies in building organizational discipline to conduct thorough analyses rather than accepting quick fixes, and following through on corrective actions to prevent recurrence.
+                    </p>
+
+                    <p class="text-gray-700 mb-6">
+                        Companies that master RCA gain competitive advantages through superior quality, lower costs, and faster problem resolution. The investment in developing RCA capability pays dividends throughout the organization.
+                    </p>
+
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 rounded-lg mt-12">
+                        <h3 class="text-2xl font-bold mb-4">Enhance Your Problem-Solving</h3>
+                        <p class="text-lg mb-6">
+                            IntraSync provides data analytics and RCA tools to identify patterns, track corrective actions, and verify effectiveness.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="../contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition text-center">Schedule a Demo</a>
+                            <a href="../index.html#modules" class="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition text-center">Explore Quality Module</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 border-t pt-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Related Articles</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <a href="non-conformance-reporting-best-practices.html" class="block p-6 bg-gray-50 rounded-lg hover:shadow-md transition">
+                                <h4 class="font-bold text-gray-800 mb-2">Non-Conformance Reporting: Best Practices and Digital Solutions</h4>
+                                <p class="text-gray-600">Learn how NCR processes integrate with RCA for continuous improvement.</p>
+                            </a>
+                            <a href="reduce-rework-scrap-precast.html" class="block p-6 bg-gray-50 rounded-lg hover:shadow-md transition">
+                                <h4 class="font-bold text-gray-800 mb-2">How to Reduce Rework and Scrap in Precast Manufacturing</h4>
+                                <p class="text-gray-600">Apply RCA principles to systematically reduce quality costs.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="bg-gray-50 border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="../images/logo.png" alt="IntraSync Industrial" class="h-10 mb-4">
+                    <p class="text-gray-600">Modern manufacturing software for precast concrete operations.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html#features" class="text-gray-600 hover:text-blue-600">Features</a></li>
+                        <li><a href="../index.html#modules" class="text-gray-600 hover:text-blue-600">Modules</a></li>
+                        <li><a href="../index.html#pricing" class="text-gray-600 hover:text-blue-600">Pricing</a></li>
+                        <li><a href="../roi-calculator.html" class="text-gray-600 hover:text-blue-600">ROI Calculator</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../blog.html" class="text-gray-600 hover:text-blue-600">Blog</a></li>
+                        <li><a href="../contact.html" class="text-gray-600 hover:text-blue-600">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html#about" class="text-gray-600 hover:text-blue-600">About</a></li>
+                        <li><a href="../contact.html" class="text-gray-600 hover:text-blue-600">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 text-center text-gray-600">
+                <p>&copy; 2025 IntraSync Industrial. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

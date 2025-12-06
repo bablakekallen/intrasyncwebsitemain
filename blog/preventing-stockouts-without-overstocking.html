@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preventing Stockouts Without Overstocking: The Balance | IntraSync Blog</title>
+    <meta name="description" content="Master the art of inventory optimization in precast manufacturing. Learn strategies to maintain perfect material availability without excessive carrying costs.">
+
+    <!-- Article Schema for SEO & AI Understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "author": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder",
+        "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg"
+        }
+      }
+    }
+    </script>
+    <meta name="keywords" content="inventory optimization, stockout prevention, precast inventory, safety stock, inventory management">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="../index.html" class="hover:text-blue-700">Home</a>
+                <a href="../modules.html" class="hover:text-blue-700">Modules</a>
+                <a href="../blog.html" class="text-blue-700">Blog</a>
+                <a href="../contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-8">
+                <a href="../blog.html" class="text-blue-600 font-semibold hover:underline mb-4 inline-block">← Back to Blog</a>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">Inventory & Materials</span>
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">Operations</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Preventing Stockouts Without Overstocking: The Balance</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <span>December 3, 2024</span>
+                    <span>•</span>
+                    <span>8 min read</span>
+                    <span>•</span>
+                    <span class="font-semibold">By IntraSync Engineering Team</span>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl h-96 mb-8 flex items-center justify-center text-white">
+                <div class="text-center">
+                    <svg class="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                    <p class="text-xl font-semibold">Preventing Stockouts Without Overstocking</p>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">Every precast manufacturer faces the same fundamental tension: maintain enough inventory to never delay production, but not so much that capital gets trapped in slow-moving materials consuming valuable yard space. Get it wrong in either direction and you pay—either through production stoppages and rush order premiums, or through excessive carrying costs and obsolescence write-offs.</p>
+
+                <p class="mb-6">The solution isn't simply splitting the difference between too much and too little. It requires systematic analysis of demand patterns, lead times, and variability to establish optimal stock levels that balance service levels against inventory investment. Modern inventory optimization combines proven statistical techniques with real-time data to maintain this delicate equilibrium automatically.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">The True Cost of Imbalance</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Stockout Consequences</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Production delays:</strong> Crews and equipment sit idle waiting for materials, destroying productivity</li>
+                    <li><strong>Schedule disruption:</strong> Cascading effects as delayed production pushes back subsequent jobs</li>
+                    <li><strong>Customer penalties:</strong> Late delivery charges contractually imposed by customers</li>
+                    <li><strong>Rush order costs:</strong> 25-50% premiums for expedited material delivery</li>
+                    <li><strong>Lost sales:</strong> Customers selecting competitors for future projects due to unreliability</li>
+                    <li><strong>Reputation damage:</strong> Market perception as unreliable supplier</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Overstock Costs</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Capital tie-up:</strong> Cash locked in inventory unavailable for growth investments</li>
+                    <li><strong>Storage costs:</strong> Yard space, handling equipment, inventory management labor</li>
+                    <li><strong>Material degradation:</strong> Cement losing effectiveness, steel corroding, insulation moisture damage</li>
+                    <li><strong>Obsolescence risk:</strong> Materials becoming worthless as projects cancel or specifications change</li>
+                    <li><strong>Insurance and taxes:</strong> Higher property insurance and tax assessments</li>
+                    <li><strong>Opportunity cost:</strong> Returns foregone by not investing capital elsewhere</li>
+                </ul>
+
+                <p class="mb-6">Industry benchmarks suggest total inventory carrying costs range from 20-30% of inventory value annually. For a precast operation with $2 million in inventory, that's $400,000-600,000 per year—serious money that could fund growth initiatives instead.</p>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">The Sweet Spot</h4>
+                    <p class="text-gray-700">Leading precast manufacturers achieve 95-98% material availability (almost never stock out) while turning inventory 8-12 times per year. This performance requires sophisticated planning systems and disciplined execution.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Understanding Inventory Fundamentals</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Inventory Types and Functions</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Cycle stock:</strong> Normal working inventory consumed and replenished regularly</li>
+                    <li><strong>Safety stock:</strong> Buffer inventory protecting against demand/supply variability</li>
+                    <li><strong>Pipeline inventory:</strong> Materials in transit or production process</li>
+                    <li><strong>Seasonal inventory:</strong> Stock built in advance of predictable demand increases</li>
+                    <li><strong>Speculative inventory:</strong> Purchased ahead of anticipated price increases</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">The Reorder Point Model</h3>
+                <p class="mb-6">Basic inventory management uses reorder points to trigger replenishment:</p>
+                <p class="mb-6"><strong>Reorder Point = (Average Daily Usage × Lead Time in Days) + Safety Stock</strong></p>
+                <p class="mb-6">When inventory drops to reorder point, purchase order is generated. The order arrives just as inventory reaches safety stock level, preventing stockouts while minimizing excess.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Economic Order Quantity (EOQ)</h3>
+                <p class="mb-6">Determines optimal order size balancing ordering costs against holding costs:</p>
+                <p class="mb-6"><strong>EOQ = √(2 × Annual Usage × Order Cost / Holding Cost per Unit)</strong></p>
+                <p class="mb-6">Ordering larger quantities reduces ordering frequency and may secure better pricing, but increases average inventory levels and carrying costs.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Calculating Optimal Safety Stock</h2>
+                <p class="mb-6">Safety stock is the buffer against uncertainty. Too little and you stock out; too much and you waste capital. The calculation balances service level targets against carrying costs:</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Service Level Approach</h3>
+                <p class="mb-6"><strong>Safety Stock = Z-score × σ × √(Lead Time)</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Z-score:</strong> Statistical factor based on desired service level (1.65 = 95%, 2.33 = 99%)</li>
+                    <li><strong>σ (sigma):</strong> Standard deviation of demand variability</li>
+                    <li><strong>Lead time:</strong> Days from order to receipt</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Service Level Selection</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>99% service level:</strong> Critical materials where stockouts cause severe problems</li>
+                    <li><strong>95% service level:</strong> Important materials with alternatives available</li>
+                    <li><strong>90% service level:</strong> Nice-to-have items with minimal stockout impact</li>
+                </ul>
+
+                <p class="mb-6">Higher service levels require more safety stock. A cement supplier might warrant 99% (almost never stock out), while office supplies might be fine at 90% (occasional shortages acceptable).</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Segmentation Strategy: ABC Analysis</h2>
+                <p class="mb-6">Not all materials deserve equal attention. ABC analysis segments inventory by importance:</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">A Items (Top 20% of Value)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Represent 70-80% of inventory investment</li>
+                    <li>Tight control: Daily monitoring, precise forecasting, high service levels</li>
+                    <li>Examples: cement, reinforcing steel, major components</li>
+                    <li>Management approach: Continuous review, optimized safety stock, regular supplier coordination</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">B Items (Next 30% of Value)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Represent 15-20% of investment</li>
+                    <li>Moderate control: Weekly reviews, standard forecasting</li>
+                    <li>Examples: admixtures, hardware, common aggregates</li>
+                    <li>Management approach: Periodic review, standard reorder points</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">C Items (Bottom 50% of Value)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Represent only 5-10% of investment</li>
+                    <li>Loose control: Monthly reviews, simple forecasting</li>
+                    <li>Examples: MRO supplies, low-volume specialty items</li>
+                    <li>Management approach: Visual review, larger order quantities to minimize ordering frequency</li>
+                </ul>
+
+                <p class="mb-6">Learn how <a href="raw-material-forecasting-precast.html" class="text-blue-600 hover:underline">accurate demand forecasting</a> enables optimal inventory levels across all categories.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Managing Variability</h2>
+                <p class="mb-6">Variability is the enemy of lean inventory. Reducing uncertainty enables lower safety stock:</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Demand Variability Reduction</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Better forecasting:</strong> Improved production planning reducing surprises</li>
+                    <li><strong>Longer planning horizons:</strong> More advance notice of material requirements</li>
+                    <li><strong>Product standardization:</strong> Fewer specialized materials with unpredictable demand</li>
+                    <li><strong>Order pipeline visibility:</strong> Confirmed projects vs. speculative quotes</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Supply Variability Reduction</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Supplier performance improvement:</strong> Working with vendors to improve on-time delivery</li>
+                    <li><strong>Lead time reduction:</strong> Negotiating faster delivery or using local suppliers</li>
+                    <li><strong>Vendor-managed inventory:</strong> Suppliers maintaining stock at your facility</li>
+                    <li><strong>Backup suppliers:</strong> Alternative sources reducing single-supplier risk</li>
+                </ul>
+
+                <div class="bg-gray-50 p-8 rounded-xl my-8">
+                    <h3 class="text-2xl font-bold mb-4">Strengthen Supplier Relationships</h3>
+                    <p class="text-gray-700 mb-4">Strategic vendor partnerships enable lower inventory through improved reliability and flexibility. Strong relationships provide preferential treatment during constraints.</p>
+                    <a href="vendor-management-best-practices.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Read Vendor Management Guide →</a>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Technology-Enabled Optimization</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">ERP-Integrated Inventory Management</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Automatic reorder point calculation:</strong> Based on actual consumption and lead times</li>
+                    <li><strong>Dynamic safety stock:</strong> Adjusts automatically as demand patterns change</li>
+                    <li><strong>Exception alerts:</strong> Warnings when inventory drops below critical levels</li>
+                    <li><strong>Purchase order automation:</strong> Generate POs automatically at reorder points</li>
+                    <li><strong>Multi-location optimization:</strong> Balance stock across multiple facilities</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Demand Forecasting Integration</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Production schedules driving material requirements</li>
+                    <li>Order pipeline informing future demand</li>
+                    <li>Historical consumption patterns baseline forecasting</li>
+                    <li>Seasonal adjustments for predictable fluctuations</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Performance Analytics</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Stockout frequency:</strong> Track how often materials unavailable</li>
+                    <li><strong>Inventory turns:</strong> Annual sales / average inventory</li>
+                    <li><strong>Days on hand:</strong> Average time materials sit in inventory</li>
+                    <li><strong>Fill rate:</strong> % of orders filled completely from stock</li>
+                    <li><strong>Carrying cost impact:</strong> Financial burden of current inventory levels</li>
+                    <li><strong>Obsolescence rate:</strong> Materials written off as unusable</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Continuous Improvement Process</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Monthly Review Cycle</h3>
+                <ol class="list-decimal pl-6 mb-6 text-gray-700">
+                    <li class="mb-3"><strong>Performance review:</strong> Analyze stockouts, excess inventory, turns</li>
+                    <li class="mb-3"><strong>Parameter adjustment:</strong> Update reorder points and safety stock as needed</li>
+                    <li class="mb-3"><strong>ABC reclassification:</strong> Move items between categories as usage changes</li>
+                    <li class="mb-3"><strong>Obsolescence identification:</strong> Flag slow-moving items for disposition</li>
+                    <li class="mb-3"><strong>Process improvements:</strong> Address root causes of variability</li>
+                </ol>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Key Performance Indicators</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Target:</strong> 8-12 inventory turns per year</li>
+                    <li><strong>Target:</strong> 95-98% fill rate (material available when needed)</li>
+                    <li><strong>Target:</strong> Under 1% stockout days (days where stockouts occurred)</li>
+                    <li><strong>Target:</strong> Less than 2% obsolescence rate</li>
+                    <li><strong>Target:</strong> 20-25% inventory carrying cost as % of inventory value</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Implementation Roadmap</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Phase 1: Baseline Assessment (Weeks 1-2)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Analyze current inventory levels and turns by category</li>
+                    <li>Document stockout frequency and causes</li>
+                    <li>Calculate current carrying costs</li>
+                    <li>Identify excess and obsolete inventory</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Phase 2: Optimization Design (Weeks 3-4)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>ABC classification of all inventory items</li>
+                    <li>Calculate optimal reorder points and order quantities</li>
+                    <li>Design safety stock levels by item importance</li>
+                    <li>Define service level targets by category</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Phase 3: System Configuration (Weeks 5-6)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Configure ERP inventory parameters</li>
+                    <li>Set up automatic reorder point monitoring</li>
+                    <li>Create exception reports and alerts</li>
+                    <li>Train team on new processes</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Phase 4: Execution and Refinement (Ongoing)</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Begin managed inventory reduction</li>
+                    <li>Monitor performance metrics weekly</li>
+                    <li>Adjust parameters based on actual results</li>
+                    <li>Continuous improvement of processes</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Conclusion</h2>
+                <p class="mb-6">Balancing inventory investment against service levels is one of the most impactful optimization opportunities in precast manufacturing. The difference between mediocre and excellent inventory management represents hundreds of thousands of dollars annually in carrying costs and operational efficiency for a typical mid-sized operation.</p>
+
+                <p class="mb-6">Success requires moving beyond gut feel and spreadsheets to systematic, data-driven approaches. ABC segmentation ensures management attention focuses where it matters most. Statistical safety stock calculations balance service levels against costs mathematically. Integrated ERP systems automate monitoring and replenishment, freeing people to manage exceptions rather than routine transactions.</p>
+
+                <p class="mb-6">The manufacturers that master this discipline achieve what seems impossible to others: near-perfect material availability with minimal inventory investment. They turn inventory 10+ times per year while maintaining 98%+ fill rates. This performance doesn't happen accidentally—it results from systematic application of proven inventory optimization principles enabled by appropriate technology and sustained by continuous improvement culture.</p>
+
+                <p class="mb-6">The path forward begins with assessment: understanding current performance, identifying improvement opportunities, and committing to systematic inventory management. The returns—measured in reduced working capital requirements, improved operational reliability, and enhanced profitability—justify the investment many times over.</p>
+
+            </div>
+
+            <div class="border-t border-b border-gray-200 py-8 my-12">
+                <div class="flex items-start gap-6">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold flex-shrink-0">I</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">IntraSync Team</h4>
+                        <p class="text-gray-600">The IntraSync team brings together experts in precast manufacturing, software engineering, and AI technology to deliver insights that help manufacturers optimize their operations and drive business growth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="raw-material-forecasting-precast.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-purple-600 font-semibold text-sm">Inventory & Materials</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Raw Material Forecasting for Precast Manufacturing</h4>
+                        <p class="text-gray-600 text-sm">Master demand planning and inventory optimization strategies.</p>
+                    </a>
+                    <a href="real-time-inventory-valuation-cogs.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-indigo-600 font-semibold text-sm">Financial Management</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Real-Time Inventory Valuation and COGS Tracking</h4>
+                        <p class="text-gray-600 text-sm">Accurate financial reporting through precise inventory tracking.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 mt-12 text-center text-white">
+                <h3 class="text-2xl font-bold mb-3">Ready to Optimize Your Operations?</h3>
+                <p class="mb-6 text-blue-100">CastLogic provides the integrated tools you need to transform your precast manufacturing operations.</p>
+                <a href="../contact.html" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Schedule a Demo</a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="../accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="../hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="../schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="../careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="../privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="../terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

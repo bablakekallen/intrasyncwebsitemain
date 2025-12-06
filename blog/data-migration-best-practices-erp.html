@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Migration Best Practices When Switching to New ERP | IntraSync Blog</title>
+    <meta name="description" content="Proven strategies for successful ERP data migration. Learn how to clean, map, and transfer data without disrupting your precast manufacturing operations.">
+
+    <!-- Article Schema for SEO & AI Understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "author": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder",
+        "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg"
+        }
+      }
+    }
+    </script>
+    <meta name="keywords" content="data migration, ERP data transfer, legacy data conversion, precast ERP implementation, data cleansing">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="../index.html" class="hover:text-blue-700">Home</a>
+                <a href="../modules.html" class="hover:text-blue-700">Modules</a>
+                <a href="../blog.html" class="text-blue-700">Blog</a>
+                <a href="../contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-8">
+                <a href="../blog.html" class="text-blue-600 font-semibold hover:underline mb-4 inline-block">← Back to Blog</a>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">ERP & Software</span>
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">Implementation</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Data Migration Best Practices When Switching to New ERP</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <span>December 3, 2024</span>
+                    <span>•</span>
+                    <span>8 min read</span>
+                    <span>•</span>
+                    <span class="font-semibold">By IntraSync Engineering Team</span>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl h-96 mb-8 flex items-center justify-center text-white">
+                <div class="text-center">
+                    <svg class="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                    </svg>
+                    <p class="text-xl font-semibold">Data Migration Excellence</p>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">Data migration represents one of the highest-risk aspects of ERP implementation. Get it right, and your new system launches with accurate, accessible information. Get it wrong, and you face months of correcting errors, lost historical data, and frustrated users questioning the entire investment.</p>
+
+                <p class="mb-6">Successful data migration requires methodical planning, rigorous execution, and realistic timelines. This guide provides the framework precast manufacturers need to transition data from legacy systems to new ERP platforms without operational disruption.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Understanding the Data Migration Challenge</h2>
+                <p class="mb-6">Data migration complexity varies dramatically based on your starting point and what you're moving to the new system.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Common Source Scenarios</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Multiple spreadsheets:</strong> Simpler migration but limited historical data structure</li>
+                    <li><strong>Legacy ERP system:</strong> Comprehensive data but complex extraction and mapping</li>
+                    <li><strong>Industry-specific software:</strong> Good data organization but may lack standard export formats</li>
+                    <li><strong>Hybrid systems:</strong> Data scattered across multiple disconnected applications</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">What Data to Migrate</h3>
+                <p class="mb-6">Not all data deserves migration. Prioritize based on business value:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Master data (essential):</strong> Customers, vendors, employees, products, charts of accounts</li>
+                    <li><strong>Open transactions (essential):</strong> Active projects, outstanding invoices, unfilled orders</li>
+                    <li><strong>Historical transactions (selective):</strong> Past orders, completed projects, financial history</li>
+                    <li><strong>Reference data (assess value):</strong> Old product catalogs, inactive customers, archived documents</li>
+                </ul>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">Critical Decision</h4>
+                    <p class="text-gray-700">Migrating excessive historical data adds cost and complexity without proportional value. Consider keeping legacy systems accessible for historical reference while starting fresh in the new ERP for ongoing transactions.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Phase 1: Planning and Assessment</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Data Inventory</h3>
+                <p class="mb-6">Document all data sources and what they contain:</p>
+                <ol class="list-decimal pl-6 mb-6 text-gray-700">
+                    <li class="mb-3">Identify every system, database, and spreadsheet holding business-critical information</li>
+                    <li class="mb-3">Catalog data types, volumes, and current quality levels</li>
+                    <li class="mb-3">Assess data relationships and dependencies</li>
+                    <li class="mb-3">Identify data owners responsible for accuracy verification</li>
+                </ol>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Data Quality Assessment</h3>
+                <p class="mb-6">Evaluate current data quality across critical dimensions:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Accuracy:</strong> Is the data correct and free from errors?</li>
+                    <li><strong>Completeness:</strong> Are all required fields populated?</li>
+                    <li><strong>Consistency:</strong> Is data formatted uniformly across records?</li>
+                    <li><strong>Currency:</strong> Is the data up-to-date and relevant?</li>
+                    <li><strong>Uniqueness:</strong> Are there duplicate records to consolidate?</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Migration Strategy Selection</h3>
+                <p class="mb-6">Choose the appropriate approach:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Big bang migration:</strong> Move all data in single cutover event (higher risk, faster completion)</li>
+                    <li><strong>Phased migration:</strong> Move data in stages by module or timeframe (lower risk, extended timeline)</li>
+                    <li><strong>Parallel operation:</strong> Run both systems temporarily while validating data (safest but resource-intensive)</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Phase 2: Data Cleansing and Preparation</h2>
+                <p class="mb-6">Migration presents the perfect opportunity to clean up years of accumulated data problems. Never migrate dirty data.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Common Data Quality Issues</h3>
+
+                <p class="mb-6"><strong>Duplicate Records</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Multiple customer records for the same company with slight name variations</li>
+                    <li>Duplicate products with different codes</li>
+                    <li>Redundant vendor entries created over time</li>
+                </ul>
+
+                <p class="mb-6"><strong>Incomplete Information</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Missing addresses, contact information, or tax IDs</li>
+                    <li>Partial product specifications</li>
+                    <li>Incomplete cost data or pricing information</li>
+                </ul>
+
+                <p class="mb-6"><strong>Inconsistent Formatting</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Phone numbers in multiple formats (dashes, dots, spaces)</li>
+                    <li>Addresses with non-standard abbreviations</li>
+                    <li>Dates in various formats</li>
+                    <li>Inconsistent capitalization and spelling</li>
+                </ul>
+
+                <p class="mb-6"><strong>Obsolete Data</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Inactive customers from years ago</li>
+                    <li>Discontinued products</li>
+                    <li>Former employees still in the system</li>
+                    <li>Outdated pricing or cost information</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Cleansing Approach</h3>
+
+                <ol class="list-decimal pl-6 mb-6 text-gray-700">
+                    <li class="mb-3"><strong>Automated cleanup:</strong> Use tools to standardize formats, remove obvious duplicates</li>
+                    <li class="mb-3"><strong>Manual review:</strong> Have data owners verify and correct critical records</li>
+                    <li class="mb-3"><strong>Validation rules:</strong> Apply business rules to identify questionable data</li>
+                    <li class="mb-3"><strong>Archival decisions:</strong> Determine what to migrate vs. archive vs. delete</li>
+                </ol>
+
+                <div class="bg-gray-50 p-8 rounded-xl my-8">
+                    <h3 class="text-2xl font-bold mb-4">Avoid Implementation Pitfalls</h3>
+                    <p class="text-gray-700 mb-4">Poor data migration is a leading cause of ERP implementation failure. Learn from others' mistakes to ensure your project succeeds.</p>
+                    <a href="common-erp-implementation-mistakes.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Read Common Mistakes →</a>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Phase 3: Data Mapping</h2>
+                <p class="mb-6">Data mapping defines how information from source systems translates to the new ERP structure.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Creating Mapping Documents</h3>
+                <p class="mb-6">For each data type, document:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Source field:</strong> Where the data currently resides</li>
+                    <li><strong>Target field:</strong> Corresponding field in new ERP</li>
+                    <li><strong>Transformation rules:</strong> Any conversion or calculation required</li>
+                    <li><strong>Default values:</strong> What to use if source data is blank</li>
+                    <li><strong>Validation criteria:</strong> Rules to verify data accuracy</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Common Mapping Challenges</h3>
+
+                <p class="mb-6"><strong>One-to-Many Relationships</strong></p>
+                <p class="mb-6">A single legacy field may need to populate multiple fields in the new system. Example: A combined "Name" field splitting into "First Name" and "Last Name."</p>
+
+                <p class="mb-6"><strong>Many-to-One Consolidation</strong></p>
+                <p class="mb-6">Multiple source fields might consolidate into a single target field. Example: Separate labor cost fields combining into one total labor cost field.</p>
+
+                <p class="mb-6"><strong>Value Translation</strong></p>
+                <p class="mb-6">Codes or categories that differ between systems require translation tables. Example: Old system uses A/B/C priority codes while new system uses High/Medium/Low.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Phase 4: Testing and Validation</h2>
+                <p class="mb-6">Never migrate data directly into the production environment. Thorough testing is essential.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Test Migration Cycles</h3>
+
+                <p class="mb-6"><strong>Cycle 1: Initial Load</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Load master data into test environment</li>
+                    <li>Verify record counts match expectations</li>
+                    <li>Identify obvious errors or mapping issues</li>
+                    <li>Refine cleansing and mapping procedures</li>
+                </ul>
+
+                <p class="mb-6"><strong>Cycle 2: Refinement</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Reload data with corrections applied</li>
+                    <li>Add transactional data to master records</li>
+                    <li>Test data relationships and dependencies</li>
+                    <li>Validate business rules and calculations</li>
+                </ul>
+
+                <p class="mb-6"><strong>Cycle 3: Final Rehearsal</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Execute complete migration as it will occur at go-live</li>
+                    <li>Time the migration process to plan cutover window</li>
+                    <li>Verify all validation checks pass</li>
+                    <li>Have end users test with migrated data</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Validation Procedures</h3>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Record count reconciliation:</strong> Verify expected number of records migrated</li>
+                    <li><strong>Hash total verification:</strong> Check financial totals match between systems</li>
+                    <li><strong>Sampling review:</strong> Manually verify representative sample of records</li>
+                    <li><strong>Relationship testing:</strong> Confirm linked data connects properly (e.g., orders to customers)</li>
+                    <li><strong>Business process testing:</strong> Execute end-to-end workflows with migrated data</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Phase 5: Production Migration</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Pre-Migration Checklist</h3>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Final backup of all source systems</li>
+                    <li>All data cleansing and preparation completed</li>
+                    <li>Mapping documents finalized and approved</li>
+                    <li>Test migrations completed successfully</li>
+                    <li>Validation procedures documented and ready</li>
+                    <li>Rollback plan prepared if migration fails</li>
+                    <li>Migration team and schedule confirmed</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Migration Execution</h3>
+
+                <ol class="list-decimal pl-6 mb-6 text-gray-700">
+                    <li class="mb-3"><strong>Cutoff transactions:</strong> Freeze legacy system at defined point</li>
+                    <li class="mb-3"><strong>Extract data:</strong> Pull data from source systems using approved scripts</li>
+                    <li class="mb-3"><strong>Transform data:</strong> Apply cleansing and mapping rules</li>
+                    <li class="mb-3"><strong>Load data:</strong> Import into production ERP environment</li>
+                    <li class="mb-3"><strong>Validate results:</strong> Execute all validation procedures</li>
+                    <li class="mb-3"><strong>User verification:</strong> Have subject matter experts review their data</li>
+                    <li class="mb-3"><strong>Go/no-go decision:</strong> Formally approve migration or execute rollback</li>
+                </ol>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Post-Migration Monitoring</h3>
+
+                <p class="mb-6">The first days after migration are critical:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Monitor system performance with production data volumes</li>
+                    <li>Track and rapidly resolve user-reported data issues</li>
+                    <li>Document any additional data corrections needed</li>
+                    <li>Maintain legacy system access for reference during transition period</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Best Practices for Success</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Start Early</h3>
+                <p class="mb-6">Begin data assessment and cleansing months before implementation. Data quality improvement takes longer than anticipated, and early starts reduce pressure during critical go-live periods.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Assign Data Ownership</h3>
+                <p class="mb-6">Each data type needs an owner responsible for accuracy verification. Project managers can coordinate, but operational experts must validate their data.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Document Everything</h3>
+                <p class="mb-6">Comprehensive documentation enables:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Consistency across multiple migration cycles</li>
+                    <li>Clear communication with all stakeholders</li>
+                    <li>Troubleshooting when issues arise</li>
+                    <li>Knowledge transfer to support teams</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Plan for Iterative Testing</h3>
+                <p class="mb-6">Budget time for 3-4 complete test migration cycles. Each iteration reveals issues that require correction before the next cycle.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Set Realistic Expectations</h3>
+                <p class="mb-6">Even with perfect migration execution, expect some data issues to surface after go-live. Plan for ongoing data quality monitoring and correction processes.</p>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">Reality Check</h4>
+                    <p class="text-gray-700">Data migration typically consumes 30-40% of total ERP implementation effort and time. Vendors who minimize migration complexity are either unrealistic or planning to deliver poor results.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Common Migration Mistakes to Avoid</h2>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Underestimating complexity:</strong> Migration always takes longer than initial estimates</li>
+                    <li><strong>Migrating dirty data:</strong> Garbage in, garbage out applies to ERP systems</li>
+                    <li><strong>Insufficient testing:</strong> Discovering errors after go-live is exponentially more expensive</li>
+                    <li><strong>Lack of data ownership:</strong> IT cannot validate business data accuracy alone</li>
+                    <li><strong>No rollback plan:</strong> Always have a contingency if migration fails</li>
+                    <li><strong>Inadequate documentation:</strong> Undocumented decisions create problems months later</li>
+                    <li><strong>Ignoring data relationships:</strong> Orphaned records break business processes</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Conclusion</h2>
+                <p class="mb-6">Data migration success requires methodical planning, disciplined execution, and adequate time allocation. Companies that invest properly in data migration lay the foundation for ERP systems that deliver immediate value and long-term operational excellence.</p>
+
+                <p class="mb-6">The manufacturers who struggle with ERP implementations typically rushed data migration, accepted poor data quality, or skipped thorough testing. Don't let timeline pressure compromise this critical phase—the operational consequences extend far beyond implementation completion.</p>
+
+                <p class="mb-6">Remember that migration is not just a technical exercise. It's an opportunity to establish clean, accurate data that drives better decision-making, streamlined operations, and sustainable competitive advantage.</p>
+            </div>
+
+            <div class="border-t border-b border-gray-200 py-8 my-12">
+                <div class="flex items-start gap-6">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold flex-shrink-0">I</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">IntraSync Team</h4>
+                        <p class="text-gray-600">The IntraSync team brings together experts in precast manufacturing, software engineering, and AI technology to deliver insights that help manufacturers optimize their operations and drive business growth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="erp-implementation-timeline-precast.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">ERP & Software</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">ERP Implementation Timeline: What Precast Manufacturers Should Expect</h4>
+                        <p class="text-gray-600 text-sm">Realistic timelines and milestones for successful ERP implementation.</p>
+                    </a>
+                    <a href="common-erp-implementation-mistakes.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">ERP & Software</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Common ERP Implementation Mistakes and How to Avoid Them</h4>
+                        <p class="text-gray-600 text-sm">Learn from others' errors to ensure your implementation succeeds.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 mt-12 text-center text-white">
+                <h3 class="text-2xl font-bold mb-3">Expert Data Migration Support</h3>
+                <p class="mb-6 text-blue-100">Our implementation team has successfully migrated data for hundreds of precast manufacturers. Let us help you avoid common pitfalls.</p>
+                <a href="../contact.html" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Discuss Your Migration</a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="../accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="../hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="../schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="../careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="../privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="../terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

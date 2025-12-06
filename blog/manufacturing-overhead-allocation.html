@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Manufacturing Overhead and How to Allocate It | IntraSync Blog</title>
+    <meta name="description" content="Master manufacturing overhead allocation for accurate job costing and pricing. Learn allocation methods, common mistakes, and how to track overhead costs effectively in precast manufacturing.">
+
+    <!-- Article Schema for SEO & AI Understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "author": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder",
+        "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg"
+        }
+      }
+    }
+    </script>
+    <meta name="keywords" content="manufacturing overhead, overhead allocation, job costing, manufacturing costs, absorption costing, activity-based costing">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="../index.html" class="hover:text-blue-700">Home</a>
+                <a href="../modules.html" class="hover:text-blue-700">Modules</a>
+                <a href="../blog.html" class="text-blue-700">Blog</a>
+                <a href="../contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-8">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Understanding Manufacturing Overhead and How to Allocate It</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <span>By IntraSync Industrial</span>
+                    <span>•</span>
+                    <span>11 min read</span>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-600 mb-8">Manufacturing overhead is the hidden cost that can make or break your profitability. While direct materials and labor are easy to track, overhead costs—from facility rent to utilities to equipment depreciation—require strategic allocation to understand true job costs and price accurately.</p>
+
+                <h2 class="text-3xl font-bold mt-12 mb-6">What is Manufacturing Overhead?</h2>
+
+                <p>Manufacturing overhead includes all production costs that aren't direct materials or direct labor. These are the expenses necessary to operate your facility and equipment but can't be easily traced to specific jobs.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Common Overhead Categories</h3>
+
+                <div class="grid md:grid-cols-2 gap-6 my-6">
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <h4 class="font-bold mb-3">Facility Costs</h4>
+                        <ul class="space-y-1 text-sm">
+                            <li>Rent or building depreciation</li>
+                            <li>Property taxes and insurance</li>
+                            <li>Utilities (electric, gas, water)</li>
+                            <li>Facility maintenance and repairs</li>
+                            <li>Security and waste disposal</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <h4 class="font-bold mb-3">Equipment Costs</h4>
+                        <ul class="space-y-1 text-sm">
+                            <li>Equipment depreciation</li>
+                            <li>Maintenance and repairs</li>
+                            <li>Small tools and supplies</li>
+                            <li>Equipment insurance</li>
+                            <li>Fuel and operating supplies</li>
+                        </ul>
+                    </div>
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                        <h4 class="font-bold mb-3">Indirect Labor</h4>
+                        <ul class="space-y-1 text-sm">
+                            <li>Supervisors and managers</li>
+                            <li>Quality control staff</li>
+                            <li>Maintenance technicians</li>
+                            <li>Material handlers</li>
+                            <li>Production support staff</li>
+                        </ul>
+                    </div>
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                        <h4 class="font-bold mb-3">Other Manufacturing Costs</h4>
+                        <ul class="space-y-1 text-sm">
+                            <li>Quality testing and inspection</li>
+                            <li>Production planning</li>
+                            <li>Engineering and design</li>
+                            <li>Safety equipment and training</li>
+                            <li>Shop supplies and consumables</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-red-50 border-l-4 border-red-600 p-6 my-8">
+                    <h3 class="text-xl font-bold mb-3">What's NOT Manufacturing Overhead</h3>
+                    <p class="mb-2">Don't confuse overhead with these costs:</p>
+                    <ul class="space-y-2">
+                        <li><strong>Selling expenses:</strong> Sales salaries, marketing, commissions—these are period costs</li>
+                        <li><strong>Administrative expenses:</strong> Accounting, HR, executive salaries—also period costs</li>
+                        <li><strong>Direct materials:</strong> Concrete, rebar, embeds—tracked directly to jobs</li>
+                        <li><strong>Direct labor:</strong> Production workers' time on specific jobs—traced directly</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-12 mb-6">Why Overhead Allocation Matters</h2>
+
+                <p>Without accurate overhead allocation, you're flying blind on profitability. Consider this scenario:</p>
+
+                <div class="bg-gray-50 rounded-lg p-6 my-8">
+                    <h3 class="text-xl font-bold mb-4">The Hidden Loss Scenario</h3>
+                    <p class="mb-4">You quote a job at:</p>
+                    <ul class="space-y-2 mb-4">
+                        <li>Direct materials: $50,000</li>
+                        <li>Direct labor: $30,000</li>
+                        <li>Subtotal: $80,000</li>
+                        <li>Markup (25%): $20,000</li>
+                        <li><strong>Quote price: $100,000</strong></li>
+                    </ul>
+                    <p class="mb-4">But you forgot overhead! The actual costs were:</p>
+                    <ul class="space-y-2 mb-4">
+                        <li>Direct materials: $50,000</li>
+                        <li>Direct labor: $30,000</li>
+                        <li>Overhead (80% of labor): $24,000</li>
+                        <li><strong>True cost: $104,000</strong></li>
+                    </ul>
+                    <p class="font-bold text-red-700">Result: You lost $4,000 on a job you thought was profitable!</p>
+                </div>
+
+                <p>Multiply this across dozens of jobs, and you understand why companies with full order books can still go bankrupt.</p>
+
+                <h2 class="text-3xl font-bold mt-12 mb-6">Common Overhead Allocation Methods</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">1. Direct Labor Hours Method</h3>
+
+                <p>The most common approach in manufacturing: allocate overhead based on how many labor hours each job requires.</p>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-6">
+                    <h4 class="font-bold mb-3">Calculation:</h4>
+                    <p class="font-mono text-sm mb-3">Overhead Rate = Total Annual Overhead / Total Annual Direct Labor Hours</p>
+                    <p class="mb-3"><strong>Example:</strong></p>
+                    <ul class="space-y-1 text-sm">
+                        <li>Annual overhead: $1,200,000</li>
+                        <li>Annual labor hours: 40,000 hours</li>
+                        <li>Overhead rate: $30/hour</li>
+                    </ul>
+                    <p class="mt-3">A job requiring 200 labor hours would be allocated $6,000 in overhead.</p>
+                </div>
+
+                <p><strong>Best for:</strong> Labor-intensive operations where overhead correlates with labor hours</p>
+                <p><strong>Weakness:</strong> Ignores differences in equipment usage, complexity, or material handling</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">2. Direct Labor Cost Method</h3>
+
+                <p>Similar to labor hours but uses dollar value instead. Useful when wage rates vary significantly.</p>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-6">
+                    <h4 class="font-bold mb-3">Calculation:</h4>
+                    <p class="font-mono text-sm mb-3">Overhead Rate = Total Annual Overhead / Total Annual Direct Labor Cost</p>
+                    <p class="mb-3"><strong>Example:</strong></p>
+                    <ul class="space-y-1 text-sm">
+                        <li>Annual overhead: $1,200,000</li>
+                        <li>Annual labor cost: $1,000,000</li>
+                        <li>Overhead rate: 120% of labor cost</li>
+                    </ul>
+                    <p class="mt-3">A job with $10,000 in labor would be allocated $12,000 in overhead.</p>
+                </div>
+
+                <p><strong>Best for:</strong> Operations with varied skill levels and wage rates</p>
+                <p><strong>Weakness:</strong> High-skill jobs get disproportionate overhead even if they use less facility/equipment</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">3. Machine Hours Method</h3>
+
+                <p>Allocate based on equipment usage time—ideal for automated or equipment-intensive operations.</p>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-6">
+                    <h4 class="font-bold mb-3">Calculation:</h4>
+                    <p class="font-mono text-sm mb-3">Overhead Rate = Total Annual Overhead / Total Annual Machine Hours</p>
+                    <p class="mb-3"><strong>Example:</strong></p>
+                    <ul class="space-y-1 text-sm">
+                        <li>Annual overhead: $1,200,000</li>
+                        <li>Annual machine hours: 15,000 hours</li>
+                        <li>Overhead rate: $80/machine hour</li>
+                    </ul>
+                    <p class="mt-3">A job using 50 machine hours would be allocated $4,000 in overhead.</p>
+                </div>
+
+                <p><strong>Best for:</strong> Highly automated facilities where equipment costs dominate</p>
+                <p><strong>Weakness:</strong> Doesn't account for hand-finishing or non-machine activities</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">4. Activity-Based Costing (ABC)</h3>
+
+                <p>The most sophisticated approach: identify specific cost drivers and allocate overhead based on actual consumption of resources.</p>
+
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 my-8">
+                    <h4 class="font-bold text-lg mb-4">ABC Example for Precast Manufacturing</h4>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white border border-gray-200">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="px-4 py-2 text-left text-sm">Activity</th>
+                                    <th class="px-4 py-2 text-left text-sm">Cost Driver</th>
+                                    <th class="px-4 py-2 text-left text-sm">Annual Cost</th>
+                                    <th class="px-4 py-2 text-left text-sm">Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200 text-sm">
+                                <tr>
+                                    <td class="px-4 py-2">Mold setup</td>
+                                    <td class="px-4 py-2">Number of setups</td>
+                                    <td class="px-4 py-2">$180,000</td>
+                                    <td class="px-4 py-2">$450/setup</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">Quality inspection</td>
+                                    <td class="px-4 py-2">Number of pieces</td>
+                                    <td class="px-4 py-2">$120,000</td>
+                                    <td class="px-4 py-2">$15/piece</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">Material handling</td>
+                                    <td class="px-4 py-2">Pounds moved</td>
+                                    <td class="px-4 py-2">$200,000</td>
+                                    <td class="px-4 py-2">$2/100 lbs</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">Facility utilities</td>
+                                    <td class="px-4 py-2">Square feet used</td>
+                                    <td class="px-4 py-2">$150,000</td>
+                                    <td class="px-4 py-2">$3/sq ft/year</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <p><strong>Best for:</strong> Complex operations with diverse product lines and varied resource consumption</p>
+                <p><strong>Weakness:</strong> More complex to implement and maintain; requires robust data tracking</p>
+
+                <h2 class="text-3xl font-bold mt-12 mb-6">Choosing the Right Method for Your Business</h2>
+
+                <p>The best allocation method depends on your specific operation:</p>
+
+                <div class="bg-gray-50 rounded-lg p-6 my-6">
+                    <h4 class="font-bold text-lg mb-3">Decision Framework</h4>
+                    <ul class="space-y-3">
+                        <li><strong>Mostly manual production:</strong> Direct labor hours or cost method</li>
+                        <li><strong>Highly automated:</strong> Machine hours method</li>
+                        <li><strong>Similar products, standard processes:</strong> Simple labor-based allocation is sufficient</li>
+                        <li><strong>Diverse products, varied complexity:</strong> Activity-based costing provides better accuracy</li>
+                        <li><strong>Small operation (under $5M revenue):</strong> Keep it simple with labor-based allocation</li>
+                        <li><strong>Large operation (over $10M revenue):</strong> Consider ABC for product line profitability insights</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-12 mb-6">Common Overhead Allocation Mistakes</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">1. Using Last Year's Rate All Year</h3>
+
+                <p>Overhead costs change throughout the year due to seasonality, utility rate increases, new equipment, or staff changes. Using a stale rate leads to under- or over-absorption.</p>
+
+                <p><strong>Solution:</strong> Update your overhead rate quarterly based on actual expenses and volume.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">2. Including Non-Manufacturing Costs</h3>
+
+                <p>Some companies incorrectly include sales, marketing, or administrative costs in their overhead rate. This inflates job costs and makes you uncompetitive.</p>
+
+                <p><strong>Solution:</strong> Strict cost classification. Manufacturing overhead stays separate from SG&A expenses.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">3. Ignoring Capacity Utilization</h3>
+
+                <p>Your overhead rate should be based on normal capacity, not current volume. Otherwise, prices fluctuate wildly with production levels.</p>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-600 p-6 my-6">
+                    <p class="mb-3"><strong>Example of the problem:</strong></p>
+                    <p class="mb-3">Fixed overhead: $100,000/month</p>
+                    <ul class="space-y-2">
+                        <li>Busy month (5,000 labor hours): $20/hour overhead rate</li>
+                        <li>Slow month (2,000 labor hours): $50/hour overhead rate</li>
+                    </ul>
+                    <p class="mt-3">Your prices shouldn't vary 150% based on how busy you are!</p>
+                </div>
+
+                <p><strong>Solution:</strong> Calculate overhead rate based on normal/expected annual capacity, not current month activity.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">4. Not Tracking Actual vs. Applied Overhead</h3>
+
+                <p>You need to monitor whether your allocated overhead matches actual overhead incurred. The variance tells you if your rates are accurate.</p>
+
+                <p><strong>Solution:</strong> Monthly reconciliation of applied overhead (allocated to jobs) vs. actual overhead (incurred). Adjust rates as needed.</p>
+
+                <h2 class="text-3xl font-bold mt-12 mb-6">Implementing Overhead Allocation in Your ERP</h2>
+
+                <p>Manual overhead allocation is error-prone and time-consuming. Modern <a href="../accounting.html" class="text-blue-600 hover:underline">ERP systems</a> automate the entire process:</p>
+
+                <div class="grid md:grid-cols-2 gap-6 my-8">
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Automatic Calculation</h4>
+                        <p class="text-sm text-gray-600">System calculates overhead rates based on actual costs and applies them to jobs in real-time as labor and materials are consumed.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Multiple Allocation Methods</h4>
+                        <p class="text-sm text-gray-600">Support for labor hours, labor cost, machine hours, or activity-based costing depending on your needs.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Department-Specific Rates</h4>
+                        <p class="text-sm text-gray-600">Different overhead rates for casting, finishing, and yard operations based on actual cost drivers in each area.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Variance Analysis</h4>
+                        <p class="text-sm text-gray-600">Automated comparison of applied vs. actual overhead with reporting on over/under absorption by job and period.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-12 mb-6">Advanced Overhead Strategies</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Multiple Overhead Pools</h3>
+
+                <p>Instead of one company-wide rate, create separate pools for different cost categories or departments:</p>
+
+                <ul class="space-y-2 my-4">
+                    <li><strong>Equipment overhead pool:</strong> Allocated based on machine hours</li>
+                    <li><strong>Facility overhead pool:</strong> Allocated based on square footage or labor hours</li>
+                    <li><strong>Quality overhead pool:</strong> Allocated based on number of pieces or complexity</li>
+                </ul>
+
+                <p>This provides more accurate costing, especially for diverse product lines.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Predetermined vs. Actual Rates</h3>
+
+                <p>Most manufacturers use predetermined overhead rates (calculated at year start) for consistency. But you should track actual overhead and reconcile:</p>
+
+                <div class="overflow-x-auto my-6">
+                    <table class="min-w-full bg-white border border-gray-200">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="px-6 py-3 text-left font-semibold">Approach</th>
+                                <th class="px-6 py-3 text-left font-semibold">Pros</th>
+                                <th class="px-6 py-3 text-left font-semibold">Cons</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4">Predetermined Rate</td>
+                                <td class="px-6 py-4">Consistent pricing; easy to apply; stable job costs</td>
+                                <td class="px-6 py-4">May not match actual; requires year-end adjustment</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4">Actual Rate</td>
+                                <td class="px-6 py-4">Perfectly accurate; matches real costs</td>
+                                <td class="px-6 py-4">Fluctuates monthly; hard to quote; delayed costing</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4">Quarterly Updated</td>
+                                <td class="px-6 py-4">Balance of accuracy and stability</td>
+                                <td class="px-6 py-4">More complex; still has timing lag</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-12 mb-6">Monitoring Overhead Performance</h2>
+
+                <p>Track these key metrics to ensure your overhead allocation is accurate and your overhead costs are under control:</p>
+
+                <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 my-8">
+                    <h4 class="font-bold text-lg mb-4">Key Overhead Metrics</h4>
+                    <ul class="space-y-3">
+                        <li><strong>Overhead as % of Sales:</strong> Industry benchmark is 25-35% for precast</li>
+                        <li><strong>Overhead per Labor Hour:</strong> Track trends over time</li>
+                        <li><strong>Over/Under Applied Overhead:</strong> Should be less than 5% variance</li>
+                        <li><strong>Capacity Utilization:</strong> Higher utilization spreads fixed overhead over more units</li>
+                        <li><strong>Overhead by Department:</strong> Identify cost reduction opportunities</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-12 mb-6">Taking Action</h2>
+
+                <p>Accurate overhead allocation is fundamental to knowing your true costs, pricing profitably, and making informed business decisions. Without it, you're guessing at profitability.</p>
+
+                <p>Start by calculating your current overhead rate using the simplest appropriate method. Then evolve to more sophisticated approaches as your business grows and product mix becomes more complex.</p>
+
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8 my-12 text-center">
+                    <h3 class="text-2xl font-bold mb-4">See Your True Job Costs</h3>
+                    <p class="mb-6">IntraSync's job costing module automatically allocates overhead and tracks profitability in real-time.</p>
+                    <a href="../contact.html" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:shadow-xl transition">
+                        Request a Demo
+                    </a>
+                </div>
+
+                <p>Remember: the goal isn't perfection—it's reasonable accuracy that leads to better decisions. Start improving your overhead allocation today, and you'll immediately gain clearer insights into which jobs and customers are truly profitable.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-gray-50 text-gray-800 mt-16">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="../accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="../hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="../schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="../roi-calculator.html" class="hover:text-blue-600 transition">ROI Calculator</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="../careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="../privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="../terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to implement Statistical Process Control (SPC) in precast manufacturing to monitor quality, reduce variation, and achieve consistent production.">
+
+    <!-- Article Schema for SEO & AI Understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "author": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder",
+        "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg"
+        }
+      }
+    }
+    </script>
+    <meta name="keywords" content="statistical process control, SPC, precast manufacturing, control charts, process capability, quality control, six sigma">
+    <meta name="author" content="IntraSync Industrial">
+    <title>Statistical Process Control (SPC) in Precast Production | IntraSync Industrial</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .content-section {
+            line-height: 1.8;
+        }
+        .content-section h2 {
+            color: #1e40af;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .content-section h3 {
+            color: #2563eb;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .highlight-box {
+            background: linear-gradient(to right, #eff6ff, #dbeafe);
+            border-left: 4px solid #3b82f6;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <img src="../images/logo.png" alt="IntraSync Industrial Logo" class="h-10">
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="../index.html#features" class="text-gray-700 hover:text-blue-600 transition">Features</a>
+                    <a href="../index.html#modules" class="text-gray-700 hover:text-blue-600 transition">Modules</a>
+                    <a href="../index.html#pricing" class="text-gray-700 hover:text-blue-600 transition">Pricing</a>
+                    <a href="../blog.html" class="text-gray-700 hover:text-blue-600 transition">Blog</a>
+                    <a href="../contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <a href="https://app.intrasync.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="gradient-header text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Statistical Process Control (SPC) in Precast Production</h1>
+                <p class="text-xl mb-6 text-blue-100">Use data-driven methods to achieve consistent quality and reduce variation</p>
+                <div class="flex items-center justify-center space-x-6 text-blue-100">
+                    <span><i class="far fa-calendar"></i> December 3, 2025</span>
+                    <span><i class="far fa-clock"></i> 12 min read</span>
+                    <span><i class="fas fa-tag"></i> Quality Control</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8 content-section">
+
+                    <p class="text-lg text-gray-700 mb-6">
+                        Statistical Process Control (SPC) transforms quality management from reactive firefighting to proactive process optimization. By applying statistical methods to manufacturing data, precast producers can detect process changes before they result in defects, reduce variation, and achieve consistently superior quality.
+                    </p>
+
+                    <div class="highlight-box">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The Power of SPC</h3>
+                        <p class="text-gray-700">
+                            SPC distinguishes between common cause variation (inherent to the process) and special cause variation (assignable to specific factors). This distinction enables targeted improvements and prevents overreaction to normal process fluctuations.
+                        </p>
+                    </div>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Understanding Process Variation</h2>
+
+                    <p class="text-gray-700 mb-4">
+                        All manufacturing processes exhibit variation. No two concrete products are exactly identical—there are always small differences in dimensions, strength, appearance, and other characteristics. SPC helps determine whether variation is acceptable or indicates process problems.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Common Cause Variation</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Common cause variation is the inherent, natural variation present in every process. Sources include:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Minor fluctuations in material properties</li>
+                        <li>Normal equipment performance variations</li>
+                        <li>Small environmental changes</li>
+                        <li>Normal human variations in manual operations</li>
+                    </ul>
+
+                    <p class="text-gray-700 mb-6">
+                        Common cause variation is stable and predictable. Reducing it requires fundamental process changes—better equipment, improved materials, or refined procedures.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Special Cause Variation</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Special cause variation stems from assignable, identifiable factors:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Equipment malfunction or improper adjustment</li>
+                        <li>Incorrect material batch or mix design error</li>
+                        <li>Operator error or lack of training</li>
+                        <li>Form damage or tooling problems</li>
+                        <li>Extreme environmental conditions</li>
+                    </ul>
+
+                    <p class="text-gray-700 mb-6">
+                        Special causes create unpredictable, non-random patterns. They must be identified and eliminated to achieve process stability.
+                    </p>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Control Charts: The Foundation of SPC</h2>
+
+                    <p class="text-gray-700 mb-4">
+                        Control charts graphically display process data over time with statistically calculated control limits. They reveal whether a process is in statistical control (only common cause variation present) or out of control (special causes affecting the process).
+                    </p>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Components of Control Charts</h3>
+
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li><strong>Center line (CL):</strong> The process average or target value</li>
+                            <li><strong>Upper control limit (UCL):</strong> Typically set at 3 standard deviations above the center line</li>
+                            <li><strong>Lower control limit (LCL):</strong> Typically set at 3 standard deviations below the center line</li>
+                            <li><strong>Data points:</strong> Individual measurements or subgroup statistics plotted over time</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Types of Control Charts for Precast Manufacturing</h3>
+
+                    <div class="bg-blue-50 p-6 rounded-lg mb-4">
+                        <h4 class="font-bold text-gray-800 mb-2">X-bar and R Charts (Variable Data)</h4>
+                        <p class="text-gray-700 mb-3">
+                            <strong>Use for:</strong> Dimensional measurements, concrete strength, weights
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li><strong>X-bar chart:</strong> Monitors the process average (mean of subgroups)</li>
+                            <li><strong>R chart:</strong> Monitors process variation (range within subgroups)</li>
+                            <li><strong>Example:</strong> Track average thickness of five panels per day</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-lg mb-4">
+                        <h4 class="font-bold text-gray-800 mb-2">P Charts (Attribute Data)</h4>
+                        <p class="text-gray-700 mb-3">
+                            <strong>Use for:</strong> Proportion of defective products or defect rates
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>Monitors percentage of units with defects</li>
+                            <li><strong>Example:</strong> Percentage of panels with surface defects per week</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold text-gray-800 mb-2">C Charts (Count Data)</h4>
+                        <p class="text-gray-700 mb-3">
+                            <strong>Use for:</strong> Number of defects per unit
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>Tracks count of defects in fixed sample size</li>
+                            <li><strong>Example:</strong> Number of surface blemishes per panel</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Interpreting Control Charts</h2>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Rules for Detecting Out-of-Control Conditions</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        A process is considered out of statistical control when:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-3 mb-6">
+                        <li><strong>Rule 1:</strong> One or more points fall outside the control limits</li>
+                        <li><strong>Rule 2:</strong> Nine consecutive points fall on one side of the center line</li>
+                        <li><strong>Rule 3:</strong> Six consecutive points steadily increasing or decreasing (trend)</li>
+                        <li><strong>Rule 4:</strong> Fourteen consecutive points alternating up and down</li>
+                        <li><strong>Rule 5:</strong> Two out of three consecutive points fall in Zone A (outer third between center line and control limit)</li>
+                        <li><strong>Rule 6:</strong> Four out of five consecutive points fall in Zone B (middle third) or beyond</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Process Capability Analysis</h2>
+
+                    <p class="text-gray-700 mb-4">
+                        Process capability compares process performance to specification requirements. A capable process consistently produces products within specification limits.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Key Capability Indices</h3>
+
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3">Cp (Process Capability)</h4>
+                        <p class="text-gray-700 mb-3">
+                            Cp = (USL - LSL) / (6 × σ)
+                        </p>
+                        <p class="text-gray-700 mb-3">Where USL = upper specification limit, LSL = lower specification limit, σ = process standard deviation</p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li><strong>Cp &lt; 1.0:</strong> Process not capable—variation exceeds tolerance</li>
+                            <li><strong>Cp = 1.0:</strong> Marginally capable—tolerance equals process variation</li>
+                            <li><strong>Cp &gt; 1.33:</strong> Capable process</li>
+                            <li><strong>Cp &gt; 1.67:</strong> Highly capable process</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3">Cpk (Process Capability Index)</h4>
+                        <p class="text-gray-700 mb-3">
+                            Cpk accounts for process centering, not just variation
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>More useful than Cp because it considers whether process average matches target</li>
+                            <li>Cpk = Cp when process is perfectly centered</li>
+                            <li>Cpk &lt; Cp when process is off-center</li>
+                            <li><strong>Target:</strong> Cpk &gt; 1.33 for critical characteristics</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Implementing SPC in Precast Manufacturing</h2>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Step 1: Identify Critical Parameters</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Focus SPC efforts on characteristics that significantly impact quality, safety, or customer satisfaction:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Concrete compressive strength at 7 and 28 days</li>
+                        <li>Critical dimensions (length, width, thickness)</li>
+                        <li>Reinforcement cover</li>
+                        <li>Concrete slump and air content</li>
+                        <li>Curing chamber temperature and humidity</li>
+                        <li>Surface finish quality metrics</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Step 2: Establish Measurement Systems</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Reliable SPC requires accurate, consistent measurements:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Calibrate measuring instruments regularly</li>
+                        <li>Train operators on proper measurement techniques</li>
+                        <li>Conduct measurement system analysis (MSA) to verify repeatability and reproducibility</li>
+                        <li>Standardize sampling procedures</li>
+                        <li>Document measurement methods</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Step 3: Collect Baseline Data</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Gather sufficient data to establish initial control limits:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Collect 20-25 subgroups of data under normal operating conditions</li>
+                        <li>Ensure data represents current process performance</li>
+                        <li>Remove any obvious outliers caused by known special causes</li>
+                        <li>Calculate preliminary control limits from baseline data</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Step 4: Create Control Charts</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Modern <a href="../index.html#modules" class="text-blue-600 hover:underline">quality management software</a> automates control chart creation and updating:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Automatically calculate control limits</li>
+                        <li>Generate charts updated in real-time as new data arrives</li>
+                        <li>Apply detection rules to identify out-of-control conditions</li>
+                        <li>Alert quality personnel when special causes are detected</li>
+                        <li>Maintain historical charts for trend analysis</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Step 5: React to Signals</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        When control charts indicate special causes:
+                    </p>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-6">
+                        <ol class="list-decimal pl-6 text-gray-700 space-y-2">
+                            <li>Stop production if necessary to prevent additional defects</li>
+                            <li>Investigate immediately to identify the special cause</li>
+                            <li>Implement corrective action to eliminate the cause</li>
+                            <li>Document the investigation and corrective action</li>
+                            <li>Monitor subsequent data to verify effectiveness</li>
+                            <li>Recalculate control limits if process fundamentally changed</li>
+                        </ol>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Step 6: Continuous Improvement</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Use SPC data to drive systematic improvement:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Analyze patterns to identify improvement opportunities</li>
+                        <li>Implement process changes to reduce common cause variation</li>
+                        <li>Tighten control limits as process improves</li>
+                        <li>Extend SPC to additional process parameters</li>
+                        <li>Share best practices across product lines and shifts</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">SPC Applications in Precast</h2>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Concrete Strength Monitoring</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Example: A hollow-core producer tracks 28-day compressive strength using X-bar and R charts:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Test five cylinders per day (one subgroup)</li>
+                        <li>Calculate daily average strength (X-bar) and range (R)</li>
+                        <li>Plot values on control charts</li>
+                        <li>Specification: 5,000 psi minimum</li>
+                        <li>Process average: 6,200 psi with σ = 250 psi</li>
+                        <li>Cpk = 1.6 indicating capable process with safety margin</li>
+                    </ul>
+
+                    <p class="text-gray-700 mb-6">
+                        When the chart shows a downward trend over six consecutive days, investigation reveals aggregate moisture content increased. Adjusting batch water corrects the trend.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3">Dimensional Control</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Example: Architectural panel producer monitors panel thickness:
+                    </p>
+
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                        <li>Measure thickness at four locations on each of five panels per day</li>
+                        <li>Calculate average and range for each day's measurements</li>
+                        <li>Specification: 8.0 inches ± 0.25 inches (7.75 to 8.25)</li>
+                        <li>Process average: 8.0 inches with σ = 0.05 inches</li>
+                        <li>Cpk = 1.67 indicating highly capable process</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Common Challenges and Solutions</h2>
+
+                    <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                        <h4 class="font-bold text-gray-800 mb-3">Challenge: Insufficient Data Collection</h4>
+                        <p class="text-gray-700 mb-2"><strong>Solution:</strong></p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>Automate data collection with IoT sensors where possible</li>
+                            <li>Simplify data entry with mobile apps and barcode scanning</li>
+                            <li>Make data collection part of standard work procedures</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                        <h4 class="font-bold text-gray-800 mb-3">Challenge: Overreaction to Normal Variation</h4>
+                        <p class="text-gray-700 mb-2"><strong>Solution:</strong></p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>Train personnel to understand common vs. special cause variation</li>
+                            <li>Use control charts strictly—don't adjust process within control limits</li>
+                            <li>Focus improvement efforts on reducing common cause variation</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3">Challenge: Control Charts Ignored</h4>
+                        <p class="text-gray-700 mb-2"><strong>Solution:</strong></p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>Display charts prominently in production areas</li>
+                            <li>Review charts in daily production meetings</li>
+                            <li>Recognize teams that use SPC effectively</li>
+                            <li>Automate alerts to ensure special causes are addressed</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="text-3xl font-bold mt-8 mb-4">Conclusion</h2>
+
+                    <p class="text-gray-700 mb-4">
+                        Statistical Process Control provides precast manufacturers with powerful tools to understand, control, and improve manufacturing processes. By distinguishing normal variation from abnormal conditions, SPC enables proactive quality management and continuous improvement.
+                    </p>
+
+                    <p class="text-gray-700 mb-4">
+                        Success with SPC requires commitment to data collection, understanding of statistical principles, disciplined response to signals, and organizational culture that values process stability and continuous improvement.
+                    </p>
+
+                    <p class="text-gray-700 mb-6">
+                        Modern digital tools make SPC more accessible and actionable than ever before, transforming quality management from an art into a science.
+                    </p>
+
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 rounded-lg mt-12">
+                        <h3 class="text-2xl font-bold mb-4">Implement SPC with IntraSync</h3>
+                        <p class="text-lg mb-6">
+                            IntraSync's quality module includes built-in SPC capabilities with automated control charts, capability analysis, and real-time alerts.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="../contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition text-center">
+                                Schedule a Demo
+                            </a>
+                            <a href="../index.html#modules" class="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition text-center">
+                                Explore Quality Module
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 border-t pt-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Related Articles</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <a href="automated-quality-control-iot-sensors.html" class="block p-6 bg-gray-50 rounded-lg hover:shadow-md transition">
+                                <h4 class="font-bold text-gray-800 mb-2">Automated Quality Control: Using IoT Sensors in Precast Production</h4>
+                                <p class="text-gray-600">Discover how IoT sensors provide the data foundation for effective SPC.</p>
+                            </a>
+                            <a href="concrete-testing-requirements-precast.html" class="block p-6 bg-gray-50 rounded-lg hover:shadow-md transition">
+                                <h4 class="font-bold text-gray-800 mb-2">Concrete Testing Requirements: What Every Precast Manufacturer Must Know</h4>
+                                <p class="text-gray-600">Learn about testing protocols that generate SPC data.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="bg-gray-50 border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="../images/logo.png" alt="IntraSync Industrial" class="h-10 mb-4">
+                    <p class="text-gray-600">Modern manufacturing software for precast concrete operations.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html#features" class="text-gray-600 hover:text-blue-600">Features</a></li>
+                        <li><a href="../index.html#modules" class="text-gray-600 hover:text-blue-600">Modules</a></li>
+                        <li><a href="../index.html#pricing" class="text-gray-600 hover:text-blue-600">Pricing</a></li>
+                        <li><a href="../roi-calculator.html" class="text-gray-600 hover:text-blue-600">ROI Calculator</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../blog.html" class="text-gray-600 hover:text-blue-600">Blog</a></li>
+                        <li><a href="../contact.html" class="text-gray-600 hover:text-blue-600">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html#about" class="text-gray-600 hover:text-blue-600">About</a></li>
+                        <li><a href="../contact.html" class="text-gray-600 hover:text-blue-600">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 text-center text-gray-600">
+                <p>&copy; 2025 IntraSync Industrial. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

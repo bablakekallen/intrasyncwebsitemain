@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CastLogic FAQ - Frequently Asked Questions | IntraSync Industrial</title>
+    <meta name="description" content="Find answers to common questions about CastLogic ERP for precast manufacturing. Learn about features, implementation, pricing, integrations, and support.">
+
+    <!-- FAQ Schema for better SEO and AI/LLM understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is CastLogic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CastLogic is a complete ERP (Enterprise Resource Planning) system built specifically for precast concrete manufacturing. It integrates all aspects of your operation including production scheduling, inventory management, accounting, HR, quality control, and logistics into one unified platform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does CastLogic integrate with BIM and CAD software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, CastLogic seamlessly integrates with major BIM and CAD platforms including Autodesk Revit, AutoCAD, and other industry-standard design tools. This allows for automatic transfer of design specifications, quantities, and production requirements directly from design files into your production schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does CastLogic implementation take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typical implementation takes 8-12 weeks depending on company size and complexity. This includes data migration, staff training, system configuration, and go-live support. We provide dedicated implementation specialists throughout the process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can CastLogic handle multiple plant locations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, CastLogic is designed for multi-plant operations. You can manage production, inventory, and resources across multiple facilities from a single dashboard, while maintaining separate accounting and reporting for each location."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of support does IntraSync provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide comprehensive support including 24/7 technical assistance, dedicated account managers, regular training sessions, software updates, and an extensive knowledge base. Our support team has deep expertise in both the software and precast manufacturing industry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is CastLogic cloud-based or on-premise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CastLogic is available both as a cloud-based SaaS solution and on-premise installation. Most customers prefer the cloud version for automatic updates, accessibility, and lower IT overhead, but we support both deployment models."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does CastLogic pricing work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CastLogic uses subscription-based pricing scaled to your company size and number of users. Pricing includes all modules, updates, training, and support. Contact us for a customized quote based on your specific needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can CastLogic track material costs in real-time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, CastLogic provides real-time tracking of material costs, inventory valuation, and COGS (Cost of Goods Sold). The system automatically updates costs as materials are consumed and allows for tracking of price fluctuations from suppliers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does CastLogic support certified payroll and prevailing wage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, CastLogic includes full certified payroll functionality for Davis-Bacon and prevailing wage compliance. The system automatically generates required reports, tracks wage rates by classification and location, and maintains audit trails."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the AI scheduling work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CastLogic uses machine learning to optimize production schedules based on your historical data, current capacity, material availability, and delivery requirements. The AI considers factors like mold availability, curing times, crew assignments, and priorities to create optimal production sequences that reduce lead times by up to 20%."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://intrasyncindustrial.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "https://intrasyncindustrial.com/faq.html"
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            background-color: #f9fafb;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync Industrial Logo" class="h-14 w-auto mr-6">
+                <nav class="hidden md:flex gap-8 text-lg font-semibold">
+                    <a href="index.html" class="hover:text-blue-700">Home</a>
+                    <a href="modules.html" class="hover:text-blue-700">Modules</a>
+                    <a href="blog.html" class="hover:text-blue-700">Blog</a>
+                    <a href="faq.html" class="text-blue-700 border-b-2 border-blue-700">FAQ</a>
+                    <a href="contact.html" class="hover:text-blue-700">Contact</a>
+                </nav>
+            </div>
+            <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                Get Demo
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-extrabold mb-4">Frequently Asked Questions</h1>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">Everything you need to know about CastLogic ERP for precast manufacturing</p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <main class="py-16">
+        <div class="container mx-auto px-6 max-w-4xl">
+
+            <!-- General Questions -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">General Questions</h2>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">What is CastLogic?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>CastLogic is a complete ERP (Enterprise Resource Planning) system built specifically for precast concrete manufacturing. Unlike generic ERP systems, CastLogic is designed from the ground up to handle the unique challenges of precast production including:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Complex production scheduling with mold constraints</li>
+                            <li>Concrete curing time management</li>
+                            <li>Multi-stage quality control and testing</li>
+                            <li>GPS-based yard inventory tracking</li>
+                            <li>Job costing with WIP accounting</li>
+                            <li>Integration with BIM/CAD design files</li>
+                        </ul>
+                        <p class="mt-2">The system integrates all aspects of your operation into one unified platform, eliminating data silos and manual processes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">Who is CastLogic designed for?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>CastLogic is designed for precast concrete manufacturers of all sizes, from small family-owned operations to large multi-plant enterprises. It's ideal for companies producing:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Architectural precast panels</li>
+                            <li>Structural precast elements</li>
+                            <li>Prestressed concrete products</li>
+                            <li>Parking structures</li>
+                            <li>Bridge components</li>
+                            <li>Utility products</li>
+                        </ul>
+                        <p class="mt-2">Whether you're running one plant or ten, CastLogic scales to meet your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">What makes CastLogic different from other ERP systems?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>CastLogic is purpose-built for precast manufacturing, not a generic system adapted for the industry. Key differentiators include:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li><strong>Industry Expertise:</strong> Built by team with 50+ years combined precast experience</li>
+                            <li><strong>AI Scheduling:</strong> Machine learning optimizes production schedules automatically</li>
+                            <li><strong>Pre-configured:</strong> 80% setup out-of-box vs. months of customization</li>
+                            <li><strong>Mobile-First:</strong> Full functionality on tablets and phones for plant floor</li>
+                            <li><strong>Visual Controls:</strong> GPS yard maps, Gantt charts, real-time dashboards</li>
+                            <li><strong>Support:</strong> Team that understands precast operations, not just software</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">Is IntraSync Industrial certified or accredited?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Yes, IntraSync Industrial is a proud member of both:</p>
+                        <div class="flex items-center gap-6 my-4">
+                            <img src="npca-logo.png" alt="NPCA" class="h-12 w-auto">
+                            <img src="pci-logo.jpg" alt="PCI" class="h-12 w-auto">
+                        </div>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li><strong>NPCA (National Precast Concrete Association):</strong> Ensuring our software
+                            aligns with industry best practices and manufacturing standards</li>
+                            <li><strong>PCI (Precast/Prestressed Concrete Institute):</strong> Staying current with
+                            quality standards, engineering practices, and industry innovations</li>
+                        </ul>
+                        <p class="mt-2">
+                            These memberships demonstrate our commitment to the precast industry and ensure
+                            CastLogic is built with authentic industry knowledge, not generic ERP adapted for precast.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features & Functionality -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">Features & Functionality</h2>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">Does CastLogic integrate with BIM and CAD software?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Yes, CastLogic seamlessly integrates with major BIM and CAD platforms including:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Autodesk Revit</li>
+                            <li>AutoCAD</li>
+                            <li>Tekla Structures</li>
+                            <li>Other IFC-compatible design tools</li>
+                        </ul>
+                        <p class="mt-2">This integration allows for automatic transfer of design specifications, piece marks, quantities, and production requirements directly from design files into your production schedule. Changes in design files can trigger automatic updates to schedules and material requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">Can CastLogic handle multiple plant locations?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Yes, CastLogic is designed for multi-plant operations. You can:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Manage production and resources across all facilities from a single dashboard</li>
+                            <li>Balance workload between plants automatically</li>
+                            <li>Transfer jobs between facilities</li>
+                            <li>Maintain separate accounting and reporting for each location</li>
+                            <li>Share inventory and resources across locations</li>
+                            <li>Consolidate reporting at corporate level</li>
+                        </ul>
+                        <p class="mt-2">Each plant can operate independently while corporate has complete visibility and control.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">How does the AI scheduling work?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>CastLogic uses machine learning to create optimal production schedules. The AI:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Learns from your historical production data and patterns</li>
+                            <li>Considers mold availability, curing times, and capacity constraints</li>
+                            <li>Factors in material availability and delivery requirements</li>
+                            <li>Optimizes crew assignments and workload balance</li>
+                            <li>Continuously improves based on actual vs. planned performance</li>
+                            <li>Automatically adjusts when priorities or requirements change</li>
+                        </ul>
+                        <p class="mt-2">Customers typically see 15-20% reduction in lead times and 25% improvement in on-time delivery within 3 months of implementation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">Can CastLogic track material costs in real-time?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Yes, CastLogic provides comprehensive real-time cost tracking:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Automatic inventory valuation updates as materials are consumed</li>
+                            <li>Real-time COGS (Cost of Goods Sold) calculation</li>
+                            <li>Tracking of price fluctuations from suppliers</li>
+                            <li>Job-level cost tracking with labor, materials, and overhead allocation</li>
+                            <li>WIP (Work in Progress) accounting</li>
+                            <li>Variance analysis between estimated and actual costs</li>
+                        </ul>
+                        <p class="mt-2">Financial reports update in real-time as production progresses, giving you accurate profitability insights at any moment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">Does CastLogic support certified payroll and prevailing wage?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Yes, CastLogic includes full certified payroll functionality for Davis-Bacon and prevailing wage compliance:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Automatic wage rate determination by classification and location</li>
+                            <li>WH-347 form generation</li>
+                            <li>Fringe benefit tracking and reporting</li>
+                            <li>Complete audit trails</li>
+                            <li>Integration with time tracking to capture hours by project</li>
+                            <li>Electronic submission capabilities</li>
+                        </ul>
+                        <p class="mt-2">The system ensures compliance while minimizing administrative burden.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Implementation & Support -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">Implementation & Support</h2>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">How long does CastLogic implementation take?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Typical implementation timeline:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li><strong>Week 1-2:</strong> System configuration and data mapping</li>
+                            <li><strong>Week 3-4:</strong> Data migration and validation</li>
+                            <li><strong>Week 5-6:</strong> Staff training (all departments)</li>
+                            <li><strong>Week 7-8:</strong> Parallel testing with existing systems</li>
+                            <li><strong>Week 9-10:</strong> Go-live preparation and final validation</li>
+                            <li><strong>Week 11-12:</strong> Go-live with on-site support</li>
+                        </ul>
+                        <p class="mt-2">Total time: 8-12 weeks depending on company size and complexity. We provide dedicated implementation specialists throughout the entire process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">What kind of support does IntraSync provide?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Comprehensive support package included with all subscriptions:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li><strong>24/7 Technical Support:</strong> Phone, email, and chat support</li>
+                            <li><strong>Dedicated Account Manager:</strong> Single point of contact who knows your operation</li>
+                            <li><strong>Regular Training:</strong> Quarterly webinars and on-demand video library</li>
+                            <li><strong>Software Updates:</strong> Automatic updates with new features and improvements</li>
+                            <li><strong>Knowledge Base:</strong> Searchable documentation and how-to guides</li>
+                            <li><strong>Community Forum:</strong> Connect with other CastLogic users</li>
+                        </ul>
+                        <p class="mt-2">Our support team has deep expertise in both the software and precast manufacturing operations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">What training is provided?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Comprehensive training program includes:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Role-based training sessions (admin, production, accounting, etc.)</li>
+                            <li>On-site training during implementation</li>
+                            <li>Video tutorials and documentation</li>
+                            <li>Live webinars for new features</li>
+                            <li>Train-the-trainer sessions for your super users</li>
+                            <li>Ongoing refresher training</li>
+                        </ul>
+                        <p class="mt-2">Training is customized to your workflows and processes, not generic software training.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing & Licensing -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">Pricing & Licensing</h2>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">How does CastLogic pricing work?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>CastLogic uses subscription-based pricing that includes:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>All software modules and features</li>
+                            <li>Unlimited users (priced per company/plant, not per user)</li>
+                            <li>All updates and new features</li>
+                            <li>Full support and training</li>
+                            <li>Data storage and backups</li>
+                            <li>Mobile access</li>
+                        </ul>
+                        <p class="mt-2">Pricing is scaled to your company size and annual revenue. Contact us for a customized quote based on your specific needs. Most customers see positive ROI within 6-9 months.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">Is CastLogic cloud-based or on-premise?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>CastLogic is available in both deployment models:</p>
+                        <p class="mt-2"><strong>Cloud-Based (SaaS) - Recommended:</strong></p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>No server hardware or IT infrastructure needed</li>
+                            <li>Automatic updates and backups</li>
+                            <li>Access from anywhere with internet connection</li>
+                            <li>Lower upfront costs</li>
+                            <li>Enterprise-grade security and redundancy</li>
+                        </ul>
+                        <p class="mt-2"><strong>On-Premise:</strong></p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Full control of data and infrastructure</li>
+                            <li>No internet dependency for core operations</li>
+                            <li>Integration with existing on-premise systems</li>
+                            <li>Compliance with specific regulatory requirements</li>
+                        </ul>
+                        <p class="mt-2">Over 85% of our customers choose the cloud version for lower cost and easier management.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">Are there any additional fees?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Transparent pricing with no hidden fees. Your subscription includes:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>All software features and modules</li>
+                            <li>Implementation and data migration</li>
+                            <li>Training for all users</li>
+                            <li>24/7 support</li>
+                            <li>Regular software updates</li>
+                            <li>Standard integrations (BIM, accounting, etc.)</li>
+                        </ul>
+                        <p class="mt-2">Optional add-ons that may incur additional fees:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Custom integrations with proprietary systems</li>
+                            <li>Extensive process customization beyond standard configuration</li>
+                            <li>On-site consulting beyond implementation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Questions -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">Technical Questions</h2>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">What are the system requirements?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>CastLogic is a web-based application accessible via modern browsers:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li><strong>Desktop:</strong> Chrome, Firefox, Safari, or Edge (latest versions)</li>
+                            <li><strong>Tablets:</strong> iPad, Android tablets, Windows tablets</li>
+                            <li><strong>Phones:</strong> iOS 14+, Android 10+</li>
+                            <li><strong>Internet:</strong> Stable broadband connection (5 Mbps minimum)</li>
+                            <li><strong>Hardware:</strong> No special hardware required, works on existing computers</li>
+                        </ul>
+                        <p class="mt-2">For on-premise installations, we provide detailed server specifications based on your company size.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">How secure is my data?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Enterprise-grade security measures protect your data:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>256-bit SSL encryption for all data transmission</li>
+                            <li>SOC 2 Type II framework security controls</li>
+                            <li>Multi-factor authentication (MFA) available</li>
+                            <li>Role-based access controls</li>
+                            <li>Automated daily backups with 30-day retention</li>
+                            <li>Regular third-party security audits</li>
+                            <li>GDPR and CCPA compliance</li>
+                            <li>Complete audit trails of all system activity</li>
+                        </ul>
+                        <p class="mt-2">Your data is isolated in a secure tenant and never shared across customers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8">Can I export my data if I need to?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Yes, you own your data and can export it anytime:</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Export to Excel, CSV, or PDF from any report</li>
+                            <li>API access for programmatic data extraction</li>
+                            <li>Complete database export available on request</li>
+                            <li>No data retention or export fees</li>
+                        </ul>
+                        <p class="mt-2">If you ever decide to leave CastLogic, we provide full assistance with data export in your format of choice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 text-center text-white">
+                <h2 class="text-3xl font-bold mb-4">Still Have Questions?</h2>
+                <p class="text-xl mb-6 text-blue-100">Our team is here to help. Schedule a demo to see CastLogic in action and get answers specific to your operation.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition">
+                        Schedule a Demo
+                    </a>
+                    <a href="tel:+1-XXX-XXX-XXXX" class="bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-800 transition">
+                        Call Us Now
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                        <li><a href="roi-calculator.html" class="hover:text-blue-600 transition">ROI Calculator</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="faq.html" class="hover:text-blue-600 transition">FAQ</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Industry Certifications -->
+            <div class="border-t border-gray-300 pt-8 pb-6">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-700 font-semibold text-sm uppercase tracking-wide">Proud Members Of:</p>
+                    </div>
+                    <div class="flex items-center gap-8 md:gap-12">
+                        <a href="https://precast.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="National Precast Concrete Association Member">
+                            <img src="npca-logo.png" alt="NPCA Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                        <a href="https://pci.org" target="_blank" rel="noopener noreferrer"
+                           class="transition transform hover:scale-110"
+                           title="Precast/Prestressed Concrete Institute Member">
+                            <img src="pci-logo.jpg" alt="PCI Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.querySelector('.faq-answer');
+            const icon = element.querySelector('svg');
+
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(a => {
+                if (a !== answer) {
+                    a.classList.remove('active');
+                }
+            });
+            document.querySelectorAll('.faq-item svg').forEach(i => {
+                if (i !== icon) {
+                    i.classList.remove('rotate-180');
+                }
+            });
+
+            // Toggle current FAQ
+            answer.classList.toggle('active');
+            icon.classList.toggle('rotate-180');
+        }
+    </script>
+</body>
+</html>

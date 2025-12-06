@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Costing for Precast: Tracking Profitability by Project | IntraSync Blog</title>
+    <meta name="description" content="Project-level costing reveals which jobs drive profitability and which erode margins. Learn systematic job costing for precast manufacturers.">
+
+    <!-- Article Schema for SEO & AI Understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "author": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder",
+        "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg"
+        }
+      }
+    }
+    </script>
+    <meta name="keywords" content="job costing, project profitability, precast accounting, cost tracking, project management">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="../index.html" class="hover:text-blue-700">Home</a>
+                <a href="../modules.html" class="hover:text-blue-700">Modules</a>
+                <a href="../blog.html" class="text-blue-700">Blog</a>
+                <a href="../contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-8">
+                <a href="../blog.html" class="text-blue-600 font-semibold hover:underline mb-4 inline-block">← Back to Blog</a>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold">Financial Management</span>
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">Project Management</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Job Costing for Precast: Tracking Profitability by Project</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <span>December 3, 2024</span>
+                    <span>•</span>
+                    <span>9 min read</span>
+                    <span>•</span>
+                    <span class="font-semibold">By IntraSync Engineering Team</span>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl h-96 mb-8 flex items-center justify-center text-white">
+                <div class="text-center">
+                    <svg class="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                    </svg>
+                    <p class="text-xl font-semibold">Job Costing</p>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">You just completed a $500,000 precast project. Did you make money? Most manufacturers answer based on gut feel or rough percentages: "seemed like a good job" or "that one was tough." But without systematic job costing, you're flying blind—unable to identify which customers, product types, or project characteristics drive profitability versus those that quietly erode margins.</p>
+
+                <p class="mb-6">Accurate job costing transforms guesswork into precision, revealing the true profitability of each project. This visibility enables data-driven decisions about pricing, customer selection, product focus, and operational improvements. The manufacturers that master job costing consistently outperform competitors because they know exactly where money is made and lost.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Why Job Costing Matters</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Strategic Decision Making</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Customer profitability:</strong> Identify which customers generate best margins</li>
+                    <li><strong>Product optimization:</strong> Focus on highest-margin product lines</li>
+                    <li><strong>Pricing strategy:</strong> Set prices based on true costs not guesses</li>
+                    <li><strong>Bidding decisions:</strong> Know which jobs to pursue aggressively vs. avoid</li>
+                    <li><strong>Resource allocation:</strong> Direct capacity toward most profitable work</li>
+                    <li><strong>Performance evaluation:</strong> Assess project management and estimating effectiveness</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Operational Improvement</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Cost control:</strong> Identify cost overruns while projects are active</li>
+                    <li><strong>Efficiency tracking:</strong> Compare estimated vs. actual labor and materials</li>
+                    <li><strong>Productivity analysis:</strong> Measure crew performance by job type</li>
+                    <li><strong>Process optimization:</strong> Learn which production methods work best</li>
+                    <li><strong>Vendor evaluation:</strong> Track material costs by supplier and project</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Financial Accuracy</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Revenue recognition:</strong> Properly recognize revenue as projects progress</li>
+                    <li><strong>WIP valuation:</strong> Accurate work-in-progress inventory accounting</li>
+                    <li><strong>Gross margin calculation:</strong> True profitability by job and period</li>
+                    <li><strong>Cash flow forecasting:</strong> Project-level understanding of timing</li>
+                    <li><strong>Contract compliance:</strong> Documentation for customer audits</li>
+                </ul>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">The Hidden Truth</h4>
+                    <p class="text-gray-700">Many precast manufacturers are shocked when detailed job costing reveals that 20-30% of projects actually lose money. These losses get masked in aggregate profitability, subsidized by better-performing jobs. Accurate costing exposes these margin killers so they can be fixed or avoided.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Components of Complete Job Costing</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">1. Direct Materials</h3>
+                <p class="mb-6">Materials consumed specifically for the project:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Concrete materials:</strong> Cement, aggregates, admixtures allocated by batch</li>
+                    <li><strong>Reinforcing materials:</strong> Steel, mesh, fibers, connectors</li>
+                    <li><strong>Embedded items:</strong> Inserts, plates, anchors, hardware specific to project</li>
+                    <li><strong>Architectural finishes:</strong> Specialty aggregates, form liners, coatings</li>
+                    <li><strong>Insulation components:</strong> Foam, connectors, accessories</li>
+                    <li><strong>Shipping materials:</strong> Dunnage, strapping, protection</li>
+                </ul>
+
+                <p class="mb-6">Each material transaction recorded against specific job number, either through batch tracking (concrete) or direct issue (embedded items).</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">2. Direct Labor</h3>
+                <p class="mb-6">Labor hours worked specifically on the project:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Production labor:</strong> Crews fabricating products</li>
+                    <li><strong>Finishing labor:</strong> Grinding, patching, applying finishes</li>
+                    <li><strong>Quality inspection:</strong> Testing and inspection time</li>
+                    <li><strong>Shipping/handling:</strong> Loading and delivery labor</li>
+                    <li><strong>Project-specific setup:</strong> Form configuration, special tooling</li>
+                </ul>
+
+                <p class="mb-6">Time tracking systems capture hours by job, typically through work order completion or time clocks with job codes.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">3. Equipment and Overhead</h3>
+                <p class="mb-6">Indirect costs allocated to projects:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Equipment usage:</strong> Machine hours or percentage of capacity</li>
+                    <li><strong>Facility costs:</strong> Plant overhead allocated by labor hours or machine time</li>
+                    <li><strong>Indirect labor:</strong> Supervision, scheduling, material handling</li>
+                    <li><strong>Utilities:</strong> Power, gas, water consumption</li>
+                    <li><strong>Support services:</strong> Engineering, testing, quality control</li>
+                </ul>
+
+                <p class="mb-6">Overhead allocation methods vary: some manufacturers use labor hour burden rates, others allocate based on machine hours or material costs.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">4. Subcontractors and Outside Services</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Specialty fabrication outsourced to suppliers</li>
+                    <li>Third-party testing and inspection</li>
+                    <li>Freight and delivery services</li>
+                    <li>Equipment rental for specific projects</li>
+                    <li>Engineering and design services</li>
+                </ul>
+
+                <p class="mb-6">Learn how <a href="real-time-inventory-valuation-cogs.html" class="text-blue-600 hover:underline">real-time inventory systems</a> enable accurate material costing at the job level.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Setting Up Job Costing Systems</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Job Number Structure</h3>
+                <p class="mb-6">Systematic job numbering enables analysis:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Sequential numbering:</strong> Unique identifier for each project</li>
+                    <li><strong>Smart coding:</strong> Embed customer, product type, or location in job number</li>
+                    <li><strong>Phase tracking:</strong> Separate job numbers or sub-codes for project phases</li>
+                    <li><strong>Change orders:</strong> Extension codes for scope changes</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Cost Categories and Codes</h3>
+                <p class="mb-6">Standardized cost structure enables comparison:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Materials:</strong> Sub-categories for concrete, steel, embedded items, etc.</li>
+                    <li><strong>Labor:</strong> Production, finishing, shipping by craft or function</li>
+                    <li><strong>Equipment:</strong> By equipment type or function</li>
+                    <li><strong>Subcontractors:</strong> By service type</li>
+                    <li><strong>Other direct costs:</strong> Permits, testing, freight</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Integration Points</h3>
+                <p class="mb-6">Job costing connects to multiple systems:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Estimating:</strong> Budget comes from estimate, actual compared to budget</li>
+                    <li><strong>Production:</strong> Work orders tied to jobs, materials and labor captured</li>
+                    <li><strong>Inventory:</strong> Material issues and consumption by job</li>
+                    <li><strong>Payroll:</strong> Time cards with job codes feeding labor costs</li>
+                    <li><strong>Accounts payable:</strong> Vendor invoices coded to jobs</li>
+                    <li><strong>Billing:</strong> Revenue recognition tied to job completion</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Real-Time vs. Period-End Costing</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Real-Time Job Costing</h3>
+                <p class="mb-6"><strong>Approach:</strong> Costs posted to jobs immediately as transactions occur</p>
+                <p class="mb-6"><strong>Advantages:</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Current visibility into job profitability</li>
+                    <li>Early warning when jobs trending over budget</li>
+                    <li>Enables proactive corrective action</li>
+                    <li>Accurate WIP valuation at any point</li>
+                </ul>
+                <p class="mb-6"><strong>Requirements:</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Integrated ERP system</li>
+                    <li>Disciplined real-time transaction posting</li>
+                    <li>Mobile time and material capture</li>
+                    <li>Automated batch and work order costing</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Period-End Job Costing</h3>
+                <p class="mb-6"><strong>Approach:</strong> Costs allocated to jobs at month end through journal entries</p>
+                <p class="mb-6"><strong>Advantages:</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Simpler systems and processes</li>
+                    <li>Less real-time data entry required</li>
+                    <li>Acceptable for simple operations</li>
+                </ul>
+                <p class="mb-6"><strong>Disadvantages:</strong></p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>No current visibility into job performance</li>
+                    <li>Problems discovered after the fact</li>
+                    <li>More manual allocation and estimation</li>
+                    <li>Potential for errors in allocations</li>
+                </ul>
+
+                <p class="mb-6">Most precast manufacturers benefit from real-time costing given project complexity and the value of current visibility.</p>
+
+                <div class="bg-gray-50 p-8 rounded-xl my-8">
+                    <h3 class="text-2xl font-bold mb-4">Connect to Cash Flow Management</h3>
+                    <p class="text-gray-700 mb-4">Job costing provides the foundation for effective cash flow management, enabling accurate project billing and collection timing predictions.</p>
+                    <a href="cash-flow-management-precast-companies.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Read Cash Flow Guide →</a>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Analyzing Job Performance</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Budget vs. Actual Comparison</h3>
+                <p class="mb-6">The fundamental job costing report:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Budgeted amounts:</strong> From original estimate or quote</li>
+                    <li><strong>Actual costs:</strong> Posted to date for active jobs, final for completed</li>
+                    <li><strong>Variance:</strong> Dollar and percentage over/under budget</li>
+                    <li><strong>Variance analysis:</strong> Explanation of significant variances</li>
+                    <li><strong>Forecast to complete:</strong> Projected final cost for active jobs</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Profitability Metrics</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Gross profit dollars:</strong> Revenue minus direct costs</li>
+                    <li><strong>Gross profit percentage:</strong> Gross profit / revenue</li>
+                    <li><strong>Contribution margin:</strong> Revenue minus variable costs</li>
+                    <li><strong>Return on labor:</strong> Gross profit / direct labor cost</li>
+                    <li><strong>Return on materials:</strong> Gross profit / material cost</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Efficiency Analysis</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Labor productivity:</strong> Actual hours vs. estimated hours</li>
+                    <li><strong>Material yield:</strong> Actual consumption vs. theoretical</li>
+                    <li><strong>Equipment utilization:</strong> Productive hours vs. available hours</li>
+                    <li><strong>Cycle time:</strong> Days from start to completion vs. planned</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Common Pitfalls and Solutions</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Pitfall 1: Incomplete Cost Capture</h3>
+                <p class="mb-6"><strong>Problem:</strong> Not all costs tracked to jobs, distorting profitability</p>
+                <p class="mb-6"><strong>Solution:</strong> Comprehensive cost capture including indirect costs, overhead allocation methodology, regular reconciliation to general ledger</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Pitfall 2: Inaccurate Time Tracking</h3>
+                <p class="mb-6"><strong>Problem:</strong> Labor hours not properly allocated to specific jobs</p>
+                <p class="mb-6"><strong>Solution:</strong> Automated time collection, validation rules requiring job codes, supervisor review and approval, exception reporting for missing allocations</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Pitfall 3: Poor Change Order Management</h3>
+                <p class="mb-6"><strong>Problem:</strong> Scope changes not properly tracked and billed</p>
+                <p class="mb-6"><strong>Solution:</strong> Formal change order process, separate cost tracking, customer approval before work, systematic billing of changes</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Pitfall 4: Inconsistent Overhead Allocation</h3>
+                <p class="mb-6"><strong>Problem:</strong> Arbitrary or variable overhead rates distorting job costs</p>
+                <p class="mb-6"><strong>Solution:</strong> Predetermined overhead rates based on annual budgets, consistent application across all jobs, annual rate review and adjustment, variance analysis</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Technology Requirements</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Core ERP Capabilities</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Job master module:</strong> Setup and maintain job records</li>
+                    <li><strong>Cost accumulation:</strong> Capture costs by job and category</li>
+                    <li><strong>Budget management:</strong> Enter and track budgets</li>
+                    <li><strong>Revenue recognition:</strong> Link billing to job completion</li>
+                    <li><strong>WIP reporting:</strong> Work-in-progress valuation</li>
+                    <li><strong>Job profitability analysis:</strong> Budget vs. actual reporting</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Integration Requirements</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Estimating system feeding job budgets</li>
+                    <li>Production system capturing material and labor</li>
+                    <li>Time tracking with job code capture</li>
+                    <li>Inventory management for material issues</li>
+                    <li>Accounts payable for vendor costs</li>
+                    <li>Billing system for revenue</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">Reporting and Analytics</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Job cost detail reports</li>
+                    <li>Budget vs. actual variance analysis</li>
+                    <li>Profitability by job, customer, product type</li>
+                    <li>WIP schedules</li>
+                    <li>Job completion forecasting</li>
+                    <li>Historical cost databases for estimating</li>
+                </ul>
+
+                <p class="mb-6">Understand how <a href="work-in-progress-wip-accounting.html" class="text-blue-600 hover:underline">WIP accounting</a> integrates with job costing for complete financial visibility.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Best Practices</h2>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">During Job Setup</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Create job immediately upon contract award</li>
+                    <li>Load detailed budget from estimate</li>
+                    <li>Define billing milestones</li>
+                    <li>Assign project manager accountability</li>
+                    <li>Set up alerts for budget variances</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">During Job Execution</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Daily review of job cost transactions</li>
+                    <li>Weekly budget vs. actual analysis</li>
+                    <li>Proactive management of variances</li>
+                    <li>Regular forecast-to-complete updates</li>
+                    <li>Change order tracking and billing</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-3">At Job Completion</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Final cost reconciliation</li>
+                    <li>Lessons learned documentation</li>
+                    <li>Historical cost database update</li>
+                    <li>Customer satisfaction feedback</li>
+                    <li>Team performance review</li>
+                </ul>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">Performance Target</h4>
+                    <p class="text-gray-700">Best-practice precast manufacturers achieve 90%+ of jobs completing within 5% of budgeted costs and margins. This consistency results from accurate estimating, effective project management, and disciplined cost control enabled by real-time job costing.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Conclusion</h2>
+                <p class="mb-6">Job costing transforms precast manufacturing from profitable company to a portfolio of measurable projects, each with clear financial performance. This visibility enables strategic decisions about customers, products, and operations that compound into sustained competitive advantage.</p>
+
+                <p class="mb-6">The manufacturers that excel at job costing don't just track costs—they use the data to drive continuous improvement. They identify and replicate what works on profitable jobs. They fix or avoid what causes losses on problem projects. They price intelligently based on true costs, not guesses. They manage actively using current data, not month-old history.</p>
+
+                <p class="mb-6">Implementation requires commitment to systematic processes, appropriate technology, and cultural accountability. But the return on this investment is substantial: most manufacturers implementing comprehensive job costing identify 2-5 percentage points of margin improvement within the first year simply by making visible what was previously hidden.</p>
+
+                <p class="mb-6">In precast manufacturing where projects vary dramatically in profitability, job costing isn't optional—it's the foundation of financial management and strategic decision-making that separates thriving operations from those that struggle despite appearing profitable on aggregate financial statements.</p>
+            </div>
+
+            <div class="border-t border-b border-gray-200 py-8 my-12">
+                <div class="flex items-start gap-6">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold flex-shrink-0">I</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">IntraSync Team</h4>
+                        <p class="text-gray-600">The IntraSync team brings together experts in precast manufacturing, software engineering, and AI technology to deliver insights that help manufacturers optimize their operations and drive business growth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="work-in-progress-wip-accounting.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-indigo-600 font-semibold text-sm">Financial Management</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Work-in-Progress (WIP) Accounting for Manufacturers</h4>
+                        <p class="text-gray-600 text-sm">WIP accounting integrates with job costing for complete financial visibility.</p>
+                    </a>
+                    <a href="progress-billing-best-practices.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-indigo-600 font-semibold text-sm">Financial Management</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Progress Billing Best Practices in Precast Manufacturing</h4>
+                        <p class="text-gray-600 text-sm">Strategic billing optimizes cash flow while maintaining customer relationships.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 mt-12 text-center text-white">
+                <h3 class="text-2xl font-bold mb-3">Master Project Profitability</h3>
+                <p class="mb-6 text-blue-100">CastLogic's integrated job costing delivers real-time visibility into project performance and profitability.</p>
+                <a href="../contact.html" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Schedule a Demo</a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="../Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-6">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="../accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="../hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="../schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="../careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="../privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="../terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
