@@ -50,6 +50,12 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://intrasyncindustrial.com/certifications.html</loc>
+        <lastmod>2024-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://intrasyncindustrial.com/privacy.html</loc>
         <lastmod>2024-12-02</lastmod>
         <changefreq>monthly</changefreq>
@@ -80,6 +86,12 @@
         <lastmod>2024-12-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/bidding.html</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://intrasyncindustrial.com/engage.html</loc>
@@ -149,6 +161,26 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <!-- White Papers - High Priority -->
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/digital-twins-precast-beyond-cad.html</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/ai-optimization-reduces-curing-time.html</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/solving-yard-logistics-nightmare-gps.html</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Regular Blog Posts -->
     <url>
         <loc>https://intrasyncindustrial.com/blog/ai-transforming-precast-production.html</loc>
         <lastmod>2024-12-02</lastmod>
@@ -690,5 +722,25 @@
         <lastmod>2024-12-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>
+
+    <!-- PCI Certification & EPD Blog Posts -->
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/pci-plant-certification-guide.html</loc>
+        <lastmod>2024-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/buy-clean-precast-epd-requirements.html</loc>
+        <lastmod>2024-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/digital-documentation-precast-audits.html</loc>
+        <lastmod>2024-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>
