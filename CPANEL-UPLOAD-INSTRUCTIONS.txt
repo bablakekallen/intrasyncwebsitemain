@@ -1,0 +1,119 @@
+========================================
+CPANEL UPLOAD INSTRUCTIONS
+IntraSync Industrial Website Update
+Date: December 6, 2024
+========================================
+
+ZIP FILE LOCATION:
+~/Documents/GitHub/intrasyncwebsite/intrasyncwebsite-update-20251206.zip
+
+FILE SIZE: 929 KB
+CONTAINS: 21 HTML pages + 90 blog posts + logos + SEO files
+
+========================================
+UPLOAD STEPS:
+========================================
+
+1. LOG INTO CPANEL
+   - Go to your hosting provider's cPanel
+   - Login with your credentials
+
+2. OPEN FILE MANAGER
+   - Find "File Manager" icon in cPanel
+   - Click to open
+
+3. NAVIGATE TO YOUR WEBSITE ROOT
+   - Usually: public_html/
+   - Or: public_html/www/ (depending on your setup)
+
+4. UPLOAD THE ZIP FILE
+   - Click "Upload" button at the top
+   - Select: intrasyncwebsite-update-20251206.zip
+   - Wait for upload to complete (should be quick, only 929KB)
+
+5. EXTRACT THE ZIP FILE
+   - Right-click on the uploaded .zip file
+   - Select "Extract"
+   - Choose "Extract to current directory"
+   - Click "Extract File(s)"
+
+6. CONFIRM EXTRACTION
+   - You should see all files extracted:
+     ✓ 21 HTML files (index.html, about.html, etc.)
+     ✓ blog/ folder with 90+ posts
+     ✓ npca-logo.png and pci-logo.jpg
+     ✓ robots.txt and sitemap.xml
+
+7. DELETE THE ZIP FILE (Optional)
+   - Right-click the .zip file
+   - Select "Delete"
+
+8. TEST YOUR WEBSITE
+   - Visit: https://intrasyncindustrial.com
+   - Check homepage for:
+     ✓ NPCA/PCI badges in footer
+     ✓ "Built by Industry Experts" section
+     ✓ Zachary Frye bio link to About page
+
+   - Visit: https://intrasyncindustrial.com/schedule.html
+   - Check for:
+     ✓ Competitive comparison table
+     ✓ "Scheduling: The Core" section
+
+========================================
+WHAT'S INCLUDED IN THIS UPDATE:
+========================================
+
+✅ NPCA/PCI CERTIFICATION BADGES
+   - Added to footers on all 21+ pages
+   - New certification section on About page
+   - New FAQ question about certifications
+
+✅ SEO & GEO OPTIMIZATIONS
+   - Schema.org markup (Organization, Person, Article)
+   - Updated robots.txt and sitemap.xml
+   - Fixed domain references (intrasync.com → intrasyncindustrial.com)
+   - All 90 blog posts indexed in sitemap
+
+✅ FOUNDER AUTHORITY
+   - Zachary Frye bio added to About page
+   - "Built by Industry Experts" on homepage
+   - Author bylines on all 90 blog posts
+   - Person schema for Zachary Frye
+
+✅ COMPETITIVE POSITIONING
+   - Scheduling page: comparison table vs Excel/Concrete Vision/Titan
+   - Emphasized scheduling as core of entire ERP
+   - "One Schedule. One Truth." messaging
+
+✅ COMPLIANCE CORRECTIONS
+   - Changed claims from "certified" to "supports compliance"
+   - Updated: GAAP, ASC 606, ASC 842, SOX, DCAA, GDPR, SOC 2
+
+✅ HR MODULE UPDATES
+   - Removed: Open enrollment, COBRA, union features
+
+========================================
+BACKUP RECOMMENDATION:
+========================================
+
+BEFORE extracting, consider downloading a backup of your current:
+- public_html/ directory (or wherever your site lives)
+
+This way you can restore if needed.
+
+========================================
+QUESTIONS?
+========================================
+
+If files don't appear after extraction:
+1. Check file permissions (should be 644 for files, 755 for folders)
+2. Clear your browser cache
+3. Check cPanel error logs
+
+If you see 404 errors:
+1. Verify files are in correct directory
+2. Check .htaccess file hasn't been modified
+3. Verify robots.txt allows indexing
+
+========================================

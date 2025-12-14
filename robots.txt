@@ -5,6 +5,44 @@
 User-agent: *
 Allow: /
 
+# Explicitly allow AI/LLM crawlers for Generative Engine Optimization (GEO)
+# These crawlers power AI search results and recommendations
+
+# OpenAI GPTBot - Powers ChatGPT search and AI features
+User-agent: GPTBot
+Allow: /
+
+# Anthropic Claude crawler
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google Bard/Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Bing AI / Copilot
+User-agent: Bingbot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Common Content / AI training
+User-agent: CCBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Apple AI (Siri, etc.)
+User-agent: Applebot
+Allow: /
+
 # Sitemap location
 Sitemap: https://intrasyncindustrial.com/sitemap.xml
 

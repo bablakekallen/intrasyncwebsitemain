@@ -1,0 +1,81 @@
+========================================
+BLOG POSTS UPLOAD - CPANEL INSTRUCTIONS
+========================================
+
+ZIP FILE: blog-posts-only-20251206.zip
+SIZE: 647 KB
+CONTAINS: 91 blog HTML files (90 posts + 1 template)
+
+========================================
+UPLOAD STEPS:
+========================================
+
+1. LOG INTO CPANEL
+   - Open File Manager
+
+2. NAVIGATE TO YOUR WEBSITE ROOT
+   - Go to: public_html/
+   (or wherever your website files are)
+
+3. UPLOAD THE BLOG ZIP FILE
+   - Click "Upload" button
+   - Select: blog-posts-only-20251206.zip
+   - Wait for upload to complete
+
+4. EXTRACT THE ZIP FILE
+   - Right-click on blog-posts-only-20251206.zip
+   - Select "Extract"
+   - Choose "Extract to current directory"
+   - Click "Extract File(s)"
+
+5. WHAT HAPPENS:
+   ✓ A "blog/" folder will be created (or replaced if it exists)
+   ✓ All 91 blog HTML files will be inside
+   ✓ Old blog posts will be REPLACED with new versions
+   ✓ New blog posts include author bylines and Article schema
+
+6. CLEAN UP
+   - Delete the blog-posts-only-20251206.zip file
+   (right-click → Delete)
+
+========================================
+VERIFY IT WORKED:
+========================================
+
+Visit any blog post, for example:
+https://intrasyncindustrial.com/blog/ai-transforming-precast-production.html
+
+You should see:
+✓ Author authority box below the featured image
+✓ Text: "Written by the IntraSync Engineering Team"
+✓ Text: "Reviewed by Zachary Frye, CTO & Founder"
+✓ Link to About page
+
+========================================
+TROUBLESHOOTING:
+========================================
+
+If blog posts don't show up:
+1. Verify the "blog/" folder exists in your public_html/
+2. Check that files are inside: public_html/blog/*.html
+3. Check file permissions (should be 644 for .html files)
+4. Clear your browser cache
+5. Try accessing directly: yoursite.com/blog/ai-transforming-precast-production.html
+
+If you get 404 errors:
+- Make sure blog.html exists in your root (not just in the blog folder)
+- The blog landing page is: public_html/blog.html
+- Blog posts are: public_html/blog/*.html
+
+========================================
+WHAT'S IN THESE BLOG POSTS:
+========================================
+
+✅ All 90 SEO-optimized blog posts
+✅ Author authority boxes on every post
+✅ Article schema markup for Google/AI
+✅ Author: "IntraSync Engineering Team"
+✅ Reviewer: "Zachary Frye, CTO & Founder"
+✅ Links to About page for authority verification
+
+========================================

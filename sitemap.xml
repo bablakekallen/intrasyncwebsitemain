@@ -68,6 +68,20 @@
         <priority>0.5</priority>
     </url>
 
+    <!-- Comparison & Case Studies - High Priority for GEO -->
+    <url>
+        <loc>https://intrasyncindustrial.com/compare.html</loc>
+        <lastmod>2024-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/case-studies.html</loc>
+        <lastmod>2024-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
     <!-- Module Pages -->
     <url>
         <loc>https://intrasyncindustrial.com/accounting.html</loc>

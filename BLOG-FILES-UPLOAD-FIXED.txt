@@ -1,0 +1,98 @@
+========================================
+BLOG FILES UPLOAD - FIXED VERSION
+(For Existing blog/ Folder)
+========================================
+
+ZIP FILE: blog-files-only-20251206.zip
+SIZE: 646 KB
+CONTAINS: 91 HTML files (NO folder wrapper)
+
+========================================
+IMPORTANT - THIS IS DIFFERENT:
+========================================
+
+This zip contains ONLY the .html files
+WITHOUT a "blog/" folder wrapper.
+
+This means when you extract, the files will go
+directly into whatever folder you're in.
+
+========================================
+UPLOAD STEPS:
+========================================
+
+1. LOG INTO CPANEL
+   - Open File Manager
+
+2. NAVIGATE INTO YOUR EXISTING BLOG FOLDER
+   - Go to: public_html/
+   - OPEN the "blog" folder (double-click it)
+   - You should now be INSIDE: public_html/blog/
+
+3. UPLOAD THE ZIP FILE HERE
+   - While inside public_html/blog/
+   - Click "Upload" button
+   - Select: blog-files-only-20251206.zip
+   - Wait for upload to complete
+
+4. EXTRACT THE ZIP FILE
+   - Right-click on blog-files-only-20251206.zip
+   - Select "Extract"
+   - Choose "Extract to current directory"
+   - Click "Extract File(s)"
+
+   ✅ This will place all 91 HTML files directly in public_html/blog/
+   ✅ It will REPLACE any old versions
+   ✅ NO nested blog/blog/ structure!
+
+5. SET PERMISSIONS (Important!)
+   - Select ALL the .html files that were just extracted
+   - Right-click → "Change Permissions"
+   - Set to: 644
+     (Or check: Owner: Read+Write, Group: Read, Public: Read)
+   - Click "Change Permissions"
+
+6. CLEAN UP
+   - Delete blog-files-only-20251206.zip
+   - You're done!
+
+========================================
+VERIFY IT WORKED:
+========================================
+
+Your structure should look like:
+public_html/
+  └── blog/
+      ├── ai-transforming-precast-production.html
+      ├── capacity-planning-precast-plant.html
+      ├── (89 more .html files...)
+      └── _template.html
+
+NOT like this (wrong):
+public_html/
+  └── blog/
+      └── blog/  ← WRONG! No nested folder
+          └── *.html
+
+Visit: https://intrasyncindustrial.com/blog/ai-transforming-precast-production.html
+
+Should see:
+✓ Blog post loads (no 403 error)
+✓ Author box with "Written by IntraSync Engineering Team"
+✓ "Reviewed by Zachary Frye, CTO & Founder"
+
+========================================
+TROUBLESHOOTING:
+========================================
+
+If you still get 403:
+1. Check file permissions = 644
+2. Check blog folder permission = 755
+3. Make sure you're accessing the right path
+
+If files are in wrong location:
+- Look for: public_html/blog/blog/ (nested)
+- If you see this, MOVE all .html files up one level
+- Delete the nested "blog" folder
+
+========================================
