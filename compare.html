@@ -187,13 +187,26 @@
                             <tr>
                                 <th class="p-4 text-left font-bold">Feature</th>
                                 <th class="p-4 text-center font-bold bg-blue-700">CastLogic</th>
-                                <th class="p-4 text-center font-bold">BETSY</th>
-                                <th class="p-4 text-center font-bold">Titan3000</th>
+                                <th class="p-4 text-center font-bold">BETSY<br><span class="text-xs font-normal text-blue-200">Legacy</span></th>
+                                <th class="p-4 text-center font-bold">Titan3000<br><span class="text-xs font-normal text-blue-200">Legacy</span></th>
                                 <th class="p-4 text-center font-bold">IDAT-ERP</th>
                                 <th class="p-4 text-center font-bold">IMPACT</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200">
+                            <!-- Platform Status -->
+                            <tr class="bg-gray-100">
+                                <td colspan="6" class="p-3 font-bold text-gray-900">Platform Status</td>
+                            </tr>
+                            <tr class="hover:bg-blue-50">
+                                <td class="p-4 font-medium">Actively Developed & Updated</td>
+                                <td class="p-4 text-center bg-green-50"><span class="text-2xl text-green-600">&#10003;</span></td>
+                                <td class="p-4 text-center"><span class="text-yellow-600 text-sm">Infrequent</span></td>
+                                <td class="p-4 text-center"><span class="text-yellow-600 text-sm">Infrequent</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-green-600">&#10003;</span></td>
+                                <td class="p-4 text-center"><span class="text-yellow-600 text-sm">Limited</span></td>
+                            </tr>
+
                             <!-- Core ERP -->
                             <tr class="bg-gray-100">
                                 <td colspan="6" class="p-3 font-bold text-gray-900">Core ERP Capabilities</td>
@@ -227,7 +240,7 @@
                                 <td class="p-4 text-center bg-green-50"><span class="text-2xl text-green-600">&#10003;</span></td>
                                 <td class="p-4 text-center"><span class="text-yellow-600 text-sm">Basic</span></td>
                                 <td class="p-4 text-center"><span class="text-yellow-600 text-sm">Basic</span></td>
-                                <td class="p-4 text-center"><span class="text-2xl text-green-600">&#10003;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
                                 <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
                             </tr>
 
@@ -291,10 +304,10 @@
                             <tr class="hover:bg-blue-50">
                                 <td class="p-4 font-medium">Barcode/RFID Scanning</td>
                                 <td class="p-4 text-center bg-green-50"><span class="text-2xl text-green-600">&#10003;</span></td>
-                                <td class="p-4 text-center"><span class="text-2xl text-green-600">&#10003;</span></td>
-                                <td class="p-4 text-center"><span class="text-2xl text-green-600">&#10003;</span></td>
-                                <td class="p-4 text-center"><span class="text-2xl text-green-600">&#10003;</span></td>
-                                <td class="p-4 text-center"><span class="text-2xl text-green-600">&#10003;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
                             </tr>
 
                             <!-- Technology & UX -->
@@ -320,10 +333,10 @@
                             <tr class="hover:bg-blue-50">
                                 <td class="p-4 font-medium">CAD/BIM Integration (Revit, AutoCAD)</td>
                                 <td class="p-4 text-center bg-green-50"><span class="text-2xl text-green-600">&#10003;</span></td>
-                                <td class="p-4 text-center"><span class="text-2xl text-green-600">&#10003;</span></td>
-                                <td class="p-4 text-center"><span class="text-2xl text-green-600">&#10003;</span></td>
-                                <td class="p-4 text-center"><span class="text-2xl text-green-600">&#10003;</span></td>
-                                <td class="p-4 text-center"><span class="text-2xl text-green-600">&#10003;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
                             </tr>
                             <tr class="hover:bg-blue-50">
                                 <td class="p-4 font-medium">Built-in Utility Design Tool</td>
@@ -366,10 +379,14 @@
                 <div class="grid md:grid-cols-2 gap-8">
                     <!-- CastLogic vs BETSY -->
                     <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
-                        <h3 class="text-2xl font-bold mb-4">CastLogic vs BETSY</h3>
-                        <p class="text-gray-600 mb-4">BETSY has been a trusted name in precast production management for decades. However, it focuses primarily on scheduling and production tracking, requiring additional software for accounting, HR, and other business functions.</p>
+                        <h3 class="text-2xl font-bold mb-4">CastLogic vs BETSY <span class="text-sm font-normal text-yellow-600 bg-yellow-50 px-2 py-1 rounded">Legacy</span></h3>
+                        <p class="text-gray-600 mb-4">BETSY has been around for decades, but as a legacy solution it receives infrequent updates and lacks modern capabilities. It focuses primarily on scheduling and production tracking, requiring additional software for accounting, HR, and other business functions.</p>
                         <h4 class="font-bold mb-2">Key Differences:</h4>
                         <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">+</span>
+                                <span><strong>CastLogic:</strong> Actively developed with regular feature updates</span>
+                            </li>
                             <li class="flex items-start gap-2">
                                 <span class="text-green-600 font-bold">+</span>
                                 <span><strong>CastLogic:</strong> Complete ERP with integrated accounting, HR, and payroll</span>
@@ -384,21 +401,29 @@
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="text-green-600 font-bold">+</span>
-                                <span><strong>CastLogic:</strong> GPS yard management with visual mapping</span>
+                                <span><strong>CastLogic:</strong> CAD/BIM integration (Revit, AutoCAD) and barcode/RFID scanning</span>
                             </li>
                         </ul>
-                        <p class="mt-4 text-sm text-gray-500">Best for: Manufacturers who want to consolidate multiple systems into one integrated platform</p>
+                        <p class="mt-4 text-sm text-gray-500">Best for: Manufacturers who want a modern, actively-maintained platform instead of legacy software</p>
                     </div>
 
                     <!-- CastLogic vs Titan3000 -->
                     <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
-                        <h3 class="text-2xl font-bold mb-4">CastLogic vs Titan3000</h3>
-                        <p class="text-gray-600 mb-4">Titan3000 offers solid production tracking capabilities for precast operations. Like BETSY, it's focused on the production side and requires integration with external accounting systems.</p>
+                        <h3 class="text-2xl font-bold mb-4">CastLogic vs Titan3000 <span class="text-sm font-normal text-yellow-600 bg-yellow-50 px-2 py-1 rounded">Legacy</span></h3>
+                        <p class="text-gray-600 mb-4">Titan3000 is another legacy solution that receives infrequent updates. Like BETSY, it's focused on the production side and requires integration with external accounting systems. It lacks modern capabilities like CAD/BIM integration and barcode scanning.</p>
                         <h4 class="font-bold mb-2">Key Differences:</h4>
                         <ul class="space-y-2 text-gray-700">
                             <li class="flex items-start gap-2">
                                 <span class="text-green-600 font-bold">+</span>
+                                <span><strong>CastLogic:</strong> Actively developed with regular feature updates</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">+</span>
                                 <span><strong>CastLogic:</strong> Real-time job costing with WIP accounting</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600 font-bold">+</span>
+                                <span><strong>CastLogic:</strong> CAD/BIM integration (Revit, AutoCAD) and barcode/RFID scanning</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="text-green-600 font-bold">+</span>
@@ -408,12 +433,8 @@
                                 <span class="text-green-600 font-bold">+</span>
                                 <span><strong>CastLogic:</strong> Flexible payroll with daily pay option</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600 font-bold">+</span>
-                                <span><strong>CastLogic:</strong> Progress billing automation</span>
-                            </li>
                         </ul>
-                        <p class="mt-4 text-sm text-gray-500">Best for: Companies tired of manual data entry between production and accounting</p>
+                        <p class="mt-4 text-sm text-gray-500">Best for: Companies ready to move from outdated legacy systems to modern technology</p>
                     </div>
 
                     <!-- CastLogic vs IDAT-ERP -->
