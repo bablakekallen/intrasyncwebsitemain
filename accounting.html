@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
     <title>CastLogic Accounting - Complete ERP Financial Management</title>
     <meta name="description" content="Enterprise-grade accounting and financial management integrated with complete ERP suite for precast manufacturing. Features comparable to Sage Intacct with industry-specific capabilities.">
     <!-- Canonical URL -->
@@ -90,28 +91,37 @@
     }
     </script>
 
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="site.js" defer></script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
         .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
     </style>
 </head>
 <body class="bg-white text-gray-800">
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <!-- Sticky Demo CTA Button -->
+    <a href="contact.html" class="cta-button-fixed bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
+        Schedule Demo
+    </a>
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-12">
-                    <a href="index.html">
+                    <a href="index.html" aria-label="IntraSync CastLogic Home">
                         <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
                     </a>
-                    <nav class="hidden md:flex gap-8 text-base font-semibold">
-                        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
-                        <a href="modules.html" class="text-blue-700 hover:text-blue-800 transition">Modules</a>
-                        <a href="compare.html" class="text-gray-700 hover:text-blue-700 transition">Compare</a>
-                        <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
-                        <a href="about.html" class="text-gray-700 hover:text-blue-700 transition">About</a>
-                        <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
                     </nav>
                 </div>
                 <div class="flex items-center gap-4">
@@ -126,9 +136,9 @@
     <!-- Hero Section -->
     <section class="gradient-bg text-white py-16">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl font-extrabold mb-6">CastLogic Accounting</h1>
-            <p class="text-2xl mb-4">Enterprise Financial Management Built for Manufacturing</p>
-            <p class="text-xl text-blue-100 max-w-3xl mx-auto">Complete ERP accounting with real-time visibility from shop floor to balance sheet. Features comparable to Sage Intacct, purpose-built for precast operations.</p>
+            <h1 class="gs-fade-up text-5xl font-extrabold mb-6">CastLogic Accounting</h1>
+            <p class="gs-fade-up text-2xl mb-4" data-delay="0.1">Enterprise Financial Management Built for Manufacturing</p>
+            <p class="gs-fade-up text-xl text-blue-100 max-w-3xl mx-auto" data-delay="0.2">Complete ERP accounting with real-time visibility from shop floor to balance sheet. Features comparable to Sage Intacct, purpose-built for precast operations.</p>
         </div>
     </section>
 
@@ -143,7 +153,7 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8">
+                    <div class="gs-fade-left bg-red-50 border-2 border-red-200 rounded-xl p-8">
                         <h3 class="text-2xl font-bold text-red-900 mb-4">❌ Standalone Accounting Software</h3>
                         <ul class="space-y-3 text-gray-700">
                             <li class="flex items-start gap-3">
@@ -173,7 +183,7 @@
                         </ul>
                     </div>
 
-                    <div class="bg-green-50 border-2 border-green-200 rounded-xl p-8">
+                    <div class="gs-fade-right bg-green-50 border-2 border-green-200 rounded-xl p-8">
                         <h3 class="text-2xl font-bold text-green-900 mb-4">✓ CastLogic Integrated ERP Accounting</h3>
                         <ul class="space-y-3 text-gray-700">
                             <li class="flex items-start gap-3">
@@ -213,9 +223,9 @@
             <!-- Core Financial Modules -->
             <section class="mb-16">
                 <h2 class="text-3xl font-extrabold mb-8 text-center">Complete Financial Management Suite</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gs-stagger-container grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-blue-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -234,7 +244,7 @@
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-green-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -253,7 +263,7 @@
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-purple-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -272,7 +282,7 @@
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-yellow-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -291,7 +301,7 @@
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-red-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -310,7 +320,7 @@
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-indigo-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -663,7 +673,7 @@
             <!-- CTA Section -->
             <section class="text-center">
                 <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-white">
-                    <h2 class="text-4xl font-extrabold mb-4">Ready to Transform Your Financial Operations?</h2>
+                    <h2 class="gs-fade-up text-4xl font-extrabold mb-4">Ready to Transform Your Financial Operations?</h2>
                     <p class="text-xl mb-8 max-w-3xl mx-auto">Experience the power of fully integrated ERP accounting built specifically for manufacturing. See how CastLogic connects your entire operation from production to profit.</p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">Schedule a Demo</a>
@@ -686,7 +696,7 @@
                         <p class="font-semibold text-gray-900">IntraSync Industrial</p>
                         <p>1401 21st Street Suite R</p>
                         <p>Sacramento, CA 95811</p>
-                        <p class="mt-2"><a href="tel:+17075643666" class="hover:text-blue-600">(707) 564-3666</a></p>
+                        <p class="mt-2"><a href="tel:+17076401380" class="hover:text-blue-600">(707) 640-1380</a></p>
                     </address>
                     <div class="flex gap-4">
                         <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
@@ -700,6 +710,7 @@
                     <h3 class="font-bold text-gray-900 mb-4">Product</h3>
                     <ul class="space-y-2">
                         <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
                         <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
                         <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
                         <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
@@ -712,7 +723,6 @@
                     <ul class="space-y-2">
                         <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
                         <li><a href="compare.html" class="hover:text-blue-600 transition">Compare</a></li>
-                        <li><a href="case-studies.html" class="hover:text-blue-600 transition">Case Studies</a></li>
                         <li><a href="certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
                         <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
                     </ul>
@@ -778,7 +788,7 @@
 
             <!-- Bottom Bar -->
             <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">&copy; 2025 IntraSync Industrial. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2025</span> IntraSync Industrial. All rights reserved.</p>
                 <div class="flex gap-6 text-sm mt-4 md:mt-0">
                     <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>

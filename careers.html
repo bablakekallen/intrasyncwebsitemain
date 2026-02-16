@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
     <title>Careers - Join IntraSync Industrial</title>
     <meta name="description" content="Join the team building the future of precast manufacturing. Explore career opportunities at IntraSync Industrial and help transform the industry with innovative ERP solutions.">
     <!-- Canonical URL -->
@@ -22,11 +23,14 @@
     <meta name="twitter:description" content="Join the team building the future of precast manufacturing. Explore career opportunities at IntraSync Industrial and help transform the industry with innovative ERP solutions.">
     <meta name="twitter:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
 
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="site.js" defer></script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-
         .job-card {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -57,19 +61,27 @@
     </style>
 </head>
 <body class="bg-white text-gray-800">
+    <!-- Sticky Demo CTA Button -->
+    <a href="contact.html" class="cta-button-fixed bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
+        Schedule Demo
+    </a>
 
     <!-- Header -->
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-12">
-                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-12 w-auto">
-                    <nav class="hidden md:flex gap-8 text-base font-semibold">
-                        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
-                        <a href="modules.html" class="text-gray-700 hover:text-blue-700 transition">Modules</a>
-                        <a href="compare.html" class="text-gray-700 hover:text-blue-700 transition">Compare</a>
-                        <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
-                        <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    <a href="index.html" aria-label="IntraSync CastLogic Home">
+                        <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                    </a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
                     </nav>
                 </div>
                 <div class="flex items-center gap-4">
@@ -89,15 +101,17 @@
                     <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6">
                         Careers
                     </div>
-                    <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    <h1 class="gs-fade-up text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
                         Join the Team Building the Future of Precast Manufacturing
                     </h1>
-                    <p class="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+                    <p class="gs-fade-up text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed" data-delay="0.1">
                         Help us transform an industry with innovative ERP solutions that combine cutting-edge technology with deep domain expertise.
                     </p>
+                    <div class="gs-fade-up" data-delay="0.2">
                     <a href="#open-positions" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition">
                         Check Opportunities
                     </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -150,8 +164,8 @@
                     </p>
                 </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <div class="benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                <div class="gs-stagger-container grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="gs-stagger-item benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
                         <div class="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg flex items-center justify-center text-2xl mb-4">
                             💰
                         </div>
@@ -159,7 +173,7 @@
                         <p class="text-gray-600">Industry-leading salaries with equity opportunities and performance bonuses</p>
                     </div>
 
-                    <div class="benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                    <div class="gs-stagger-item benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
                         <div class="w-12 h-12 bg-gradient-to-br from-green-100 to-green-50 rounded-lg flex items-center justify-center text-2xl mb-4">
                             🏠
                         </div>
@@ -167,7 +181,7 @@
                         <p class="text-gray-600">Work from anywhere with flexible hours and a results-focused culture</p>
                     </div>
 
-                    <div class="benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                    <div class="gs-stagger-item benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
                         <div class="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-50 rounded-lg flex items-center justify-center text-2xl mb-4">
                             🏥
                         </div>
@@ -175,7 +189,7 @@
                         <p class="text-gray-600">Medical, dental, vision, and life insurance for you and your family</p>
                     </div>
 
-                    <div class="benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                    <div class="gs-stagger-item benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
                         <div class="w-12 h-12 bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-lg flex items-center justify-center text-2xl mb-4">
                             📈
                         </div>
@@ -183,7 +197,7 @@
                         <p class="text-gray-600">Generous retirement plan with company matching to secure your future</p>
                     </div>
 
-                    <div class="benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                    <div class="gs-stagger-item benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
                         <div class="w-12 h-12 bg-gradient-to-br from-red-100 to-red-50 rounded-lg flex items-center justify-center text-2xl mb-4">
                             🎓
                         </div>
@@ -191,7 +205,7 @@
                         <p class="text-gray-600">Conference budget, training programs, and continued education support</p>
                     </div>
 
-                    <div class="benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                    <div class="gs-stagger-item benefit-card bg-white rounded-xl shadow-lg p-8 border border-gray-200">
                         <div class="w-12 h-12 bg-gradient-to-br from-indigo-100 to-indigo-50 rounded-lg flex items-center justify-center text-2xl mb-4">
                             ⚖️
                         </div>
@@ -284,7 +298,7 @@
         <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
             <div class="container mx-auto px-6 text-center">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to Make an Impact?</h2>
+                    <h2 class="gs-fade-up text-4xl md:text-5xl font-extrabold mb-6">Ready to Make an Impact?</h2>
                     <p class="text-xl mb-8 text-blue-100">
                         Don't see the perfect role? We're always looking for exceptional talent. Send us your resume and tell us how you can contribute to our mission.
                     </p>
@@ -314,7 +328,7 @@
                         <p class="font-semibold text-gray-900">IntraSync Industrial</p>
                         <p>1401 21st Street Suite R</p>
                         <p>Sacramento, CA 95811</p>
-                        <p class="mt-2"><a href="tel:+17075643666" class="hover:text-blue-600">(707) 564-3666</a></p>
+                        <p class="mt-2"><a href="tel:+17076401380" class="hover:text-blue-600">(707) 640-1380</a></p>
                     </address>
                     <div class="flex gap-4">
                         <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
@@ -328,6 +342,7 @@
                     <h3 class="font-bold text-gray-900 mb-4">Product</h3>
                     <ul class="space-y-2">
                         <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
                         <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
                         <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
                         <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
@@ -340,7 +355,6 @@
                     <ul class="space-y-2">
                         <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
                         <li><a href="compare.html" class="hover:text-blue-600 transition">Compare</a></li>
-                        <li><a href="case-studies.html" class="hover:text-blue-600 transition">Case Studies</a></li>
                         <li><a href="certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
                         <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
                     </ul>
@@ -406,7 +420,7 @@
 
             <!-- Bottom Bar -->
             <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">&copy; 2025 IntraSync Industrial. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2025</span> IntraSync Industrial. All rights reserved.</p>
                 <div class="flex gap-6 text-sm mt-4 md:mt-0">
                     <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>

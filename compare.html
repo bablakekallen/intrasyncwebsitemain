@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
     <title>CastLogic vs Precast ERP Competitors | BETSY, Titan, IDAT Comparison</title>
     <meta name="description" content="Compare CastLogic ERP to BETSY, Titan3000, IDAT-ERP, IMPACT Production, and other precast concrete manufacturing software. See feature comparisons, pricing models, and why manufacturers are switching to CastLogic.">
     <!-- Canonical URL -->
@@ -124,27 +125,34 @@
     }
     </script>
 
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <link rel="stylesheet" href="site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="site.js" defer></script>
 </head>
 <body class="bg-white text-gray-800">
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <!-- Sticky Demo CTA Button -->
+    <a href="contact.html" class="cta-button-fixed bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
+        Schedule Demo
+    </a>
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-12">
-                    <a href="index.html">
+                    <a href="index.html" aria-label="IntraSync CastLogic Home">
                         <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
                     </a>
-                    <nav class="hidden md:flex gap-8 text-base font-semibold">
-                        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
-                        <a href="modules.html" class="text-gray-700 hover:text-blue-700 transition">Modules</a>
-                        <a href="compare.html" class="text-gray-700 hover:text-blue-700 transition">Compare</a>
-                        <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
-                        <a href="about.html" class="text-gray-700 hover:text-blue-700 transition">About</a>
-                        <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
                     </nav>
                 </div>
                 <div class="flex items-center gap-4">
@@ -159,8 +167,8 @@
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Compare CastLogic to Other Precast ERP Solutions</h1>
-            <p class="text-xl text-blue-100 max-w-3xl mx-auto">See how CastLogic stacks up against BETSY, Titan3000, IDAT-ERP, IMPACT Production, and other precast manufacturing software</p>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 gs-fade-up">Compare CastLogic to Other Precast ERP Solutions</h1>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto gs-fade-up" data-delay="0.1">See how CastLogic stacks up against BETSY, Titan3000, IDAT-ERP, IMPACT Production, and other precast manufacturing software</p>
         </div>
     </section>
 
@@ -384,8 +392,62 @@
                                 <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
                                 <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
                             </tr>
+                            <!-- Machine Vision & Robotics -->
+                            <tr class="bg-gray-100">
+                                <td colspan="6" class="p-3 font-bold text-gray-900">Machine Vision & Plant Floor Integration</td>
+                            </tr>
+                            <tr class="hover:bg-blue-50">
+                                <td class="p-4 font-medium">Machine Vision Quality Control</td>
+                                <td class="p-4 text-center bg-green-50"><span class="text-2xl text-green-600">&#10003;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                            </tr>
+                            <tr class="hover:bg-blue-50">
+                                <td class="p-4 font-medium">Robotics & Automation Integration</td>
+                                <td class="p-4 text-center bg-green-50"><span class="text-2xl text-green-600">&#10003;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                            </tr>
+                            <tr class="hover:bg-blue-50">
+                                <td class="p-4 font-medium">Automated Defect Detection & Dimensional Verification</td>
+                                <td class="p-4 text-center bg-green-50"><span class="text-2xl text-green-600">&#10003;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                                <td class="p-4 text-center"><span class="text-2xl text-red-500">&#10007;</span></td>
+                            </tr>
                         </tbody>
                     </table>
+                </div>
+            </section>
+
+            <!-- Machine Vision Differentiator -->
+            <section class="mb-16 gs-fade-up">
+                <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="text-2xl font-bold mb-4 text-gray-900">While Other ERPs Stop at Scheduling, CastLogic Connects to Your Plant Floor</h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            CastLogic is the only precast ERP with built-in machine vision quality control and robotics integration. Other systems manage your schedule and paperwork -- CastLogic goes further by connecting directly to cameras and automation equipment on the production line. When you are ready to take that next step, the capability is already built into your ERP.
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-white rounded-lg p-5 shadow-sm">
+                                <h4 class="font-bold text-gray-900 mb-2">Vision-Powered QC</h4>
+                                <p class="text-gray-600 text-sm">Camera systems inspect every piece for surface defects, dimensional accuracy, and embed placement -- automatically logged to your QC records.</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-5 shadow-sm">
+                                <h4 class="font-bold text-gray-900 mb-2">Robotics Integration</h4>
+                                <p class="text-gray-600 text-sm">Production data flows directly to robotic systems for finishing, marking, and material handling -- no middleware or manual handoff required.</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-5 shadow-sm">
+                                <h4 class="font-bold text-gray-900 mb-2">Optional &amp; Modular</h4>
+                                <p class="text-gray-600 text-sm">Start with core ERP and scheduling. Add machine vision and robotics modules when your operation is ready -- no platform change needed.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -393,9 +455,9 @@
             <section class="mb-16">
                 <h2 class="text-3xl font-bold mb-8 text-center">Detailed Comparisons</h2>
 
-                <div class="grid md:grid-cols-2 gap-8">
+                <div class="grid md:grid-cols-2 gap-8 gs-stagger-container">
                     <!-- CastLogic vs BETSY -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true">
                         <h3 class="text-2xl font-bold mb-4">CastLogic vs BETSY <span class="text-sm font-normal text-yellow-600 bg-yellow-50 px-2 py-1 rounded">Legacy</span></h3>
                         <p class="text-gray-600 mb-4">BETSY has been around for decades, but as a legacy solution it receives infrequent updates and lacks modern capabilities. It focuses primarily on scheduling and production tracking, requiring additional software for accounting, HR, and other business functions.</p>
                         <h4 class="font-bold mb-2">Key Differences:</h4>
@@ -425,7 +487,7 @@
                     </div>
 
                     <!-- CastLogic vs Titan3000 -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true">
                         <h3 class="text-2xl font-bold mb-4">CastLogic vs Titan3000 <span class="text-sm font-normal text-yellow-600 bg-yellow-50 px-2 py-1 rounded">Legacy</span></h3>
                         <p class="text-gray-600 mb-4">Titan3000 is another legacy solution that receives infrequent updates. Like BETSY, it's focused on the production side and requires integration with external accounting systems. It lacks modern capabilities like CAD/BIM integration and barcode scanning.</p>
                         <h4 class="font-bold mb-2">Key Differences:</h4>
@@ -455,7 +517,7 @@
                     </div>
 
                     <!-- CastLogic vs IDAT-ERP -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true">
                         <h3 class="text-2xl font-bold mb-4">CastLogic vs IDAT-ERP <span class="text-sm font-normal text-yellow-600 bg-yellow-50 px-2 py-1 rounded">Legacy (Germany)</span></h3>
                         <p class="text-gray-600 mb-4">IDAT-ERP is a legacy German-specific solution with limited support outside of Germany. It lacks modern capabilities like real-time job costing, CAD/BIM integration, and barcode scanning, and offers minimal support for other European operations.</p>
                         <h4 class="font-bold mb-2">Key Differences:</h4>
@@ -485,7 +547,7 @@
                     </div>
 
                     <!-- CastLogic vs Spreadsheets/Manual -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true">
                         <h3 class="text-2xl font-bold mb-4">CastLogic vs Spreadsheets + QuickBooks</h3>
                         <p class="text-gray-600 mb-4">Many precast manufacturers still rely on Excel for scheduling, QuickBooks for accounting, and various other tools. This creates data silos, manual reconciliation nightmares, and no real-time visibility.</p>
                         <h4 class="font-bold mb-2">Key Differences:</h4>
@@ -538,9 +600,9 @@
 
             <!-- CTA Section -->
             <section class="text-center">
-                <h2 class="text-3xl font-bold mb-4">Ready to See CastLogic in Action?</h2>
+                <h2 class="text-3xl font-bold mb-4 gs-fade-up">Ready to See CastLogic in Action?</h2>
                 <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Schedule a personalized demo to see how CastLogic compares to your current systems and competitors you're evaluating.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center gs-fade-up" data-delay="0.2">
                     <a href="contact.html" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition">
                         Schedule Your Demo
                     </a>
@@ -565,7 +627,7 @@
                         <p class="font-semibold text-gray-900">IntraSync Industrial</p>
                         <p>1401 21st Street Suite R</p>
                         <p>Sacramento, CA 95811</p>
-                        <p class="mt-2"><a href="tel:+17075643666" class="hover:text-blue-600">(707) 564-3666</a></p>
+                        <p class="mt-2"><a href="tel:+17076401380" class="hover:text-blue-600">(707) 640-1380</a></p>
                     </address>
                     <div class="flex gap-4">
                         <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
@@ -579,6 +641,7 @@
                     <h3 class="font-bold text-gray-900 mb-4">Product</h3>
                     <ul class="space-y-2">
                         <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
                         <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
                         <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
                         <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
@@ -591,7 +654,6 @@
                     <ul class="space-y-2">
                         <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
                         <li><a href="compare.html" class="hover:text-blue-600 transition">Compare</a></li>
-                        <li><a href="case-studies.html" class="hover:text-blue-600 transition">Case Studies</a></li>
                         <li><a href="certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
                         <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
                     </ul>
@@ -657,7 +719,7 @@
 
             <!-- Bottom Bar -->
             <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">&copy; 2025 IntraSync Industrial. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2025</span> IntraSync Industrial. All rights reserved.</p>
                 <div class="flex gap-6 text-sm mt-4 md:mt-0">
                     <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
