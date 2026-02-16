@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
     <title>GPS Yard Management & Inventory Control | CastLogic by IntraSync</title>
-    <meta name="description" content="Real-time component tracking with GPS yard mapping, barcode scanning, and perpetual inventory sync with COGS. Know exactly what you have, where it is, and what it's worth.">
+    <meta name="description" content="Real-time inventory powered by automated production counts from robotic cells and GPS yard tracking. Know exactly what you have, where it is, and what it's worth.">
     <!-- Canonical URL -->
     <link rel="canonical" href="https://intrasyncindustrial.com/stock.html">
-    
+
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://intrasyncindustrial.com/stock.html">
     <meta property="og:title" content="GPS Yard Management & Inventory Control | CastLogic by IntraSync">
-    <meta property="og:description" content="Real-time component tracking with GPS yard mapping, barcode scanning, and perpetual inventory sync with COGS. Know exactly what you have, where it is, and what it's worth.">
+    <meta property="og:description" content="Real-time inventory powered by automated production counts from robotic cells and GPS yard tracking. Know exactly what you have, where it is, and what it's worth.">
     <meta property="og:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
     <meta property="og:site_name" content="IntraSync Industrial">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="GPS Yard Management & Inventory Control | CastLogic by IntraSync">
-    <meta name="twitter:description" content="Real-time component tracking with GPS yard mapping, barcode scanning, and perpetual inventory sync with COGS. Know exactly what you have, where it is, and what it's worth.">
+    <meta name="twitter:description" content="Real-time inventory powered by automated production counts from robotic cells and GPS yard tracking. Know exactly what you have, where it is, and what it's worth.">
     <meta name="twitter:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
 
 
@@ -43,18 +42,20 @@
         "name": "IntraSync Industrial",
         "url": "https://intrasyncindustrial.com"
       },
-      "description": "GPS-enabled yard management and inventory control for precast concrete manufacturing. Features real-time component tracking with visual yard mapping, barcode/RFID scanning, perpetual inventory with automatic COGS sync, raw material management, and finished goods tracking. Eliminates lost pieces and provides instant inventory valuation.",
+      "description": "GPS-enabled yard management and inventory control for precast concrete manufacturing. Features automated inventory updates from robotic production lines, camera-based yard identification, real-time component tracking with visual yard mapping, barcode/RFID scanning, perpetual inventory with automatic COGS sync, raw material consumption auto-tracked from batching plants and rebar machines, and finished goods tracking.",
       "featureList": [
         "GPS yard mapping with visual interface",
+        "Automated inventory updates from robotic production cells",
+        "Camera-based yard element identification and tracking",
         "Barcode and RFID scanning",
         "Perpetual inventory with COGS sync",
-        "Raw material tracking and forecasting",
-        "Finished goods management",
+        "Raw material consumption auto-tracked from batching plants and rebar machines",
+        "Finished goods management with automated production counts",
         "Multi-location inventory",
         "Cycle counting automation",
         "Mobile inventory management",
         "Real-time inventory valuation",
-        "Integration with production and accounting"
+        "Integration with robotic production lines and accounting"
       ],
       "audience": {
         "@type": "Audience",
@@ -91,34 +92,28 @@
     }
     </script>
 
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="site.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-    <script src="site.js" defer></script>
+    <link rel="stylesheet" href="assets/css/modern.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
 <body class="bg-white text-gray-800">
-    <!-- Sticky Demo CTA Button -->
-    <a href="contact.html" class="cta-button-fixed bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
-        Schedule Demo
-    </a>
-    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-12">
-                    <a href="index.html" aria-label="IntraSync CastLogic Home">
+                    <a href="index.html">
                         <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
                     </a>
-                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
-                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
-                        <a href="modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Modules</a>
-                        <a href="robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
-                        <a href="compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
-                        <a href="blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
-                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
-                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold">
+                        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="modules.html" class="text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="robotics.html" class="text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="compare.html" class="text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
                     </nav>
                 </div>
                 <div class="flex items-center gap-4">
@@ -132,88 +127,120 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="bg-gradient-to-r from-yellow-600 to-yellow-800 text-white py-20">
-            <div class="container mx-auto px-6">
+        <section class="relative bg-gradient-to-br from-amber-600 via-yellow-700 to-orange-800 text-white py-28 md:py-36 overflow-hidden">
+            <!-- Floating Orbs -->
+            <div class="floating-orb w-96 h-96 bg-yellow-300 top-[-10%] left-[-5%]"></div>
+            <div class="floating-orb w-80 h-80 bg-orange-400 bottom-[-15%] right-[-8%]"></div>
+            <div class="floating-orb w-64 h-64 bg-amber-200 top-[40%] right-[20%]"></div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="max-w-4xl">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-4xl">📦</div>
-                        <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-bold">OPERATIONS</span>
+                    <div class="flex items-center gap-3 mb-8 reveal">
+                        <span class="bg-white/15 backdrop-blur-sm px-5 py-2.5 rounded-full text-sm font-bold tracking-wide border border-white/20">INVENTORY & YARD MANAGEMENT</span>
                     </div>
-                    <h1 class="gs-fade-up text-5xl md:text-6xl font-extrabold mb-6">GPS Yard Management & Inventory Control</h1>
-                    <p class="gs-fade-up text-2xl mb-8 text-yellow-100" data-delay="0.1">Real-time component tracking with GPS yard mapping, barcode scanning, and perpetual inventory sync with COGS. Know exactly what you have, where it is, and what it's worth.</p>
-                    <div class="gs-fade-up flex gap-4" data-delay="0.2">
-                        <a href="contact.html" class="bg-white text-yellow-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-50 transition">Schedule Demo</a>
-                        <a href="#features" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition">Learn More</a>
+                    <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-[1.1] reveal">
+                        GPS Yard Management<br>& Inventory Control
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-10 text-amber-100 max-w-3xl leading-relaxed reveal">
+                        Real-time inventory powered by automated production counts from robotic cells and GPS yard tracking. Elements are counted automatically as they exit production, tracked visually through the yard, and synced to financials without a single manual entry.
+                    </p>
+                    <div class="flex flex-wrap gap-4 reveal">
+                        <a href="contact.html" class="bg-white text-amber-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-amber-50 hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5">Schedule Demo</a>
+                        <a href="#features" class="border-2 border-white/40 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 backdrop-blur-sm transition-all duration-300">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-16 bg-white border-b border-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center reveal">
+                    <div>
+                        <div class="text-4xl md:text-5xl font-extrabold text-amber-600 counter" data-target="99" data-suffix="%">0%</div>
+                        <p class="text-gray-600 mt-2 font-medium">Inventory Accuracy</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-extrabold text-amber-600 counter" data-target="85" data-suffix="%">0%</div>
+                        <p class="text-gray-600 mt-2 font-medium">Less Manual Counting</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-extrabold text-amber-600 counter" data-target="0" data-suffix="">0</div>
+                        <p class="text-gray-600 mt-2 font-medium">Lost Components</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-extrabold text-amber-600 counter" data-target="100" data-suffix="%">0%</div>
+                        <p class="text-gray-600 mt-2 font-medium">COGS Sync Accuracy</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Standalone vs. Integrated Section -->
-        <section class="py-20 bg-gray-50">
+        <section class="py-24 bg-gray-50 bg-dots">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">The Power of Integrated Yard Management in Your ERP</h2>
-                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">Most inventory systems lose track of components in the yard. CastLogic Stock connects GPS tracking directly to financials and operations.</p>
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">The Power of Integrated Yard Management in Your ERP</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">Most inventory systems lose track of components in the yard. CastLogic Stock connects GPS tracking, automated production counts, and camera-based identification directly to financials and operations.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                    <div class="gs-fade-left bg-red-50 border-2 border-red-200 rounded-xl p-8">
-                        <h3 class="text-2xl font-bold mb-6 text-red-900">❌ Manual Yard Management</h3>
+                    <div class="bg-red-50 border-2 border-red-200 rounded-2xl p-8 reveal-left">
+                        <h3 class="text-2xl font-bold mb-6 text-red-900">Manual Yard Management</h3>
                         <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start gap-2">
-                                <span class="text-red-600 font-bold">•</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
                                 <span>Manual yard walks to find component locations</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-red-600 font-bold">•</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
                                 <span>No real-time inventory counts or accuracy</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-red-600 font-bold">•</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
                                 <span>COGS reconciliation nightmares at month-end</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-red-600 font-bold">•</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
                                 <span>Components lost or misplaced in the yard</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-red-600 font-bold">•</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
                                 <span>No financial system synchronization</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-red-600 font-bold">•</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
                                 <span>Physical count variances and inventory write-offs</span>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="gs-fade-right bg-green-50 border-2 border-green-200 rounded-xl p-8">
-                        <h3 class="text-2xl font-bold mb-6 text-green-900">✅ CastLogic GPS Yard Management</h3>
+                    <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-8 reveal-right">
+                        <h3 class="text-2xl font-bold mb-6 text-green-900">CastLogic GPS Yard Management</h3>
                         <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600 font-bold">✓</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold mt-0.5">&#10003;</span>
                                 <span>GPS locations of every component on demand</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600 font-bold">✓</span>
-                                <span>Instant barcode/RFID lookup and tracking</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold mt-0.5">&#10003;</span>
+                                <span>Automated counts as elements exit robotic production cells</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600 font-bold">✓</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold mt-0.5">&#10003;</span>
                                 <span>Perpetual COGS sync with zero variance</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600 font-bold">✓</span>
-                                <span>Yard space optimization and utilization analytics</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold mt-0.5">&#10003;</span>
+                                <span>Camera-based yard identification and visual tracking</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600 font-bold">✓</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold mt-0.5">&#10003;</span>
                                 <span>Real-time financial accuracy at all times</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600 font-bold">✓</span>
-                                <span>Zero physical count variance on reconciliation</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold mt-0.5">&#10003;</span>
+                                <span>Raw materials auto-tracked from batching plants and rebar machines</span>
                             </li>
                         </ul>
                     </div>
@@ -222,207 +249,171 @@
         </section>
 
         <!-- Stock Feature Modules -->
-        <section id="features" class="py-20">
+        <section id="features" class="py-24 bg-grid">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-extrabold mb-4">Complete Yard & Inventory Management</h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Every tool you need to track, locate, and manage inventory from raw materials to finished goods.</p>
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Complete Yard & Inventory Management</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Every tool you need to track, locate, and manage inventory from raw materials through automated production to finished goods in the yard.</p>
                 </div>
 
-                <div class="gs-stagger-container grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto stagger reveal">
                     <!-- GPS Yard Mapping -->
-                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition" data-tilt="true">
-                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-xl flex items-center justify-center text-3xl mb-4">🗺️</div>
-                        <h3 class="text-2xl font-bold mb-3">GPS Yard Mapping</h3>
-                        <p class="text-gray-600 mb-4">Visual yard layout with component locations, satellite view integration, zone management, space utilization analytics, and optimal placement suggestions.</p>
-                        <ul class="space-y-2 text-sm text-gray-700">
+                    <div class="modern-card p-8">
+                        <div class="feature-icon-modern bg-gradient-to-br from-amber-100 to-amber-50 text-3xl mb-6">
+                            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">GPS-Mapped Yard</h3>
+                        <p class="text-gray-600 mb-5">Visual yard layout with GPS-mapped element positions, camera-based identification, satellite view integration, and zone management for instant component location.</p>
+                        <ul class="space-y-2.5 text-sm text-gray-700">
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Visual yard layout display</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Visual element identification via cameras</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Satellite view integration</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Zone management tools</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Zone management & space optimization</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Optimal placement suggestions</span>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Barcode & RFID Tracking -->
-                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition" data-tilt="true">
-                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-xl flex items-center justify-center text-3xl mb-4">📱</div>
-                        <h3 class="text-2xl font-bold mb-3">Barcode & RFID Tracking</h3>
-                        <p class="text-gray-600 mb-4">Scan components at production, track movements through yard, verify deliveries, automated location updates, and mobile scanner integration.</p>
-                        <ul class="space-y-2 text-sm text-gray-700">
+                    <!-- Automated Production Counting -->
+                    <div class="modern-card p-8">
+                        <div class="feature-icon-modern bg-gradient-to-br from-amber-100 to-amber-50 text-3xl mb-6">
+                            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Automated Production Counts</h3>
+                        <p class="text-gray-600 mb-5">Elements are counted automatically as they exit robotic production cells. Inventory updates in real-time without manual data entry, eliminating count discrepancies at the source.</p>
+                        <ul class="space-y-2.5 text-sm text-gray-700">
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Production scan tracking</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Auto-count at production line exit</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Yard movement tracking</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Zero manual data entry required</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Delivery verification</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Instant WIP-to-finished-goods flow</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Mobile scanner integration</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>COGS posted at moment of completion</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Raw Material Tracking -->
+                    <div class="modern-card p-8">
+                        <div class="feature-icon-modern bg-gradient-to-br from-amber-100 to-amber-50 text-3xl mb-6">
+                            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Raw Material Auto-Tracking</h3>
+                        <p class="text-gray-600 mb-5">Raw material consumption is auto-tracked from batching plants and rebar machines. Concrete, steel, and hardware usage is captured at the source, driving accurate costing and reorder alerts.</p>
+                        <ul class="space-y-2.5 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Batch plant consumption auto-captured</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Rebar machine usage tracked per piece</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Automatic reorder alerts</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Material cost-per-unit analytics</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Perpetual Inventory -->
-                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition" data-tilt="true">
-                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-xl flex items-center justify-center text-3xl mb-4">📊</div>
+                    <div class="modern-card p-8">
+                        <div class="feature-icon-modern bg-gradient-to-br from-amber-100 to-amber-50 text-3xl mb-6">
+                            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        </div>
                         <h3 class="text-2xl font-bold mb-3">Perpetual Inventory</h3>
-                        <p class="text-gray-600 mb-4">Real-time quantity tracking, automatic COGS posting, WIP to finished goods flow, scrap tracking, and rework management all integrated.</p>
-                        <ul class="space-y-2 text-sm text-gray-700">
+                        <p class="text-gray-600 mb-5">Real-time quantity tracking fed by automated production data, automatic COGS posting, WIP to finished goods flow, scrap tracking, and rework management all integrated.</p>
+                        <ul class="space-y-2.5 text-sm text-gray-700">
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Real-time quantity tracking</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Automatic COGS posting</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>WIP to FG flow tracking</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Scrap & rework management</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Component Location Management -->
-                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition" data-tilt="true">
-                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-xl flex items-center justify-center text-3xl mb-4">🔍</div>
+                    <div class="modern-card p-8">
+                        <div class="feature-icon-modern bg-gradient-to-br from-amber-100 to-amber-50 text-3xl mb-6">
+                            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
                         <h3 class="text-2xl font-bold mb-3">Component Location Management</h3>
-                        <p class="text-gray-600 mb-4">Searchable database of all components, production date tracking, customer/project tagging, and load sequencing for delivery optimization.</p>
-                        <ul class="space-y-2 text-sm text-gray-700">
+                        <p class="text-gray-600 mb-5">Searchable database of all components with production date tracking, customer/project tagging, and load sequencing for delivery optimization.</p>
+                        <ul class="space-y-2.5 text-sm text-gray-700">
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Searchable component database</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Production date tracking</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Customer/project tagging</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Load sequencing tools</span>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Yard Optimization -->
-                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition" data-tilt="true">
-                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-xl flex items-center justify-center text-3xl mb-4">📐</div>
-                        <h3 class="text-2xl font-bold mb-3">Yard Optimization</h3>
-                        <p class="text-gray-600 mb-4">Space utilization reports, traffic flow analysis, staging area management, aged inventory identification, and seasonal storage planning.</p>
-                        <ul class="space-y-2 text-sm text-gray-700">
-                            <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Space utilization reports</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Traffic flow analysis</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Staging area management</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Aged inventory identification</span>
-                            </li>
-                        </ul>
-                    </div>
-
                     <!-- Financial Synchronization -->
-                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition" data-tilt="true">
-                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-xl flex items-center justify-center text-3xl mb-4">💰</div>
+                    <div class="modern-card p-8">
+                        <div class="feature-icon-modern bg-gradient-to-br from-amber-100 to-amber-50 text-3xl mb-6">
+                            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
                         <h3 class="text-2xl font-bold mb-3">Financial Synchronization</h3>
-                        <p class="text-gray-600 mb-4">Real-time COGS updates, inventory valuation accuracy, GL reconciliation automation, and variance investigation tools integrated.</p>
-                        <ul class="space-y-2 text-sm text-gray-700">
+                        <p class="text-gray-600 mb-5">Real-time COGS updates, inventory valuation accuracy, GL reconciliation automation, and variance investigation tools integrated with automated production data.</p>
+                        <ul class="space-y-2.5 text-sm text-gray-700">
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Real-time COGS updates</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Inventory valuation accuracy</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>GL reconciliation automation</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span>Variance investigation tools</span>
                             </li>
                         </ul>
@@ -431,141 +422,132 @@
             </div>
         </section>
 
-        <!-- Complete ERP Integration -->
-        <section class="py-20 bg-gradient-to-br from-yellow-50 to-orange-50">
+        <!-- Video Section -->
+        <section class="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Complete ERP Integration</h2>
-                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">CastLogic Stock doesn't just track inventory—it connects yard management to every part of your operation.</p>
+                <div class="max-w-4xl mx-auto text-center mb-12 reveal">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">See It In Action</h2>
+                    <p class="text-xl text-slate-300 leading-relaxed">See automated inventory tracking from production line to yard to delivery truck -- every element counted, identified, and located without manual intervention.</p>
+                </div>
+                <div class="max-w-4xl mx-auto reveal-scale">
+                    <div class="video-placeholder aspect-video" data-video="">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <p class="text-white/60 text-lg font-medium mt-24">Product demo coming soon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complete ERP Integration -->
+        <section class="py-24 bg-gradient-to-br from-amber-50 to-orange-50 bg-dots">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Complete ERP Integration</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">CastLogic Stock doesn't just track inventory -- it connects yard management, automated production data, and every part of your operation.</p>
                 </div>
 
                 <div class="max-w-6xl mx-auto space-y-6">
                     <!-- Integration 1: Flow -->
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="modern-card p-6 reveal">
                         <div class="flex items-center mb-4">
-                            <span class="bg-yellow-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">1</span>
-                            <h3 class="text-xl font-bold">Flow Integration</h3>
+                            <span class="bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">1</span>
+                            <h3 class="text-xl font-bold">Production Flow Integration</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700">
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
-                                <span>Production completion auto-adds components to inventory</span>
+                                <span class="text-green-600">&#10003;</span>
+                                <span>Automated production counts from robotic cells update inventory instantly</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>QC pass/fail updates stock status and availability</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Component moves through yard tracked automatically</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Scrap and rework flow updates inventory in real-time</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Integration 2: Dispatch -->
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="modern-card p-6 reveal">
                         <div class="flex items-center mb-4">
-                            <span class="bg-yellow-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">2</span>
+                            <span class="bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">2</span>
                             <h3 class="text-xl font-bold">Dispatch Integration</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700">
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Delivery schedules populated from yard locations</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>BOL creation decrements inventory automatically</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>GPS coordinates flow to driver routing systems</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Load planning uses real-time yard availability</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Integration 3: Accounting -->
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="modern-card p-6 reveal">
                         <div class="flex items-center mb-4">
-                            <span class="bg-yellow-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">3</span>
+                            <span class="bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">3</span>
                             <h3 class="text-xl font-bold">Accounting Integration</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700">
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Inventory movements post to COGS in real-time</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Finished goods valuation calculated automatically</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Perpetual GL reconciliation with zero variance</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Month-end close simplified with accurate WIP data</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Integration 4: Schedule -->
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="modern-card p-6 reveal">
                         <div class="flex items-center mb-4">
-                            <span class="bg-yellow-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">4</span>
+                            <span class="bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">4</span>
                             <h3 class="text-xl font-bold">Schedule Integration</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700">
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Available inventory visible during production scheduling</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Production plans consider yard space constraints</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Completion milestones trigger inventory updates</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
+                                <span class="text-green-600">&#10003;</span>
                                 <span>Material availability constrains production planning</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Integration 5: Engage -->
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <span class="bg-yellow-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">5</span>
-                            <h3 class="text-xl font-bold">Engage Integration</h3>
-                        </div>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
-                                <span>Component specifications drive yard location assignments</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
-                                <span>Weight and dimension data for handling equipment</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
-                                <span>Custom component identification from engineering</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-green-600">✓</span>
-                                <span>BOM components tracked through inventory flow</span>
                             </li>
                         </ul>
                     </div>
@@ -574,67 +556,69 @@
         </section>
 
         <!-- Industry-Specific Features -->
-        <section class="py-20">
+        <section class="py-24 bg-grid">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-extrabold mb-4">Built for Precast Component Storage</h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Yard management challenges unique to large, heavy precast components require specialized solutions.</p>
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Built for Precast Component Storage</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Yard management challenges unique to large, heavy precast components require specialized solutions.</p>
                 </div>
 
                 <div class="max-w-4xl mx-auto space-y-6">
-                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
-                        <svg class="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="modern-card p-6 flex items-start gap-4 reveal">
+                        <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                         </svg>
                         <div>
-                            <strong>Component Aging Tracking:</strong> Production date on every piece, identify aged inventory for priority shipping, FIFO enforcement, and warranty expiration warnings.
+                            <strong class="text-lg">Component Aging Tracking:</strong> Production date on every piece, identify aged inventory for priority shipping, FIFO enforcement, and warranty expiration warnings.
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
-                        <svg class="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="modern-card p-6 flex items-start gap-4 reveal">
+                        <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                         </svg>
                         <div>
-                            <strong>Weight & Dimension Management:</strong> Accurate component weights for crane planning, dimensional data for truck loading optimization, and yard space calculations.
+                            <strong class="text-lg">Weight & Dimension Management:</strong> Accurate component weights for crane planning, dimensional data for truck loading optimization, and yard space calculations.
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
-                        <svg class="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="modern-card p-6 flex items-start gap-4 reveal">
+                        <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                         </svg>
                         <div>
-                            <strong>Customer Segregation:</strong> Components tagged by project and customer, prevent cross-project shipment errors, and customer-specific quality holds management.
+                            <strong class="text-lg">Customer Segregation:</strong> Components tagged by project and customer, prevent cross-project shipment errors, and customer-specific quality holds management.
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
-                        <svg class="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="modern-card p-6 flex items-start gap-4 reveal">
+                        <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                         </svg>
                         <div>
-                            <strong>Weather Protection Management:</strong> Track covered vs. exposed storage locations, tarping requirements by component type, and freeze-thaw cycle monitoring.
+                            <strong class="text-lg">Weather Protection Management:</strong> Track covered vs. exposed storage locations, tarping requirements by component type, and freeze-thaw cycle monitoring.
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-3 bg-white p-6 rounded-xl shadow">
-                        <svg class="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="modern-card p-6 flex items-start gap-4 reveal">
+                        <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                         </svg>
                         <div>
-                            <strong>Load Staging Optimization:</strong> Pre-stage components for upcoming deliveries, minimize crane moves and handling time, and optimize truck loading sequence.
+                            <strong class="text-lg">Load Staging Optimization:</strong> Pre-stage components for upcoming deliveries, minimize crane moves and handling time, and optimize truck loading sequence.
                         </div>
                     </div>
 
                     <!-- EPD Material Traceability Callout -->
-                    <div class="mt-8 bg-gradient-to-r from-green-600 to-emerald-600 rounded-xl p-6 text-white">
+                    <div class="mt-8 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-8 text-white reveal-scale">
                         <div class="flex items-start gap-4">
-                            <div class="text-3xl">🌱</div>
+                            <div>
+                                <svg class="w-8 h-8 text-green-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
                             <div>
                                 <h3 class="text-xl font-bold mb-2">EPD-Ready Material Traceability</h3>
-                                <p class="text-green-100 mb-3">Track mix designs, supplier certifications, and material batch data needed for Environmental Product Declaration documentation and LEED project requirements.</p>
-                                <a href="certifications.html" class="inline-block bg-white text-green-700 px-4 py-2 rounded-lg font-semibold hover:bg-green-50 transition text-sm">Learn more about EPD support</a>
+                                <p class="text-green-100 mb-4">Track mix designs, supplier certifications, and material batch data needed for Environmental Product Declaration documentation and LEED project requirements.</p>
+                                <a href="certifications.html" class="inline-block bg-white text-green-700 px-5 py-2.5 rounded-lg font-semibold hover:bg-green-50 transition text-sm">Learn more about EPD support</a>
                             </div>
                         </div>
                     </div>
@@ -642,32 +626,14 @@
             </div>
         </section>
 
-        <!-- Machine Vision Integration -->
-        <div class="container mx-auto px-6 mb-16">
-            <div class="max-w-4xl mx-auto gs-fade-up">
-                <div class="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-600 rounded-r-xl p-6 md:p-8">
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Advanced: Vision-Verified Inventory</h3>
-                            <p class="text-gray-700 mb-3">Level up with computer vision that can verify piece counts, identify products by mark number, and detect damage during yard inventory — all feeding into CastLogic Stock automatically.</p>
-                            <a href="verify.html" class="text-blue-600 font-semibold hover:text-blue-800 transition inline-flex items-center gap-1">
-                                Learn about machine vision integration <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- CTA Section -->
-        <section class="bg-gradient-to-r from-yellow-600 to-yellow-800 text-white py-20">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="gs-fade-up text-4xl md:text-5xl font-extrabold mb-6">Transform Your Yard Management</h2>
-                <p class="text-xl mb-8 max-w-3xl mx-auto text-yellow-100">See how CastLogic Stock eliminates lost components and financial variance with GPS tracking and perpetual inventory integration.</p>
-                <a href="contact.html" class="inline-block bg-white text-yellow-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-50 transition">Schedule Your Demo →</a>
+        <section class="relative bg-gradient-to-br from-amber-600 via-yellow-700 to-orange-800 text-white py-24 overflow-hidden">
+            <div class="floating-orb w-72 h-72 bg-yellow-300 top-[-10%] right-[-5%]"></div>
+            <div class="floating-orb w-56 h-56 bg-orange-400 bottom-[-15%] left-[-8%]"></div>
+            <div class="container mx-auto px-6 text-center relative z-10 reveal">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Transform Your Yard Management</h2>
+                <p class="text-xl mb-10 max-w-3xl mx-auto text-amber-100 leading-relaxed">See how CastLogic Stock eliminates lost components and financial variance with automated production counts, GPS tracking, and perpetual inventory integration.</p>
+                <a href="contact.html" class="inline-block bg-white text-amber-700 px-10 py-4 rounded-xl font-bold text-lg hover:bg-amber-50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5">Schedule Your Demo</a>
             </div>
         </section>
     </main>
@@ -683,7 +649,7 @@
                         <p class="font-semibold text-gray-900">IntraSync Industrial</p>
                         <p>1401 21st Street Suite R</p>
                         <p>Sacramento, CA 95811</p>
-                        <p class="mt-2"><a href="tel:+17076401380" class="hover:text-blue-600">(707) 640-1380</a></p>
+                        <p class="mt-2"><a href="tel:+17075643666" class="hover:text-blue-600">(707) 564-3666</a></p>
                     </address>
                     <div class="flex gap-4">
                         <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
@@ -697,7 +663,6 @@
                     <h3 class="font-bold text-gray-900 mb-4">Product</h3>
                     <ul class="space-y-2">
                         <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
-                        <li><a href="robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
                         <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
                         <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
                         <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
@@ -775,7 +740,7 @@
 
             <!-- Bottom Bar -->
             <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2025</span> IntraSync Industrial. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; 2025 IntraSync Industrial. All rights reserved.</p>
                 <div class="flex gap-6 text-sm mt-4 md:mt-0">
                     <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
@@ -783,5 +748,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/modern.js"></script>
 </body>
 </html>
