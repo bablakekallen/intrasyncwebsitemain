@@ -48,7 +48,7 @@ Based on the GEO assessment feedback, I've implemented critical fixes to improve
   "@type": "Organization",
   "name": "IntraSync Industrial",
   "alternateName": "IntraSync",
-  "logo": "https://intrasyncindustrial.com/Intrasync Industrial Logo 1.19.24.jpg",
+  "logo": "https://intrasyncindustrial.com/intrasync-logo.jpg",
   "sameAs": ["LinkedIn URL"]
 }
 ```
