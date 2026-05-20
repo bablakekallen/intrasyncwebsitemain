@@ -1,4 +1,10 @@
 ---
 deployment:
   tasks:
+    - /bin/rm -f /home/d2v9su284tj5/public_html/*.zip
+    - /bin/rm -f /home/d2v9su284tj5/public_html/CPANEL-UPLOAD-INSTRUCTIONS.txt
+    - /bin/rm -f /home/d2v9su284tj5/public_html/BLOG-FILES-UPLOAD-FIXED.txt
+    - /bin/rm -f /home/d2v9su284tj5/public_html/BLOG-UPLOAD-INSTRUCTIONS.txt
+    - /bin/rm -f /home/d2v9su284tj5/public_html/blog/flexible-payroll-manufacturing.html
+    - /bin/rm -f /home/d2v9su284tj5/public_html/blog/prevailing-wage-compliance.html
     - /bin/cp -R ./ /home/d2v9su284tj5/public_html/
