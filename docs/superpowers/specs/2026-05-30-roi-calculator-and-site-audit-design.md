@@ -145,10 +145,10 @@ All reduction percentages are scaled by a **current-state headroom factor**:
 
 ### A.9 Open items needing IntraSync validation
 
-1. Confirm 151–200 implementation fee (assumed $25k).
+1. Confirm 151–200 implementation fee (assumed $25k — user gave 100–150=$25k, 200+=$35k).
 2. Validate precast baseline rates in A.4 (scrap %, data-entry hrs/emp, rework %).
 3. Confirm default loaded labor rate ($35) and finance-staff ratio.
-4. Confirm whether subscription differs by segment (Architectural/Structural/Utility/Pipe) — current model treats all the same; user quoted "structural or utility."
+4. **RESOLVED (2026-05-30):** no segment difference in subscription or implementation fees.
 
 ---
 
@@ -192,16 +192,27 @@ All reduction percentages are scaled by a **current-state headroom factor**:
 - Add `width`/`height` + `loading="lazy"` to images on key pages; right-size logos.
 - **Follow-up (separate task):** replace the Tailwind Play CDN (`cdn.tailwindcss.com`, on all 125 pages, render-blocking) with a built, purged CSS file. Flagged separately because it needs a build step, not a static edit.
 
-### B.6 Factual decisions needed from user before content edits
+### B.6 Factual decisions — CONFIRMED facts + remaining open items
 
-1. Founding year: 2020 or 2023?
-2. Real support hours (memo'd standard: 6a–6p PST, 1-hr critical SLA) — replace "24/7"?
-3. Real typical onboarding time (FAQ says 8–12 weeks) — fix the "weeks not months" hero?
-4. Modules: à la carte or all-included?
-5. SOC 2 language — drop entirely vs. "SOC 2-aligned controls" (no audit held)?
-6. Lead-time stat: 20% or 10%?
-7. Any nameable customer proof / logos / testimonials, or reframe to "Built for…"?
-8. Any real review profiles (G2/Capterra/Crunchbase) for `sameAs`?
+**CONFIRMED by user (2026-05-30):**
+
+1. **Founding year: 2024.** Both current schema values are wrong — `index.html` says 2020, `about.html` says 2023. Both must change to 2024 (and any "founded"/copyright/history copy aligned).
+2. **Support hours: 6am–6pm PST.** Replace every "24/7" claim (faq.html lines ~73, 481, 580) with 6am–6pm PST.
+3. **Onboarding: 4–6 months.** Contradicts BOTH the hero ("setup in weeks, not months") AND the FAQ ("8–12 weeks"). Fix both to 4–6 months.
+4. **Modules: à la carte by module group** — sold as packages, not all-included. Module groups:
+   - **Production** (Estimating, Production, Yard, Dispatch, QC)
+   - **Accounting**
+   - **BatchLogic**
+   - **MaterialsLogic**
+   "Purchase individual modules" framing is CORRECT; the FAQ "pricing includes all modules" line is the one to fix.
+5. **Pricing: no difference between segments** (Architectural/Structural/Utility/Pipe) for subscription or implementation. Resolves A.9 item 4.
+
+**STILL OPEN (needed before B.2/B.3 content edits):**
+
+6. SOC 2 language — drop entirely vs. "SOC 2-aligned controls" (no audit held)?
+7. Lead-time stat: 20% or 10%?
+8. Any nameable customer proof / logos / testimonials, or reframe to "Built for…"?
+9. Any real review profiles (G2/Capterra/Crunchbase) for `sameAs`?
 
 ---
 
