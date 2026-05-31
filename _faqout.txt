@@ -1,0 +1,15 @@
+SCHEMA COUNT: 11
+VISIBLE COUNT: 23
+=== MISSING FROM SCHEMA ===
+ - Who is CastLogic designed for?
+ - What makes CastLogic different from other ERP systems?
+ - Is IntraSync Industrial certified or accredited?
+ - What training is provided?
+ - Are there any additional fees?
+ - What are the system requirements?
+ - How secure is my data?
+ - Can I export my data if I need to?
+ - What is machine vision and how does it work in precast manufacturing?
+ - Do I need machine vision to use CastLogic?
+ - What equipment do I need for machine vision QC?
+ - How does machine vision integrate with quality control workflows?
