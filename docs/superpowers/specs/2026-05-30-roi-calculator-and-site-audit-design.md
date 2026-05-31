@@ -51,6 +51,8 @@ Fixed monthly subscription, **piecewise-linear interpolation** between the real 
 
 | Employees | Monthly | Annual | Implied $/emp/mo |
 |---|---|---|---|
+| ≤10 | $1,950 | $23,400 | — (floor) |
+| 20 | $2,250 | $27,000 | $113 |
 | 50 | $2,500 | $30,000 | $50 |
 | 100 | $5,000 | $60,000 | $50 |
 | 150 | $6,000 | $72,000 | $40 |
@@ -58,7 +60,9 @@ Fixed monthly subscription, **piecewise-linear interpolation** between the real 
 | 300 | $7,850 | $94,200 | $26 |
 
 Interpolation rules:
-- `≤50`: floor at $2,500/mo
+- `≤10`: floor at $1,950/mo
+- `10–20`: +$30/employee/mo (→ $2,250 @20)
+- `20–50`: +$8.33/employee/mo (→ $2,500 @50)
 - `50–100`: +$50/employee/mo
 - `100–150`: +$20/employee/mo
 - `150–200`: +$17/employee/mo
@@ -84,9 +88,12 @@ All reduction percentages are scaled by a **current-state headroom factor**:
 
 | Current state | Headroom factor |
 |---|---|
-| Mostly paper / Excel | 1.0 |
-| Some standalone software | ~0.6 |
-| Fairly integrated | ~0.3 |
+| Mostly paper / Excel **(default)** | 1.0 |
+| Old/legacy system, clunky or error-prone (e.g. Titan) | 0.85 |
+| Some standalone software | 0.6 |
+| Fairly integrated | 0.3 |
+
+**Default = paper/Excel (1.0):** per user, most prospects run on paper/Excel or an old legacy system (Titan) that errors frequently — so paper/Excel is the *representative* default, not an inflationary one. The legacy/Titan option is high-headroom because a buggy legacy tool delivers little real integration benefit.
 
 > **CALIBRATION NOTE:** the default baseline rates below (data-entry hrs/employee, scrap % of revenue, etc.) are defensible industry estimates but precast-specific figures should be **validated by IntraSync before launch**. They are exposed as named parameters so they are easy to tune.
 
@@ -102,7 +109,11 @@ All reduction percentages are scaled by a **current-state headroom factor**:
 | Line | Formula | Default baseline (paper state) |
 |---|---|---|
 | Duplicate data entry | `hrs/emp/wk × employees × 52 × reduction% × headroom × loaded rate` | 2.5 hrs/emp/wk; reduction 70%; rate $35 |
+| Drafting & drawing rework | `draft hrs/wk × 52 × reduction% × headroom × draft rate` | draft hrs = max(10, employees×0.5) — near-fixed office burden, hits small plants hardest; reduction 40%; rate $50 (DesignLogic) |
+| Production scheduling | `sched hrs/wk × 52 × reduction% × headroom × planner rate` | sched hrs = max(12, employees×0.8) → ~40 hrs/wk @50 emp, crashed to ≤5; reduction 85%; rate $45 |
 | Month-end close | `finance staff × close-days × 8h × 12 × reduction% × headroom × rate` | finance staff = max(1, employees×0.04); reduction 75% |
+
+**Added 2026-05-30 per user field observations:** drafting/drawing rework (a 15–20-person shop can spend 10+ hrs/wk redrawing) and production scheduling (40 hrs/wk → ≤5 for a 50-person plant). Both are near-fixed office burdens that lift small-plant ROI. With these, default 50-emp plant ≈ 12.6×, paper 50-emp ≈ 20.6×, paper 18-emp ≈ 8.2×.
 | Error/rework labor | `revenue × rework-labor% × reduction% × headroom` | rework labor 1% of revenue; reduction 70% |
 
 `Total efficiency value = hard cash + capacity`
