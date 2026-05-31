@@ -8,26 +8,26 @@
     <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <title>ROI Calculator - IntraSync Industrial</title>
-    <meta name="description" content="Calculate your potential ROI with CastLogic ERP. Our data shows integrated ERP drives 8-12% revenue increase plus significant cost savings.">
+    <meta name="description" content="Estimate your potential return with CastLogic ERP. Enter your plant size and revenue to see input-driven efficiency savings and a transparent ROI multiple.">
     <!-- Canonical URL -->
     <link rel="canonical" href="https://intrasyncindustrial.com/roi-calculator.html">
-    
+
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://intrasyncindustrial.com/roi-calculator.html">
     <meta property="og:title" content="ROI Calculator - IntraSync Industrial">
-    <meta property="og:description" content="Calculate your potential ROI with CastLogic ERP. Our data shows integrated ERP drives 8-12% revenue increase plus significant cost savings.">
+    <meta property="og:description" content="Estimate your potential return with CastLogic ERP. Input-driven efficiency savings and a transparent ROI multiple for precast plants.">
     <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
     <meta property="og:site_name" content="IntraSync Industrial">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ROI Calculator - IntraSync Industrial">
-    <meta name="twitter:description" content="Calculate your potential ROI with CastLogic ERP. Our data shows integrated ERP drives 8-12% revenue increase plus significant cost savings.">
+    <meta name="twitter:description" content="Estimate your potential return with CastLogic ERP. Input-driven efficiency savings and a transparent ROI multiple for precast plants.">
     <meta name="twitter:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
 
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="site.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -55,6 +55,7 @@ o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd002113
 document.head.appendChild(o)}initApollo();</script>
 </head>
 <body class="bg-white text-gray-800">
+    <a href="#main" class="skip-link">Skip to content</a>
     <!-- Sticky Demo CTA Button -->
     <a href="contact.html" class="cta-button-fixed bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
         Schedule Demo
@@ -86,28 +87,37 @@ document.head.appendChild(o)}initApollo();</script>
         </div>
     </header>
 
-    <main class="py-16">
+    <main id="main" class="py-16">
         <div class="container mx-auto px-6 max-w-7xl">
             <!-- Header -->
             <div class="text-center mb-12">
                 <div class="inline-block bg-gradient-to-r from-green-100 to-emerald-100 px-6 py-2 rounded-full mb-4">
-                    <span class="text-green-800 font-bold">8-12% Revenue Increase + Significant Cost Savings</span>
+                    <span class="text-green-800 font-bold">See your efficiency return — built from your own numbers</span>
                 </div>
                 <h1 class="gs-fade-up text-4xl md:text-5xl font-extrabold mb-4">ROI Calculator</h1>
                 <p class="gs-fade-up text-xl text-gray-600 max-w-3xl mx-auto" data-delay="0.1">
-                    Industry research shows integrated ERP systems drive measurable revenue growth through improved capacity utilization, faster quoting, better inventory management, and enhanced customer satisfaction. Calculate your potential return below.
+                    Enter your plant size and revenue to see a transparent, input-driven estimate of the efficiency savings CastLogic can unlock. Every figure below is calculated from your inputs and the conservative, adjustable assumptions shown beside each line.
                 </p>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12">
                 <!-- Input Form -->
-                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
-                    <h2 class="text-2xl font-bold mb-6 text-gray-900">Your Current Operations</h2>
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 self-start lg:sticky lg:top-24">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-900">Tell us about your plant</h2>
 
                     <form id="roiForm" class="space-y-6">
-                        <!-- Company Size -->
+                        <!-- Number of Employees -->
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Annual Revenue</label>
+                            <label for="employees" class="block text-sm font-semibold text-gray-700 mb-2">Total Employees</label>
+                            <input type="number" id="employees" value="50" min="1" step="1"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="50">
+                            <p class="text-xs text-gray-500 mt-1">Total headcount across all departments</p>
+                        </div>
+
+                        <!-- Annual Revenue -->
+                        <div>
+                            <label for="revenue" class="block text-sm font-semibold text-gray-700 mb-2">Annual Revenue</label>
                             <div class="relative">
                                 <span class="absolute left-4 top-3 text-gray-500">$</span>
                                 <input type="number" id="revenue" value="15000000" min="0" step="100000"
@@ -117,249 +127,261 @@ document.head.appendChild(o)}initApollo();</script>
                             <p class="text-xs text-gray-500 mt-1">Your total annual revenue</p>
                         </div>
 
-                        <!-- Number of Employees -->
+                        <!-- Current State -->
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Total Employees</label>
-                            <input type="number" id="employees" value="50" min="1" step="1"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                placeholder="50">
-                            <p class="text-xs text-gray-500 mt-1">Total number of employees across all departments</p>
+                            <label for="currentState" class="block text-sm font-semibold text-gray-700 mb-2">How do you run the plant today?</label>
+                            <select id="currentState"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white">
+                                <option value="1.0" selected>Mostly paper &amp; spreadsheets</option>
+                                <option value="0.85">An old/legacy system that's clunky or errors often (e.g. Titan)</option>
+                                <option value="0.6">A few standalone software tools</option>
+                                <option value="0.3">Fairly integrated already</option>
+                            </select>
+                            <p class="text-xs text-gray-500 mt-1">The more manual or error-prone your tools today, the more there is to gain</p>
                         </div>
 
-                        <!-- Average Hourly Labor Cost -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Average Hourly Labor Cost</label>
-                            <div class="relative">
-                                <span class="absolute left-4 top-3 text-gray-500">$</span>
-                                <input type="number" id="laborCost" value="35" min="0" step="1"
-                                    class="w-full pl-8 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                    placeholder="35">
+                        <!-- Refine toggle -->
+                        <div class="pt-2">
+                            <button type="button" id="refineToggle" aria-expanded="false" aria-controls="refinePanel"
+                                class="text-sm font-semibold text-blue-700 hover:text-blue-900 transition flex items-center gap-2">
+                                <span id="refineToggleIcon">+</span> Refine with your operational details (optional)
+                            </button>
+                        </div>
+
+                        <!-- Refine panel (hidden by default) -->
+                        <div id="refinePanel" class="space-y-6 hidden border-t border-gray-100 pt-6">
+                            <p class="text-xs text-gray-500">Leave any field blank to use a conservative benchmark for your plant size and current state.</p>
+
+                            <div>
+                                <label for="laborCost" class="block text-sm font-semibold text-gray-700 mb-2">Average Loaded Labor Cost ($/hr)</label>
+                                <div class="relative">
+                                    <span class="absolute left-4 top-3 text-gray-500">$</span>
+                                    <input type="number" id="laborCost" min="0" step="1"
+                                        class="w-full pl-8 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                        placeholder="35 (benchmark)">
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">Wages + benefits + overhead</p>
                             </div>
-                            <p class="text-xs text-gray-500 mt-1">Including wages, benefits, and overhead</p>
+
+                            <div>
+                                <label for="dataEntryHours" class="block text-sm font-semibold text-gray-700 mb-2">Duplicate Data-Entry Hours per Employee per Week</label>
+                                <input type="number" id="dataEntryHours" min="0" step="0.5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="2.5 (benchmark)">
+                                <p class="text-xs text-gray-500 mt-1">Hours spent re-keying the same data across systems/paper</p>
+                            </div>
+
+                            <div>
+                                <label for="draftHours" class="block text-sm font-semibold text-gray-700 mb-2">Drafting / Drawing-Edit Hours per Week (whole shop)</label>
+                                <input type="number" id="draftHours" min="0" step="1"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="benchmark from plant size">
+                                <p class="text-xs text-gray-500 mt-1">Office time drawing, revising &amp; re-issuing shop drawings (DesignLogic territory)</p>
+                            </div>
+
+                            <div>
+                                <label for="schedHours" class="block text-sm font-semibold text-gray-700 mb-2">Production Scheduling Hours per Week (whole shop)</label>
+                                <input type="number" id="schedHours" min="0" step="1"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="benchmark from plant size">
+                                <p class="text-xs text-gray-500 mt-1">Building &amp; reshuffling the production/pour schedule by hand</p>
+                            </div>
+
+                            <div>
+                                <label for="financeStaff" class="block text-sm font-semibold text-gray-700 mb-2">Finance/Accounting Staff</label>
+                                <input type="number" id="financeStaff" min="0" step="1"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="benchmark from headcount">
+                                <p class="text-xs text-gray-500 mt-1">People involved in monthly close</p>
+                            </div>
+
+                            <div>
+                                <label for="closeTime" class="block text-sm font-semibold text-gray-700 mb-2">Days to Close Books Each Month</label>
+                                <input type="number" id="closeTime" min="0" step="0.5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="7 (benchmark)">
+                            </div>
+
+                            <div>
+                                <label for="scrapRate" class="block text-sm font-semibold text-gray-700 mb-2">Scrap / Material Waste (% of revenue)</label>
+                                <input type="number" id="scrapRate" min="0" max="100" step="0.25"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="2 (benchmark)">
+                                <p class="text-xs text-gray-500 mt-1">Rejected pours, remakes, wasted material</p>
+                            </div>
+
+                            <div>
+                                <label for="systems" class="block text-sm font-semibold text-gray-700 mb-2">Number of Separate Software Systems</label>
+                                <input type="number" id="systems" min="0" step="1"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="benchmark estimate">
+                            </div>
+
+                            <div>
+                                <label for="softwareSpend" class="block text-sm font-semibold text-gray-700 mb-2">Current Monthly Software Spend (systems you'd replace)</label>
+                                <div class="relative">
+                                    <span class="absolute left-4 top-3 text-gray-500">$</span>
+                                    <input type="number" id="softwareSpend" min="0" step="50"
+                                        class="w-full pl-8 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                        placeholder="benchmark estimate">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="quoteTime" class="block text-sm font-semibold text-gray-700 mb-2">Average Quote Response Time (days)</label>
+                                <input type="number" id="quoteTime" min="0" step="0.5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="5 (benchmark)">
+                                <p class="text-xs text-gray-500 mt-1">Used only for the illustrative revenue upside</p>
+                            </div>
+
+                            <div>
+                                <label for="onTimeRate" class="block text-sm font-semibold text-gray-700 mb-2">Current On-Time Delivery Rate (%)</label>
+                                <input type="number" id="onTimeRate" min="0" max="100" step="1"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="75 (benchmark)">
+                                <p class="text-xs text-gray-500 mt-1">Used only for the illustrative revenue upside</p>
+                            </div>
                         </div>
 
-                        <!-- Orders per Month -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Orders/Jobs per Month</label>
-                            <input type="number" id="orders" value="100" min="1" step="1"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                placeholder="100">
-                            <p class="text-xs text-gray-500 mt-1">Average number of customer orders or jobs per month</p>
-                        </div>
-
-                        <!-- Manual Data Entry Hours -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Manual Data Entry Hours per Week</label>
-                            <input type="number" id="dataEntryHours" value="80" min="0" step="5"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                placeholder="80">
-                            <p class="text-xs text-gray-500 mt-1">Total hours spent on duplicate data entry across systems</p>
-                        </div>
-
-                        <!-- Month-End Close Time -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Days to Close Books Each Month</label>
-                            <input type="number" id="closeTime" value="7" min="1" step="0.5"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                placeholder="7">
-                            <p class="text-xs text-gray-500 mt-1">Time spent reconciling and closing monthly financials</p>
-                        </div>
-
-                        <!-- Average Production Lead Time -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Average Production Lead Time (Days)</label>
-                            <input type="number" id="leadTime" value="30" min="1" step="1"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                placeholder="30">
-                            <p class="text-xs text-gray-500 mt-1">Average days from order to delivery</p>
-                        </div>
-
-                        <!-- Quote Response Time -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Average Quote Response Time (Days)</label>
-                            <input type="number" id="quoteTime" value="5" min="0.5" step="0.5"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                placeholder="5">
-                            <p class="text-xs text-gray-500 mt-1">Time to respond to customer quote requests</p>
-                        </div>
-
-                        <!-- Number of Software Systems -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Number of Separate Software Systems</label>
-                            <input type="number" id="systems" value="5" min="1" step="1"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                placeholder="5">
-                            <p class="text-xs text-gray-500 mt-1">How many different software tools you currently use</p>
-                        </div>
-
-                        <!-- Error Rate -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Order Data Error Rate (%)</label>
-                            <input type="number" id="errorRate" value="5" min="0" max="100" step="0.5"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                placeholder="5">
-                            <p class="text-xs text-gray-500 mt-1">Percentage of orders with data errors requiring rework</p>
-                        </div>
-
-                        <!-- On-Time Delivery Rate -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">Current On-Time Delivery Rate (%)</label>
-                            <input type="number" id="onTimeRate" value="75" min="0" max="100" step="1"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                placeholder="75">
-                            <p class="text-xs text-gray-500 mt-1">Percentage of orders delivered on or before promised date</p>
-                        </div>
-
-                        <button type="button" onclick="calculateROI()"
-                            class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-lg font-bold text-lg hover:shadow-xl transition">
-                            Calculate My ROI
-                        </button>
+                        <p class="text-xs text-gray-500 italic pt-2">Results update automatically as you type.</p>
                     </form>
                 </div>
 
                 <!-- Results Panel -->
-                <div class="space-y-6">
-                    <!-- Revenue Impact - PRIMARY METRIC -->
+                <div class="space-y-6" id="resultsPanel" aria-live="polite">
+                    <!-- HERO: ROI Multiple -->
                     <div class="bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl shadow-2xl p-8 text-white">
                         <div class="flex items-center justify-between mb-4">
-                            <h2 class="text-2xl font-bold">Revenue Impact</h2>
-                            <div class="stat-badge bg-white/20 px-4 py-2 rounded-full text-sm font-bold">Year 1</div>
+                            <h2 class="text-2xl font-bold">Your Efficiency Return</h2>
+                            <div class="stat-badge bg-white/20 px-4 py-2 rounded-full text-sm font-bold">Steady state</div>
                         </div>
 
                         <div class="mb-6">
-                            <div class="text-sm opacity-90 mb-1">Projected Revenue Increase</div>
-                            <div id="revenueIncrease" class="text-5xl font-extrabold">$0</div>
-                            <div class="flex items-center gap-2 mt-2">
-                                <div id="revenuePercent" class="text-2xl font-bold">8-12%</div>
-                                <div class="text-sm opacity-90">average growth</div>
-                            </div>
+                            <div class="text-sm opacity-90 mb-1">Annual return for every $1 invested</div>
+                            <div id="roiMultiple" class="text-6xl font-extrabold">—</div>
+                            <div class="text-sm opacity-90 mt-2">based on hard efficiency savings ÷ your annual subscription</div>
                         </div>
 
                         <div class="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-white/20">
                             <div>
-                                <div class="text-xs opacity-75">Current Revenue</div>
-                                <div id="currentRevenue" class="text-xl font-bold">$0</div>
+                                <div class="text-xs opacity-75">Total annual efficiency value</div>
+                                <div id="totalEfficiency" class="text-xl font-bold">$0</div>
                             </div>
                             <div>
-                                <div class="text-xs opacity-75">Projected Revenue</div>
-                                <div id="newRevenue" class="text-xl font-bold">$0</div>
+                                <div class="text-xs opacity-75">Estimated annual investment</div>
+                                <div id="annualInvestment" class="text-xl font-bold">$0</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Revenue Growth Drivers -->
+                    <!-- Bucket 1: Hard cash -->
                     <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-200">
-                        <h3 class="text-lg font-bold mb-4 text-gray-900">Revenue Growth Breakdown</h3>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-lg font-bold text-gray-900">💵 Hard-cash savings</h3>
+                            <div id="hardCashTotal" class="text-lg font-extrabold text-green-600">$0</div>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4">Dollars you stop spending — real cash out the door.</p>
                         <div class="space-y-3">
-                            <div class="flex justify-between items-center">
-                                <div class="text-sm text-gray-700">Increased Production Capacity</div>
-                                <div class="flex items-center gap-2">
-                                    <div id="capacityRevenue" class="text-sm font-bold text-green-600">$0</div>
-                                    <div class="text-xs text-gray-500">(4.5%)</div>
+                            <div class="result-card bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm font-semibold text-gray-700">Software consolidation</div>
+                                    <div id="softwareSavings" class="text-base font-bold text-green-600">$0</div>
                                 </div>
+                                <div id="softwareNote" class="text-xs text-gray-500 mt-1"></div>
                             </div>
-                            <div class="text-xs text-gray-500 -mt-2 ml-4">Faster lead times = more throughput capacity</div>
-
-                            <div class="flex justify-between items-center pt-2">
-                                <div class="text-sm text-gray-700">Higher Quote Win Rate</div>
-                                <div class="flex items-center gap-2">
-                                    <div id="quoteRevenue" class="text-sm font-bold text-green-600">$0</div>
-                                    <div class="text-xs text-gray-500">(2.5%)</div>
+                            <div class="result-card bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm font-semibold text-gray-700">Material &amp; scrap waste</div>
+                                    <div id="scrapSavings" class="text-base font-bold text-green-600">$0</div>
                                 </div>
+                                <div id="scrapNote" class="text-xs text-gray-500 mt-1"></div>
                             </div>
-                            <div class="text-xs text-gray-500 -mt-2 ml-4">Faster, more accurate quotes = win more deals</div>
-
-                            <div class="flex justify-between items-center pt-2">
-                                <div class="text-sm text-gray-700">Better Inventory Management</div>
-                                <div class="flex items-center gap-2">
-                                    <div id="inventoryRevenue" class="text-sm font-bold text-green-600">$0</div>
-                                    <div class="text-xs text-gray-500">(1.5%)</div>
+                            <div class="result-card bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm font-semibold text-gray-700">Error &amp; rework reduction</div>
+                                    <div id="errorSavings" class="text-base font-bold text-green-600">$0</div>
                                 </div>
+                                <div id="errorNote" class="text-xs text-gray-500 mt-1"></div>
                             </div>
-                            <div class="text-xs text-gray-500 -mt-2 ml-4">Reduce stockouts and production delays</div>
-
-                            <div class="flex justify-between items-center pt-2">
-                                <div class="text-sm text-gray-700">Customer Retention & Satisfaction</div>
-                                <div class="flex items-center gap-2">
-                                    <div id="retentionRevenue" class="text-sm font-bold text-green-600">$0</div>
-                                    <div class="text-xs text-gray-500">(1.2%)</div>
-                                </div>
-                            </div>
-                            <div class="text-xs text-gray-500 -mt-2 ml-4">Fewer errors, on-time delivery = repeat business</div>
-
-                            <div class="flex justify-between items-center pt-2">
-                                <div class="text-sm text-gray-700">Sales Team Efficiency</div>
-                                <div class="flex items-center gap-2">
-                                    <div id="salesRevenue" class="text-sm font-bold text-green-600">$0</div>
-                                    <div class="text-xs text-gray-500">(0.5%)</div>
-                                </div>
-                            </div>
-                            <div class="text-xs text-gray-500 -mt-2 ml-4">Real-time data enables more effective selling</div>
                         </div>
                     </div>
 
-                    <!-- Cost Savings -->
+                    <!-- Bucket 2: Recovered capacity -->
                     <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl shadow-xl p-6 border-2 border-blue-200">
-                        <h3 class="text-lg font-bold mb-4 text-gray-900">Annual Cost Savings</h3>
-
-                        <div class="bg-white rounded-xl p-4 mb-4 shadow">
-                            <div class="text-sm text-gray-600 mb-1">Total Operational Savings</div>
-                            <div id="totalSavings" class="text-3xl font-extrabold text-blue-600">$0</div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-lg font-bold text-gray-900">⏱️ Recovered capacity</h3>
+                            <div id="capacityTotal" class="text-lg font-extrabold text-blue-600">$0</div>
                         </div>
-
+                        <p class="text-xs text-gray-500 mb-4">Freed labor &amp; time. Real value — converts to cash through growth or reassignment, not a refund.</p>
                         <div class="space-y-3">
                             <div class="result-card bg-white rounded-lg p-3 shadow-sm">
                                 <div class="flex justify-between items-center">
-                                    <div class="text-sm font-semibold text-gray-700">Manual Data Entry</div>
+                                    <div class="text-sm font-semibold text-gray-700">Duplicate data entry</div>
                                     <div id="dataEntrySavings" class="text-base font-bold text-blue-600">$0</div>
                                 </div>
-                                <div id="dataEntryHoursSaved" class="text-xs text-gray-500 mt-1"></div>
+                                <div id="dataEntryNote" class="text-xs text-gray-500 mt-1"></div>
                             </div>
-
                             <div class="result-card bg-white rounded-lg p-3 shadow-sm">
                                 <div class="flex justify-between items-center">
-                                    <div class="text-sm font-semibold text-gray-700">Month-End Close</div>
+                                    <div class="text-sm font-semibold text-gray-700">Drafting &amp; drawing rework</div>
+                                    <div id="draftSavings" class="text-base font-bold text-blue-600">$0</div>
+                                </div>
+                                <div id="draftNote" class="text-xs text-gray-500 mt-1"></div>
+                            </div>
+                            <div class="result-card bg-white rounded-lg p-3 shadow-sm">
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm font-semibold text-gray-700">Production scheduling</div>
+                                    <div id="schedSavings" class="text-base font-bold text-blue-600">$0</div>
+                                </div>
+                                <div id="schedNote" class="text-xs text-gray-500 mt-1"></div>
+                            </div>
+                            <div class="result-card bg-white rounded-lg p-3 shadow-sm">
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm font-semibold text-gray-700">Month-end close</div>
                                     <div id="closeSavings" class="text-base font-bold text-blue-600">$0</div>
                                 </div>
-                                <div id="closeDaysSaved" class="text-xs text-gray-500 mt-1"></div>
-                            </div>
-
-                            <div class="result-card bg-white rounded-lg p-3 shadow-sm">
-                                <div class="flex justify-between items-center">
-                                    <div class="text-sm font-semibold text-gray-700">Error Reduction</div>
-                                    <div id="errorSavings" class="text-base font-bold text-blue-600">$0</div>
-                                </div>
-                                <div id="errorReduction" class="text-xs text-gray-500 mt-1"></div>
-                            </div>
-
-                            <div class="result-card bg-white rounded-lg p-3 shadow-sm">
-                                <div class="flex justify-between items-center">
-                                    <div class="text-sm font-semibold text-gray-700">Software Consolidation</div>
-                                    <div id="softwareSavings" class="text-base font-bold text-blue-600">$0</div>
-                                </div>
-                                <div id="systemsEliminated" class="text-xs text-gray-500 mt-1"></div>
+                                <div id="closeNote" class="text-xs text-gray-500 mt-1"></div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Total Impact -->
+                    <!-- First year vs steady state -->
                     <div class="bg-gradient-to-br from-purple-600 to-indigo-600 rounded-2xl shadow-2xl p-6 text-white">
-                        <h3 class="text-lg font-bold mb-4">Total Financial Impact</h3>
-
+                        <h3 class="text-lg font-bold mb-4">First year vs. steady state</h3>
                         <div class="space-y-4">
                             <div class="flex justify-between items-center pb-4 border-b border-white/20">
-                                <div class="text-sm opacity-90">Year 1 Total Benefit</div>
-                                <div id="totalBenefit" class="text-2xl font-bold">$0</div>
+                                <div class="text-sm opacity-90">First-year return ($1 invested)<br><span class="text-xs opacity-75">includes one-time setup</span></div>
+                                <div id="firstYearMultiple" class="text-2xl font-bold">—</div>
                             </div>
-
                             <div class="flex justify-between items-center">
-                                <div class="text-sm opacity-90">3-Year Total Impact</div>
-                                <div id="threeYearTotal" class="text-2xl font-bold">$0</div>
+                                <div class="text-sm opacity-90">One-time implementation</div>
+                                <div id="implementationFee" class="text-2xl font-bold">$0</div>
                             </div>
+                            <div id="noImplNote" class="text-xs bg-white/15 rounded-lg p-3 hidden">
+                                ✅ Plants of 50 employees or fewer pay <strong>no implementation fee</strong> — your first-year return matches steady state from day one.
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="pt-4 border-t border-white/20">
-                                <div class="text-sm opacity-90 mb-1">Estimated Payback Period</div>
-                                <div id="paybackPeriod" class="text-xl font-bold">8-12 months</div>
+                    <!-- Revenue upside (illustrative, separate) -->
+                    <div class="bg-white rounded-2xl shadow-xl p-6 border border-dashed border-gray-300">
+                        <button type="button" id="upsideToggle" aria-expanded="true" aria-controls="upsidePanel"
+                            class="w-full flex justify-between items-center text-left">
+                            <h3 class="text-lg font-bold text-gray-900">📈 Potential revenue upside <span class="text-xs font-normal text-gray-500">(illustrative)</span></h3>
+                            <span id="upsideToggleIcon" class="text-gray-400">−</span>
+                        </button>
+                        <div id="upsidePanel">
+                            <p class="text-xs text-gray-500 mt-1 mb-4">A scenario, not a projection — depends on market demand and execution. <strong>Not included</strong> in the return figures above.</p>
+                            <div class="bg-amber-50 rounded-lg p-4 mb-4">
+                                <div class="text-sm text-gray-600 mb-1">Estimated additional revenue / year</div>
+                                <div id="upsideRange" class="text-2xl font-extrabold text-amber-700">—</div>
+                            </div>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between"><span class="text-gray-700">Higher quote win rate</span><span id="quoteUpside" class="font-bold text-amber-700">—</span></div>
+                                <div class="text-xs text-gray-500 -mt-1">Faster, more accurate quotes win more bids</div>
+                                <div class="flex justify-between pt-2"><span class="text-gray-700">Customer retention</span><span id="retentionUpside" class="font-bold text-amber-700">—</span></div>
+                                <div class="text-xs text-gray-500 -mt-1">On-time delivery + fewer errors = repeat business</div>
                             </div>
                         </div>
                     </div>
@@ -372,27 +394,58 @@ document.head.appendChild(o)}initApollo();</script>
                         <p class="text-xs text-gray-600 mt-3">See these results in action with a personalized demo</p>
                     </div>
 
+                    <!-- Adjust assumptions -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                        <button type="button" id="assumptionsToggle" aria-expanded="false" aria-controls="assumptionsPanel"
+                            class="w-full flex justify-between items-center text-left">
+                            <h3 class="font-bold text-gray-900">Adjust the assumptions</h3>
+                            <span id="assumptionsToggleIcon" class="text-gray-400">+</span>
+                        </button>
+                        <div id="assumptionsPanel" class="hidden mt-4 space-y-4">
+                            <p class="text-xs text-gray-600">These conservative defaults drive the savings above. Dial them to your reality.</p>
+                            <div>
+                                <label for="dataEntryReduction" class="block text-xs font-semibold text-gray-700 mb-1">Data-entry reduction: <span id="dataEntryReductionVal">70</span>%</label>
+                                <input type="range" id="dataEntryReduction" min="0" max="100" value="70" class="w-full">
+                            </div>
+                            <div>
+                                <label for="draftReduction" class="block text-xs font-semibold text-gray-700 mb-1">Drafting/drawing rework reduction: <span id="draftReductionVal">40</span>%</label>
+                                <input type="range" id="draftReduction" min="0" max="100" value="40" class="w-full">
+                            </div>
+                            <div>
+                                <label for="schedReduction" class="block text-xs font-semibold text-gray-700 mb-1">Production scheduling reduction: <span id="schedReductionVal">85</span>%</label>
+                                <input type="range" id="schedReduction" min="0" max="100" value="85" class="w-full">
+                            </div>
+                            <div>
+                                <label for="closeReduction" class="block text-xs font-semibold text-gray-700 mb-1">Month-end close reduction: <span id="closeReductionVal">75</span>%</label>
+                                <input type="range" id="closeReduction" min="0" max="100" value="75" class="w-full">
+                            </div>
+                            <div>
+                                <label for="scrapReduction" class="block text-xs font-semibold text-gray-700 mb-1">Scrap/waste reduction: <span id="scrapReductionVal">65</span>%</label>
+                                <input type="range" id="scrapReduction" min="0" max="100" value="65" class="w-full">
+                            </div>
+                            <div>
+                                <label for="errorReduction" class="block text-xs font-semibold text-gray-700 mb-1">Error/rework reduction: <span id="errorReductionVal">70</span>%</label>
+                                <input type="range" id="errorReduction" min="0" max="100" value="70" class="w-full">
+                            </div>
+                            <div>
+                                <label for="softwareReduction" class="block text-xs font-semibold text-gray-700 mb-1">Software consolidation: <span id="softwareReductionVal">70</span>%</label>
+                                <input type="range" id="softwareReduction" min="0" max="100" value="70" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Methodology -->
                     <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
-                        <h3 class="font-bold text-gray-900 mb-3">Research-Based Methodology</h3>
+                        <h3 class="font-bold text-gray-900 mb-3">How this is calculated</h3>
                         <div class="text-xs text-gray-600 space-y-2">
-                            <p class="font-semibold text-gray-700">Revenue Growth Drivers (8-12% based on our data):</p>
+                            <p>This is an <strong>illustrative estimate</strong> generated from the figures you enter and the conservative, adjustable assumptions shown beside each line — not a guarantee.</p>
                             <ul class="space-y-1 ml-4">
-                                <li>• <strong>Production Capacity:</strong> Faster lead times increase throughput capacity; improved utilization of freed capacity drives revenue growth</li>
-                                <li>• <strong>Quote Win Rate:</strong> Faster, more accurate quote response time increases win rate</li>
-                                <li>• <strong>Inventory Optimization:</strong> Real-time inventory prevents stockouts that impact orders</li>
-                                <li>• <strong>Customer Retention:</strong> Improved on-time delivery and reduced errors improve customer retention</li>
-                                <li>• <strong>Sales Efficiency:</strong> Real-time data enables more effective selling</li>
+                                <li>• <strong>Hard-cash savings</strong> reflect dollars you stop spending (software you replace, material/scrap you stop wasting, rework you stop incurring).</li>
+                                <li>• <strong>Recovered capacity</strong> reflects freed labor and time. It is real value but converts to cash only through growth or reassignment — so we keep it in a separate bucket.</li>
+                                <li>• The <strong>ROI multiple</strong> divides total efficiency value by your estimated CastLogic subscription. Plants that run more manually today (paper/Excel) see larger gains because there is more waste to remove.</li>
+                                <li>• <strong>Revenue upside</strong> is a scenario based on market behavior (quote win rate, retention), not your own internal data — so it is shown separately and excluded from the return figures.</li>
                             </ul>
-                            <p class="font-semibold text-gray-700 mt-3">Cost Savings Assumptions:</p>
-                            <ul class="space-y-1 ml-4">
-                                <li>• 80% reduction in manual data entry (single source of truth)</li>
-                                <li>• 10x faster month-end close (automated reconciliation)</li>
-                                <li>• 90% reduction in data entry errors (integrated workflows)</li>
-                                <li>• Software consolidation: $50/user/month per system replaced</li>
-                                <li>• Error rework: 4-6 hours per incident at loaded labor rate</li>
-                            </ul>
-                            <p class="text-xs mt-3 italic">Based on Aberdeen Group, Gartner, and McKinsey ERP implementation research (2022-2024) and IntraSync customer case studies.</p>
+                            <p class="italic mt-3">Subscription and implementation figures reflect IntraSync's standard pricing. Your actual quote depends on the module groups you select (Production, Accounting, BatchLogic, MaterialsLogic).</p>
                         </div>
                     </div>
                 </div>
@@ -439,6 +492,7 @@ document.head.appendChild(o)}initApollo();</script>
                         <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
                         <li><a href="compare.html" class="hover:text-blue-600 transition">Compare</a></li>
                         <li><a href="certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
+                        <li><a href="roi-calculator.html" class="hover:text-blue-600 transition">ROI Calculator</a></li>
                         <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
                     </ul>
                 </div>
@@ -503,7 +557,7 @@ document.head.appendChild(o)}initApollo();</script>
 
             <!-- Bottom Bar -->
             <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2025</span> IntraSync Industrial. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2026</span> IntraSync Industrial. All rights reserved.</p>
                 <div class="flex gap-6 text-sm mt-4 md:mt-0">
                     <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
@@ -513,161 +567,186 @@ document.head.appendChild(o)}initApollo();</script>
     </footer>
 
     <script>
-        // Auto-calculate on page load
-        window.addEventListener('load', function() {
-            calculateROI();
-        });
+        // ============ PRICING MODEL ============
+        // Fixed monthly subscription, piecewise-linear interpolation between real anchors.
+        function monthlySubscription(emp) {
+            if (emp <= 10) return 1950;
+            if (emp <= 20) return 1950 + (emp - 10) * 30;    // -> 2250 @20
+            if (emp <= 50) return 2250 + (emp - 20) * (250/30); // -> 2500 @50
+            if (emp <= 100) return 2500 + (emp - 50) * 50;   // -> 5000 @100
+            if (emp <= 150) return 5000 + (emp - 100) * 20;  // -> 6000 @150
+            if (emp <= 200) return 6000 + (emp - 150) * 17;  // -> ~6850 @200
+            if (emp <= 300) return 6850 + (emp - 200) * 10;  // -> 7850 @300
+            return 7850 + (emp - 300) * 10;                  // extrapolate
+        }
 
-        // Auto-calculate on input change
-        document.getElementById('roiForm').addEventListener('input', function() {
-            calculateROI();
-        });
+        // One-time implementation fee by band.
+        function implementationFee(emp) {
+            if (emp <= 50) return 0;
+            if (emp <= 100) return 15000;
+            if (emp <= 200) return 25000;
+            return 35000;
+        }
+
+        // Read a refine field; return fallback if blank/invalid.
+        function val(id, fallback) {
+            const el = document.getElementById(id);
+            if (!el || el.value === '' || el.value === null) return fallback;
+            const n = parseFloat(el.value);
+            return isNaN(n) ? fallback : n;
+        }
+        function pct(id, fallback) { return val(id, fallback) / 100; }
 
         function calculateROI() {
-            // Get input values
-            const revenue = parseFloat(document.getElementById('revenue').value) || 0;
-            const employees = parseFloat(document.getElementById('employees').value) || 0;
-            const laborCost = parseFloat(document.getElementById('laborCost').value) || 0;
-            const orders = parseFloat(document.getElementById('orders').value) || 0;
-            const dataEntryHours = parseFloat(document.getElementById('dataEntryHours').value) || 0;
-            const closeTime = parseFloat(document.getElementById('closeTime').value) || 0;
-            const leadTime = parseFloat(document.getElementById('leadTime').value) || 0;
-            const quoteTime = parseFloat(document.getElementById('quoteTime').value) || 0;
-            const systems = parseFloat(document.getElementById('systems').value) || 0;
-            const errorRate = parseFloat(document.getElementById('errorRate').value) || 0;
-            const onTimeRate = parseFloat(document.getElementById('onTimeRate').value) || 0;
+            const employees = val('employees', 0);
+            const revenue = val('revenue', 0);
+            const headroom = parseFloat(document.getElementById('currentState').value) || 1.0;
 
-            // ============ REVENUE GROWTH CALCULATIONS ============
+            // Guard: no meaningful inputs yet.
+            if (employees <= 0 || revenue <= 0) {
+                ['roiMultiple','firstYearMultiple','upsideRange'].forEach(id => document.getElementById(id).textContent = '—');
+                ['totalEfficiency','annualInvestment','hardCashTotal','capacityTotal','softwareSavings','scrapSavings','errorSavings','dataEntrySavings','closeSavings','implementationFee','quoteUpside','retentionUpside'].forEach(id => document.getElementById(id).textContent = '$0');
+                return;
+            }
 
-            // 1. Increased Production Capacity (4.5% revenue growth)
-            // Faster lead times increase theoretical capacity
-            // Conservative assumption: Can utilize 27% of freed capacity = 4.5% revenue increase
-            const capacityGrowthRate = 0.045;
-            const capacityRevenue = revenue * capacityGrowthRate;
+            // ----- Benchmarks (scaled by current-state headroom where noted) -----
+            const laborCost      = val('laborCost', 35);
+            const dataHrsPerEmp  = val('dataEntryHours', 2.5);
+            // Drafting is a near-fixed office burden: a floor of ~10 hrs/wk even for small shops,
+            // growing with job volume. Hits small plants disproportionately.
+            const draftHrs       = val('draftHours', Math.max(10, employees * 0.5));
+            const DRAFT_RATE     = 50; // engineers/drafters cost more than general labor
+            // Production scheduling: ~40 hrs/wk for a 50-person plant (0.8 hrs/emp/wk), floor ~12.
+            const schedHrs       = val('schedHours', Math.max(12, employees * 0.8));
+            const SCHED_RATE     = 45; // production planner / ops manager time
+            const financeStaff   = val('financeStaff', Math.max(1, Math.round(employees * 0.04)));
+            const closeDays      = val('closeTime', 7);
+            const scrapRate      = pct('scrapRate', 2);          // % of revenue
+            const systems        = val('systems', Math.max(2, Math.round(employees / 12)));
+            const softwareSpend  = val('softwareSpend', Math.max(0, systems - 1) * Math.ceil(employees * 0.30) * 50); // $/mo
+            const quoteTime      = val('quoteTime', 5);
+            const onTimeRate     = pct('onTimeRate', 75);
 
-            // 2. Higher Quote Win Rate (2.5% revenue growth)
-            // Faster quotes (60% faster with automation) improves win rate
-            // Industry baseline: 12-15% win rate, 20% improvement = 2.5% revenue increase
-            const quoteGrowthRate = 0.025;
-            const quoteRevenue = revenue * quoteGrowthRate;
+            // ----- Adjustable reduction rates -----
+            const rData  = pct('dataEntryReduction', 70);
+            const rDraft = pct('draftReduction', 40);
+            const rSched = pct('schedReduction', 85);
+            const rClose = pct('closeReduction', 75);
+            const rScrap = pct('scrapReduction', 65);
+            const rError = pct('errorReduction', 70);
+            const rSoft  = pct('softwareReduction', 70);
 
-            // 3. Better Inventory Management (1.5% revenue growth)
-            // Real-time inventory prevents stockouts affecting 8-12% of orders
-            // Retain 15-20% of at-risk revenue = 1.5% overall growth
-            const inventoryGrowthRate = 0.015;
-            const inventoryRevenue = revenue * inventoryGrowthRate;
+            // ============ BUCKET 1: HARD CASH ============
+            const softwareSavings = softwareSpend * 12 * rSoft;
+            const scrapSavings    = revenue * scrapRate * rScrap * headroom;
+            const reworkLaborPct  = 0.01; // 1% of revenue baseline
+            const errorSavings    = revenue * reworkLaborPct * rError * headroom;
+            const hardCash = softwareSavings + scrapSavings + errorSavings;
 
-            // 4. Customer Retention & Satisfaction (1.2% revenue growth)
-            // Improved on-time delivery (from onTimeRate to 95%+) and error reduction
-            // Increases customer retention by 5-8% (baseline 85% retention)
-            const retentionGrowthRate = 0.012;
-            const retentionRevenue = revenue * retentionGrowthRate;
+            // ============ BUCKET 2: RECOVERED CAPACITY ============
+            const dataHoursSaved  = dataHrsPerEmp * employees * 52 * rData * headroom;
+            const dataEntrySavings = dataHoursSaved * laborCost;
+            const draftHoursSaved = draftHrs * 52 * rDraft * headroom;
+            const draftSavings    = draftHoursSaved * DRAFT_RATE;
+            const schedHoursSaved = schedHrs * 52 * rSched * headroom;
+            const schedSavings    = schedHoursSaved * SCHED_RATE;
+            const closeHoursSaved = financeStaff * closeDays * 8 * 12 * rClose * headroom;
+            const closeSavings    = closeHoursSaved * laborCost;
+            const daysSaved       = closeDays * rClose * 12;
+            const capacity = dataEntrySavings + draftSavings + schedSavings + closeSavings;
 
-            // 5. Sales Team Efficiency (0.5% revenue growth)
-            // Real-time data gives sales team 8-10% more effective selling time
-            const salesGrowthRate = 0.005;
-            const salesRevenue = revenue * salesGrowthRate;
+            // ============ TOTALS & MULTIPLE ============
+            const totalEfficiency = hardCash + capacity;
+            const annualSub = monthlySubscription(employees) * 12;
+            const implFee = implementationFee(employees);
+            const multiple = totalEfficiency / annualSub;
+            const firstYearMultiple = totalEfficiency / (annualSub + implFee);
 
-            // Total Revenue Growth = 8-12% (based on our data)
-            const totalRevenueGrowth = capacityRevenue + quoteRevenue + inventoryRevenue + retentionRevenue + salesRevenue;
-            const revenueGrowthPercent = (totalRevenueGrowth / revenue) * 100;
-            const newRevenue = revenue + totalRevenueGrowth;
-
-            // ============ COST SAVINGS CALCULATIONS ============
-
-            // 1. Data Entry Savings (80% reduction)
-            const dataEntryHoursPerYear = dataEntryHours * 52;
-            const dataEntryHoursSaved = dataEntryHoursPerYear * 0.80;
-            const dataEntrySavings = dataEntryHoursSaved * laborCost;
-
-            // 2. Month-End Close Savings (90% time reduction - 10x faster)
-            const closeHoursPerMonth = closeTime * 8; // 8 hours per day
-            const closeHoursSaved = closeHoursPerMonth * 0.90 * 12;
-            const closeSavings = closeHoursSaved * laborCost;
-            const closeDaysSaved = closeTime * 0.90 * 12;
-
-            // 3. Error Reduction (90% fewer errors)
-            const ordersPerYear = orders * 12;
-            const currentErrors = ordersPerYear * (errorRate / 100);
-            const errorsReduced = currentErrors * 0.90;
-            const reworkHoursPerError = 5; // Industry average 4-6 hours
-            const errorSavings = errorsReduced * reworkHoursPerError * laborCost;
-
-            // 4. Software License Savings
-            const avgSoftwareCostPerUserPerMonth = 50;
-            const systemsToReplace = Math.max(0, systems - 1);
-            const usersPerSystem = Math.ceil(employees * 0.30);
-            const softwareSavings = systemsToReplace * usersPerSystem * avgSoftwareCostPerUserPerMonth * 12;
-
-            // Total Cost Savings
-            const totalSavings = dataEntrySavings + closeSavings + errorSavings + softwareSavings;
-
-            // ============ TOTAL IMPACT ============
-
-            // Year 1 Total Benefit = Revenue Growth + Cost Savings
-            const totalBenefit = totalRevenueGrowth + totalSavings;
-
-            // 3-Year Projection
-            // Revenue growth compounds, savings grow 5% YoY
-            const year2RevenueGrowth = newRevenue * 0.102;
-            const year3RevenueGrowth = (newRevenue + year2RevenueGrowth) * 0.102;
-            const year2Savings = totalSavings * 1.05;
-            const year3Savings = totalSavings * 1.10;
-            const threeYearTotal = (totalRevenueGrowth + year2RevenueGrowth + year3RevenueGrowth) +
-                                   (totalSavings + year2Savings + year3Savings);
-
-            // Payback Period
-            const implementationCost = totalBenefit * 0.55; // Implementation ~55% of year 1 benefit
-            const monthlyBenefit = totalBenefit / 12;
-            const paybackMonths = Math.ceil(implementationCost / monthlyBenefit);
+            // ============ REVENUE UPSIDE (illustrative, excluded from multiple) ============
+            // Quote win rate: faster quotes lift win rate ~1-2 pts on bid-driven revenue (~60% of rev).
+            const quoteSpeedFactor = Math.min(1, Math.max(0, (quoteTime - 1) / 5)); // slower today -> more to gain
+            const quoteUpside = revenue * 0.60 * (0.01 + 0.01 * quoteSpeedFactor) * headroom;
+            // Retention: gap from current on-time to 95% target, ~1% of revenue max.
+            const onTimeGap = Math.min(1, Math.max(0, (0.95 - onTimeRate) / 0.20));
+            const retentionUpside = revenue * 0.01 * onTimeGap;
+            const upsideLow = (quoteUpside + retentionUpside) * 0.7;
+            const upsideHigh = quoteUpside + retentionUpside;
 
             // ============ UPDATE UI ============
+            document.getElementById('roiMultiple').textContent = multiple >= 1 ? `${multiple.toFixed(1)}×` : `${multiple.toFixed(2)}×`;
+            document.getElementById('firstYearMultiple').textContent = `${firstYearMultiple.toFixed(1)}×`;
+            document.getElementById('totalEfficiency').textContent = formatCurrency(totalEfficiency);
+            document.getElementById('annualInvestment').textContent = formatCurrency(annualSub) + '/yr';
 
-            // Revenue Impact
-            document.getElementById('revenueIncrease').textContent = formatCurrency(totalRevenueGrowth);
-            document.getElementById('revenuePercent').textContent = `${revenueGrowthPercent.toFixed(1)}%`;
-            document.getElementById('currentRevenue').textContent = formatCurrency(revenue);
-            document.getElementById('newRevenue').textContent = formatCurrency(newRevenue);
-
-            // Revenue Breakdown
-            document.getElementById('capacityRevenue').textContent = formatCurrency(capacityRevenue);
-            document.getElementById('quoteRevenue').textContent = formatCurrency(quoteRevenue);
-            document.getElementById('inventoryRevenue').textContent = formatCurrency(inventoryRevenue);
-            document.getElementById('retentionRevenue').textContent = formatCurrency(retentionRevenue);
-            document.getElementById('salesRevenue').textContent = formatCurrency(salesRevenue);
-
-            // Cost Savings
-            document.getElementById('totalSavings').textContent = formatCurrency(totalSavings);
-            document.getElementById('dataEntrySavings').textContent = formatCurrency(dataEntrySavings);
-            document.getElementById('dataEntryHoursSaved').textContent = `Saves ${formatNumber(dataEntryHoursSaved)} hours/year (80% reduction)`;
-            document.getElementById('closeSavings').textContent = formatCurrency(closeSavings);
-            document.getElementById('closeDaysSaved').textContent = `Saves ${formatNumber(closeDaysSaved)} days/year (10x faster)`;
-            document.getElementById('errorSavings').textContent = formatCurrency(errorSavings);
-            document.getElementById('errorReduction').textContent = `Prevents ${formatNumber(errorsReduced)} errors/year (90% reduction)`;
+            document.getElementById('hardCashTotal').textContent = formatCurrency(hardCash);
             document.getElementById('softwareSavings').textContent = formatCurrency(softwareSavings);
-            document.getElementById('systemsEliminated').textContent = `Consolidate ${systemsToReplace} systems into one platform`;
+            document.getElementById('softwareNote').textContent = `Replace ${Math.max(0, systems - 1)} system(s) — ${formatCurrency(softwareSpend)}/mo today, ${Math.round(rSoft*100)}% recovered`;
+            document.getElementById('scrapSavings').textContent = formatCurrency(scrapSavings);
+            document.getElementById('scrapNote').textContent = `${Math.round(rScrap*100)}% less scrap/waste (scaled to how manual you are today)`;
+            document.getElementById('errorSavings').textContent = formatCurrency(errorSavings);
+            document.getElementById('errorNote').textContent = `${Math.round(rError*100)}% less error rework`;
 
-            // Total Impact
-            document.getElementById('totalBenefit').textContent = formatCurrency(totalBenefit);
-            document.getElementById('threeYearTotal').textContent = formatCurrency(threeYearTotal);
-            document.getElementById('paybackPeriod').textContent = `${paybackMonths} months`;
+            document.getElementById('capacityTotal').textContent = formatCurrency(capacity);
+            document.getElementById('dataEntrySavings').textContent = formatCurrency(dataEntrySavings);
+            document.getElementById('dataEntryNote').textContent = `Frees ~${formatNumber(dataHoursSaved)} hours/year (${Math.round(rData*100)}% less re-keying)`;
+            document.getElementById('draftSavings').textContent = formatCurrency(draftSavings);
+            document.getElementById('draftNote').textContent = `Frees ~${formatNumber(draftHoursSaved)} drafting hours/year (${Math.round(rDraft*100)}% less redraw/revision)`;
+            document.getElementById('schedSavings').textContent = formatCurrency(schedSavings);
+            document.getElementById('schedNote').textContent = `~${formatNumber(schedHrs)} hrs/wk → ~${formatNumber(schedHrs*(1-rSched))} hrs/wk (${Math.round(rSched*100)}% faster scheduling)`;
+            document.getElementById('closeSavings').textContent = formatCurrency(closeSavings);
+            document.getElementById('closeNote').textContent = `~${formatNumber(daysSaved)} close-days/year freed (${Math.round(rClose*100)}% faster)`;
+
+            document.getElementById('implementationFee').textContent = implFee === 0 ? '$0' : formatCurrency(implFee);
+            document.getElementById('noImplNote').classList.toggle('hidden', implFee !== 0);
+
+            document.getElementById('upsideRange').textContent = `${formatCurrency(upsideLow)} – ${formatCurrency(upsideHigh)}`;
+            document.getElementById('quoteUpside').textContent = formatCurrency(quoteUpside);
+            document.getElementById('retentionUpside').textContent = formatCurrency(retentionUpside);
         }
 
         function formatCurrency(value) {
             return new Intl.NumberFormat('en-US', {
-                style: 'currency',
-                currency: 'USD',
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0
-            }).format(value);
+                style: 'currency', currency: 'USD',
+                minimumFractionDigits: 0, maximumFractionDigits: 0
+            }).format(isFinite(value) ? value : 0);
         }
-
         function formatNumber(value) {
             return new Intl.NumberFormat('en-US', {
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 1
-            }).format(value);
+                minimumFractionDigits: 0, maximumFractionDigits: 0
+            }).format(isFinite(value) ? value : 0);
         }
+
+        // ============ WIRING ============
+        function setupToggle(btnId, panelId, iconId, openChar, closedChar, startOpen) {
+            const btn = document.getElementById(btnId);
+            const panel = document.getElementById(panelId);
+            const icon = document.getElementById(iconId);
+            btn.addEventListener('click', function() {
+                const isHidden = panel.classList.toggle('hidden');
+                btn.setAttribute('aria-expanded', String(!isHidden));
+                if (icon) icon.textContent = isHidden ? closedChar : openChar;
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setupToggle('refineToggle', 'refinePanel', 'refineToggleIcon', '−', '+');
+            setupToggle('upsideToggle', 'upsidePanel', 'upsideToggleIcon', '−', '+');
+            setupToggle('assumptionsToggle', 'assumptionsPanel', 'assumptionsToggleIcon', '−', '+');
+
+            // Live labels for sliders + recalc.
+            [['dataEntryReduction','dataEntryReductionVal'],['draftReduction','draftReductionVal'],['schedReduction','schedReductionVal'],['closeReduction','closeReductionVal'],
+             ['scrapReduction','scrapReductionVal'],['errorReduction','errorReductionVal'],
+             ['softwareReduction','softwareReductionVal']].forEach(([slider, label]) => {
+                document.getElementById(slider).addEventListener('input', function() {
+                    document.getElementById(label).textContent = this.value;
+                });
+            });
+
+            document.getElementById('roiForm').addEventListener('input', calculateROI);
+            document.getElementById('currentState').addEventListener('change', calculateROI);
+            document.getElementById('assumptionsPanel').addEventListener('input', calculateROI);
+            calculateROI();
+        });
     </script>
 </body>
 </html>

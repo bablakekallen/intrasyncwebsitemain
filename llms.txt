@@ -1,0 +1,60 @@
+# IntraSync Industrial — CastLogic ERP
+
+> IntraSync Industrial is the maker of **CastLogic**, a cloud-based ERP platform built specifically for **precast concrete manufacturing**. CastLogic connects estimating, production, yard, dispatch, quality control, accounting, and HR/payroll integration in one system — replacing paper, spreadsheets, and disconnected legacy tools. Founded in 2024 by Zachary Frye (Mechanical Engineering background, 7+ years of precast industry experience). Member of the National Precast Concrete Association (NPCA) and the Precast/Prestressed Concrete Institute (PCI).
+
+## What CastLogic is
+
+- **Category:** ERP software for precast concrete manufacturers (architectural, structural, utility, and pipe segments).
+- **Deployment:** Cloud-based / web.
+- **Who it's for:** Precast plants currently running on paper, spreadsheets, or aging legacy systems that want one integrated system from quote to cash.
+- **Core promise:** Eliminate duplicate data entry, reduce errors and rework, crash manual production scheduling time, and give real-time visibility across the plant.
+
+## Module groups (sold à la carte)
+
+CastLogic is purchased by module group, scaled to company size:
+
+- **Production** — Estimating, Production, Yard, Dispatch, and Quality Control (QC).
+- **Accounting** — Integrated accounting and job costing.
+- **BatchLogic** — Batch control for concrete production.
+- **MaterialsLogic** — Aggregates/materials ERP.
+
+Related engineering tooling: **DesignLogic** — Revit/AutoCAD plugins for drafting and shop-drawing workflows.
+
+## Pricing
+
+Custom pricing based on company size and the module groups selected. Fixed monthly subscription; one-time implementation fee waived for plants of 50 employees or fewer. Contact IntraSync for a quote. An interactive ROI calculator is available at /roi-calculator.html.
+
+## Implementation & support
+
+- **Onboarding:** Typically 4–6 months (data migration, staff training, configuration, go-live support) with dedicated implementation specialists.
+- **Support:** Live technical assistance 6am–6pm PST, Monday–Friday, with a 1-hour response target for critical issues. Dedicated account managers, training, and knowledge base.
+
+## How CastLogic compares
+
+CastLogic positions as a modern, integrated alternative to legacy precast systems including **BETSY**, **Titan3000**, **IDAT-ERP**, and **IMPACT Production**. Detailed feature-by-feature comparison: /compare.html
+
+## Key pages
+
+- Home: /index.html
+- All modules: /modules.html
+- Robotics & machine vision: /robotics.html
+- Compare vs. competitors: /compare.html
+- Accounting: /accounting.html
+- HR & payroll integration: /hr.html
+- ROI calculator: /roi-calculator.html
+- FAQ: /faq.html
+- About / founder: /about.html
+- Contact / book a demo: /contact.html
+- Blog: /blog.html
+
+## Company facts
+
+- **Company:** IntraSync Industrial
+- **Product:** CastLogic (ERP for precast concrete manufacturing)
+- **Founded:** 2024
+- **Founder:** Zachary Frye
+- **Location:** Sacramento, CA
+- **Phone:** (707) 640-1380
+- **LinkedIn:** https://www.linkedin.com/company/intrasync-industrial
+- **Memberships:** NPCA, PCI
+- **Sitemap:** https://intrasyncindustrial.com/sitemap.xml

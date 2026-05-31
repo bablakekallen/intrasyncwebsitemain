@@ -709,3 +709,41 @@ html {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* ===== Accessibility: visible focus, skip link, screen-reader utility ===== */
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Screen-reader-only utility (also provided by Tailwind, defined here so it
+   survives once the Tailwind Play CDN is replaced with a built stylesheet). */
+.sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Skip-to-content link: hidden until focused, then pinned top-left */
+.skip-link {
+    position: absolute;
+    left: 0; top: 0;
+    transform: translateY(-120%);
+    z-index: 100;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    border-radius: 0 0 0.5rem 0;
+    transition: transform 0.2s ease;
+}
+.skip-link:focus {
+    transform: translateY(0);
+    outline: 2px solid #fff;
+    outline-offset: -4px;
+}
