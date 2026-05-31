@@ -1,6 +1,0 @@
-Q: What makes CastLogic different from other ERP systems?
-A: CastLogic is purpose-built for precast manufacturing, not a generic system adapted for the industry. Key differentiators include:
-
-Q: How do you handle product updates and new features?
-A: (none)
-
