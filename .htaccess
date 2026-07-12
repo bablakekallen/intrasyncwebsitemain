@@ -1,3 +1,8 @@
+# Canonical host: redirect www to apex
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.intrasyncindustrial\.com$ [NC]
+RewriteRule ^(.*)$ https://intrasyncindustrial.com/$1 [R=301,L]
+
 # 301 redirects for unpublished blog posts
 Redirect 301 /blog/flexible-payroll-manufacturing.html /blog/calculate-true-labor-costs.html
 Redirect 301 /blog/prevailing-wage-compliance.html /blog/certified-payroll-davis-bacon.html
