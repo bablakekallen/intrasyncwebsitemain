@@ -781,4 +781,46 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/csa-a23-4-precast-certification-guide.html</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/cpcqa-plant-certification-digital-qc.html</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/pci-vs-cpci-certification-cross-border.html</loc>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/canada-low-carbon-concrete-epd-requirements.html</loc>
+        <lastmod>2026-07-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/erp-canadian-precast-gst-hst-metric.html</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/qc-traceability-canadian-pipe-manhole-producers.html</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/cold-weather-precast-csa-a23-1-curing.html</loc>
+        <lastmod>2026-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
