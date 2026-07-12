@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <title>About IntraSync Industrial - CastLogic ERP</title>
     <meta name="description" content="Learn about IntraSync Industrial and our mission to transform precast manufacturing through AI-powered ERP solutions. Founded by industry experts with 7+ years of precast experience.">
     <!-- Canonical URL -->
@@ -13,14 +17,14 @@
     <meta property="og:url" content="https://intrasyncindustrial.com/about.html">
     <meta property="og:title" content="About IntraSync Industrial - CastLogic ERP">
     <meta property="og:description" content="Learn about IntraSync Industrial and our mission to transform precast manufacturing through AI-powered ERP solutions. Founded by industry experts with 7+ years of precast experience.">
-    <meta property="og:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
     <meta property="og:site_name" content="IntraSync Industrial">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About IntraSync Industrial - CastLogic ERP">
     <meta name="twitter:description" content="Learn about IntraSync Industrial and our mission to transform precast manufacturing through AI-powered ERP solutions. Founded by industry experts with 7+ years of precast experience.">
-    <meta name="twitter:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta name="twitter:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
 
 
     <!-- Person Schema for Founder Authority -->
@@ -50,28 +54,67 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "IntraSync Industrial",
+      "url": "https://intrasyncindustrial.com",
+      "description": "IntraSync Industrial builds CastLogic ERP, purpose-built software for precast concrete manufacturers. From production scheduling to machine vision quality control and robotics integration.",
+      "telephone": "+1-707-640-1380",
+      "foundingDate": "2024",
+      "founder": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/intrasync-industrial"
+      ]
+    }
+    </script>
+
+    <meta name="keywords" content="IntraSync Industrial, CastLogic ERP, about IntraSync, precast concrete software company, Zachary Frye, precast manufacturing ERP, NPCA member, PCI member">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="site.js" defer></script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
         .gradient-bg {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
     </style>
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
 </head>
 <body class="bg-white text-gray-800">
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <!-- Sticky Demo CTA Button -->
+    <a href="contact.html" class="cta-button-fixed bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
+        Schedule Demo
+    </a>
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-12">
-                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-12 w-auto">
-                    <nav class="hidden md:flex gap-8 text-base font-semibold">
-                        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
-                        <a href="modules.html" class="text-gray-700 hover:text-blue-700 transition">Modules</a>
-                        <a href="compare.html" class="text-gray-700 hover:text-blue-700 transition">Compare</a>
-                        <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
-                        <a href="about.html" class="text-blue-700 hover:text-blue-800 transition">About</a>
-                        <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    <a href="index.html" aria-label="IntraSync CastLogic Home">
+                        <img src="intrasync-logo.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                    </a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
                     </nav>
                 </div>
                 <div class="flex items-center gap-4">
@@ -83,15 +126,15 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <!-- Hero Section -->
         <section class="gradient-bg text-white py-20 md:py-32">
             <div class="container mx-auto px-6 text-center">
                 <div class="max-w-4xl mx-auto">
-                    <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight gs-fade-up">
                         Redefining the Future of Precast Manufacturing
                     </h1>
-                    <p class="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+                    <p class="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed gs-fade-up" data-delay="0.1">
                         IntraSync Industrial brings AI-powered operations to the precast concrete industry, combining deep domain expertise with cutting-edge technology.
                     </p>
                 </div>
@@ -109,22 +152,22 @@
                         </p>
                     </div>
 
-                    <div class="grid md:grid-cols-3 gap-8 mb-16">
-                        <div class="text-center p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+                    <div class="grid md:grid-cols-3 gap-8 mb-16 gs-stagger-container">
+                        <div class="text-center p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl gs-stagger-item" data-tilt="true">
                             <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4 text-white">
                                 💰
                             </div>
                             <h3 class="text-xl font-bold mb-3">Profitability</h3>
                             <p class="text-gray-600">Real-time job costing, automated financials, and AI-optimized scheduling to maximize margins</p>
                         </div>
-                        <div class="text-center p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
+                        <div class="text-center p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-xl gs-stagger-item" data-tilt="true">
                             <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4 text-white">
                                 🌱
                             </div>
                             <h3 class="text-xl font-bold mb-3">Sustainability</h3>
                             <p class="text-gray-600">Reduce waste through accurate material tracking and optimized production planning</p>
                         </div>
-                        <div class="text-center p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
+                        <div class="text-center p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl gs-stagger-item" data-tilt="true">
                             <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4 text-white">
                                 📈
                             </div>
@@ -165,9 +208,9 @@
                         CastLogic is designed to handle the unique requirements of all precast product types—from architectural finishes to structural engineering to utility production and pipe manufacturing.
                     </p>
 
-                    <div class="grid md:grid-cols-2 gap-8 mb-10">
+                    <div class="grid md:grid-cols-2 gap-8 mb-10 gs-stagger-container">
                         <!-- Architectural Precast -->
-                        <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border-2 border-blue-200">
+                        <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border-2 border-blue-200 gs-stagger-item" data-tilt="true">
                             <div class="flex items-start gap-4">
                                 <div class="text-5xl">🏢</div>
                                 <div>
@@ -183,7 +226,7 @@
                         </div>
 
                         <!-- Structural Precast -->
-                        <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 border-2 border-purple-200">
+                        <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 border-2 border-purple-200 gs-stagger-item" data-tilt="true">
                             <div class="flex items-start gap-4">
                                 <div class="text-5xl">🏗️</div>
                                 <div>
@@ -199,7 +242,7 @@
                         </div>
 
                         <!-- Utility Products -->
-                        <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 border-2 border-green-200">
+                        <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 border-2 border-green-200 gs-stagger-item" data-tilt="true">
                             <div class="flex items-start gap-4">
                                 <div class="text-5xl">⚡</div>
                                 <div>
@@ -215,7 +258,7 @@
                         </div>
 
                         <!-- Pipe Production -->
-                        <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 border-2 border-orange-200">
+                        <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 border-2 border-orange-200 gs-stagger-item" data-tilt="true">
                             <div class="flex items-start gap-4">
                                 <div class="text-5xl">🔧</div>
                                 <div>
@@ -306,7 +349,7 @@
                         <div class="grid md:grid-cols-2 gap-8">
                             <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border border-purple-200">
                                 <h4 class="text-xl font-bold mb-3">Production Optimization</h4>
-                                <p class="text-gray-600">AI-driven scheduling, capacity planning, and resource allocation to reduce lead times by up to 10%</p>
+                                <p class="text-gray-600">AI-driven scheduling, capacity planning, and resource allocation to reduce lead times by up to 20%</p>
                             </div>
                             <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border border-green-200">
                                 <h4 class="text-xl font-bold mb-3">Financial Integration</h4>
@@ -431,7 +474,7 @@
         <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
             <div class="container mx-auto px-6 text-center">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to Learn More?</h2>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 gs-fade-up">Ready to Learn More?</h2>
                     <p class="text-xl mb-8 text-blue-100">
                         Schedule a personalized demo to see how CastLogic can transform your precast operations.
                     </p>
@@ -453,7 +496,7 @@
             <div class="grid md:grid-cols-5 gap-8 mb-12">
                 <!-- Company Info -->
                 <div class="md:col-span-2">
-                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <img src="intrasync-logo.jpg" alt="IntraSync" class="h-10 mb-4">
                     <p class="text-gray-600 mb-4">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
                     <address class="not-italic text-gray-600 mb-4">
                         <p class="font-semibold text-gray-900">IntraSync Industrial</p>
@@ -474,6 +517,7 @@
                     <ul class="space-y-2">
                         <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
                         <li><a href="designer.html" class="hover:text-blue-600 transition">Designer</a></li>
+                        <li><a href="robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
                         <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
                         <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
                         <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
@@ -487,8 +531,8 @@
                     <ul class="space-y-2">
                         <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
                         <li><a href="compare.html" class="hover:text-blue-600 transition">Compare</a></li>
-                        <li><a href="case-studies.html" class="hover:text-blue-600 transition">Case Studies</a></li>
                         <li><a href="certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
+                        <li><a href="roi-calculator.html" class="hover:text-blue-600 transition">ROI Calculator</a></li>
                         <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
                     </ul>
                 </div>
@@ -558,7 +602,7 @@
 
             <!-- Bottom Bar -->
             <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">&copy; 2025 IntraSync Industrial. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2026</span> IntraSync Industrial. All rights reserved.</p>
                 <div class="flex gap-6 text-sm mt-4 md:mt-0">
                     <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>

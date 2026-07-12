@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <title>CastLogic Modules - Complete ERP Suite for Precast Manufacturing</title>
     <meta name="description" content="Explore all 13 CastLogic modules: Designer, Accounting, HR, Scheduling, Inventory, Production Tracking, and more. Choose the modules you need for complete operational control.">
     <!-- Canonical URL -->
@@ -13,20 +17,82 @@
     <meta property="og:url" content="https://intrasyncindustrial.com/modules.html">
     <meta property="og:title" content="CastLogic Modules - Complete ERP Suite for Precast Manufacturing">
     <meta property="og:description" content="Explore all 13 CastLogic modules: Designer, Accounting, HR, Scheduling, Inventory, Production Tracking, and more. Choose the modules you need for complete operational control.">
-    <meta property="og:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
     <meta property="og:site_name" content="IntraSync Industrial">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="CastLogic Modules - Complete ERP Suite for Precast Manufacturing">
     <meta name="twitter:description" content="Explore all 13 CastLogic modules: Designer, Accounting, HR, Scheduling, Inventory, Production Tracking, and more. Choose the modules you need for complete operational control.">
-    <meta name="twitter:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta name="twitter:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SoftwareApplication Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CastLogic ERP",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "ERP Software",
+      "operatingSystem": "Web-based, Cloud",
+      "provider": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "url": "https://intrasyncindustrial.com"
+      },
+      "description": "Complete modular ERP suite for precast concrete manufacturers. 11 integrated modules covering accounting, HR, production scheduling, inventory, quality control, dispatch, engineering, and more.",
+      "featureList": [
+        "Accounting & Job Costing",
+        "HR & Payroll",
+        "AI-Powered Production Scheduling",
+        "Inventory & Yard Management",
+        "Production Tracking",
+        "Quality Control & Compliance",
+        "Dispatch & Logistics",
+        "Engineering & BIM Integration",
+        "Bidding & Estimating",
+        "Robotics Integration",
+        "Machine Vision QC"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Precast concrete manufacturers, Plant managers, Operations directors"
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://intrasyncindustrial.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Modules",
+          "item": "https://intrasyncindustrial.com/modules.html"
+        }
+      ]
+    }
+    </script>
+
+    <meta name="keywords" content="CastLogic modules, precast ERP modules, accounting software precast, production scheduling, inventory management, HR payroll manufacturing, quality control, dispatch logistics, CastLogic ERP, IntraSync Industrial">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="site.js" defer></script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-
         .module-card {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
@@ -83,26 +149,33 @@
             animation: float 3s ease-in-out infinite;
         }
     </style>
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
 </head>
 <body class="bg-white text-gray-800">
+    <a href="#main" class="skip-link">Skip to content</a>
 
     <!-- Sticky Demo CTA Button -->
-    <a href="contact.html" class="cta-button bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
-        📅 Schedule Demo
+    <a href="contact.html" class="cta-button-fixed bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
+        Schedule Demo
     </a>
-
-    <!-- Header -->
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-12">
-                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="Intrasync Industrial Logo" class="h-12 w-auto">
-                    <nav class="hidden md:flex gap-8 text-base font-semibold">
-                        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
-                        <a href="modules.html" class="text-blue-700 hover:text-blue-800 transition">Modules</a>
-                        <a href="compare.html" class="text-gray-700 hover:text-blue-700 transition">Compare</a>
-                        <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
-                        <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    <a href="index.html" aria-label="IntraSync CastLogic Home">
+                        <img src="intrasync-logo.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                    </a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
                     </nav>
                 </div>
                 <div class="flex items-center gap-4">
@@ -114,15 +187,15 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <!-- Hero Section -->
         <section class="gradient-bg text-white py-20">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-5xl md:text-6xl font-extrabold mb-6">CastLogic Modules</h1>
-                <p class="text-xl md:text-2xl mb-4 max-w-4xl mx-auto text-blue-100">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-6 gs-fade-up">CastLogic Modules</h1>
+                <p class="text-xl md:text-2xl mb-4 max-w-4xl mx-auto text-blue-100 gs-fade-up" data-delay="0.1">
                     13 Powerful Modules. One Integrated Platform.
                 </p>
-                <p class="text-lg max-w-3xl mx-auto text-blue-100 mb-8">
+                <p class="text-lg max-w-3xl mx-auto text-blue-100 mb-8 gs-fade-up" data-delay="0.2">
                     Choose the modules you need. Everything works together seamlessly to give you complete operational control from quote to cash.
                 </p>
 
@@ -146,11 +219,11 @@
         <section class="py-8 bg-gray-50 border-b border-gray-200">
             <div class="container mx-auto px-6">
                 <div class="flex flex-wrap justify-center gap-4">
-                    <button data-filter="all" class="filter-btn px-6 py-2 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition">All Modules</button>
-                    <button data-filter="financial" class="filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Financial</button>
-                    <button data-filter="operations" class="filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Operations</button>
-                    <button data-filter="production" class="filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Production</button>
-                    <button data-filter="engineering" class="filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Engineering</button>
+                    <button data-filter="all" class="filter-btn module-filter-btn px-6 py-2 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition">All Modules</button>
+                    <button data-filter="financial" class="filter-btn module-filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Financial</button>
+                    <button data-filter="operations" class="filter-btn module-filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Operations</button>
+                    <button data-filter="production" class="filter-btn module-filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Production</button>
+                    <button data-filter="engineering" class="filter-btn module-filter-btn px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border border-gray-300">Engineering</button>
                 </div>
             </div>
         </section>
@@ -158,10 +231,10 @@
         <!-- Modules Grid -->
         <section class="py-20">
             <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto gs-stagger-container">
 
                     <!-- Accounting Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="financial">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="financial" data-module-category="financial">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             💰
                         </div>
@@ -194,31 +267,31 @@
                     </div>
 
                     <!-- HR Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="financial">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="financial" data-module-category="financial">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-green-100 to-green-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             👥
                         </div>
                         <div class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold mb-3">FINANCIAL</div>
                         <h2 class="text-2xl font-bold mb-3">HR & Payroll</h2>
-                        <p class="text-gray-600 mb-6 leading-relaxed">Flexible payroll, compliance automation, time tracking, and workforce management. Powered by Everee integration with same-day payment capability.</p>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Integration layer that connects your existing HR and payroll platform—BambooHR, Rippling, Paylocity, Time Track Plus, and others—into the ERP for unified time, labor costing, and GL posting.</p>
                         <ul class="space-y-2 mb-6 text-sm text-gray-700">
                             <li class="flex items-start gap-2">
                                 <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                 </svg>
-                                <span>50-state compliance</span>
+                                <span>Open-API integration with your HR/payroll system</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                 </svg>
-                                <span>Certified payroll reporting</span>
+                                <span>Time data allocated to ERP jobs and operations</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                 </svg>
-                                <span>Automatic tax filing</span>
+                                <span>Multi-entity payroll posted to the right GL</span>
                             </li>
                         </ul>
                         <a href="hr.html" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition w-full text-center">
@@ -227,7 +300,7 @@
                     </div>
 
                     <!-- Bidding, Estimating & Sales Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="operations">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="operations" data-module-category="operations">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-emerald-100 to-emerald-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             💼
                         </div>
@@ -260,13 +333,13 @@
                     </div>
 
                     <!-- Schedule Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="production">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="production" data-module-category="production">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             📅
                         </div>
                         <div class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold mb-3">PRODUCTION</div>
                         <h2 class="text-2xl font-bold mb-3">Schedule</h2>
-                        <p class="text-gray-600 mb-6 leading-relaxed">AI-powered production scheduling optimizes mold capacity, labor allocation, and resource sequencing. Reduce lead times by up to 10%.</p>
+                        <p class="text-gray-600 mb-6 leading-relaxed">AI-powered production scheduling optimizes mold capacity, labor allocation, and resource sequencing. reduce lead times by up to 20%.</p>
                         <ul class="space-y-2 mb-6 text-sm text-gray-700">
                             <li class="flex items-start gap-2">
                                 <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -293,7 +366,7 @@
                     </div>
 
                     <!-- Stock Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="operations">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="operations" data-module-category="operations">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             📦
                         </div>
@@ -326,7 +399,7 @@
                     </div>
 
                     <!-- Flow Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="production">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="production" data-module-category="production">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-red-100 to-red-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             ⚙️
                         </div>
@@ -358,7 +431,7 @@
                         </a>
                     </div>
 
-                    <!-- Designer Module -->
+<!-- Designer Module -->
                     <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="engineering">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-teal-100 to-teal-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             📏
@@ -391,8 +464,8 @@
                         </a>
                     </div>
 
-                    <!-- Engage Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="engineering">
+                                        <!-- Engage Module -->
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="engineering" data-module-category="engineering">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-indigo-100 to-indigo-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             📐
                         </div>
@@ -425,7 +498,7 @@
                     </div>
 
                     <!-- Dispatch Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="operations">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="operations" data-module-category="operations">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-pink-100 to-pink-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             🚚
                         </div>
@@ -458,7 +531,7 @@
                     </div>
 
                     <!-- Site Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="operations">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="operations" data-module-category="operations">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-teal-100 to-teal-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             🏗️
                         </div>
@@ -491,7 +564,7 @@
                     </div>
 
                     <!-- Insights Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="analytics">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="analytics" data-module-category="analytics">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             📊
                         </div>
@@ -524,7 +597,7 @@
                     </div>
 
                     <!-- Verify Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="production">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="production" data-module-category="production">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             ✅
                         </div>
@@ -557,7 +630,7 @@
                     </div>
 
                     <!-- AI Module -->
-                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200" data-category="ai">
+                    <div class="module-card bg-white rounded-xl shadow-lg p-8 border border-gray-200 gs-stagger-item" data-tilt="true" data-category="ai" data-module-category="ai">
                         <div class="module-icon w-20 h-20 bg-gradient-to-br from-violet-100 to-violet-50 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-sm">
                             🤖
                         </div>
@@ -634,7 +707,7 @@
         <!-- CTA Section -->
         <section class="py-20 bg-white">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to See CastLogic in Action?</h2>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6 gs-fade-up">Ready to See CastLogic in Action?</h2>
                 <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Schedule a personalized demo to see how these modules work together to transform your operations.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="contact.html" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition">
@@ -655,7 +728,7 @@
             <div class="grid md:grid-cols-5 gap-8 mb-12">
                 <!-- Company Info -->
                 <div class="md:col-span-2">
-                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <img src="intrasync-logo.jpg" alt="IntraSync" class="h-10 mb-4">
                     <p class="text-gray-600 mb-4">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
                     <address class="not-italic text-gray-600 mb-4">
                         <p class="font-semibold text-gray-900">IntraSync Industrial</p>
@@ -676,6 +749,7 @@
                     <ul class="space-y-2">
                         <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
                         <li><a href="designer.html" class="hover:text-blue-600 transition">Designer</a></li>
+                        <li><a href="robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
                         <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
                         <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
                         <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
@@ -689,8 +763,8 @@
                     <ul class="space-y-2">
                         <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
                         <li><a href="compare.html" class="hover:text-blue-600 transition">Compare</a></li>
-                        <li><a href="case-studies.html" class="hover:text-blue-600 transition">Case Studies</a></li>
                         <li><a href="certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
+                        <li><a href="roi-calculator.html" class="hover:text-blue-600 transition">ROI Calculator</a></li>
                         <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
                     </ul>
                 </div>
@@ -760,7 +834,7 @@
 
             <!-- Bottom Bar -->
             <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">&copy; 2025 IntraSync Industrial. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2026</span> IntraSync Industrial. All rights reserved.</p>
                 <div class="flex gap-6 text-sm mt-4 md:mt-0">
                     <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>

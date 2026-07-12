@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <title>CastLogic HR - Complete Workforce Management & Payroll ERP</title>
-    <meta name="description" content="Comprehensive HR and payroll management powered by Everee integration, fully integrated with your complete ERP system for seamless workforce and financial operations.">
+    <meta name="description" content="Connect your HR and payroll platform—BambooHR, Rippling, Paylocity, Time Track Plus, and others—directly to your ERP for seamless workforce, accounting, and project-cost data flow.">
     <!-- Canonical URL -->
     <link rel="canonical" href="https://intrasyncindustrial.com/hr.html">
     
@@ -12,15 +16,15 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://intrasyncindustrial.com/hr.html">
     <meta property="og:title" content="CastLogic HR - Complete Workforce Management & Payroll ERP">
-    <meta property="og:description" content="Comprehensive HR and payroll management powered by Everee integration, fully integrated with your complete ERP system for seamless workforce and financial operations.">
-    <meta property="og:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta property="og:description" content="Connect your HR and payroll platform—BambooHR, Rippling, Paylocity, Time Track Plus, and others—directly to your ERP for seamless workforce, accounting, and project-cost data flow.">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
     <meta property="og:site_name" content="IntraSync Industrial">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="CastLogic HR - Complete Workforce Management & Payroll ERP">
-    <meta name="twitter:description" content="Comprehensive HR and payroll management powered by Everee integration, fully integrated with your complete ERP system for seamless workforce and financial operations.">
-    <meta name="twitter:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta name="twitter:description" content="Connect your HR and payroll platform—BambooHR, Rippling, Paylocity, Time Track Plus, and others—directly to your ERP for seamless workforce, accounting, and project-cost data flow.">
+    <meta name="twitter:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
 
 
     <!-- Schema.org markup for AI/LLM discovery -->
@@ -42,22 +46,19 @@
         "name": "IntraSync Industrial",
         "url": "https://intrasyncindustrial.com"
       },
-      "description": "Comprehensive HR and payroll management for precast concrete manufacturing. Powered by Everee integration for flexible payroll options including daily pay. Features time tracking with job costing, certified payroll for Davis-Bacon compliance, prevailing wage management, and full integration with ERP accounting and production modules.",
+      "description": "HR and payroll integration layer for precast concrete manufacturing. Connects leading HR & payroll platforms—including BambooHR, Rippling, Paylocity, and Time Track Plus—to the ERP so time, job-costed labor, and GL postings flow automatically. Brings certified payroll, prevailing wage, and workforce data into accounting and production context.",
       "featureList": [
-        "Flexible payroll with daily pay option (via Everee)",
-        "Time tracking with job costing integration",
-        "Certified payroll for Davis-Bacon compliance",
-        "Prevailing wage rate management",
-        "Employee self-service portal",
-        "Benefits administration",
-        "Onboarding automation",
-        "Safety training tracking",
-        "Safety training tracking",
-        "Direct integration with GL and project accounting"
+        "Integrates with open-API HR & payroll platforms (BambooHR, Rippling, Paylocity, Time Track Plus, ADP, Paychex, Gusto, and others)",
+        "Time data pulled from your HR/time platform and allocated to ERP jobs",
+        "Certified payroll and prevailing wage data surfaced in ERP project reporting",
+        "Burden rates from your HR platform applied to ERP labor costing",
+        "Multi-entity payroll postings routed to correct GL accounts",
+        "Direct integration with GL and project accounting",
+        "Workforce KPIs unified with financial and production data"
       ],
       "audience": {
         "@type": "Audience",
-        "audienceType": "Precast concrete manufacturers, HR managers, Payroll administrators"
+        "audienceType": "Precast concrete manufacturers, controllers, operations leaders responsible for connecting HR data to job costing and ERP reporting"
       }
     }
     </script>
@@ -90,28 +91,42 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="site.js" defer></script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
         .gradient-bg { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
     </style>
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
 </head>
 <body class="bg-white text-gray-800">
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <!-- Sticky Demo CTA Button -->
+    <a href="contact.html" class="cta-button-fixed bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
+        Schedule Demo
+    </a>
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-12">
-                    <a href="index.html">
-                        <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                    <a href="index.html" aria-label="IntraSync CastLogic Home">
+                        <img src="intrasync-logo.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
                     </a>
-                    <nav class="hidden md:flex gap-8 text-base font-semibold">
-                        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
-                        <a href="modules.html" class="text-blue-700 hover:text-blue-800 transition">Modules</a>
-                        <a href="compare.html" class="text-gray-700 hover:text-blue-700 transition">Compare</a>
-                        <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
-                        <a href="about.html" class="text-gray-700 hover:text-blue-700 transition">About</a>
-                        <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
                     </nav>
                 </div>
                 <div class="flex items-center gap-4">
@@ -126,24 +141,24 @@
     <!-- Hero Section -->
     <section class="gradient-bg text-white py-16">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl font-extrabold mb-6">CastLogic HR & Payroll</h1>
-            <p class="text-2xl mb-4">Complete Workforce Management Integrated with Your ERP</p>
-            <p class="text-xl text-green-100 max-w-3xl mx-auto">Flexible payroll powered by Everee, seamlessly connected to production, accounting, and project costing for complete operational visibility.</p>
+            <h1 class="gs-fade-up text-5xl font-extrabold mb-6">CastLogic HR & Payroll</h1>
+            <p class="gs-fade-up text-2xl mb-4" data-delay="0.1">Complete Workforce Management Integrated with Your ERP</p>
+            <p class="gs-fade-up text-xl text-green-100 max-w-3xl mx-auto" data-delay="0.2">Connect your HR and payroll platform—BambooHR, Rippling, Paylocity, Time Track Plus, or others—to production, accounting, and project costing for complete operational visibility.</p>
         </div>
     </section>
 
-    <main class="py-16">
+    <main id="main" class="py-16">
         <div class="container mx-auto px-6 max-w-6xl">
 
             <!-- The Full ERP Advantage -->
             <section class="mb-16">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-extrabold mb-4">The Power of Integrated HR & Payroll in Your ERP</h2>
-                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">Traditional standalone HR systems can't connect workforce costs to production reality. CastLogic HR is fully integrated with your complete ERP—from timeclock to job cost to financial statements.</p>
+                    <h2 class="text-4xl font-extrabold mb-4">Connect Your HR & Payroll Platform to Your ERP</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">When your HR platform lives in a silo, workforce data never reaches production or accounting. CastLogic HR integrates with whichever HR/payroll system you use—via its open API—so time, labor cost, and GL postings flow into the ERP automatically.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8">
+                    <div class="gs-fade-left bg-red-50 border-2 border-red-200 rounded-xl p-8">
                         <h3 class="text-2xl font-bold text-red-900 mb-4">❌ Standalone HR/Payroll Systems</h3>
                         <ul class="space-y-3 text-gray-700">
                             <li class="flex items-start gap-3">
@@ -173,12 +188,12 @@
                         </ul>
                     </div>
 
-                    <div class="bg-green-50 border-2 border-green-200 rounded-xl p-8">
+                    <div class="gs-fade-right bg-green-50 border-2 border-green-200 rounded-xl p-8">
                         <h3 class="text-2xl font-bold text-green-900 mb-4">✓ CastLogic Integrated HR & Payroll</h3>
                         <ul class="space-y-3 text-gray-700">
                             <li class="flex items-start gap-3">
                                 <span class="text-green-600 font-bold">✓</span>
-                                <span><strong>Automatic time capture</strong> from production floor flows directly to payroll</span>
+                                <span><strong>Time data from your HR platform</strong> flows automatically to the ERP for job costing</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="text-green-600 font-bold">✓</span>
@@ -212,105 +227,105 @@
 
             <!-- Core HR & Payroll Modules -->
             <section class="mb-16">
-                <h2 class="text-3xl font-extrabold mb-8 text-center">Complete HR & Payroll Suite</h2>
-                <p class="text-center text-lg text-gray-600 mb-8">Powered by our integration with Everee, a leading payroll platform trusted by manufacturers nationwide</p>
+                <h2 class="text-3xl font-extrabold mb-8 text-center">What CastLogic Integration Brings to the ERP</h2>
+                <p class="text-center text-lg text-gray-600 mb-8">Your HR/payroll platform runs payroll, taxes, benefits, time tracking, and employee management. CastLogic connects via its open API and brings that data into the ERP—so it's not stuck in a silo.</p>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gs-stagger-container grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-green-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Flexible Payroll</h3>
+                            <h3 class="text-xl font-bold">Payroll Platform Integration</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• Daily, weekly, or on-demand pay schedules</li>
-                            <li>• Same-day payment processing</li>
-                            <li>• W-2 and 1099 worker support</li>
-                            <li>• Multi-location & multi-entity payroll</li>
-                            <li>• Cash flow support with Flex Credit</li>
-                            <li>• Custom pay rates by role or project</li>
+                            <li>• Two-way sync with BambooHR, Rippling, Paylocity, Time Track Plus, and others</li>
+                            <li>• Employee, pay rate, and deduction data kept in sync</li>
+                            <li>• W-2 and 1099 worker support inherited from your provider</li>
+                            <li>• Multi-location & multi-entity payroll passthrough</li>
+                            <li>• Custom pay rates by role or project flow to time-costing</li>
+                            <li>• Run your existing payroll workflow—no rip-and-replace</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-blue-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Tax & Compliance</h3>
+                            <h3 class="text-xl font-bold">Tax & Compliance Data Flow</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• 50-state automated compliance</li>
-                            <li>• Multi-EIN support</li>
-                            <li>• Automatic tax filing (federal & state)</li>
-                            <li>• Intelligent tax form routing</li>
-                            <li>• Certified payroll for government jobs</li>
-                            <li>• Year-end W-2/1099 generation</li>
+                            <li>• Tax filings and compliance handled by your HR/payroll provider</li>
+                            <li>• Multi-EIN postings routed to the right legal entity in the GL</li>
+                            <li>• Certified payroll data surfaced in ERP project reporting</li>
+                            <li>• Prevailing wage rates pulled in for job cost accuracy</li>
+                            <li>• Year-end W-2/1099 totals reconcilable against ERP GL</li>
+                            <li>• Audit trail spans payroll provider → ERP → financials</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-purple-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Employee Management</h3>
+                            <h3 class="text-xl font-bold">Employee Data Sync</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• Digital onboarding & I-9 management</li>
-                            <li>• Employee self-service portal</li>
-                            <li>• Document management (certifications, licenses)</li>
-                            <li>• PTO accrual and tracking</li>
-                            <li>• Performance reviews & evaluations</li>
-                            <li>• Organizational chart & hierarchy</li>
+                            <li>• Employee master record synced from your HR platform</li>
+                            <li>• Pay rates, roles, and cost centers kept in step with the ERP</li>
+                            <li>• Certifications and licenses surfaced for production scheduling</li>
+                            <li>• PTO balances visible to production planning</li>
+                            <li>• Onboarding/offboarding events trigger ERP-side updates</li>
+                            <li>• One source of truth for who works on what</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-yellow-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Time & Attendance</h3>
+                            <h3 class="text-xl font-bold">Time Data → Job Costing</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• Integrated timeclock systems</li>
-                            <li>• Mobile time tracking</li>
-                            <li>• Job/project time allocation</li>
-                            <li>• Overtime calculation & alerts</li>
-                            <li>• Shift differential management</li>
-                            <li>• CSV upload for legacy systems</li>
+                            <li>• Time entries pulled from your HR/time platform via API</li>
+                            <li>• Hours allocated to ERP jobs, operations, and cost objects</li>
+                            <li>• Overtime, shift, and rate context preserved through to GL</li>
+                            <li>• Approved hours flow back to payroll for processing</li>
+                            <li>• CSV fallback for legacy time systems without an API</li>
+                            <li>• Actual vs. standard labor analyzed in production reports</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-red-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Benefits Administration</h3>
+                            <h3 class="text-xl font-bold">Burden & Cost Data</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• Health insurance enrollment</li>
-                            <li>• 401(k) & retirement plan integration</li>
-                            <li>• Benefits eligibility tracking</li>
-                            <li>• Deduction management & processing</li>
+                            <li>• Benefits administration handled in your HR platform</li>
+                            <li>• Burden rates (taxes, benefits, employer contributions) pulled into ERP</li>
+                            <li>• Fully-burdened labor cost applied to job and project totals</li>
+                            <li>• Deductions reconciled to GL postings automatically</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+                    <div class="gs-stagger-item bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition" data-tilt="true">
                         <div class="flex items-center mb-4">
                             <div class="bg-indigo-100 rounded-lg p-3 mr-4">
                                 <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -320,12 +335,12 @@
                             <h3 class="text-xl font-bold">Workforce Analytics</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• Labor cost analysis by project</li>
-                            <li>• Productivity metrics & trends</li>
-                            <li>• Turnover and retention reporting</li>
-                            <li>• Headcount planning tools</li>
-                            <li>• Overtime tracking & forecasting</li>
-                            <li>• Custom HR dashboards</li>
+                            <li>• Labor cost analysis by project, crew, or product</li>
+                            <li>• Productivity metrics combining HR data with production data</li>
+                            <li>• Headcount and labor capacity planning in ERP context</li>
+                            <li>• Overtime trends alongside job/operation profitability</li>
+                            <li>• Custom ERP dashboards blending HR and operations data</li>
+                            <li>• Workforce KPIs unified with financial and production KPIs</li>
                         </ul>
                     </div>
 
@@ -334,8 +349,8 @@
 
             <!-- ERP Integration Benefits -->
             <section class="mb-16 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-12">
-                <h2 class="text-3xl font-extrabold mb-8 text-center">Complete ERP Integration: HR Connected to Everything</h2>
-                <p class="text-center text-xl text-gray-700 mb-12 max-w-4xl mx-auto">CastLogic HR doesn't operate in isolation. See how workforce data flows seamlessly through every part of your ERP system.</p>
+                <h2 class="text-3xl font-extrabold mb-8 text-center">How HR Data Flows Through the ERP</h2>
+                <p class="text-center text-xl text-gray-700 mb-12 max-w-4xl mx-auto">Once your HR/payroll platform is connected, workforce data stops living in a silo. Here's where it shows up across the rest of CastLogic.</p>
 
                 <div class="grid md:grid-cols-2 gap-8">
 
@@ -345,11 +360,11 @@
                             <h3 class="text-xl font-bold">Production & Time Tracking Integration</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700">
-                            <li>✓ Shop floor timeclocks automatically record hours by job and operation</li>
-                            <li>✓ Clock-in/out data flows directly to payroll—no manual time cards</li>
-                            <li>✓ Labor hours instantly allocated to WIP and job costing</li>
+                            <li>✓ Time entries pulled from your HR/time platform—no rekeying</li>
+                            <li>✓ Hours tagged to job and operation in the ERP for WIP and costing</li>
+                            <li>✓ Labor hours instantly allocated to job cost as time is approved</li>
                             <li>✓ Productivity tracking shows actual vs. standard labor hours</li>
-                            <li>✓ Overtime automatically calculated and flagged for approval</li>
+                            <li>✓ Overtime context (already calculated in your HR platform) preserved through to GL</li>
                             <li>✓ Crew productivity dashboards by project or shift</li>
                         </ul>
                     </div>
@@ -377,7 +392,7 @@
                         <ul class="space-y-2 text-gray-700">
                             <li>✓ Labor costs automatically distributed to projects by actual time</li>
                             <li>✓ Direct vs. indirect labor properly allocated</li>
-                            <li>✓ Prevailing wage compliance for government projects</li>
+                            <li>✓ Prevailing wage data (from your HR platform) tied to ERP project records</li>
                             <li>✓ Labor efficiency variance analysis (actual vs. budget)</li>
                             <li>✓ Real-time project profitability including all labor costs</li>
                         </ul>
@@ -389,12 +404,12 @@
                             <h3 class="text-xl font-bold">Scheduling & Capacity Planning</h3>
                         </div>
                         <ul class="space-y-2 text-gray-700">
-                            <li>✓ Employee availability syncs with production schedules</li>
-                            <li>✓ Skill-based scheduling assigns right workers to jobs</li>
-                            <li>✓ PTO requests check production schedules for conflicts</li>
-                            <li>✓ Labor capacity planning based on headcount and skills</li>
+                            <li>✓ Employee availability synced from your HR platform to production schedules</li>
+                            <li>✓ Skill-based scheduling uses certifications pulled from HR data</li>
+                            <li>✓ PTO data from your HR platform visible to production planning</li>
+                            <li>✓ Labor capacity planning based on synced headcount and skills</li>
                             <li>✓ Shift schedules optimize crew assignments</li>
-                            <li>✓ Certifications and training track qualified workers</li>
+                            <li>✓ Certifications and training data surface for qualified-worker assignment</li>
                         </ul>
                     </div>
 
@@ -434,8 +449,8 @@
             <!-- Manufacturing-Specific HR Features -->
             <section class="mb-16">
                 <div class="bg-gray-50 rounded-2xl p-10">
-                    <h2 class="text-3xl font-extrabold mb-6 text-center">Built for Manufacturing Workforce Needs</h2>
-                    <p class="text-center text-lg text-gray-700 mb-10 max-w-3xl mx-auto">Generic HR systems don't understand the complexity of manufacturing labor. CastLogic HR handles the unique challenges of precast production workforces.</p>
+                    <h2 class="text-3xl font-extrabold mb-6 text-center">Built for Manufacturing Workforce Complexity</h2>
+                    <p class="text-center text-lg text-gray-700 mb-10 max-w-3xl mx-auto">Generic ERPs lose the nuance of how manufacturing labor actually gets paid. CastLogic preserves that nuance through the integration—so prevailing wage, shift differentials, and skill-based pay reach the GL with the right context.</p>
 
                     <div class="grid md:grid-cols-2 gap-8">
                         <div>
@@ -446,7 +461,7 @@
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
                                     <div>
-                                        <strong>Prevailing Wage Compliance:</strong> Automatic calculation and reporting for government contracts (Davis-Bacon, state prevailing wage)
+                                        <strong>Prevailing Wage Context:</strong> Davis-Bacon and state prevailing wage data from your HR platform flows into ERP project costing and reporting
                                     </div>
                                 </li>
                                 <li class="flex items-start gap-3">
@@ -454,7 +469,7 @@
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
                                     <div>
-                                        <strong>Shift Differentials:</strong> Multiple pay rates for day/swing/night shifts with automatic calculation
+                                        <strong>Shift Differentials:</strong> Day/swing/night rate context preserved end-to-end from your HR platform through to job cost
                                     </div>
                                 </li>
                                 <li class="flex items-start gap-3">
@@ -462,7 +477,7 @@
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
                                     <div>
-                                        <strong>Skill-Based Pay:</strong> Different rates based on certifications, roles, or specialized skills
+                                        <strong>Skill-Based Pay:</strong> Certification, role, and skill data synced from HR drives the right pay rate to the right job
                                     </div>
                                 </li>
                                 <li class="flex items-start gap-3">
@@ -480,16 +495,16 @@
                             <h3 class="text-xl font-bold mb-4">Additional Manufacturing Capabilities</h3>
                             <div class="grid md:grid-cols-3 gap-6">
                                 <div class="bg-white p-4 rounded-lg border border-gray-200">
-                                    <h4 class="font-bold mb-2">Contractor Management</h4>
-                                    <p class="text-sm text-gray-600">1099 contractor payroll, independent contractor compliance, and blended W-2/1099 workforces</p>
+                                    <h4 class="font-bold mb-2">Contractor Data</h4>
+                                    <p class="text-sm text-gray-600">W-2 and 1099 worker records from your HR platform reach the ERP with the right job and cost context</p>
                                 </div>
                                 <div class="bg-white p-4 rounded-lg border border-gray-200">
-                                    <h4 class="font-bold mb-2">Multi-Site Operations</h4>
-                                    <p class="text-sm text-gray-600">Manage payroll across multiple plants with different state tax requirements and local regulations</p>
+                                    <h4 class="font-bold mb-2">Multi-Site Posting</h4>
+                                    <p class="text-sm text-gray-600">Multi-entity, multi-state payroll postings route to the correct legal entity and GL in the ERP</p>
                                 </div>
                                 <div class="bg-white p-4 rounded-lg border border-gray-200">
                                     <h4 class="font-bold mb-2">Seasonal Workforce</h4>
-                                    <p class="text-sm text-gray-600">Handle fluctuating headcount with easy onboarding/offboarding and temporary worker tracking</p>
+                                    <p class="text-sm text-gray-600">Headcount changes in your HR platform flow through to ERP scheduling and labor planning automatically</p>
                                 </div>
                             </div>
                         </div>
@@ -497,30 +512,38 @@
                 </div>
             </section>
 
-            <!-- Powered by Everee -->
+            <!-- HR & Payroll Platform Integrations -->
             <section class="mb-16">
                 <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl p-10">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                         <div>
-                            <h2 class="text-3xl font-extrabold mb-4">Powered by Everee</h2>
-                            <p class="text-lg text-blue-100 mb-6">Our strategic partnership with Everee brings you enterprise-grade payroll technology trusted by leading manufacturers, seamlessly embedded in your CastLogic ERP.</p>
-                            <h3 class="text-xl font-bold mb-3">Why Everee?</h3>
+                            <h2 class="text-3xl font-extrabold mb-4">Works With Your HR &amp; Payroll Platform</h2>
+                            <p class="text-lg text-blue-100 mb-6">CastLogic HR is an integration layer, not a payroll engine. Keep the HR or payroll system your team already runs—we pull time, employee, and pay data into the ERP so labor flows automatically to job costing, the GL, and project profitability.</p>
+                            <h3 class="text-xl font-bold mb-3">Why this approach?</h3>
                             <ul class="space-y-2 text-blue-100">
-                                <li>✓ Dedicated account support (no call centers)</li>
-                                <li>✓ Same-day payment capability</li>
-                                <li>✓ Flexible payment schedules (daily, weekly, on-demand)</li>
-                                <li>✓ 50-state compliance automation</li>
-                                <li>✓ Modern API for seamless integration</li>
-                                <li>✓ White-label worker experience</li>
+                                <li>✓ No rip-and-replace of your payroll provider</li>
+                                <li>✓ Your HR team keeps the tools and workflows they know</li>
+                                <li>✓ Compliance, tax filing, and benefits stay with your dedicated provider</li>
+                                <li>✓ One source of truth for labor in the ERP</li>
+                                <li>✓ Faster implementation—weeks, not quarters</li>
+                                <li>✓ Switch providers without losing ERP-side history</li>
                             </ul>
                         </div>
                         <div class="bg-white/10 p-8 rounded-xl">
-                            <h3 class="text-2xl font-bold mb-4 text-center">Flex Credit Cash Flow Support</h3>
-                            <p class="text-center mb-4">Run payroll even when waiting for customer payments</p>
+                            <h3 class="text-2xl font-bold mb-4 text-center">Supported HR &amp; Payroll Platforms</h3>
+                            <p class="text-center mb-4 text-blue-100">Out-of-the-box and custom integrations for the systems precast manufacturers actually use:</p>
                             <div class="bg-white text-gray-800 p-6 rounded-lg">
-                                <p class="text-sm font-semibold mb-2">Example Scenario:</p>
-                                <p class="text-sm mb-4">Your client's payment is delayed, but your team needs to be paid on Friday. Everee's Flex Credit covers your payroll, and you settle when the client payment arrives—no interruption to your workforce.</p>
-                                <p class="text-xs text-gray-600">This feature has helped manufacturers maintain consistent payroll during cash flow gaps.</p>
+                                <ul class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm font-semibold">
+                                    <li>• BambooHR</li>
+                                    <li>• Rippling</li>
+                                    <li>• Paylocity</li>
+                                    <li>• Time Track Plus</li>
+                                    <li>• ADP</li>
+                                    <li>• Paychex</li>
+                                    <li>• Gusto</li>
+                                    <li>• &amp; others on request</li>
+                                </ul>
+                                <p class="text-xs text-gray-600 mt-4">Don't see your platform? Most modern HR/payroll systems expose APIs we can connect to during implementation.</p>
                             </div>
                         </div>
                     </div>
@@ -529,41 +552,42 @@
 
             <!-- Reporting & Analytics -->
             <section class="mb-16">
-                <h2 class="text-3xl font-extrabold mb-8 text-center">HR & Workforce Reporting</h2>
+                <h2 class="text-3xl font-extrabold mb-8 text-center">Workforce Reporting in ERP Context</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Statutory and HR-side reports stay with your HR/payroll platform. CastLogic combines that data with ERP data to produce reports the HR system can't, and surfaces HR-system reports inside ERP project context.</p>
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-green-600">
-                        <h3 class="text-xl font-bold mb-4">Payroll Reports</h3>
+                        <h3 class="text-xl font-bold mb-4">Labor Cost in ERP</h3>
                         <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>✓ Payroll Register & Summary</li>
-                            <li>✓ Labor Distribution by Project</li>
-                            <li>✓ Tax Liability Reports</li>
-                            <li>✓ Deduction & Benefits Summary</li>
-                            <li>✓ Quarterly & Annual Tax Filings</li>
-                            <li>✓ Workers' Comp Audit Reports</li>
+                            <li>✓ Labor Distribution by Project & Operation</li>
+                            <li>✓ Fully-Burdened Labor Cost Reports</li>
+                            <li>✓ Direct vs. Indirect Labor Allocation</li>
+                            <li>✓ Multi-Entity GL Posting Summary</li>
+                            <li>✓ Variance: Actual vs. Standard Labor</li>
+                            <li>✓ Job Costing reconciled to payroll provider totals</li>
                         </ul>
                     </div>
 
                     <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-blue-600">
                         <h3 class="text-xl font-bold mb-4">Workforce Analytics</h3>
                         <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>✓ Headcount & Demographics</li>
-                            <li>✓ Turnover & Retention Rates</li>
-                            <li>✓ Labor Cost Trends</li>
-                            <li>✓ Productivity by Employee/Crew</li>
-                            <li>✓ Overtime Analysis</li>
-                            <li>✓ Skills Gap Analysis</li>
+                            <li>✓ Headcount (synced from HR) by job, crew, or shift</li>
+                            <li>✓ Labor Cost Trends across projects</li>
+                            <li>✓ Productivity by Employee/Crew vs. standards</li>
+                            <li>✓ Overtime Analysis against production output</li>
+                            <li>✓ Skills/Certification utilization for scheduling</li>
+                            <li>✓ Custom dashboards blending HR + ERP data</li>
                         </ul>
                     </div>
 
                     <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-purple-600">
-                        <h3 class="text-xl font-bold mb-4">Compliance Reports</h3>
+                        <h3 class="text-xl font-bold mb-4">HR Reports Surfaced in ERP</h3>
                         <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>✓ Certified Payroll (WH-347)</li>
-                            <li>✓ Prevailing Wage Compliance</li>
-                            <li>✓ EEO-1 Reporting</li>
-                            <li>✓ Injury/Incident Logs</li>
-                            <li>✓ Certification Expiration Tracking</li>
-                            <li>✓ ACA (Affordable Care Act) Reports</li>
+                            <li>✓ Certified Payroll data (from your HR provider) tied to ERP projects</li>
+                            <li>✓ Prevailing Wage context applied to government job costing</li>
+                            <li>✓ Certification expirations visible to production scheduling</li>
+                            <li>✓ Injury/incident data linked to ERP work orders</li>
+                            <li>✓ Statutory filings (EEO-1, ACA, tax) remain with HR provider</li>
+                            <li>✓ ERP totals reconcilable to HR/payroll source</li>
                         </ul>
                     </div>
                 </div>
@@ -589,7 +613,7 @@
                             <h3 class="text-xl font-bold mb-4">Data Security</h3>
                             <ul class="space-y-2 text-gray-300">
                                 <li>✓ Bank-level encryption for all employee data</li>
-                                <li>✓ SOC 2 Type II framework controls</li>
+                                <li>✓ Role-based access controls &amp; audit trails</li>
                                 <li>✓ Role-based access controls</li>
                                 <li>✓ Multi-factor authentication</li>
                                 <li>✓ Automatic data backups</li>
@@ -612,7 +636,7 @@
             </section>
 
             <!-- CTA Section -->
-        <!-- Expanded Capabilities -->
+<!-- Expanded Capabilities -->
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -622,8 +646,8 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
                         <div class="text-4xl mb-4">🔗</div>
-                        <h3 class="text-xl font-bold mb-3">Payroll Integrations</h3>
-                        <p class="text-gray-600">Embedded payroll powered by Everee — or a full Paylocity integration if that's what you run. Journal entries flow back into the CastLogic general ledger automatically.</p>
+                        <h3 class="text-xl font-bold mb-3">Payroll Platform Integrations</h3>
+                        <p class="text-gray-600">Full integrations with the payroll platform you already run — Paylocity, Rippling, and others — with journal entries flowing back into the CastLogic general ledger automatically.</p>
                     </div>
                     <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
                         <div class="text-4xl mb-4">⏱️</div>
@@ -646,7 +670,7 @@
 
             <section class="text-center">
                 <div class="bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-12 text-white">
-                    <h2 class="text-4xl font-extrabold mb-4">Ready to Transform Your Workforce Management?</h2>
+                    <h2 class="gs-fade-up text-4xl font-extrabold mb-4">Ready to Transform Your Workforce Management?</h2>
                     <p class="text-xl mb-8 max-w-3xl mx-auto">Experience the power of fully integrated HR & Payroll that connects your people, production, and profits. See how CastLogic HR eliminates manual processes and gives you complete workforce visibility.</p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="contact.html" class="bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">Schedule a Demo</a>
@@ -663,7 +687,7 @@
             <div class="grid md:grid-cols-5 gap-8 mb-12">
                 <!-- Company Info -->
                 <div class="md:col-span-2">
-                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <img src="intrasync-logo.jpg" alt="IntraSync" class="h-10 mb-4">
                     <p class="text-gray-600 mb-4">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
                     <address class="not-italic text-gray-600 mb-4">
                         <p class="font-semibold text-gray-900">IntraSync Industrial</p>
@@ -684,6 +708,7 @@
                     <ul class="space-y-2">
                         <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
                         <li><a href="designer.html" class="hover:text-blue-600 transition">Designer</a></li>
+                        <li><a href="robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
                         <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
                         <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
                         <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
@@ -697,8 +722,8 @@
                     <ul class="space-y-2">
                         <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
                         <li><a href="compare.html" class="hover:text-blue-600 transition">Compare</a></li>
-                        <li><a href="case-studies.html" class="hover:text-blue-600 transition">Case Studies</a></li>
                         <li><a href="certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
+                        <li><a href="roi-calculator.html" class="hover:text-blue-600 transition">ROI Calculator</a></li>
                         <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
                     </ul>
                 </div>
@@ -768,7 +793,7 @@
 
             <!-- Bottom Bar -->
             <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">&copy; 2025 IntraSync Industrial. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2026</span> IntraSync Industrial. All rights reserved.</p>
                 <div class="flex gap-6 text-sm mt-4 md:mt-0">
                     <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>

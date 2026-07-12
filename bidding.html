@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <title>Bidding, Estimating & Sales | CastLogic by IntraSync</title>
     <meta name="description" content="Win more work at better margins with integrated design tools, machine vision takeoffs, automated cost estimating, and seamless quote-to-production workflow for precast manufacturing.">
     <!-- Canonical URL -->
@@ -13,36 +17,117 @@
     <meta property="og:url" content="https://intrasyncindustrial.com/bidding.html">
     <meta property="og:title" content="Bidding, Estimating & Sales | CastLogic by IntraSync">
     <meta property="og:description" content="Win more work at better margins with integrated design tools, machine vision takeoffs, automated cost estimating, and seamless quote-to-production workflow for precast manufacturing.">
-    <meta property="og:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
     <meta property="og:site_name" content="IntraSync Industrial">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bidding, Estimating & Sales | CastLogic by IntraSync">
     <meta name="twitter:description" content="Win more work at better margins with integrated design tools, machine vision takeoffs, automated cost estimating, and seamless quote-to-production workflow for precast manufacturing.">
-    <meta name="twitter:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta name="twitter:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SoftwareApplication Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CastLogic Bidding & Estimating",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Estimating Software",
+      "operatingSystem": "Web-based, Cloud",
+      "isPartOf": {
+        "@type": "SoftwareApplication",
+        "name": "CastLogic ERP",
+        "url": "https://intrasyncindustrial.com"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "url": "https://intrasyncindustrial.com"
+      },
+      "description": "Integrated bidding, estimating, and sales software for precast concrete manufacturers. Features machine vision takeoffs, automated cost estimating, integrated design tools, and seamless quote-to-production workflow.",
+      "featureList": [
+        "Machine vision plan takeoffs",
+        "Automated cost estimating",
+        "Integrated design tools",
+        "Quote-to-production workflow",
+        "Bid tracking and management",
+        "Historical cost analysis",
+        "Material and labor cost calculation",
+        "CRM integration",
+        "Proposal generation",
+        "Win/loss analytics"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Precast concrete manufacturers, Estimators, Sales managers"
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://intrasyncindustrial.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Modules",
+          "item": "https://intrasyncindustrial.com/modules.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Bidding & Estimating",
+          "item": "https://intrasyncindustrial.com/bidding.html"
+        }
+      ]
+    }
+    </script>
+
+    <meta name="keywords" content="precast concrete estimating, bidding software, cost estimating, machine vision takeoffs, quote-to-production, CastLogic, precast sales, automated estimating, IntraSync Industrial">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <link rel="stylesheet" href="site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="site.js" defer></script>
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
 </head>
 <body class="bg-white text-gray-800">
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <!-- Sticky Demo CTA Button -->
+    <a href="contact.html" class="cta-button-fixed bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
+        Schedule Demo
+    </a>
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-12">
-                    <a href="index.html">
-                        <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                    <a href="index.html" aria-label="IntraSync CastLogic Home">
+                        <img src="intrasync-logo.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
                     </a>
-                    <nav class="hidden md:flex gap-8 text-base font-semibold">
-                        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
-                        <a href="modules.html" class="text-gray-700 hover:text-blue-700 transition">Modules</a>
-                        <a href="compare.html" class="text-gray-700 hover:text-blue-700 transition">Compare</a>
-                        <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
-                        <a href="about.html" class="text-gray-700 hover:text-blue-700 transition">About</a>
-                        <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
                     </nav>
                 </div>
                 <div class="flex items-center gap-4">
@@ -54,7 +139,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <!-- Hero Section -->
         <section class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white py-20">
             <div class="container mx-auto px-6">
@@ -63,9 +148,9 @@
                         <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-4xl">💼</div>
                         <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-bold">SALES & ESTIMATING</span>
                     </div>
-                    <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Bidding, Estimating & Sales</h1>
-                    <p class="text-2xl mb-8 text-emerald-100">Win more work at better margins with integrated design tools, machine vision takeoffs, automated cost estimating, and seamless quote-to-production workflow.</p>
-                    <div class="flex gap-4">
+                    <h1 class="gs-fade-up text-5xl md:text-6xl font-extrabold mb-6">Bidding, Estimating & Sales</h1>
+                    <p class="gs-fade-up text-2xl mb-8 text-emerald-100" data-delay="0.1">Win more work at better margins with integrated design tools, machine vision takeoffs, automated cost estimating, and seamless quote-to-production workflow.</p>
+                    <div class="gs-fade-up flex gap-4" data-delay="0.2">
                         <a href="contact.html" class="bg-white text-emerald-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-50 transition">Schedule Demo</a>
                         <a href="#features" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition">Learn More</a>
                     </div>
@@ -82,7 +167,7 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                    <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8">
+                    <div class="gs-fade-left bg-red-50 border-2 border-red-200 rounded-xl p-8">
                         <h3 class="text-2xl font-bold mb-6 text-red-900">❌ Traditional Estimating Chaos</h3>
                         <ul class="space-y-3 text-gray-700">
                             <li class="flex items-start gap-2">
@@ -116,7 +201,7 @@
                         </ul>
                     </div>
 
-                    <div class="bg-green-50 border-2 border-green-200 rounded-xl p-8">
+                    <div class="gs-fade-right bg-green-50 border-2 border-green-200 rounded-xl p-8">
                         <h3 class="text-2xl font-bold mb-6 text-green-900">✅ CastLogic Integrated Sales</h3>
                         <ul class="space-y-3 text-gray-700">
                             <li class="flex items-start gap-2">
@@ -432,44 +517,44 @@
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">Real-time cost data from actual production, not outdated spreadsheets</p>
                 </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="gs-stagger-container grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <!-- Feature 1 -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition" data-tilt="true">
                         <div class="text-4xl mb-4">📊</div>
                         <h3 class="text-xl font-bold mb-3">Historical Cost Database</h3>
                         <p class="text-gray-600">Pull actual costs from completed jobs. Material prices, labor hours, and overhead rates updated from real production data—not guesses.</p>
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition" data-tilt="true">
                         <div class="text-4xl mb-4">👷</div>
                         <h3 class="text-xl font-bold mb-3">Crew Productivity Rates</h3>
                         <p class="text-gray-600">System learns how long your crews actually take for forming, pouring, stripping, finishing. Estimates based on YOUR plant's performance, not industry averages.</p>
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition" data-tilt="true">
                         <div class="text-4xl mb-4">🧮</div>
                         <h3 class="text-xl font-bold mb-3">Automated Calculations</h3>
                         <p class="text-gray-600">Concrete volume, rebar tonnage, embedded item counts, labor hours—all calculated automatically from design specs. No manual math errors.</p>
                     </div>
 
                     <!-- Feature 4 -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition" data-tilt="true">
                         <div class="text-4xl mb-4">💵</div>
                         <h3 class="text-xl font-bold mb-3">Material Pricing Integration</h3>
                         <p class="text-gray-600">Current prices from suppliers flow into estimates. When cement prices change, your estimates reflect it immediately.</p>
                     </div>
 
                     <!-- Feature 5 -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition" data-tilt="true">
                         <div class="text-4xl mb-4">📈</div>
                         <h3 class="text-xl font-bold mb-3">Margin Analysis</h3>
                         <p class="text-gray-600">Set target margins by product type, customer, or project size. System warns if your bid is below minimum acceptable margin.</p>
                     </div>
 
                     <!-- Feature 6 -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="gs-stagger-item bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition" data-tilt="true">
                         <div class="text-4xl mb-4">🔄</div>
                         <h3 class="text-xl font-bold mb-3">Version Control</h3>
                         <p class="text-gray-600">Track estimate revisions when customer changes scope. Compare original vs. revised pricing. Maintain audit trail for change orders.</p>
@@ -753,7 +838,7 @@
         </section>
 
         <!-- CTA Section -->
-        <!-- Expanded Capabilities -->
+<!-- Expanded Capabilities -->
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -792,7 +877,7 @@
 
         <section class="py-20 bg-gradient-to-r from-emerald-600 to-teal-700 text-white">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to Win More Work?</h2>
+                <h2 class="gs-fade-up text-4xl md:text-5xl font-extrabold mb-6">Ready to Win More Work?</h2>
                 <p class="text-2xl mb-8 text-emerald-100 max-w-3xl mx-auto">See how CastLogic's integrated bidding, estimating, and sales platform helps you respond faster, quote more accurately, and convert more opportunities to production.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="contact.html" class="bg-white text-emerald-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-50 transition inline-block">Schedule a Demo</a>
@@ -808,7 +893,7 @@
             <div class="grid md:grid-cols-5 gap-8 mb-12">
                 <!-- Company Info -->
                 <div class="md:col-span-2">
-                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <img src="intrasync-logo.jpg" alt="IntraSync" class="h-10 mb-4">
                     <p class="text-gray-600 mb-4">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
                     <address class="not-italic text-gray-600 mb-4">
                         <p class="font-semibold text-gray-900">IntraSync Industrial</p>
@@ -829,6 +914,7 @@
                     <ul class="space-y-2">
                         <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
                         <li><a href="designer.html" class="hover:text-blue-600 transition">Designer</a></li>
+                        <li><a href="robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
                         <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
                         <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
                         <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
@@ -842,8 +928,8 @@
                     <ul class="space-y-2">
                         <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
                         <li><a href="compare.html" class="hover:text-blue-600 transition">Compare</a></li>
-                        <li><a href="case-studies.html" class="hover:text-blue-600 transition">Case Studies</a></li>
                         <li><a href="certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
+                        <li><a href="roi-calculator.html" class="hover:text-blue-600 transition">ROI Calculator</a></li>
                         <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
                     </ul>
                 </div>
@@ -913,7 +999,7 @@
 
             <!-- Bottom Bar -->
             <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">&copy; 2025 IntraSync Industrial. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2026</span> IntraSync Industrial. All rights reserved.</p>
                 <div class="flex gap-6 text-sm mt-4 md:mt-0">
                     <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>

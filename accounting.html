@@ -7,20 +7,20 @@
     <meta name="description" content="Enterprise-grade accounting and financial management integrated with complete ERP suite for precast manufacturing. Features comparable to Sage Intacct with industry-specific capabilities.">
     <!-- Canonical URL -->
     <link rel="canonical" href="https://intrasyncindustrial.com/accounting.html">
-    
+
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://intrasyncindustrial.com/accounting.html">
     <meta property="og:title" content="CastLogic Accounting - Complete ERP Financial Management">
     <meta property="og:description" content="Enterprise-grade accounting and financial management integrated with complete ERP suite for precast manufacturing. Features comparable to Sage Intacct with industry-specific capabilities.">
-    <meta property="og:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
     <meta property="og:site_name" content="IntraSync Industrial">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="CastLogic Accounting - Complete ERP Financial Management">
     <meta name="twitter:description" content="Enterprise-grade accounting and financial management integrated with complete ERP suite for precast manufacturing. Features comparable to Sage Intacct with industry-specific capabilities.">
-    <meta name="twitter:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta name="twitter:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
 
 
     <!-- Schema.org markup for AI/LLM discovery -->
@@ -90,27 +90,31 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/modern.css">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
     </style>
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
 </head>
 <body class="bg-white text-gray-800">
+    <a href="#main" class="skip-link">Skip to content</a>
     <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-12">
                     <a href="index.html">
-                        <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                        <img src="intrasync-logo.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
                     </a>
                     <nav class="hidden md:flex gap-8 text-base font-semibold">
                         <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
                         <a href="modules.html" class="text-blue-700 hover:text-blue-800 transition">Modules</a>
                         <a href="compare.html" class="text-gray-700 hover:text-blue-700 transition">Compare</a>
                         <a href="blog.html" class="text-gray-700 hover:text-blue-700 transition">Blog</a>
-                        <a href="about.html" class="text-gray-700 hover:text-blue-700 transition">About</a>
                         <a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a>
                     </nav>
                 </div>
@@ -123,367 +127,422 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="gradient-bg text-white py-16">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl font-extrabold mb-6">CastLogic Accounting</h1>
-            <p class="text-2xl mb-4">Enterprise Financial Management Built for Manufacturing</p>
-            <p class="text-xl text-blue-100 max-w-3xl mx-auto">Complete ERP accounting with real-time visibility from shop floor to balance sheet. Features comparable to Sage Intacct, purpose-built for precast operations.</p>
+    <!-- Hero Section with Floating Orbs -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white py-28 md:py-36">
+        <!-- Floating Orbs -->
+        <div class="floating-orb" style="width: 500px; height: 500px; background: #667eea; top: -10%; left: -5%;"></div>
+        <div class="floating-orb" style="width: 400px; height: 400px; background: #764ba2; bottom: -15%; right: -5%;"></div>
+        <div class="floating-orb" style="width: 300px; height: 300px; background: #06b6d4; top: 40%; left: 60%;"></div>
+
+        <div class="relative z-10 container mx-auto px-6 text-center">
+            <div class="reveal max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2 text-sm font-semibold mb-8">
+                    <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+                    FINANCIAL MODULE
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
+                    CastLogic<br><span class="gradient-text">Accounting</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Enterprise Financial Management Built for Manufacturing
+                </p>
+                <p class="text-lg text-blue-200/80 max-w-3xl mx-auto mb-10 leading-relaxed">
+                    Complete ERP accounting with real-time visibility from shop floor to balance sheet. Automated cost capture from robotic production cells feeds directly into job costing -- no manual data entry, no reconciliation gaps.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-primary text-lg px-8 py-4">Schedule a Demo</a>
+                    <a href="#features" class="btn-secondary !bg-white/10 !border-white/30 !text-white hover:!bg-white/20 text-lg px-8 py-4">Explore Features</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <main class="py-16">
-        <div class="container mx-auto px-6 max-w-6xl">
+    <main id="main">
+        <!-- Stats Bar -->
+        <section class="relative z-20 -mt-12">
+            <div class="container mx-auto px-6">
+                <div class="reveal bg-white rounded-2xl shadow-xl border border-gray-100 p-8 md:p-10 max-w-5xl mx-auto">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div>
+                            <div class="text-4xl md:text-5xl font-black gradient-text counter" data-target="85" data-suffix="%">0%</div>
+                            <p class="text-sm text-gray-500 mt-2 font-medium">Faster Month-End Close</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl md:text-5xl font-black gradient-text counter" data-target="100" data-suffix="%">0%</div>
+                            <p class="text-sm text-gray-500 mt-2 font-medium">Real-Time Job Costing</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl md:text-5xl font-black gradient-text counter" data-target="0" data-suffix="">0</div>
+                            <p class="text-sm text-gray-500 mt-2 font-medium">Manual Data Entry</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl md:text-5xl font-black gradient-text counter" data-target="50" data-suffix="+">0+</div>
+                            <p class="text-sm text-gray-500 mt-2 font-medium">Built-In Reports</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-6 max-w-6xl py-24">
 
             <!-- The Full ERP Advantage -->
-            <section class="mb-16">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-extrabold mb-4">The Power of Fully Integrated ERP Accounting</h2>
-                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">Unlike standalone accounting software, CastLogic Accounting is the financial backbone of your complete ERP system—seamlessly connecting production, inventory, HR, and operations into one unified platform.</p>
+            <section class="mb-24 reveal">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">The Power of Fully Integrated<br><span class="gradient-text">ERP Accounting</span></h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">Unlike standalone accounting software, CastLogic Accounting is the financial backbone of your complete ERP system -- seamlessly connecting production, inventory, HR, and operations into one unified platform.</p>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8">
-                        <h3 class="text-2xl font-bold text-red-900 mb-4">❌ Standalone Accounting Software</h3>
-                        <ul class="space-y-3 text-gray-700">
+                <div class="grid md:grid-cols-2 gap-8 mb-12 stagger">
+                    <div class="modern-card bg-red-50/50 border-red-100">
+                        <h3 class="text-2xl font-bold text-red-900 mb-6">Standalone Accounting Software</h3>
+                        <ul class="space-y-4 text-gray-700">
                             <li class="flex items-start gap-3">
-                                <span class="text-red-600 font-bold">•</span>
+                                <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                                 <span>Manual data entry between systems creates errors and delays</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-red-600 font-bold">•</span>
+                                <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                                 <span>Job costing requires reconciliation across multiple platforms</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-red-600 font-bold">•</span>
+                                <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                                 <span>Inventory values don't sync with financial records</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-red-600 font-bold">•</span>
+                                <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                                 <span>Payroll costs disconnected from project tracking</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-red-600 font-bold">•</span>
+                                <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                                 <span>Real-time profitability analysis is impossible</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-red-600 font-bold">•</span>
+                                <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                                 <span>Month-end close takes days of reconciliation work</span>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="bg-green-50 border-2 border-green-200 rounded-xl p-8">
-                        <h3 class="text-2xl font-bold text-green-900 mb-4">✓ CastLogic Integrated ERP Accounting</h3>
-                        <ul class="space-y-3 text-gray-700">
+                    <div class="modern-card bg-green-50/50 border-green-100">
+                        <h3 class="text-2xl font-bold text-green-900 mb-6">CastLogic Integrated ERP Accounting</h3>
+                        <ul class="space-y-4 text-gray-700">
                             <li class="flex items-start gap-3">
-                                <span class="text-green-600 font-bold">✓</span>
-                                <span><strong>Automatic data flow</strong> from production to financials—zero manual entry</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span><strong>Automatic data flow</strong> from production to financials -- zero manual entry</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-green-600 font-bold">✓</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span><strong>Real-time job costing</strong> tracks every labor hour, material, and overhead automatically</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-green-600 font-bold">✓</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span><strong>Inventory perpetually synced</strong> with COGS and financial statements</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-green-600 font-bold">✓</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span><strong>Payroll integrated</strong> directly into project costs and WIP accounting</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-green-600 font-bold">✓</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span><strong>Live profitability dashboards</strong> show margins by project, product line, or customer</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-green-600 font-bold">✓</span>
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                                 <span><strong>Month-end close in hours</strong> not days with automated reconciliations</span>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8 text-center">
+                <div class="glass-card-dark bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 md:p-10 text-center reveal">
                     <h3 class="text-2xl font-bold mb-3">The Bottom Line</h3>
-                    <p class="text-xl">CastLogic Accounting isn't just software—it's the financial intelligence layer that connects your entire operation, eliminating data silos and giving you complete visibility from production to profit.</p>
+                    <p class="text-xl text-blue-100 leading-relaxed max-w-4xl mx-auto">CastLogic Accounting isn't just software -- it's the financial intelligence layer that connects your entire operation, eliminating data silos and giving you complete visibility from production to profit.</p>
                 </div>
             </section>
 
             <!-- Core Financial Modules -->
-            <section class="mb-16">
-                <h2 class="text-3xl font-extrabold mb-8 text-center">Complete Financial Management Suite</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <section id="features" class="mb-24">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Complete Financial<br><span class="gradient-text">Management Suite</span></h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 stagger">
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4">
-                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold">General Ledger</h3>
+                    <div class="modern-card">
+                        <div class="feature-icon-modern bg-blue-100 text-blue-600 mb-5">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
                         </div>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• Unlimited dimensions for detailed reporting</li>
-                            <li>• Multi-entity consolidations</li>
-                            <li>• Automated journal entries</li>
-                            <li>• Inter-company transactions</li>
-                            <li>• Real-time financial statements</li>
-                            <li>• Drill-down to source transactions</li>
+                        <h3 class="text-xl font-bold mb-3">General Ledger</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm leading-relaxed">
+                            <li>Unlimited dimensions for detailed reporting</li>
+                            <li>Multi-entity consolidations</li>
+                            <li>Automated journal entries</li>
+                            <li>Inter-company transactions</li>
+                            <li>Real-time financial statements</li>
+                            <li>Drill-down to source transactions</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-green-100 rounded-lg p-3 mr-4">
-                                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold">Accounts Payable</h3>
+                    <div class="modern-card">
+                        <div class="feature-icon-modern bg-green-100 text-green-600 mb-5">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
                         </div>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• AI-powered bill capture & data entry</li>
-                            <li>• 3-way PO matching automation</li>
-                            <li>• Vendor management & 1099 tracking</li>
-                            <li>• Automated payment workflows</li>
-                            <li>• Early payment discount optimization</li>
-                            <li>• ACH & check printing integration</li>
+                        <h3 class="text-xl font-bold mb-3">Accounts Payable</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm leading-relaxed">
+                            <li>AI-powered bill capture and data entry</li>
+                            <li>3-way PO matching automation</li>
+                            <li>Vendor management and 1099 tracking</li>
+                            <li>Automated payment workflows</li>
+                            <li>Early payment discount optimization</li>
+                            <li>ACH and check printing integration</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-purple-100 rounded-lg p-3 mr-4">
-                                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold">Accounts Receivable</h3>
+                    <div class="modern-card">
+                        <div class="feature-icon-modern bg-purple-100 text-purple-600 mb-5">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z"></path>
+                            </svg>
                         </div>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• Automated invoice generation</li>
-                            <li>• Progress billing & retention tracking</li>
-                            <li>• Electronic payment processing</li>
-                            <li>• Collections management workflows</li>
-                            <li>• Customer credit monitoring</li>
-                            <li>• Aging reports & dunning letters</li>
+                        <h3 class="text-xl font-bold mb-3">Accounts Receivable</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm leading-relaxed">
+                            <li>Automated invoice generation</li>
+                            <li>Progress billing and retention tracking</li>
+                            <li>Electronic payment processing</li>
+                            <li>Collections management workflows</li>
+                            <li>Customer credit monitoring</li>
+                            <li>Aging reports and dunning letters</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-yellow-100 rounded-lg p-3 mr-4">
-                                <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold">Cash Management</h3>
+                    <div class="modern-card">
+                        <div class="feature-icon-modern bg-yellow-100 text-yellow-600 mb-5">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
                         </div>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• Multi-bank account management</li>
-                            <li>• Automated bank reconciliation</li>
-                            <li>• Cash flow forecasting</li>
-                            <li>• Bank feed integration</li>
-                            <li>• Payment processing tracking</li>
-                            <li>• Treasury management tools</li>
+                        <h3 class="text-xl font-bold mb-3">Job Costing</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-3">Automated cost data from robotic production -- energy consumption, cycle times, and material usage -- flows into job costs without manual entry.</p>
+                        <ul class="space-y-2 text-gray-600 text-sm leading-relaxed">
+                            <li>Real-time cost accumulation by project</li>
+                            <li>Budget vs. actual analysis</li>
+                            <li>Change order management</li>
+                            <li>Project profitability dashboards</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-red-100 rounded-lg p-3 mr-4">
-                                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold">Project Accounting</h3>
+                    <div class="modern-card">
+                        <div class="feature-icon-modern bg-red-100 text-red-600 mb-5">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                            </svg>
                         </div>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• Job costing by project/phase/task</li>
-                            <li>• WIP (Work-in-Progress) tracking</li>
-                            <li>• Percent-of-completion revenue</li>
-                            <li>• Budget vs. actual analysis</li>
-                            <li>• Change order management</li>
-                            <li>• Project profitability dashboards</li>
+                        <h3 class="text-xl font-bold mb-3">COGS Management</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-3">Automated material consumption tracking from batching plants and rebar machines ensures COGS accuracy down to the individual element.</p>
+                        <ul class="space-y-2 text-gray-600 text-sm leading-relaxed">
+                            <li>Perpetual inventory valuation synced with GL</li>
+                            <li>Automatic variance accounting</li>
+                            <li>Lot and serial tracking for cost allocation</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-indigo-100 rounded-lg p-3 mr-4">
-                                <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold">Fixed Assets</h3>
+                    <div class="modern-card">
+                        <div class="feature-icon-modern bg-indigo-100 text-indigo-600 mb-5">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
                         </div>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>• Complete asset lifecycle tracking</li>
-                            <li>• Multiple depreciation methods</li>
-                            <li>• Book vs. tax depreciation</li>
-                            <li>• Asset transfers & disposals</li>
-                            <li>• Leased asset management</li>
-                            <li>• Compliance reporting (ASC 842)</li>
+                        <h3 class="text-xl font-bold mb-3">WIP Accounting</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-3">Real-time WIP values updated automatically as robotic cells and production stations complete elements -- no lag between production and financials.</p>
+                        <ul class="space-y-2 text-gray-600 text-sm leading-relaxed">
+                            <li>Percent-of-completion revenue recognition</li>
+                            <li>Automated WIP schedule generation</li>
+                            <li>Over/under billing analysis</li>
                         </ul>
                     </div>
 
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="mb-24 reveal">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">See It <span class="gradient-text">In Action</span></h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">See how CastLogic automates precast accounting from production to financial reporting</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="video-placeholder aspect-video" data-video="">
+                        <div class="absolute inset-0 flex items-center justify-center z-10">
+                            <div class="text-center text-white">
+                                <p class="text-lg font-semibold mt-16 opacity-80">Product Demo Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- ERP Integration Benefits -->
-            <section class="mb-16 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-12">
-                <h2 class="text-3xl font-extrabold mb-8 text-center">Seamless Integration Across Your Entire Operation</h2>
-                <p class="text-center text-xl text-gray-700 mb-12 max-w-4xl mx-auto">See how CastLogic Accounting connects with every module in your ERP system to create a single source of financial truth.</p>
-
-                <div class="grid md:grid-cols-2 gap-8">
-
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <span class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">1</span>
-                            <h3 class="text-xl font-bold">Production Integration (Schedule + Flow)</h3>
-                        </div>
-                        <ul class="space-y-2 text-gray-700">
-                            <li>✓ Labor hours automatically flow from timekeeping to job costs</li>
-                            <li>✓ Production milestones trigger revenue recognition</li>
-                            <li>✓ Machine hours allocate overhead to specific projects</li>
-                            <li>✓ WIP values update in real-time as production progresses</li>
-                            <li>✓ Scrap and rework costs captured at the point of occurrence</li>
-                        </ul>
+            <section class="mb-24 reveal">
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50/50 rounded-3xl p-8 md:p-14 bg-dots">
+                    <div class="text-center mb-14">
+                        <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Seamless Integration Across<br><span class="gradient-text">Your Entire Operation</span></h2>
+                        <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">See how CastLogic Accounting connects with every module in your ERP system to create a single source of financial truth.</p>
                     </div>
 
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <span class="bg-green-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">2</span>
-                            <h3 class="text-xl font-bold">Inventory Integration (Stock)</h3>
-                        </div>
-                        <ul class="space-y-2 text-gray-700">
-                            <li>✓ Material requisitions automatically create COGS entries</li>
-                            <li>✓ Inventory values perpetually synchronized with GL</li>
-                            <li>✓ Finished goods costs calculated with full traceability</li>
-                            <li>✓ Automatic variance accounting for waste and shrinkage</li>
-                            <li>✓ Lot and serial tracking for cost allocation</li>
-                        </ul>
-                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 stagger">
 
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <span class="bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">3</span>
-                            <h3 class="text-xl font-bold">HR & Payroll Integration</h3>
+                        <div class="modern-card">
+                            <div class="flex items-center mb-5">
+                                <span class="bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl w-10 h-10 flex items-center justify-center font-bold mr-4 text-sm">01</span>
+                                <h3 class="text-lg font-bold">Production Integration (Schedule + Flow)</h3>
+                            </div>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li>Labor hours automatically flow from timekeeping to job costs</li>
+                                <li>Production milestones trigger revenue recognition</li>
+                                <li>Machine hours allocate overhead to specific projects</li>
+                                <li>WIP values update in real-time as production progresses</li>
+                                <li>Scrap and rework costs captured at the point of occurrence</li>
+                            </ul>
                         </div>
-                        <ul class="space-y-2 text-gray-700">
-                            <li>✓ Payroll costs distributed to correct projects automatically</li>
-                            <li>✓ Benefits and burden rates applied to labor costing</li>
-                            <li>✓ Certified payroll reporting for government contracts</li>
-                            <li>✓ Employee expenses flow directly to job costs</li>
-                            <li>✓ PTO accruals and tracking integrated with financials</li>
-                        </ul>
-                    </div>
 
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <span class="bg-yellow-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">4</span>
-                            <h3 class="text-xl font-bold">Sales & Order Management (Engage)</h3>
+                        <div class="modern-card">
+                            <div class="flex items-center mb-5">
+                                <span class="bg-gradient-to-br from-green-600 to-emerald-600 text-white rounded-xl w-10 h-10 flex items-center justify-center font-bold mr-4 text-sm">02</span>
+                                <h3 class="text-lg font-bold">Inventory Integration (Stock)</h3>
+                            </div>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li>Material requisitions automatically create COGS entries</li>
+                                <li>Inventory values perpetually synchronized with GL</li>
+                                <li>Finished goods costs calculated with full traceability</li>
+                                <li>Automatic variance accounting for waste and shrinkage</li>
+                                <li>Lot and serial tracking for cost allocation</li>
+                            </ul>
                         </div>
-                        <ul class="space-y-2 text-gray-700">
-                            <li>✓ Sales orders create projects with full budget setup</li>
-                            <li>✓ Quotes convert to projects with approved pricing</li>
-                            <li>✓ Contract terms drive revenue recognition schedules</li>
-                            <li>✓ Change orders update budgets and billing automatically</li>
-                            <li>✓ Customer deposits and retainage properly accounted</li>
-                        </ul>
-                    </div>
 
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <span class="bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">5</span>
-                            <h3 class="text-xl font-bold">Delivery & Logistics (Dispatch)</h3>
+                        <div class="modern-card">
+                            <div class="flex items-center mb-5">
+                                <span class="bg-gradient-to-br from-purple-600 to-violet-600 text-white rounded-xl w-10 h-10 flex items-center justify-center font-bold mr-4 text-sm">03</span>
+                                <h3 class="text-lg font-bold">HR & Payroll Integration</h3>
+                            </div>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li>Payroll from your HR provider distributed to the right projects automatically</li>
+                                <li>Burden rates (from your HR platform) applied to ERP labor costing</li>
+                                <li>Certified payroll data surfaced in ERP project reporting</li>
+                                <li>Employee expenses flow directly to job costs</li>
+                                <li>Multi-entity payroll routed to the correct legal entity in the GL</li>
+                            </ul>
                         </div>
-                        <ul class="space-y-2 text-gray-700">
-                            <li>✓ Shipping costs allocated to specific jobs</li>
-                            <li>✓ Delivery milestones trigger billing events</li>
-                            <li>✓ Freight expense tracking by customer or project</li>
-                            <li>✓ BOL (Bill of Lading) linked to invoices</li>
-                            <li>✓ Proof of delivery drives AR automation</li>
-                        </ul>
-                    </div>
 
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <span class="bg-indigo-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">6</span>
-                            <h3 class="text-xl font-bold">Quality & Compliance (Verify)</h3>
+                        <div class="modern-card">
+                            <div class="flex items-center mb-5">
+                                <span class="bg-gradient-to-br from-amber-600 to-orange-600 text-white rounded-xl w-10 h-10 flex items-center justify-center font-bold mr-4 text-sm">04</span>
+                                <h3 class="text-lg font-bold">Sales & Order Management (Engage)</h3>
+                            </div>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li>Sales orders create projects with full budget setup</li>
+                                <li>Quotes convert to projects with approved pricing</li>
+                                <li>Contract terms drive revenue recognition schedules</li>
+                                <li>Change orders update budgets and billing automatically</li>
+                                <li>Customer deposits and retainage properly accounted</li>
+                            </ul>
                         </div>
-                        <ul class="space-y-2 text-gray-700">
-                            <li>✓ Quality inspection failures create cost variances</li>
-                            <li>✓ Rework costs tracked separately by project</li>
-                            <li>✓ Warranty claims trigger reserve accounting</li>
-                            <li>✓ Non-conformance reports linked to financial impact</li>
-                            <li>✓ Testing costs allocated to overhead or specific jobs</li>
-                        </ul>
-                    </div>
 
+                        <div class="modern-card">
+                            <div class="flex items-center mb-5">
+                                <span class="bg-gradient-to-br from-rose-600 to-pink-600 text-white rounded-xl w-10 h-10 flex items-center justify-center font-bold mr-4 text-sm">05</span>
+                                <h3 class="text-lg font-bold">Delivery & Logistics (Dispatch)</h3>
+                            </div>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li>Shipping costs allocated to specific jobs</li>
+                                <li>Delivery milestones trigger billing events</li>
+                                <li>Freight expense tracking by customer or project</li>
+                                <li>BOL (Bill of Lading) linked to invoices</li>
+                                <li>Proof of delivery drives AR automation</li>
+                            </ul>
+                        </div>
+
+                        <div class="modern-card">
+                            <div class="flex items-center mb-5">
+                                <span class="bg-gradient-to-br from-cyan-600 to-teal-600 text-white rounded-xl w-10 h-10 flex items-center justify-center font-bold mr-4 text-sm">06</span>
+                                <h3 class="text-lg font-bold">Quality & Compliance (Verify)</h3>
+                            </div>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li>Quality inspection failures create cost variances</li>
+                                <li>Rework costs tracked separately by project</li>
+                                <li>Warranty claims trigger reserve accounting</li>
+                                <li>Non-conformance reports linked to financial impact</li>
+                                <li>Testing costs allocated to overhead or specific jobs</li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
             <!-- Advanced Features -->
-            <section class="mb-16">
-                <h2 class="text-3xl font-extrabold mb-8">Advanced Enterprise Capabilities</h2>
+            <section class="mb-24">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Advanced Enterprise<br><span class="gradient-text">Capabilities</span></h2>
+                </div>
 
-                <div class="grid md:grid-cols-3 gap-6 mb-8">
-                    <div class="bg-white border-2 border-blue-200 rounded-xl p-6">
+                <div class="grid md:grid-cols-3 gap-8 mb-10 stagger">
+                    <div class="modern-card gradient-border">
                         <h3 class="text-xl font-bold mb-3 text-blue-900">Multi-Entity Management</h3>
-                        <p class="text-gray-700 mb-3">Manage multiple legal entities, divisions, or locations with:</p>
-                        <ul class="space-y-2 text-sm text-gray-600">
-                            <li>• Consolidated financial statements</li>
-                            <li>• Inter-company transactions & eliminations</li>
-                            <li>• Separate or combined reporting</li>
-                            <li>• Cross-entity project tracking</li>
+                        <p class="text-gray-600 mb-4 text-sm">Manage multiple legal entities, divisions, or locations with:</p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li>Consolidated financial statements</li>
+                            <li>Inter-company transactions and eliminations</li>
+                            <li>Separate or combined reporting</li>
+                            <li>Cross-entity project tracking</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border-2 border-green-200 rounded-xl p-6">
+                    <div class="modern-card gradient-border">
                         <h3 class="text-xl font-bold mb-3 text-green-900">Revenue Recognition (ASC 606)</h3>
-                        <p class="text-gray-700 mb-3">Supports revenue recognition standards compliance:</p>
-                        <ul class="space-y-2 text-sm text-gray-600">
-                            <li>• Percentage-of-completion method</li>
-                            <li>• Cost-to-cost calculations</li>
-                            <li>• Performance obligation tracking</li>
-                            <li>• Deferred revenue management</li>
+                        <p class="text-gray-600 mb-4 text-sm">Supports revenue recognition standards compliance:</p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li>Percentage-of-completion method</li>
+                            <li>Cost-to-cost calculations</li>
+                            <li>Performance obligation tracking</li>
+                            <li>Deferred revenue management</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white border-2 border-purple-200 rounded-xl p-6">
+                    <div class="modern-card gradient-border">
                         <h3 class="text-xl font-bold mb-3 text-purple-900">Global Operations</h3>
-                        <p class="text-gray-700 mb-3">Support for international business:</p>
-                        <ul class="space-y-2 text-sm text-gray-600">
-                            <li>• Multi-currency transactions</li>
-                            <li>• Automated currency conversion</li>
-                            <li>• Gain/loss tracking</li>
-                            <li>• International tax compliance</li>
+                        <p class="text-gray-600 mb-4 text-sm">Support for international business:</p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li>Multi-currency transactions</li>
+                            <li>Automated currency conversion</li>
+                            <li>Gain/loss tracking</li>
+                            <li>International tax compliance</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-4">AI-Powered Financial Intelligence</h3>
-                    <div class="grid md:grid-cols-2 gap-6">
+                <div class="reveal glass-card-dark bg-gradient-to-r from-indigo-600 to-blue-600 text-white rounded-2xl p-8 md:p-10">
+                    <h3 class="text-2xl font-bold mb-6">AI-Powered Financial Intelligence</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
                         <div>
-                            <h4 class="font-bold mb-2">Intelligent Automation</h4>
-                            <ul class="space-y-2 text-blue-100">
-                                <li>• AI bill capture extracts data from any invoice format</li>
-                                <li>• Smart GL coding learns from your historical patterns</li>
-                                <li>• Automated vendor matching and duplicate detection</li>
-                                <li>• Predictive cash flow forecasting</li>
+                            <h4 class="font-bold mb-3 text-lg">Intelligent Automation</h4>
+                            <ul class="space-y-2 text-blue-100 text-sm">
+                                <li>AI bill capture extracts data from any invoice format</li>
+                                <li>Smart GL coding learns from your historical patterns</li>
+                                <li>Automated vendor matching and duplicate detection</li>
+                                <li>Predictive cash flow forecasting</li>
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-bold mb-2">Anomaly Detection</h4>
-                            <ul class="space-y-2 text-blue-100">
-                                <li>• Scan thousands of transactions for outliers</li>
-                                <li>• Flag unusual spending patterns</li>
-                                <li>• Identify potential fraud or errors</li>
-                                <li>• Continuous audit trail monitoring</li>
+                            <h4 class="font-bold mb-3 text-lg">Anomaly Detection</h4>
+                            <ul class="space-y-2 text-blue-100 text-sm">
+                                <li>Scan thousands of transactions for outliers</li>
+                                <li>Flag unusual spending patterns</li>
+                                <li>Identify potential fraud or errors</li>
+                                <li>Continuous audit trail monitoring</li>
                             </ul>
                         </div>
                     </div>
@@ -491,84 +550,54 @@
             </section>
 
             <!-- Industry-Specific Features -->
-            <section class="mb-16">
-                <div class="bg-gray-50 rounded-2xl p-10">
-                    <h2 class="text-3xl font-extrabold mb-6 text-center">Built for Construction & Manufacturing</h2>
-                    <p class="text-center text-lg text-gray-700 mb-10 max-w-3xl mx-auto">Generic accounting software doesn't understand your business. CastLogic Accounting is purpose-built for the unique financial requirements of precast manufacturing.</p>
+            <section class="mb-24 reveal">
+                <div class="bg-gradient-to-br from-slate-50 to-purple-50/30 rounded-3xl p-8 md:p-14 bg-grid">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Built for Construction<br><span class="gradient-text">& Manufacturing</span></h2>
+                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Generic accounting software doesn't understand your business. CastLogic Accounting is purpose-built for the unique financial requirements of precast manufacturing.</p>
+                    </div>
 
-                    <div class="grid md:grid-cols-2 gap-8">
+                    <div class="grid md:grid-cols-2 gap-10">
                         <div>
-                            <h3 class="text-xl font-bold mb-4">Contract Accounting</h3>
-                            <ul class="space-y-3 text-gray-700">
+                            <h3 class="text-xl font-bold mb-5">Contract Accounting</h3>
+                            <ul class="space-y-4 text-gray-700">
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <div>
-                                        <strong>Progress Billing:</strong> Bill based on completion milestones, not just time
-                                    </div>
+                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <div><strong>Progress Billing:</strong> Bill based on completion milestones, not just time</div>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <div>
-                                        <strong>Retainage Management:</strong> Track held amounts and release schedules
-                                    </div>
+                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <div><strong>Retainage Management:</strong> Track held amounts and release schedules</div>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <div>
-                                        <strong>Change Orders:</strong> Seamlessly update budgets and billing schedules
-                                    </div>
+                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <div><strong>Change Orders:</strong> Seamlessly update budgets and billing schedules</div>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <div>
-                                        <strong>Lien Waivers:</strong> Track and manage conditional and unconditional releases
-                                    </div>
+                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <div><strong>Lien Waivers:</strong> Track and manage conditional and unconditional releases</div>
                                 </li>
                             </ul>
                         </div>
 
                         <div>
-                            <h3 class="text-xl font-bold mb-4">Manufacturing Costing</h3>
-                            <ul class="space-y-3 text-gray-700">
+                            <h3 class="text-xl font-bold mb-5">Manufacturing Costing</h3>
+                            <ul class="space-y-4 text-gray-700">
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <div>
-                                        <strong>Direct vs. Indirect Costs:</strong> Properly allocate materials, labor, and overhead
-                                    </div>
+                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <div><strong>Direct vs. Indirect Costs:</strong> Properly allocate materials, labor, and overhead</div>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <div>
-                                        <strong>Standard Costing:</strong> Compare actual costs to standards and analyze variances
-                                    </div>
+                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <div><strong>Standard Costing:</strong> Compare actual costs to standards and analyze variances</div>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <div>
-                                        <strong>By-Product Costing:</strong> Account for scrap, rework, and secondary products
-                                    </div>
+                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <div><strong>By-Product Costing:</strong> Account for scrap, rework, and secondary products</div>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <div>
-                                        <strong>Inventory Valuation:</strong> Support for FIFO, LIFO, weighted average, and standard cost
-                                    </div>
+                                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <div><strong>Inventory Valuation:</strong> Support for FIFO, LIFO, weighted average, and standard cost</div>
                                 </li>
                             </ul>
                         </div>
@@ -577,83 +606,126 @@
             </section>
 
             <!-- Reporting & Analytics -->
-            <section class="mb-16">
-                <h2 class="text-3xl font-extrabold mb-8 text-center">Powerful Reporting & Real-Time Dashboards</h2>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-blue-600">
+            <section class="mb-24">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Powerful Reporting &<br><span class="gradient-text">Real-Time Dashboards</span></h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 stagger">
+                    <div class="modern-card !pt-0 overflow-hidden">
+                        <div class="h-1.5 bg-gradient-to-r from-blue-600 to-blue-400 -mx-8 mb-6"></div>
                         <h3 class="text-xl font-bold mb-4">Financial Statements</h3>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>✓ Balance Sheet</li>
-                            <li>✓ Income Statement (P&L)</li>
-                            <li>✓ Cash Flow Statement</li>
-                            <li>✓ Statement of Changes in Equity</li>
-                            <li>✓ Comparative & Consolidated reports</li>
-                            <li>✓ Multi-period analysis</li>
+                        <ul class="space-y-2.5 text-gray-600 text-sm">
+                            <li>Balance Sheet</li>
+                            <li>Income Statement (P&L)</li>
+                            <li>Cash Flow Statement</li>
+                            <li>Statement of Changes in Equity</li>
+                            <li>Comparative and Consolidated reports</li>
+                            <li>Multi-period analysis</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-green-600">
+                    <div class="modern-card !pt-0 overflow-hidden">
+                        <div class="h-1.5 bg-gradient-to-r from-green-600 to-emerald-400 -mx-8 mb-6"></div>
                         <h3 class="text-xl font-bold mb-4">Operational Reports</h3>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>✓ Job Profitability by Project</li>
-                            <li>✓ WIP (Work-in-Progress) Schedule</li>
-                            <li>✓ Budget vs. Actual Analysis</li>
-                            <li>✓ Aged AR/AP Reports</li>
-                            <li>✓ Vendor Spend Analysis</li>
-                            <li>✓ Customer Profitability</li>
+                        <ul class="space-y-2.5 text-gray-600 text-sm">
+                            <li>Job Profitability by Project</li>
+                            <li>WIP (Work-in-Progress) Schedule</li>
+                            <li>Budget vs. Actual Analysis</li>
+                            <li>Aged AR/AP Reports</li>
+                            <li>Vendor Spend Analysis</li>
+                            <li>Customer Profitability</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-purple-600">
+                    <div class="modern-card !pt-0 overflow-hidden">
+                        <div class="h-1.5 bg-gradient-to-r from-purple-600 to-violet-400 -mx-8 mb-6"></div>
                         <h3 class="text-xl font-bold mb-4">Compliance Reports</h3>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>✓ 1099 & 1096 Reporting</li>
-                            <li>✓ Sales Tax Returns</li>
-                            <li>✓ Fixed Asset Schedules</li>
-                            <li>✓ Audit Trail Reports</li>
-                            <li>✓ Certified Payroll (for government jobs)</li>
-                            <li>✓ Financial Statement Notes</li>
+                        <ul class="space-y-2.5 text-gray-600 text-sm">
+                            <li>Sales Tax Returns</li>
+                            <li>Fixed Asset Schedules</li>
+                            <li>Audit Trail Reports</li>
+                            <li>Certified Payroll data (from your HR provider) surfaced by project</li>
+                            <li>Financial Statement Notes</li>
+                            <li>Statutory payroll filings (1099, 1096, W-2) remain with your HR platform</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="mt-8 bg-blue-600 text-white rounded-xl p-8 text-center">
-                    <h3 class="text-2xl font-bold mb-3">Custom Dashboard Builder</h3>
-                    <p class="text-lg mb-4">Create unlimited custom dashboards with drag-and-drop widgets showing the exact KPIs you need:</p>
-                    <div class="grid md:grid-cols-4 gap-4 text-sm">
-                        <div>📊 Revenue by Product Line</div>
-                        <div>💰 Gross Margin Trends</div>
-                        <div>📈 Cash Position Forecast</div>
-                        <div>⚡ Days Sales Outstanding</div>
+                <div class="mt-10 reveal">
+                    <div class="glass-card-dark bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl p-8 md:p-10 text-center">
+                        <h3 class="text-2xl font-bold mb-4">Custom Dashboard Builder</h3>
+                        <p class="text-lg text-blue-100 mb-6">Create unlimited custom dashboards with drag-and-drop widgets showing the exact KPIs you need:</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                            <div class="bg-white/10 rounded-lg p-3">Revenue by Product Line</div>
+                            <div class="bg-white/10 rounded-lg p-3">Gross Margin Trends</div>
+                            <div class="bg-white/10 rounded-lg p-3">Cash Position Forecast</div>
+                            <div class="bg-white/10 rounded-lg p-3">Days Sales Outstanding</div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Security & Compliance -->
-            <section class="mb-16">
-                <div class="bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-2xl p-10">
-                    <h2 class="text-3xl font-extrabold mb-8 text-center">Enterprise-Grade Security & Compliance</h2>
-                    <div class="grid md:grid-cols-2 gap-8">
+            <section class="mb-24 reveal">
+                <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-8 md:p-14">
+                    <h2 class="text-3xl md:text-4xl font-black mb-10 text-center tracking-tight">Enterprise-Grade Security & Compliance</h2>
+                    <div class="grid md:grid-cols-2 gap-10">
                         <div>
-                            <h3 class="text-xl font-bold mb-4">Security Features</h3>
-                            <ul class="space-y-2 text-gray-300">
-                                <li>✓ Bank-level 256-bit encryption</li>
-                                <li>✓ Role-based access controls</li>
-                                <li>✓ Multi-factor authentication</li>
-                                <li>✓ SOC 2 Type II framework controls</li>
-                                <li>✓ Automated backups & disaster recovery</li>
-                                <li>✓ Complete audit trail of all transactions</li>
+                            <h3 class="text-xl font-bold mb-5">Security Features</h3>
+                            <ul class="space-y-3 text-gray-300 text-sm">
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>Bank-level 256-bit encryption</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>Role-based access controls</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>Multi-factor authentication</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>Role-based access controls &amp; audit trails</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>Automated backups and disaster recovery</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>Complete audit trail of all transactions</span>
+                                </li>
                             </ul>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-4">Compliance Support</h3>
-                            <ul class="space-y-2 text-gray-300">
-                                <li>✓ Supports GAAP compliance</li>
-                                <li>✓ ASC 606 Revenue Recognition support</li>
-                                <li>✓ ASC 842 Lease Accounting support</li>
-                                <li>✓ Sarbanes-Oxley (SOX) control frameworks</li>
-                                <li>✓ Supports DCAA compliance (for government contractors)</li>
-                                <li>✓ GDPR & data privacy frameworks</li>
+                            <h3 class="text-xl font-bold mb-5">Compliance Support</h3>
+                            <ul class="space-y-3 text-gray-300 text-sm">
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>Supports GAAP compliance</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>ASC 606 Revenue Recognition support</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>ASC 842 Lease Accounting support</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>Sarbanes-Oxley (SOX) control frameworks</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>Supports DCAA compliance (for government contractors)</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    <span>GDPR and data privacy frameworks</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -661,7 +733,7 @@
             </section>
 
             <!-- CTA Section -->
-        <!-- Expanded Capabilities -->
+<!-- Expanded Capabilities -->
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -703,13 +775,17 @@
             </div>
         </section>
 
-            <section class="text-center">
-                <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-white">
-                    <h2 class="text-4xl font-extrabold mb-4">Ready to Transform Your Financial Operations?</h2>
-                    <p class="text-xl mb-8 max-w-3xl mx-auto">Experience the power of fully integrated ERP accounting built specifically for manufacturing. See how CastLogic connects your entire operation from production to profit.</p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">Schedule a Demo</a>
-                        <a href="modules.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition">Explore All Modules</a>
+            <section class="text-center reveal">
+                <div class="relative overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 rounded-3xl p-10 md:p-16 text-white">
+                    <div class="floating-orb" style="width: 300px; height: 300px; background: #a78bfa; top: -20%; right: -5%; opacity: 0.1;"></div>
+                    <div class="floating-orb" style="width: 200px; height: 200px; background: #60a5fa; bottom: -15%; left: -3%; opacity: 0.1;"></div>
+                    <div class="relative z-10">
+                        <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Ready to Transform Your<br>Financial Operations?</h2>
+                        <p class="text-xl mb-10 max-w-3xl mx-auto text-blue-100 leading-relaxed">Experience the power of fully integrated ERP accounting built specifically for manufacturing. See how CastLogic connects your entire operation from production to profit.</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition hover:shadow-xl">Schedule a Demo</a>
+                            <a href="modules.html" class="bg-transparent border-2 border-white/60 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-600 transition">Explore All Modules</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -720,9 +796,8 @@
     <footer class="bg-gray-50 text-gray-800">
         <div class="container mx-auto px-6 py-16">
             <div class="grid md:grid-cols-5 gap-8 mb-12">
-                <!-- Company Info -->
                 <div class="md:col-span-2">
-                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <img src="intrasync-logo.jpg" alt="IntraSync" class="h-10 mb-4">
                     <p class="text-gray-600 mb-4">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
                     <address class="not-italic text-gray-600 mb-4">
                         <p class="font-semibold text-gray-900">IntraSync Industrial</p>
@@ -736,8 +811,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Product -->
                 <div>
                     <h3 class="font-bold text-gray-900 mb-4">Product</h3>
                     <ul class="space-y-2">
@@ -749,20 +822,16 @@
                         <li><a href="integrations.html" class="hover:text-blue-600 transition">Integrations</a></li>
                     </ul>
                 </div>
-
-                <!-- Resources -->
                 <div>
                     <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
                     <ul class="space-y-2">
                         <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
                         <li><a href="compare.html" class="hover:text-blue-600 transition">Compare</a></li>
-                        <li><a href="case-studies.html" class="hover:text-blue-600 transition">Case Studies</a></li>
                         <li><a href="certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
+                        <li><a href="roi-calculator.html" class="hover:text-blue-600 transition">ROI Calculator</a></li>
                         <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
                     </ul>
                 </div>
-
-                <!-- Company -->
                 <div>
                     <h3 class="font-bold text-gray-900 mb-4">Company</h3>
                     <ul class="space-y-2">
@@ -772,8 +841,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- IntraSync Product Family -->
             <div class="border-t border-gray-300 pt-8 pb-6">
                 <div class="flex flex-col md:flex-row items-center justify-center gap-6">
                     <span class="text-gray-500 text-sm">Also from IntraSync:</span>
@@ -798,36 +865,26 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Industry Certifications -->
             <div class="border-t border-gray-300 pt-8 pb-6">
                 <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
                     <div class="text-center md:text-left">
                         <p class="text-gray-700 font-semibold text-sm uppercase tracking-wide">Proud Members Of:</p>
                     </div>
                     <div class="flex items-center gap-8 md:gap-12">
-                        <a href="https://precast.org" target="_blank" rel="noopener noreferrer"
-                           class="transition transform hover:scale-110"
-                           title="National Precast Concrete Association Member">
+                        <a href="https://precast.org" target="_blank" rel="noopener noreferrer" class="transition transform hover:scale-110" title="National Precast Concrete Association Member">
                             <img src="npca-logo.png" alt="NPCA Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
                         </a>
-                        <a href="https://pci.org" target="_blank" rel="noopener noreferrer"
-                           class="transition transform hover:scale-110"
-                           title="Precast/Prestressed Concrete Institute Member">
+                        <a href="https://pci.org" target="_blank" rel="noopener noreferrer" class="transition transform hover:scale-110" title="Precast/Prestressed Concrete Institute Member">
                             <img src="pci-logo.jpg" alt="PCI Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
                         </a>
-                        <a href="https://www.cpci.ca" target="_blank" rel="noopener noreferrer"
-                           class="transition transform hover:scale-110"
-                           title="Canadian Precast Concrete Institute Member">
+                        <a href="https://www.cpci.ca" target="_blank" rel="noopener noreferrer" class="transition transform hover:scale-110" title="Canadian Precast Concrete Institute Member">
                             <img src="cpci-logo.svg" alt="CPCI Member" class="h-14 md:h-16 w-auto opacity-85 hover:opacity-100 transition">
                         </a>
                     </div>
                 </div>
             </div>
-
-            <!-- Bottom Bar -->
             <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">&copy; 2025 IntraSync Industrial. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2026</span> IntraSync Industrial. All rights reserved.</p>
                 <div class="flex gap-6 text-sm mt-4 md:mt-0">
                     <a href="privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
@@ -835,5 +892,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/modern.js"></script>
 </body>
 </html>

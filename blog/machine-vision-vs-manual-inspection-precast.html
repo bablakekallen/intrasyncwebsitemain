@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <title>Machine Vision vs. Manual Inspection: What Precast Producers Need to Know | IntraSync</title>
+    <meta name="description" content="Comparing automated machine vision with traditional manual QC inspection methods for precast concrete. Learn when each approach makes sense.">
+
+    <!-- Article Schema for SEO & AI Understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Machine Vision vs. Manual Inspection: What Precast Producers Need to Know",
+      "description": "Comparing automated machine vision with traditional manual QC inspection methods for precast concrete. Learn when each approach makes sense.",
+      "image": "https://intrasyncindustrial.com/intrasync-logo.jpg",
+      "author": {
+            "@type": "Person",
+            "name": "Zachary Frye",
+            "jobTitle": "CTO & Founder",
+            "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+            "@type": "Organization",
+            "name": "IntraSync Industrial",
+            "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://intrasyncindustrial.com/intrasync-logo.jpg"
+            }
+      },
+      "datePublished": "2025-02-15",
+      "dateModified": "2025-02-15",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://intrasyncindustrial.com/blog/machine-vision-vs-manual-inspection-precast.html"
+      },
+      "keywords": "machine vision vs manual inspection, precast QC comparison, automated inspection precast, manual quality control, precast inspection methods",
+      "wordCount": 960,
+      "articleSection": "Quality Control",
+      "inLanguage": "en-US"
+}
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+            {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://intrasyncindustrial.com/"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog",
+                  "item": "https://intrasyncindustrial.com/blog.html"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Machine Vision vs. Manual Inspection: What Precast Producers Need to Know",
+                  "item": "https://intrasyncindustrial.com/blog/machine-vision-vs-manual-inspection-precast.html"
+            }
+      ]
+}
+    </script>
+    <meta name="keywords" content="machine vision vs manual inspection, precast QC comparison, automated inspection precast, manual quality control, precast inspection methods">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://intrasyncindustrial.com/blog/machine-vision-vs-manual-inspection-precast.html">
+    <meta property="og:title" content="Machine Vision vs. Manual Inspection: What Precast Producers Need to Know | IntraSync">
+    <meta property="og:description" content="Comparing automated machine vision with traditional manual QC inspection methods for precast concrete. Learn when each approach makes sense.">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
+    <meta property="og:site_name" content="IntraSync Industrial">
+    <meta property="article:published_time" content="2025-02-15T00:00:00+00:00">
+    <meta property="article:author" content="Zachary Frye">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://intrasyncindustrial.com/blog/machine-vision-vs-manual-inspection-precast.html">
+    <meta name="twitter:title" content="Machine Vision vs. Manual Inspection: What Precast Producers Need to Know | IntraSync">
+    <meta name="twitter:description" content="Comparing automated machine vision with traditional manual QC inspection methods for precast concrete. Learn when each approach makes sense.">
+    <meta name="twitter:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://intrasyncindustrial.com/blog/machine-vision-vs-manual-inspection-precast.html">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="../tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="../site.js" defer></script>
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress-bar" id="readingProgress"></div>
+
+    <a href="../contact.html" class="cta-button-fixed bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition hidden md:block">
+        Schedule Demo
+    </a>
+
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-12">
+                    <a href="../index.html" aria-label="IntraSync CastLogic Home">
+                        <img src="../intrasync-logo.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                    </a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="../modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="../robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="../compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="../blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="../about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="../contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="../contact.html" class="hidden md:inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <!-- Article Header -->
+            <div class="mb-8">
+                <a href="../blog.html" class="text-blue-600 font-semibold hover:underline mb-4 inline-block">&larr; Back to Blog</a>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">Quality Control</span>
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">Best Practices</span>
+                </div>
+                <h1 class="gs-fade-up text-4xl md:text-5xl font-extrabold mb-4">Machine Vision vs. Manual Inspection: What Precast Producers Need to Know</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <span><time datetime="2025-02-15">February 15, 2025</time></span>
+                    <span>&bull;</span>
+                    <span>6 min read</span>
+                    <span>&bull;</span>
+                    <span class="font-semibold">By Zachary Frye</span>
+                </div>
+            </div>
+
+            <!-- Featured Image Placeholder -->
+            <div class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl h-96 mb-8 flex items-center justify-center text-white">
+                <div class="text-center">
+                    <svg class="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                    <p class="text-xl font-semibold">Vision vs. Manual Inspection</p>
+                </div>
+            </div>
+
+            <!-- Author Authority Signal -->
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-600 p-6 mb-8 rounded-r-lg">
+                <div class="flex items-center gap-3">
+                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text-gray-700">
+                        <span class="font-semibold">Written by <a href="../about.html" class="text-blue-600 font-semibold hover:underline">Zachary Frye</a>, CTO & Founder</span> |
+                        <span>7+ years precast industry experience, specializing in manufacturing technology and automation</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Article Content -->
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">The debate between automated and manual inspection in precast is not really an either-or question. Both approaches have genuine strengths, and the smartest producers are figuring out where each one fits best. Here is an honest comparison to help you make the right call for your plant.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">What Manual Inspection Does Well</h2>
+                <p class="mb-6">There is a reason manual inspection has been the standard in precast for decades. Experienced QC inspectors bring capabilities that are genuinely difficult to replicate with technology:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Contextual judgment:</strong> A seasoned inspector understands that a small surface blemish on a hidden face is acceptable, while the same blemish on an exposed architectural panel is not. They apply judgment based on the end use of every piece.</li>
+                    <li><strong>Tactile assessment:</strong> Inspectors can feel surface texture, tap to assess consolidation, and detect issues that are not purely visual. Not everything shows up on camera.</li>
+                    <li><strong>Adaptability:</strong> When your plant runs a one-off custom piece, an inspector adapts immediately. No training data required, no model retraining needed.</li>
+                    <li><strong>Root cause intuition:</strong> Good inspectors do not just find defects; they recognize patterns and suggest process fixes. They often know why a defect occurred based on what it looks like.</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Where Manual Inspection Falls Short</h2>
+                <p class="mb-6">Even the best manual inspection has inherent limitations that become more pronounced as production volumes increase:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Consistency:</strong> Inspector A and Inspector B will not always flag the same defects. Studies in manufacturing QC show that manual inspection consistency ranges from 60-80%, meaning 20-40% of defects may be judged differently depending on who is inspecting and when.</li>
+                    <li><strong>Fatigue:</strong> After four hours of detailed visual inspection, detection accuracy drops significantly. This is human physiology, not a training problem.</li>
+                    <li><strong>Throughput:</strong> A thorough manual inspection of a structural precast piece takes 15-30 minutes. At high volumes, this becomes a bottleneck.</li>
+                    <li><strong>Documentation:</strong> Manually recording defect locations, types, and severity is time-consuming and often inconsistent, making trend analysis difficult.</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">What Machine Vision Does Well</h2>
+                <p class="mb-6">Machine vision addresses the specific weaknesses of manual inspection while introducing its own set of strengths:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Perfect consistency:</strong> The 100th piece of the day gets the same level of scrutiny as the first. Every time, every shift.</li>
+                    <li><strong>Speed:</strong> A vision system can inspect a piece in 30-90 seconds, compared to 15-30 minutes manually. This eliminates QC as a production bottleneck.</li>
+                    <li><strong>Automatic documentation:</strong> Every inspection generates a complete digital record with images, measurements, and defect classifications. No extra paperwork.</li>
+                    <li><strong>Dimensional precision:</strong> Cameras with calibrated measurements achieve accuracy within fractions of a millimeter, exceeding what is possible with tape measures and straightedges.</li>
+                    <li><strong>Trend detection:</strong> Because every inspection is recorded in the same format, the system can automatically identify quality trends over time, across shifts, and between product types.</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Where Machine Vision Falls Short</h2>
+                <p class="mb-6">Being honest about vision's limitations is important for setting realistic expectations:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Novel defects:</strong> Vision systems trained on known defect types may miss entirely new defect patterns until the model is updated</li>
+                    <li><strong>Subjective assessments:</strong> Aesthetic judgments (is this color variation acceptable for this project?) still require human input</li>
+                    <li><strong>Complex geometries:</strong> Highly detailed architectural elements with intricate reveals and textures are harder for vision to assess than flat structural surfaces</li>
+                    <li><strong>Setup investment:</strong> Every new product type requires training data, and low-volume custom work may not justify the setup effort</li>
+                </ul>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">The Honest Answer</h4>
+                    <p class="text-gray-700">The best QC programs in precast are not choosing between vision and manual inspection. They are using vision for what it does best (speed, consistency, documentation, dimensional accuracy) and keeping experienced inspectors focused on what they do best (judgment calls, complex assessments, root cause analysis). The combination is stronger than either approach alone.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">When Manual Inspection Is the Right Choice</h2>
+                <p class="mb-6">Stick with primarily manual inspection if your plant fits these profiles:</p>
+
+                <ol class="list-decimal pl-6 mb-6 text-gray-700">
+                    <li class="mb-3"><strong>Low-volume custom production:</strong> If you produce fewer than 15-20 unique pieces per day with high variety, the setup and training cost of vision may not be justified.</li>
+                    <li class="mb-3"><strong>Highly architectural work:</strong> Custom architectural panels with unique textures, reveals, and aesthetic requirements where subjective judgment dominates the inspection criteria.</li>
+                    <li class="mb-3"><strong>Limited budget for technology:</strong> If your priority investment should go toward basic production tracking and scheduling first, those foundational systems will deliver more immediate value.</li>
+                </ol>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">When Machine Vision Makes Sense</h2>
+                <p class="mb-6">Vision becomes a clear advantage in these situations:</p>
+
+                <ol class="list-decimal pl-6 mb-6 text-gray-700">
+                    <li class="mb-3"><strong>High-volume repetitive production:</strong> Running 50+ similar pieces per day is where vision's speed and consistency really pay off.</li>
+                    <li class="mb-3"><strong>Tight tolerance structural work:</strong> Bridge beams, DOT products, and infrastructure pieces where dimensional accuracy must be documented and verified.</li>
+                    <li class="mb-3"><strong>Labor-constrained QC:</strong> When you cannot hire or retain enough qualified inspectors, vision extends your team without lowering standards.</li>
+                    <li class="mb-3"><strong>Contract requirements:</strong> Some project specifications now require automated inspection documentation. Vision gives you this automatically.</li>
+                </ol>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">The Hybrid Approach: Best of Both Worlds</h2>
+                <p class="mb-6">The most effective QC programs we see in precast use a layered approach:</p>
+
+                <ol class="list-decimal pl-6 mb-6 text-gray-700">
+                    <li class="mb-3"><strong>Machine vision handles first-pass inspection:</strong> Dimensional checks, surface defect scanning, and embedded item verification happen automatically. Every piece gets the same thorough check.</li>
+                    <li class="mb-3"><strong>Vision flags exceptions for human review:</strong> When the system detects something outside normal parameters or encounters uncertainty, it routes that piece to an inspector for a judgment call.</li>
+                    <li class="mb-3"><strong>Inspectors focus on high-value assessments:</strong> Your experienced QC team spends their time on the pieces and decisions that genuinely require expertise, not routine checks.</li>
+                </ol>
+
+                <p class="mb-6">This hybrid model typically reduces total inspection time by 50-70% while actually improving detection rates, because the human inspectors are fresher and more focused when they do inspect.</p>
+
+                <div class="bg-gray-50 p-8 rounded-xl my-8">
+                    <h3 class="text-2xl font-bold mb-4">CastLogic Supports Both Approaches</h3>
+                    <p class="text-gray-700 mb-4">Whether your QC program is fully manual, fully automated, or a hybrid of both, CastLogic's quality management module provides the digital backbone for tracking inspections, managing non-conformances, and generating the documentation your customers and certifications require. Start with digital checklists and manual tracking, then add vision integration when the time is right.</p>
+                    <a href="../modules.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Explore CastLogic Modules &rarr;</a>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Conclusion</h2>
+                <p class="mb-6">The question is not whether machine vision is better than manual inspection. It is whether your production profile, volume, and quality requirements create a scenario where vision adds enough value to justify the investment. For many precast producers, the answer is a hybrid approach that leverages the strengths of both methods.</p>
+
+                <p class="mb-6">Whatever approach you choose, the foundation matters most. Consistent inspection processes, good documentation, and a quality management system that captures and acts on the data are what drive real improvement, regardless of whether a camera or a clipboard initiates the inspection.</p>
+            </div>
+
+            <!-- Author Bio -->
+            <div class="border-t border-b border-gray-200 py-8 my-12">
+                <div class="flex items-start gap-6">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold flex-shrink-0">ZF</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">Zachary Frye</h4>
+                        <p class="text-gray-600">CTO & Founder of IntraSync Industrial. Zachary brings over 7 years of hands-on experience in precast manufacturing technology, helping producers modernize operations with practical, results-driven solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="surface-defect-detection-precast-concrete.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">Quality Control</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">How Surface Defect Detection Works in Precast Concrete Manufacturing</h4>
+                        <p class="text-gray-600 text-sm">Deep dive into how AI-powered cameras detect bug holes, cracks, and color variations automatically.</p>
+                    </a>
+                    <a href="automated-quality-control-iot-sensors.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">Quality Control</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Automated Quality Control with IoT Sensors</h4>
+                        <p class="text-gray-600 text-sm">How IoT sensor networks complement visual inspection for comprehensive quality assurance.</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 mt-12 text-center text-white">
+                <h3 class="text-2xl font-bold mb-3">Want to Learn More?</h3>
+                <p class="mb-6 text-blue-100">Schedule a demo to see how CastLogic can transform your precast operations.</p>
+                <a href="../contact.html" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Contact Us</a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="../intrasync-logo.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <p class="text-gray-600 mb-4">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
+                    <address class="not-italic text-gray-600 mb-4">
+                        <p class="font-semibold text-gray-900">IntraSync Industrial</p>
+                        <p>1401 21st Street Suite R</p>
+                        <p>Sacramento, CA 95811</p>
+                        <p class="mt-2"><a href="tel:+17076401380" class="hover:text-blue-600">(707) 640-1380</a></p>
+                    </address>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/intrasync-industrial" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="../robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
+                        <li><a href="../accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
+                        <li><a href="../hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
+                        <li><a href="../schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../blog.html" class="hover:text-blue-600 transition">Blog</a></li>
+                        <li><a href="../compare.html" class="hover:text-blue-600 transition">Compare</a></li>
+                        <li><a href="../certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="../contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="../careers.html" class="hover:text-blue-600 transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- IntraSync Product Family -->
+            <div class="border-t border-gray-300 pt-8 pb-6">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <span class="text-gray-500 text-sm">Also from IntraSync:</span>
+                    <div class="flex items-center gap-6">
+                        <a href="https://materialslogic.intrasyncindustrial.com" class="text-gray-600 hover:text-amber-600 transition flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg>
+                            <span class="font-medium">MaterialsLogic</span>
+                            <span class="text-gray-400 text-sm">Aggregates ERP</span>
+                        </a>
+                        <span class="text-gray-300">|</span>
+                        <a href="https://batchlogic.intrasyncindustrial.com" class="text-gray-600 hover:text-cyan-600 transition flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                            <span class="font-medium">BatchLogic</span>
+                            <span class="text-gray-400 text-sm">Batch Control</span>
+                        </a>
+                        <span class="text-gray-300">|</span>
+                        <a href="https://designlogic.intrasyncindustrial.com" class="text-gray-600 hover:text-emerald-600 transition flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                            <span class="font-medium">DesignLogic</span>
+                            <span class="text-gray-400 text-sm">Engineering Plugins</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; <span class="copyright-year">2025</span> IntraSync Industrial. All rights reserved.</p>
+                <div class="flex gap-6 text-sm mt-4 md:mt-0">
+                    <a href="../privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
+                    <a href="../terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

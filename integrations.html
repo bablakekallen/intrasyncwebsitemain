@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <title>Integrations - Payroll, ERP, Banking, CAD/BIM | CastLogic by IntraSync</title>
-    <meta name="description" content="CastLogic connects to the systems you already run: Everee and Paylocity payroll, TimeClock Plus, BambooHR, NetSuite, SAP, Oracle, QuickBooks, Sage, bank feeds, Revit, AutoCAD, SolidWorks, and any financial system with open APIs.">
+    <meta name="description" content="CastLogic connects to the systems you already run: Paylocity payroll, TimeClock Plus, BambooHR, Rippling, NetSuite, SAP, Oracle, QuickBooks, Sage, bank feeds, Revit, AutoCAD, SolidWorks, and any financial system with open APIs.">
     <!-- Canonical URL -->
     <link rel="canonical" href="https://intrasyncindustrial.com/integrations.html">
 
@@ -13,16 +17,16 @@
     <meta property="og:url" content="https://intrasyncindustrial.com/integrations.html">
     <meta property="og:title" content="Integrations - Payroll, ERP, Banking, CAD/BIM | CastLogic by IntraSync">
     <meta property="og:description" content="CastLogic connects to the systems you already run: payroll, time clocks, enterprise ERPs, banking, CAD/BIM — and any financial system with open APIs.">
-    <meta property="og:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
     <meta property="og:site_name" content="IntraSync Industrial">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Integrations - Payroll, ERP, Banking, CAD/BIM | CastLogic by IntraSync">
     <meta name="twitter:description" content="CastLogic connects to the systems you already run: payroll, time clocks, enterprise ERPs, banking, CAD/BIM — and any financial system with open APIs.">
-    <meta name="twitter:image" content="https://intrasyncindustrial.com/Intrasync%20Industrial%20Logo%201.19.24.jpg">
+    <meta name="twitter:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
 
-    <meta name="keywords" content="precast ERP integrations, Everee integration, Paylocity integration, TimeClock Plus integration, BambooHR integration, NetSuite integration, SAP integration, Oracle integration, QuickBooks precast, Revit integration precast, Titan 3000 migration, open API ERP">
+    <meta name="keywords" content="precast ERP integrations, Paylocity integration, Rippling integration, TimeClock Plus integration, BambooHR integration, NetSuite integration, SAP integration, Oracle integration, QuickBooks precast, Revit integration precast, Titan 3000 migration, open API ERP">
 
     <!-- Schema.org markup for AI/LLM discovery -->
     <script type="application/ld+json">
@@ -30,15 +34,18 @@
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "CastLogic Integrations",
-      "description": "Integrations available for CastLogic, the precast manufacturing ERP by IntraSync Industrial: payroll (Everee, Paylocity), time and attendance (TimeClock Plus, BambooHR), enterprise financial systems (NetSuite, SAP, Oracle, QuickBooks, Sage) via open APIs, banking feeds, CAD/BIM (Revit, AutoCAD, SolidWorks), and legacy ERP data migration (Titan 3000)."
+      "description": "Integrations available for CastLogic, the precast manufacturing ERP by IntraSync Industrial: payroll (Paylocity, Rippling), time and attendance (TimeClock Plus, BambooHR), enterprise financial systems (NetSuite, SAP, Oracle, QuickBooks, Sage) via open APIs, banking feeds, CAD/BIM (Revit, AutoCAD, SolidWorks), and legacy ERP data migration (Titan 3000)."
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
 </head>
 <body class="bg-white text-gray-800">
     <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
@@ -46,7 +53,7 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-12">
                     <a href="index.html">
-                        <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                        <img src="intrasync-logo.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
                     </a>
                     <nav class="hidden md:flex gap-8 text-base font-semibold">
                         <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a>
@@ -99,10 +106,9 @@
                         <div class="text-4xl mb-4">👥</div>
                         <h3 class="text-2xl font-bold mb-4">Payroll, HR &amp; Time</h3>
                         <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start gap-2"><span class="text-green-600 font-bold">✓</span><span><strong>Everee</strong> — embedded payroll processing with journal entries flowing back into the CastLogic general ledger, including daily-pay options</span></li>
-                            <li class="flex items-start gap-2"><span class="text-green-600 font-bold">✓</span><span><strong>Paylocity</strong> — full payroll integration for plants running Paylocity</span></li>
+                            <li class="flex items-start gap-2"><span class="text-green-600 font-bold">✓</span><span><strong>Paylocity</strong> — full payroll integration with journal entries flowing back into the CastLogic general ledger</span></li>
                             <li class="flex items-start gap-2"><span class="text-green-600 font-bold">✓</span><span><strong>TimeClock Plus (TCP)</strong> — consolidate multiple TCP accounts, import time with leave and overtime, persistent employee mapping</span></li>
-                            <li class="flex items-start gap-2"><span class="text-green-600 font-bold">✓</span><span><strong>BambooHR</strong> — time and job-code data flowing into production and job costing</span></li>
+                            <li class="flex items-start gap-2"><span class="text-green-600 font-bold">✓</span><span><strong>BambooHR &amp; Rippling</strong> — HR platform data flowing into production and job costing</span></li>
                             <li class="flex items-start gap-2"><span class="text-green-600 font-bold">✓</span><span><strong>Benefits Navigator</strong> — automated benefits administration and reporting</span></li>
                         </ul>
                     </div>
@@ -193,7 +199,7 @@
             <div class="grid md:grid-cols-5 gap-8 mb-12">
                 <!-- Company Info -->
                 <div class="md:col-span-2">
-                    <img src="Intrasync Industrial Logo 1.19.24.jpg" alt="IntraSync" class="h-10 mb-4">
+                    <img src="intrasync-logo.jpg" alt="IntraSync" class="h-10 mb-4">
                     <p class="text-gray-600 mb-4">The complete ERP platform built specifically for precast manufacturing. Automate your operations from quote to cash.</p>
                     <address class="not-italic text-gray-600 mb-4">
                         <p class="font-semibold text-gray-900">IntraSync Industrial</p>
@@ -214,6 +220,7 @@
                     <ul class="space-y-2">
                         <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
                         <li><a href="designer.html" class="hover:text-blue-600 transition">Designer</a></li>
+                        <li><a href="robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
                         <li><a href="accounting.html" class="hover:text-blue-600 transition">Accounting</a></li>
                         <li><a href="hr.html" class="hover:text-blue-600 transition">HR & Payroll</a></li>
                         <li><a href="schedule.html" class="hover:text-blue-600 transition">Scheduling</a></li>
@@ -227,8 +234,8 @@
                     <ul class="space-y-2">
                         <li><a href="blog.html" class="hover:text-blue-600 transition">Blog</a></li>
                         <li><a href="compare.html" class="hover:text-blue-600 transition">Compare</a></li>
-                        <li><a href="case-studies.html" class="hover:text-blue-600 transition">Case Studies</a></li>
                         <li><a href="certifications.html" class="hover:text-blue-600 transition">Certifications</a></li>
+                        <li><a href="roi-calculator.html" class="hover:text-blue-600 transition">ROI Calculator</a></li>
                         <li><a href="contact.html" class="hover:text-blue-600 transition">Support</a></li>
                     </ul>
                 </div>
