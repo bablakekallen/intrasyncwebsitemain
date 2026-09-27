@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <title>Migrating Accounting Data Out of a Legacy Precast ERP: Chart of Accounts, Open AP/AR, and History | IntraSync Blog</title>
+    <meta name="description" content="A practical guide for precast controllers leaving a legacy ERP like Titan 3000: cleaning up the chart of accounts, carrying over open AP, AR, and POs, deciding how much history to move, and timing the cutover.">
+    <meta name="keywords" content="precast ERP accounting migration, migrate chart of accounts, open AP AR migration, Titan 3000 accounting migration, legacy ERP financial data migration, precast accounting software">
+    <link rel="canonical" href="https://intrasyncindustrial.com/blog/migrating-accounting-data-legacy-precast-erp.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://intrasyncindustrial.com/blog/migrating-accounting-data-legacy-precast-erp.html">
+    <meta property="og:title" content="Migrating Accounting Data Out of a Legacy Precast ERP: Chart of Accounts, Open AP/AR, and History">
+    <meta property="og:description" content="A practical guide for precast controllers leaving a legacy ERP like Titan 3000: cleaning up the chart of accounts, carrying over open AP, AR, and POs, deciding how much history to move, and timing the cutover.">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
+    <meta property="og:site_name" content="IntraSync Industrial">
+    <meta property="article:published_time" content="2026-09-23">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Migrating Accounting Data Out of a Legacy Precast ERP: Chart of Accounts, Open AP/AR, and History",
+      "description": "A practical guide for precast controllers leaving a legacy ERP like Titan 3000: cleaning up the chart of accounts, carrying over open AP, AR, and POs, deciding how much history to move, and timing the cutover.",
+      "image": "https://intrasyncindustrial.com/intrasync-logo.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder",
+        "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://intrasyncindustrial.com/intrasync-logo.jpg"
+        }
+      },
+      "datePublished": "2026-09-23",
+      "dateModified": "2026-09-23",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://intrasyncindustrial.com/blog/migrating-accounting-data-legacy-precast-erp.html"
+      },
+      "keywords": "precast ERP accounting migration, migrate chart of accounts, open AP AR migration, Titan 3000 accounting migration, legacy ERP financial data migration, precast accounting software",
+      "articleSection": "ERP & Software",
+      "inLanguage": "en-US"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can accounting data be migrated out of Titan 3000?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Because Titan 3000 is a full ERP, a migration can include the chart of accounts, opening balances, open AP and AR, and purchase orders. The legacy chart is typically mapped to a clean, standardized general ledger in the new system."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I migrate all historical accounting transactions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not. A common approach is to migrate the current fiscal year in detail, carry prior years as summarized balances, and keep a read-only archive of the legacy system for older records."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is the best time to cut over accounting to a new ERP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At a month-end or quarter-end, after the legacy books are closed for the period, and after running the new system in parallel for at least one full close cycle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I keep my current accounting software and still replace my precast ERP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many producers run a precast ERP like CastLogic as the operational system and integrate with QuickBooks, Sage, NetSuite, SAP, or Oracle through open APIs instead of moving the books."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tailwind.css">
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="../intrasync-logo.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="../index.html" class="hover:text-blue-700">Home</a>
+                <a href="../modules.html" class="hover:text-blue-700">Modules</a>
+                <a href="../blog.html" class="text-blue-700">Blog</a>
+                <a href="../contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-8">
+                <a href="../blog.html" class="text-blue-600 font-semibold hover:underline mb-4 inline-block">← Back to Blog</a>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">ERP & Software</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Migrating Accounting Data Out of a Legacy Precast ERP: Chart of Accounts, Open AP/AR, and History</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <time datetime="2026-09-23">September 23, 2026</time>
+                    <span>•</span>
+                    <span>8 min read</span>
+                    <span>•</span>
+                    <span>By Zachary Frye</span>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">When a precast plant runs its books inside its ERP — as producers on Titan 3000 do — changing systems means moving the accounting too. That's the part controllers worry about most, and rightly so. Here's how to move financial data out of a legacy precast ERP without breaking the close.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Decide: Move the Books, or Keep Them Separate?</h2>
+
+                <p class="mb-6">The first decision isn't technical. Some plants want production and accounting in one system again. Others — especially plants owned by a group with a corporate ledger — prefer to run the plant in a precast ERP and post to an existing QuickBooks, Sage, NetSuite, SAP, or Oracle instance. Either works; the migration scope is very different, so settle it first.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Clean Up the Chart of Accounts First</h2>
+
+                <p class="mb-6">Legacy charts of accounts grow by accretion: duplicate accounts, retired departments, one-off accounts nobody remembers opening. A migration is the one moment you can fix that cheaply. Map the old accounts onto a clean, standardized chart, and keep the mapping table — auditors and your own team will want to trace old balances to new accounts later.</p>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">Tip</h4>
+                    <p class="text-gray-700">Map by roll-up, not one-to-one. Five legacy "misc. plant expense" accounts can land in one well-defined account without losing traceability, as long as the mapping is documented.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Carry Over What's Open</h2>
+
+                <p class="mb-6">The critical data at cutover is whatever is still in flight:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Open AR</strong> — every unpaid invoice with customer, amount, due date, and any retention.</li>
+                    <li><strong>Open AP</strong> — unpaid vendor bills, so nothing is paid twice or missed.</li>
+                    <li><strong>Open purchase orders</strong> — committed material spend on active jobs.</li>
+                    <li><strong>Opening balances</strong> — a trial balance as of the cutover date, reconciled to the old system.</li>
+                </ul>
+
+                <p class="mb-6">Reconcile each of these to the legacy system at cutover. If open AR in the new system doesn't tie to the old aging report to the penny, stop and fix the mapping before anyone sends an invoice.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">How Much History Should You Move?</h2>
+
+                <p class="mb-6">Not all of it needs to be live in the new system. A common pattern: migrate the current fiscal year in detail for comparisons, carry prior years as summarized balances, and keep a read-only archive of the legacy database for anything older. Job and customer history is often worth bringing over in detail, because it drives estimating and reorders.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Time the Cutover to a Close</h2>
+
+                <p class="mb-6">Cut over at a month-end — ideally a quarter-end — after the old system's books are closed for the period. Run the new system in parallel for at least one close cycle beforehand so the accounting team has already produced a full set of statements in it before it becomes the system of record.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Don't Forget Payroll and Job Costing</h2>
+
+                <p class="mb-6">Payroll setup and labor distribution feed job costing. Map earnings codes and departments along with the GL so labor lands on the right jobs from day one. In CastLogic, payroll can run through our HR module or through integrations with platforms like Paylocity and Rippling.</p>
+
+                <p class="mb-6">For the full picture of moving a plant off Titan 3000 — production data included — see <a href="../titan-3000-alternative.html" class="text-blue-600 font-semibold hover:underline">our Titan 3000 migration overview</a>.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Frequently Asked Questions</h2>
+                <h3 class="text-xl font-bold mt-6 mb-2">Can accounting data be migrated out of Titan 3000?</h3>
+                <p class="mb-6">Yes. Because Titan 3000 is a full ERP, a migration can include the chart of accounts, opening balances, open AP and AR, and purchase orders. The legacy chart is typically mapped to a clean, standardized general ledger in the new system.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">Should I migrate all historical accounting transactions?</h3>
+                <p class="mb-6">Usually not. A common approach is to migrate the current fiscal year in detail, carry prior years as summarized balances, and keep a read-only archive of the legacy system for older records.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">When is the best time to cut over accounting to a new ERP?</h3>
+                <p class="mb-6">At a month-end or quarter-end, after the legacy books are closed for the period, and after running the new system in parallel for at least one full close cycle.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">Can I keep my current accounting software and still replace my precast ERP?</h3>
+                <p class="mb-6">Yes. Many producers run a precast ERP like CastLogic as the operational system and integrate with QuickBooks, Sage, NetSuite, SAP, or Oracle through open APIs instead of moving the books.</p>
+            </div>
+
+            <div class="border-t border-b border-gray-200 py-8 my-12">
+                <div class="flex items-start gap-6">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold flex-shrink-0">ZF</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">Zachary Frye</h4>
+                        <p class="text-gray-600">CTO & Founder of IntraSync Industrial. Zachary builds ERP software purpose-built for precast concrete manufacturing, drawing on decades of combined team experience on plant floors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="migrating-from-titan-3000-step-by-step.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">ERP & Software</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Moving Off Titan 3000: A Step-by-Step Migration Guide</h4>
+                        <p class="text-gray-600 text-sm">Inventory, mapping, parallel runs, and cutover — how to leave Titan 3000 without losing history.</p>
+                    </a>
+                    <a href="titan-3000-vs-cloud-precast-erp.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">ERP & Software</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Titan 3000 vs. a Modern Cloud Precast ERP: What Changes When You Switch</h4>
+                        <p class="text-gray-600 text-sm">An honest look at what stays the same, what changes, and the questions to ask before you decide.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 mt-12 text-center text-white">
+                <h3 class="text-2xl font-bold mb-3">Running Titan 3000 Today?</h3>
+                <p class="mb-6 text-blue-100">See what migrates to CastLogic and what the cutover looks like for your plant.</p>
+                <a href="../titan-3000-alternative.html" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">See the Titan 3000 Migration Path</a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            &copy; 2026 IntraSync Industrial. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

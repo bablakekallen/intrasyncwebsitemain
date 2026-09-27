@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <title>Moving Off Titan 3000: A Step-by-Step Migration Guide for Precast Producers | IntraSync Blog</title>
+    <meta name="description" content="How to migrate a precast plant off the Titan 3000 ERP without losing history: data inventory, mapping structure IDs and catalogs, financial carryover, parallel runs, and cutover planning.">
+    <meta name="keywords" content="migrate from Titan 3000, Titan 3000 migration, replace Titan 3000, Titan 3000 alternative, Titan3000 data export, precast ERP migration, legacy precast ERP replacement">
+    <link rel="canonical" href="https://intrasyncindustrial.com/blog/migrating-from-titan-3000-step-by-step.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://intrasyncindustrial.com/blog/migrating-from-titan-3000-step-by-step.html">
+    <meta property="og:title" content="Moving Off Titan 3000: A Step-by-Step Migration Guide for Precast Producers">
+    <meta property="og:description" content="How to migrate a precast plant off the Titan 3000 ERP without losing history: data inventory, mapping structure IDs and catalogs, financial carryover, parallel runs, and cutover planning.">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
+    <meta property="og:site_name" content="IntraSync Industrial">
+    <meta property="article:published_time" content="2026-09-21">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Moving Off Titan 3000: A Step-by-Step Migration Guide for Precast Producers",
+      "description": "How to migrate a precast plant off the Titan 3000 ERP without losing history: data inventory, mapping structure IDs and catalogs, financial carryover, parallel runs, and cutover planning.",
+      "image": "https://intrasyncindustrial.com/intrasync-logo.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Zachary Frye",
+        "jobTitle": "CTO & Founder",
+        "url": "https://intrasyncindustrial.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IntraSync Industrial",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://intrasyncindustrial.com/intrasync-logo.jpg"
+        }
+      },
+      "datePublished": "2026-09-21",
+      "dateModified": "2026-09-21",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://intrasyncindustrial.com/blog/migrating-from-titan-3000-step-by-step.html"
+      },
+      "keywords": "migrate from Titan 3000, Titan 3000 migration, replace Titan 3000, Titan 3000 alternative, Titan3000 data export, precast ERP migration, legacy precast ERP replacement",
+      "articleSection": "ERP & Software",
+      "inLanguage": "en-US"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I migrate my data out of Titan 3000?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A migration works from a Titan 3000 database backup and can include structure IDs, product and pipe catalogs, BOMs, customers, historical jobs, sales orders, and financial data such as the chart of accounts and open AP/AR."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a Titan 3000 migration take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a CastLogic implementation, a typical timeline is 4 to 6 months depending on the number of plants, product mix, and whether accounting data is moving too. That includes mapping, auditing, training, and a parallel run."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to shut down production to switch off Titan 3000?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The migration works from database backups, so the plant keeps running on Titan 3000 while data is mapped and audited. Both systems run in parallel before a planned cutover, usually at a month-end."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my existing structure IDs and part numbers still work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They should. A good migration maps legacy structure IDs directly into the new system so crews, customers, and existing drawings can keep using the same numbers."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tailwind.css">
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <img src="../intrasync-logo.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
+            <nav class="flex gap-8 text-lg font-semibold">
+                <a href="../index.html" class="hover:text-blue-700">Home</a>
+                <a href="../modules.html" class="hover:text-blue-700">Modules</a>
+                <a href="../blog.html" class="text-blue-700">Blog</a>
+                <a href="../contact.html" class="hover:text-blue-700">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-8">
+                <a href="../blog.html" class="text-blue-600 font-semibold hover:underline mb-4 inline-block">← Back to Blog</a>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">ERP & Software</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Moving Off Titan 3000: A Step-by-Step Migration Guide for Precast Producers</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <time datetime="2026-09-21">September 21, 2026</time>
+                    <span>•</span>
+                    <span>9 min read</span>
+                    <span>•</span>
+                    <span>By Zachary Frye</span>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">Titan 3000 has been the system of record for a lot of precast plants for a long time. That longevity is exactly what makes leaving it feel risky: years of structures, catalogs, customers, jobs, and the books all live in one database. The good news is that a well-run migration moves that history with you. This guide walks through how to do it, step by step.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 1: Know What You Actually Have</h2>
+
+                <p class="mb-6">Titan 3000 is a full ERP, not just a production tracker, so the first job is an honest inventory of what your plant uses it for. Most producers find the data falls into three groups:</p>
+
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Engineering and product data</strong> — structure IDs, product and pipe catalogs, BOMs, and components.</li>
+                    <li><strong>Commercial history</strong> — customers, historical jobs, quotes, and sales orders.</li>
+                    <li><strong>Financial data</strong> — chart of accounts, open AP and AR, purchase orders, and payroll setup.</li>
+                </ul>
+
+                <p class="mb-6">Also write down the workarounds: the spreadsheets, the side databases, the reports someone rebuilds every month. Those tell you where the new system has to do better, not just the same.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 2: Get a Clean Copy of the Database</h2>
+
+                <p class="mb-6">Work from a database backup, never the live system. A backup gives the migration team something they can read, map, and re-read as many times as needed without touching the plant's day-to-day operations. Take a fresh backup again near cutover so the final import reflects current balances and open jobs.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 3: Map, Don't Just Copy</h2>
+
+                <p class="mb-6">A straight table-to-table copy carries over every old inconsistency. Instead, build explicit mappings: which legacy structure IDs become which items, how catalog fields line up, and how the old chart of accounts rolls up into a clean general ledger. Save those mappings as templates so every re-import is repeatable and auditable.</p>
+
+                <p class="mb-6">Structure IDs deserve special care. Your crews, customers, and drawings all refer to them. Preserving existing part numbers means nobody has to relearn the catalog on day one.</p>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">Rule of Thumb</h4>
+                    <p class="text-gray-700">Every mapping should be re-runnable. If fixing one field means redoing the whole migration by hand, the process is too fragile to trust at cutover.</p>
+                </div>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 4: Audit Against the Source</h2>
+
+                <p class="mb-6">Compare the imported data to the Titan 3000 backup before anyone depends on it: catalog counts, BOM totals, customer balances, and trial balance by account. Fix the mapping, re-import, and audit again. Two or three passes is normal, and far cheaper than finding a problem after go-live.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 5: Train by Department and Run in Parallel</h2>
+
+                <p class="mb-6">Train each department on its own workflows: estimating, production scheduling, QC, yard and dispatch, and accounting. Then run both systems side by side for a defined window. Parallel testing is where you catch the process gaps that no data audit will find.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 6: Cut Over on a Clean Boundary</h2>
+
+                <p class="mb-6">Pick a cutover date on a natural boundary — ideally a month-end close. Take the final backup, run the final import of open AP, AR, POs, and in-flight jobs, reconcile, and go live with support on hand. Keep read-only access to the old system for reference until you're confident nothing was missed.</p>
+
+                <h2 class="text-3xl font-bold mt-10 mb-4">How Long Should It Take?</h2>
+
+                <p class="mb-6">For a CastLogic implementation, a typical timeline is 4 to 6 months depending on the number of plants, product mix, and whether accounting is moving too. Rushing the mapping and audit steps is the most common way migrations go wrong.</p>
+
+                <p class="mb-6">If you're evaluating options now, see <a href="../titan-3000-alternative.html" class="text-blue-600 font-semibold hover:underline">what moves from Titan 3000 to CastLogic</a>.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Frequently Asked Questions</h2>
+                <h3 class="text-xl font-bold mt-6 mb-2">Can I migrate my data out of Titan 3000?</h3>
+                <p class="mb-6">Yes. A migration works from a Titan 3000 database backup and can include structure IDs, product and pipe catalogs, BOMs, customers, historical jobs, sales orders, and financial data such as the chart of accounts and open AP/AR.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">How long does a Titan 3000 migration take?</h3>
+                <p class="mb-6">For a CastLogic implementation, a typical timeline is 4 to 6 months depending on the number of plants, product mix, and whether accounting data is moving too. That includes mapping, auditing, training, and a parallel run.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">Do I have to shut down production to switch off Titan 3000?</h3>
+                <p class="mb-6">No. The migration works from database backups, so the plant keeps running on Titan 3000 while data is mapped and audited. Both systems run in parallel before a planned cutover, usually at a month-end.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">Will my existing structure IDs and part numbers still work?</h3>
+                <p class="mb-6">They should. A good migration maps legacy structure IDs directly into the new system so crews, customers, and existing drawings can keep using the same numbers.</p>
+            </div>
+
+            <div class="border-t border-b border-gray-200 py-8 my-12">
+                <div class="flex items-start gap-6">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold flex-shrink-0">ZF</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">Zachary Frye</h4>
+                        <p class="text-gray-600">CTO & Founder of IntraSync Industrial. Zachary builds ERP software purpose-built for precast concrete manufacturing, drawing on decades of combined team experience on plant floors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="migrating-accounting-data-legacy-precast-erp.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">ERP & Software</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Migrating Accounting Data Out of a Legacy Precast ERP</h4>
+                        <p class="text-gray-600 text-sm">Chart of accounts, open AP/AR, and history: what to move, what to archive, and when to cut over.</p>
+                    </a>
+                    <a href="titan-3000-vs-cloud-precast-erp.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">ERP & Software</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Titan 3000 vs. a Modern Cloud Precast ERP: What Changes When You Switch</h4>
+                        <p class="text-gray-600 text-sm">An honest look at what stays the same, what changes, and the questions to ask before you decide.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 mt-12 text-center text-white">
+                <h3 class="text-2xl font-bold mb-3">Running Titan 3000 Today?</h3>
+                <p class="mb-6 text-blue-100">See what migrates to CastLogic and what the cutover looks like for your plant.</p>
+                <a href="../titan-3000-alternative.html" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">See the Titan 3000 Migration Path</a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            &copy; 2026 IntraSync Industrial. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

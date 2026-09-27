@@ -823,4 +823,28 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/titan-3000-alternative.html</loc>
+        <lastmod>2026-09-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/migrating-from-titan-3000-step-by-step.html</loc>
+        <lastmod>2026-09-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/migrating-accounting-data-legacy-precast-erp.html</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/titan-3000-vs-cloud-precast-erp.html</loc>
+        <lastmod>2026-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
