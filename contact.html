@@ -146,14 +146,17 @@ document.head.appendChild(o)}initApollo();</script>
             fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
                 .then(function (res) {
                     if (!res.ok) throw new Error('Form submit failed');
-                    if (typeof gtag === 'function') {
-                        gtag('event', 'conversion', { 'send_to': 'AW-18479283499/vpYRCLKhy4gdEKv6zetE' });
-                    }
                     form.classList.add('hidden');
                     thanks.classList.remove('hidden');
+                    // Tracking must never affect the submission (ad blockers can break gtag)
+                    try {
+                        gtag('event', 'conversion', { 'send_to': 'AW-18479283499/vpYRCLKhy4gdEKv6zetE' });
+                    } catch (err) {}
+                }, function () {
+                    // Fall back to a normal Formspree post so the lead is never lost
+                    form.submit();
                 })
                 .catch(function () {
-                    // Fall back to a normal Formspree post so the lead is never lost
                     form.submit();
                 });
         });
