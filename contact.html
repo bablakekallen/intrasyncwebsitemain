@@ -63,6 +63,14 @@
 o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
 o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
 document.head.appendChild(o)}initApollo();</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18479283499"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18479283499');
+</script>
 </head>
 <body class="bg-white text-gray-800">
     <a href="#main" class="skip-link">Skip to content</a>
@@ -101,7 +109,7 @@ document.head.appendChild(o)}initApollo();</script>
             <p class="text-center text-gray-600 mb-8 max-w-lg mx-auto gs-fade-up" data-delay="0.1">
                 Whether you're interested in individual modules, the complete platform, or custom-built solutions for your unique processes—we're here to help.
             </p>
-            <form action="https://formspree.io/f/meoknpor" method="POST" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 space-y-6 gs-fade-up" data-delay="0.2">
+            <form id="contact-form" action="https://formspree.io/f/meoknpor" method="POST" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 space-y-6 gs-fade-up" data-delay="0.2">
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
                     <input type="text" name="name" id="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3">
@@ -127,6 +135,30 @@ document.head.appendChild(o)}initApollo();</script>
             </div>
         </div>
     </main>
+    <script>
+    (function () {
+        var form = document.getElementById('contact-form');
+        var thanks = document.getElementById('thankyou-message');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var button = form.querySelector('button[type="submit"]');
+            button.disabled = true;
+            fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+                .then(function (res) {
+                    if (!res.ok) throw new Error('Form submit failed');
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'conversion', { 'send_to': 'AW-18479283499/vpYRCLKhy4gdEKv6zetE' });
+                    }
+                    form.classList.add('hidden');
+                    thanks.classList.remove('hidden');
+                })
+                .catch(function () {
+                    // Fall back to a normal Formspree post so the lead is never lost
+                    form.submit();
+                });
+        });
+    })();
+    </script>
     <footer class="bg-gray-50 text-gray-800">
         <div class="container mx-auto px-6 py-16">
             <div class="grid md:grid-cols-5 gap-8 mb-12">
