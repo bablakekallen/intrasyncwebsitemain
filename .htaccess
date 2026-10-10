@@ -6,3 +6,10 @@ RewriteRule ^(.*)$ https://intrasyncindustrial.com/$1 [R=301,L]
 # 301 redirects for unpublished blog posts
 Redirect 301 /blog/flexible-payroll-manufacturing.html /blog/calculate-true-labor-costs.html
 Redirect 301 /blog/prevailing-wage-compliance.html /blog/certified-payroll-davis-bacon.html
+
+# Keep internal repo files off the public site (strategy docs, build config).
+# cPanel deploy copies the whole repo into public_html.
+RedirectMatch 404 ^/(docs|src|node_modules|v1)(/|$)
+<FilesMatch "\.(md|yml|yaml|lock)$|^(package(-lock)?\.json|tailwind\.config\.js)$">
+    Require all denied
+</FilesMatch>

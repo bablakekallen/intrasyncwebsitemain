@@ -8,7 +8,19 @@ Allow: /
 # Explicitly allow AI/LLM crawlers for Generative Engine Optimization (GEO)
 # These crawlers power AI search results and recommendations
 
-# OpenAI GPTBot - Powers ChatGPT search and AI features
+# OpenAI OAI-SearchBot - surfaces sites in ChatGPT search answers
+# (https://developers.openai.com/api/docs/bots). Opting this out removes
+# the site from ChatGPT search, so keep it allowed.
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI ChatGPT-User - fetches pages when a ChatGPT user asks about them
+User-agent: ChatGPT-User
+Allow: /
+
+# OpenAI GPTBot - model TRAINING crawler only; does not control ChatGPT
+# search inclusion. Allowed by business decision; can be set to
+# Disallow without affecting ChatGPT search visibility.
 User-agent: GPTBot
 Allow: /
 
