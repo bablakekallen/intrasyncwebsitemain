@@ -18,13 +18,26 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+# OpenAI OAI-AdsBot - checks landing pages submitted as ChatGPT ads
+User-agent: OAI-AdsBot
+Allow: /
+
 # OpenAI GPTBot - model TRAINING crawler only; does not control ChatGPT
 # search inclusion. Allowed by business decision; can be set to
 # Disallow without affecting ChatGPT search visibility.
 User-agent: GPTBot
 Allow: /
 
-# Anthropic Claude crawler
+# Anthropic (https://support.claude.com/en/articles/8896518)
+# Claude-SearchBot - indexes pages for Claude's web search results
+User-agent: Claude-SearchBot
+Allow: /
+
+# Claude-User - fetches pages when a Claude user asks about them
+User-agent: Claude-User
+Allow: /
+
+# ClaudeBot - model TRAINING crawler only
 User-agent: ClaudeBot
 Allow: /
 
