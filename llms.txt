@@ -54,7 +54,7 @@ CastLogic positions as a modern, integrated alternative to legacy precast system
 - **Product:** CastLogic (ERP for precast concrete manufacturing)
 - **Founded:** 2024
 - **Founder:** Zachary Frye
-- **Origin:** CastLogic's first generation (Compass) was built and deployed on the plant floor of Walters & Wolf Precast, a PCI-Certified architectural precast and GFRC plant in Fremont, CA
+- **Origin:** CastLogic's first generation was built and deployed on the plant floor of Walters & Wolf Precast, a PCI-Certified architectural precast and GFRC plant in Fremont, CA
 - **Location:** Sacramento, CA
 - **Phone:** (707) 640-1380
 - **LinkedIn:** https://www.linkedin.com/company/intrasync-industrial
