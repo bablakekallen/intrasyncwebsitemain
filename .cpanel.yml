@@ -7,4 +7,6 @@ deployment:
     - /bin/rm -f /home/d2v9su284tj5/public_html/BLOG-UPLOAD-INSTRUCTIONS.txt
     - /bin/rm -f /home/d2v9su284tj5/public_html/blog/flexible-payroll-manufacturing.html
     - /bin/rm -f /home/d2v9su284tj5/public_html/blog/prevailing-wage-compliance.html
-    - /usr/bin/rsync -rlt --exclude=.git --exclude=node_modules --exclude=.cpanel.yml ./ /home/d2v9su284tj5/public_html/
+    - /bin/rm -f /home/d2v9su284tj5/public_html/walters-wolf-whitepaper.html
+    - /bin/rm -f /home/d2v9su284tj5/public_html/assets/whitepapers/walters-wolf-architectural-precast-whitepaper.pdf
+    - /usr/bin/rsync -rlt --exclude=.git --exclude=node_modules --exclude=/docs --exclude=/src --exclude=.cpanel.yml ./ /home/d2v9su284tj5/public_html/
