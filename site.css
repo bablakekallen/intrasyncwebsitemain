@@ -747,3 +747,7 @@ html {
     outline: 2px solid #fff;
     outline-offset: -4px;
 }
+
+/* Client logo strip */
+.client-logo { filter: grayscale(100%); opacity: .7; transition: filter .25s ease, opacity .25s ease; }
+.client-logo:hover { filter: none; opacity: 1; }
