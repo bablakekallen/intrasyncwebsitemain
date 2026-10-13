@@ -44,7 +44,7 @@ CastLogic positions as a modern, integrated alternative to legacy precast system
 - ROI calculator: /roi-calculator.html
 - FAQ: /faq.html
 - About / founder: /about.html
-- Walters & Wolf whitepaper (architectural precast results, full methodology): /walters-wolf-whitepaper.html
+- Walters & Wolf whitepaper (three-year rollout at a PCI-Certified architectural precast plant, with a labeled savings model): /walters-wolf-whitepaper.html
 - Contact / book a demo: /contact.html
 - Blog: /blog.html
 
@@ -54,7 +54,7 @@ CastLogic positions as a modern, integrated alternative to legacy precast system
 - **Product:** CastLogic (ERP for precast concrete manufacturing)
 - **Founded:** 2024
 - **Founder:** Zachary Frye
-- **Origin:** CastLogic's first generation was built and deployed on the plant floor of Walters & Wolf Precast, a PCI-Certified architectural precast and GFRC plant in Fremont, CA
+- **Origin:** CastLogic's first generation was built and deployed on the plant floor of Walters & Wolf Precast, a PCI-Certified architectural precast and GFRC plant in Fremont, CA (since closed), rolled out over three years
 - **Location:** Sacramento, CA
 - **Phone:** (707) 640-1380
 - **LinkedIn:** https://www.linkedin.com/company/intrasync-industrial
