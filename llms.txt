@@ -9,12 +9,16 @@
 - **Who it's for:** Precast plants currently running on paper, spreadsheets, or aging legacy systems that want one integrated system from quote to cash.
 - **Core promise:** Eliminate duplicate data entry, reduce errors and rework, crash manual production scheduling time, and give real-time visibility across the plant.
 
-## Module groups (sold à la carte)
+## Products
 
-CastLogic is purchased by module group, scaled to company size:
+CastLogic is sold as two products on one platform, scaled to company size:
 
-- **Production** — Estimating, Production, Yard, Dispatch, and Quality Control (QC).
-- **Accounting** — Integrated accounting and job costing.
+- **CastLogic Production** — estimating through dispatch and the field: Bidding & Estimating, Designer (structure design and drawings), Engage (CAD/BIM engineering data), Schedule, Flow (production tracking), Verify (quality control), Stock (yard and inventory), Dispatch, and Site (field/project management). Designer and QC are included.
+- **CastLogic Accounting** — GL, AP/AR, project accounting, and job costing. Sold on its own or with Production.
+- **Included with both:** Insights (analytics) and AI.
+- **Integrations (not separate modules):** CastLogic integrates with HR/payroll platforms (e.g., BambooHR, Rippling, Paylocity, Time Track Plus) and with modern external accounting systems (e.g., QuickBooks, Sage, NetSuite, SAP, Oracle), with data flowing both ways. Plants can run Production with their existing accounting system.
+
+Other IntraSync product lines:
 - **BatchLogic** — Batch control for concrete production.
 - **MaterialsLogic** — Aggregates/materials ERP.
 
@@ -31,12 +35,12 @@ Custom pricing based on company size and the module groups selected. Fixed month
 
 ## How CastLogic compares
 
-CastLogic positions as a modern, integrated alternative to legacy precast systems including **BETSY**, **Titan3000**, **IDAT-ERP**, and **IMPACT Production**. Detailed feature-by-feature comparison: /compare.html
+CastLogic positions as a modern, integrated alternative to legacy precast systems including **BETSY**, **Titan3000**, **IDAT-ERP**, and **IMPACT Production**. Detailed feature-by-feature comparison: /compare.html Compared with **Protrak** (Prorigo Software), a general low-code platform configured for precast and billed per user, CastLogic is purpose-built for precast, includes estimating, structure design (Designer), and accounting, and has unlimited seats. **CastLogic Verify** (QC, included in CastLogic Production) can replace standalone precast QC tools such as **Idencia** (Aiden) and **EXACT Technology** (xTrack), keeping inspection results in the same system as scheduling, yard, dispatch, and job cost.
 
 ## Key pages
 
 - Home: /index.html
-- All modules: /modules.html
+- Products (CastLogic Production + CastLogic Accounting): /modules.html
 - Robotics & machine vision: /robotics.html
 - Compare vs. competitors: /compare.html
 - Accounting: /accounting.html

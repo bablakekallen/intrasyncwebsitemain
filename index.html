@@ -163,7 +163,7 @@
     <meta name="keywords" content="precast concrete ERP, CastLogic, precast manufacturing software, production scheduling, inventory management, job costing, precast concrete, IntraSync Industrial, manufacturing ERP, quality control">
 
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="tailwind.css?v=8f83a329">
+    <link rel="stylesheet" href="tailwind.css?v=6b892b3e">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="site.css?v=a9ce9325">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -204,7 +204,7 @@ document.head.appendChild(o)}initApollo();</script>
                     </a>
                     <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
                         <a href="index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
-                        <a href="modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Modules</a>
+                        <a href="modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Products</a>
                         <a href="robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
                         <a href="compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
                         <a href="blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
@@ -629,67 +629,71 @@ document.head.appendChild(o)}initApollo();</script>
         <!-- Key Modules Section -->
         <section id="modules" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">13 Powerful Modules. One Integrated Platform.</h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose the modules you need. Everything works together seamlessly.</p>
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Two Products. One Platform.</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Run the plant with CastLogic Production, run the books with CastLogic Accounting, or run both on one connected system.</p>
                 </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto gs-stagger-container">
-                    <!-- Module Cards -->
-                    <div class="gs-stagger-item module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200" data-tilt>
-                        <div class="feature-icon w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center text-3xl mb-4">💰</div>
-                        <h3 class="text-xl font-bold mb-2">Accounting</h3>
-                        <p class="text-gray-600 text-sm mb-4">Full ERP financials with GL, AP/AR, project accounting, and AI automation</p>
-                        <a href="accounting.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
+                <!-- Job flow -->
+                <ol class="grid grid-cols-4 lg:grid-cols-8 gap-y-6 gap-x-2 max-w-5xl mx-auto mb-14">
+                        <li class="flex flex-col items-center text-center"><span class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-xl">💲</span><span class="mt-2 text-sm font-bold text-gray-900">Estimate</span><span class="text-xs text-gray-500">Bidding</span></li>
+                        <li class="flex flex-col items-center text-center"><span class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-xl">📐</span><span class="mt-2 text-sm font-bold text-gray-900">Design</span><span class="text-xs text-gray-500">Designer &amp; Engage</span></li>
+                        <li class="flex flex-col items-center text-center"><span class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-xl">📅</span><span class="mt-2 text-sm font-bold text-gray-900">Schedule</span><span class="text-xs text-gray-500">Schedule</span></li>
+                        <li class="flex flex-col items-center text-center"><span class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-xl">⚙️</span><span class="mt-2 text-sm font-bold text-gray-900">Produce</span><span class="text-xs text-gray-500">Flow</span></li>
+                        <li class="flex flex-col items-center text-center"><span class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-xl">🔍</span><span class="mt-2 text-sm font-bold text-gray-900">Inspect</span><span class="text-xs text-gray-500">Verify QC</span></li>
+                        <li class="flex flex-col items-center text-center"><span class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-xl">📦</span><span class="mt-2 text-sm font-bold text-gray-900">Yard</span><span class="text-xs text-gray-500">Stock</span></li>
+                        <li class="flex flex-col items-center text-center"><span class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-xl">🚚</span><span class="mt-2 text-sm font-bold text-gray-900">Ship</span><span class="text-xs text-gray-500">Dispatch</span></li>
+                        <li class="flex flex-col items-center text-center"><span class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-xl">🏗️</span><span class="mt-2 text-sm font-bold text-gray-900">Field</span><span class="text-xs text-gray-500">Site</span></li>
+                </ol>
+
+                <div class="grid lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+                    <!-- Production -->
+                    <div class="lg:col-span-3 bg-white rounded-2xl shadow-lg border border-gray-200 p-8">
+                        <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold mb-3">PRODUCT 1</span>
+                        <h3 class="text-3xl font-extrabold mb-2">CastLogic Production</h3>
+                        <p class="text-gray-600 mb-6">Estimating through dispatch and the field, in one system. Designer and quality control are included.</p>
+                        <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm mb-6">
+                                <li><a href="bidding.html" class="hover:text-blue-700"><strong class="text-gray-900">Bidding &amp; Estimating</strong> <span class="text-gray-500">· quotes and takeoffs</span></a></li>
+                                <li><a href="designer.html" class="hover:text-blue-700"><strong class="text-gray-900">Designer</strong> <span class="text-gray-500">· structure design and drawings</span></a></li>
+                                <li><a href="engage.html" class="hover:text-blue-700"><strong class="text-gray-900">Engage</strong> <span class="text-gray-500">· CAD/BIM engineering data</span></a></li>
+                                <li><a href="schedule.html" class="hover:text-blue-700"><strong class="text-gray-900">Schedule</strong> <span class="text-gray-500">· AI production scheduling</span></a></li>
+                                <li><a href="flow.html" class="hover:text-blue-700"><strong class="text-gray-900">Flow</strong> <span class="text-gray-500">· real-time production tracking</span></a></li>
+                                <li><a href="verify.html" class="hover:text-blue-700"><strong class="text-gray-900">Verify</strong> <span class="text-gray-500">· quality control</span></a></li>
+                                <li><a href="stock.html" class="hover:text-blue-700"><strong class="text-gray-900">Stock</strong> <span class="text-gray-500">· yard and inventory</span></a></li>
+                                <li><a href="dispatch.html" class="hover:text-blue-700"><strong class="text-gray-900">Dispatch</strong> <span class="text-gray-500">· loads and shipping</span></a></li>
+                                <li><a href="site.html" class="hover:text-blue-700"><strong class="text-gray-900">Site</strong> <span class="text-gray-500">· field and project management</span></a></li>
+                        </ul>
+                        <a href="modules.html#production" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Explore Production →</a>
                     </div>
 
-                    <div class="gs-stagger-item module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200" data-tilt>
-                        <div class="feature-icon w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center text-3xl mb-4">👥</div>
-                        <h3 class="text-xl font-bold mb-2">HR & Payroll</h3>
-                        <p class="text-gray-600 text-sm mb-4">Connect BambooHR, Rippling, Paylocity, Time Track Plus, and other HR platforms to your ERP</p>
-                        <a href="hr.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
-                    </div>
-
-                    <div class="gs-stagger-item module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200" data-tilt>
-                        <div class="feature-icon w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center text-3xl mb-4">📅</div>
-                        <h3 class="text-xl font-bold mb-2">Schedule</h3>
-                        <p class="text-gray-600 text-sm mb-4">AI-powered production scheduling reduces lead times by up to 20%</p>
-                        <a href="schedule.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
-                    </div>
-
-                    <div class="gs-stagger-item module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200" data-tilt>
-                        <div class="feature-icon w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center text-3xl mb-4">📦</div>
-                        <h3 class="text-xl font-bold mb-2">Stock</h3>
-                        <p class="text-gray-600 text-sm mb-4">GPS yard mapping, inventory tracking, perpetual COGS sync</p>
-                        <a href="stock.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
-                    </div>
-
-                    <div class="gs-stagger-item module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200" data-tilt>
-                        <div class="feature-icon w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center text-3xl mb-4">⚙️</div>
-                        <h3 class="text-xl font-bold mb-2">Flow</h3>
-                        <p class="text-gray-600 text-sm mb-4">Real-time production tracking with robotics and IoT integration</p>
-                        <a href="flow.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
-                    </div>
-
-                    <div class="gs-stagger-item module-card feature-card bg-white rounded-xl shadow-lg p-6 border border-gray-200" data-tilt>
-                        <div class="feature-icon w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center text-3xl mb-4">📏</div>
-                        <h3 class="text-xl font-bold mb-2">Designer</h3>
-                        <p class="text-gray-600 text-sm mb-4">Design manholes &amp; structures in minutes—auto-stacking, rebar detailing, instant submittals</p>
-                        <a href="designer.html" class="text-blue-600 font-semibold text-sm hover:underline">Learn more →</a>
+                    <!-- Accounting -->
+                    <div class="lg:col-span-2 bg-white rounded-2xl shadow-lg border border-gray-200 p-8 flex flex-col">
+                        <span class="inline-block self-start bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold mb-3">PRODUCT 2</span>
+                        <h3 class="text-3xl font-extrabold mb-2">CastLogic Accounting</h3>
+                        <p class="text-gray-600 mb-6">Full financials with GL, AP/AR, project accounting, and real-time job costing. Buy it on its own or with Production.</p>
+                        <ul class="space-y-2 text-sm text-gray-700 mb-6">
+                            <li>✓ Multi-entity consolidations</li>
+                            <li>✓ AI-powered bill entry</li>
+                            <li>✓ Real-time job costing</li>
+                        </ul>
+                        <a href="accounting.html" class="mt-auto inline-block self-start bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">Explore Accounting →</a>
                     </div>
                 </div>
 
-                <div class="text-center mt-12">
-                    <a href="modules.html" class="inline-block text-blue-600 font-semibold text-lg hover:underline">
-                        View all 13 modules →
-                    </a>
+                <!-- Integrations -->
+                <div class="max-w-6xl mx-auto mt-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-8 grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h3 class="text-2xl font-extrabold mb-2">Keep the systems you already use</h3>
+                        <p class="text-blue-100">CastLogic integrates with your HR and payroll platform and with modern accounting systems, and data flows both ways. Insights and AI are included with both products.</p>
+                    </div>
+                    <a href="integrations.html" class="inline-block text-center bg-white text-blue-700 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition">See Integrations →</a>
                 </div>
 
                 <!-- Pricing Section -->
                 <div class="mt-16 max-w-5xl mx-auto">
                     <div class="text-center mb-10">
                         <h3 class="text-3xl font-extrabold text-gray-900 mb-4">Simple, Scalable Pricing</h3>
-                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">One subscription based on your operation size and the modules you choose—with unlimited seats, so your whole team is in the system. AI features scale with your actual usage.</p>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">One subscription based on your operation size and the products you choose—with unlimited seats, so your whole team is in the system. AI features scale with your actual usage.</p>
                     </div>
                     <div class="grid md:grid-cols-4 gap-4 mb-8">
                         <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
@@ -715,14 +719,14 @@ document.head.appendChild(o)}initApollo();</script>
                     </div>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-xl p-8 shadow-lg">
-                            <h4 class="text-xl font-bold mb-3">Choose What You Need</h4>
+                            <h4 class="text-xl font-bold mb-3">Production, Accounting, or Both</h4>
                             <p class="text-blue-100 mb-4">
-                                Start with just the modules that solve your biggest pain points today. Add more as you grow.
+                                Start with the product that solves your biggest pain point today. Add the other anytime.
                             </p>
                             <ul class="space-y-2 text-blue-100 text-sm">
-                                <li>✓ Purchase individual modules</li>
-                                <li>✓ Add modules anytime</li>
-                                <li>✓ Flexible pricing options</li>
+                                <li>✓ Production: estimating through dispatch and field</li>
+                                <li>✓ Accounting: on its own or with Production</li>
+                                <li>✓ Connects to your HR, payroll, and accounting systems</li>
                             </ul>
                         </div>
 
@@ -905,7 +909,7 @@ document.head.appendChild(o)}initApollo();</script>
                 <div>
                     <h3 class="font-bold text-gray-900 mb-4">Product</h3>
                     <ul class="space-y-2">
-                        <li><a href="modules.html" class="hover:text-blue-600 transition">All Modules</a></li>
+                        <li><a href="modules.html" class="hover:text-blue-600 transition">All Products</a></li>
                         <li><a href="designer.html" class="hover:text-blue-600 transition">Designer</a></li>
                         <li><a href="robotics.html" class="hover:text-blue-600 transition">Robotics Integration</a></li>
                         <li><a href="ai.html" class="hover:text-blue-600 transition">AI & Automation</a></li>
@@ -945,19 +949,19 @@ document.head.appendChild(o)}initApollo();</script>
             <div class="border-t border-gray-300 pt-8 pb-6">
                 <div class="flex flex-col md:flex-row items-center justify-center gap-6">
                     <span class="text-gray-500 text-sm">Also from IntraSync:</span>
-                    <div class="flex items-center gap-6">
+                    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
                         <a href="https://materialslogic.intrasyncindustrial.com" class="text-gray-600 hover:text-amber-600 transition flex items-center gap-2">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg>
                             <span class="font-medium">MaterialsLogic</span>
                             <span class="text-gray-400 text-sm">Aggregates ERP</span>
                         </a>
-                        <span class="text-gray-300">|</span>
+                        <span class="hidden md:inline text-gray-300">|</span>
                         <a href="https://batchlogic.intrasyncindustrial.com" class="text-gray-600 hover:text-cyan-600 transition flex items-center gap-2">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
                             <span class="font-medium">BatchLogic</span>
                             <span class="text-gray-400 text-sm">Batch Control</span>
                         </a>
-                        <span class="text-gray-300">|</span>
+                        <span class="hidden md:inline text-gray-300">|</span>
                         <a href="https://designlogic.intrasyncindustrial.com" class="text-gray-600 hover:text-emerald-600 transition flex items-center gap-2">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
                             <span class="font-medium">DesignLogic</span>
