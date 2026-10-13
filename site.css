@@ -751,3 +751,6 @@ html {
 /* Client logo strip */
 .client-logo { filter: grayscale(100%); opacity: .7; transition: filter .25s ease, opacity .25s ease; }
 .client-logo:hover { filter: none; opacity: 1; }
+
+/* Programmatic focus targets (skip link, in-page anchors) */
+[tabindex="-1"]:focus { outline: none; }

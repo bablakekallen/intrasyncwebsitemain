@@ -317,26 +317,24 @@
             var targetId = link.getAttribute('href');
             if (targetId === '#') return;
 
-            var target = document.querySelector(targetId);
+            var target = document.getElementById(decodeURIComponent(targetId.slice(1)));
             if (!target) return;
 
             e.preventDefault();
 
-            var headerHeight = document.querySelector('.site-header')
-                ? document.querySelector('.site-header').offsetHeight
-                : 0;
-
+            var header = document.querySelector('.site-header');
+            var headerHeight = header ? header.offsetHeight : 0;
             var targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+            var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-            if (typeof gsap !== 'undefined') {
-                gsap.to(window, {
-                    scrollTo: { y: targetPosition, autoKill: true },
-                    duration: 0.8,
-                    ease: 'power2.inOut'
-                });
-            } else {
-                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+            window.scrollTo({ top: targetPosition, behavior: reduceMotion ? 'auto' : 'smooth' });
+
+            // Move keyboard focus to the target (skip link, in-page nav)
+            if (!target.hasAttribute('tabindex') && !/^(A|BUTTON|INPUT|SELECT|TEXTAREA)$/.test(target.tagName)) {
+                target.setAttribute('tabindex', '-1');
             }
+            target.focus({ preventScroll: true });
+            if (history.pushState) history.pushState(null, '', targetId);
         });
     }
 
