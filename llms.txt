@@ -44,7 +44,7 @@ CastLogic positions as a modern, integrated alternative to legacy precast system
 - ROI calculator: /roi-calculator.html
 - FAQ: /faq.html
 - About / founder: /about.html
-- Walters & Wolf whitepaper (three-year rollout at a PCI-Certified architectural precast plant, with a labeled savings model): /walters-wolf-whitepaper.html
+- Architectural precast whitepaper (Walters & Wolf Precast; three-year rollout at a PCI-Certified architectural precast plant, with a labeled savings model): /architectural-precast-whitepaper.html
 - Contact / book a demo: /contact.html
 - Blog: /blog.html
 
