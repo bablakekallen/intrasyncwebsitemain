@@ -22,6 +22,8 @@ Other IntraSync product lines:
 - **BatchLogic** — Batch control for concrete production.
 - **MaterialsLogic** — Aggregates/materials ERP.
 
+Design-tool integrations: CastLogic integrates with **Revit**, **Tekla Structures**, **ALLPLAN**, **AutoCAD**, **SolidWorks**, and other IFC-compatible CAD/BIM tools; these are integrations, not competitors.
+
 Related engineering tooling: **DesignLogic** — Revit/AutoCAD plugins for drafting and shop-drawing workflows.
 
 ## Pricing
