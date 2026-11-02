@@ -109,7 +109,7 @@ document.head.appendChild(o)}initApollo();</script>
         <div class="container mx-auto px-6 max-w-xl">
             <h1 class="text-4xl font-extrabold mb-6 text-center gs-fade-up">Contact Us</h1>
             <p class="text-center text-gray-600 mb-8 max-w-lg mx-auto gs-fade-up" data-delay="0.1">
-                Whether you're interested in individual modules, the complete platform, or custom-built solutions for your unique processes—we're here to help.
+                Whether you want CastLogic Production, CastLogic Accounting, or both, or you're planning a move off Titan or another system, we're here to help.
             </p>
             <form id="contact-form" action="https://formspree.io/f/meoknpor" method="POST" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 space-y-6 gs-fade-up" data-delay="0.2">
                 <div>
@@ -125,8 +125,31 @@ document.head.appendChild(o)}initApollo();</script>
                     <input type="text" name="company" id="company" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3">
                 </div>
                 <div>
+                    <label for="interest" class="block text-sm font-medium text-gray-700">What are you looking for?</label>
+                    <select name="interest" id="interest" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3 bg-white">
+                        <option value="">Choose one (optional)</option>
+                        <option value="production">CastLogic Production</option>
+                        <option value="accounting">CastLogic Accounting</option>
+                        <option value="both">Production + Accounting</option>
+                        <option value="migration">Replacing Titan or another system</option>
+                        <option value="partner">Partnership</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="plant_type" class="block text-sm font-medium text-gray-700">Plant type</label>
+                    <select name="plant_type" id="plant_type" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3 bg-white">
+                        <option value="">Choose one (optional)</option>
+                        <option>Utility / underground precast</option>
+                        <option>Structural precast</option>
+                        <option>Architectural precast</option>
+                        <option>More than one</option>
+                        <option>Other / not a plant</option>
+                    </select>
+                </div>
+                <div>
                     <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="Tell us about your needs—individual modules, full platform, or custom solutions..."></textarea>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="Tell us about your plant and what you want to fix first..."></textarea>
                 </div>
                 <div>
                     <button type="submit" class="w-full justify-center rounded-md border border-transparent bg-blue-600 py-3 px-4 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Send Message</button>
@@ -140,6 +163,9 @@ document.head.appendChild(o)}initApollo();</script>
     <script>
     (function () {
         var form = document.getElementById('contact-form');
+        var pre = new URLSearchParams(location.search).get('interest');
+        var sel = document.getElementById('interest');
+        if (pre && sel && sel.querySelector('option[value="' + pre + '"]')) sel.value = pre;
         var thanks = document.getElementById('thankyou-message');
         form.addEventListener('submit', function (e) {
             e.preventDefault();

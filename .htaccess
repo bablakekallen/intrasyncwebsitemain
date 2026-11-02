@@ -10,6 +10,14 @@ RewriteRule ^(.*)$ https://intrasyncindustrial.com/$1 [R=301,L]
 RewriteCond %{HTTP:X-Forwarded-Proto} =http [NC]
 RewriteRule ^(.*)$ https://intrasyncindustrial.com/$1 [R=301,L]
 
+# One URL per page: /index.html -> / and extensionless /contact -> /contact.html
+# (THE_REQUEST so DirectoryIndex's internal lookup of index.html never loops)
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+RewriteRule ^(.*/)?index\.html$ https://intrasyncindustrial.com/$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^([^.]+?)/?$ https://intrasyncindustrial.com/$1.html [R=301,L]
+
 # Block access to hidden files and directories (except .well-known for SSL certificates)
 RewriteCond %{REQUEST_URI} !^/\.well-known/
 RewriteRule (^\.|/\.) - [F,L]
