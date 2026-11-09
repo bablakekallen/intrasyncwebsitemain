@@ -33,6 +33,10 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
+                    {"@type": "Question", "name": "What is ISA?", "acceptedAnswer": {"@type": "Answer", "text": "ISA is the AI built into CastLogic. It reads site plans, civil sets, and piece tickets, drafts takeoffs, proposes production schedules around your limits, and starts the install sequence on your drawings. Your team reviews its work, and anything placed by ISA is labeled."}},
+                    {"@type": "Question", "name": "Can CastLogic read site plans and civil sets?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Upload a site plan, civil set, or piece tickets and ISA finds the structure callouts and piece marks, then drafts the takeoff for your review. PDFs with real text read directly and scanned sets go through OCR. A set takes minutes, not days."}},
+                    {"@type": "Question", "name": "Can my customers track their jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The customer portal gives your customer a read-only view with a stage-by-stage tracker, the status of each structure, deliveries, and job documents."}},
+                    {"@type": "Question", "name": "Does CastLogic plan installation on the jobsite?", "acceptedAnswer": {"@type": "Answer", "text": "Site Install is built and targeted for platform-wide availability in the coming weeks. It lays out the sequence on your PDF drawings, on the site plan, and in 3D, with pick numbers, crane pads, truck routes, and laydown. It exports a marked-up PDF and pick schedule. Critical-pick figures are estimates that support your lift plan and do not replace it."}},
             {
                   "@type": "Question",
                   "name": "What is CastLogic?",
@@ -102,7 +106,7 @@
                   "name": "Does CastLogic support certified payroll and prevailing wage?",
                   "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "CastLogic doesn't run payroll directly. Certified payroll, Davis-Bacon, prevailing wage, WH-347 generation, and fringe benefit tracking all live in your HR/payroll platform. CastLogic integrates with that platform via its open API and brings the data into the ERP, so you get: Hours from your time/HR system tagged to ERP jobs and operations Certified payroll data surfaced inside ERP project reports Prevailing wage context tied to government-job costing Labor cost reconciled to payroll provider totals One audit trail spanning HR platform → ERP → financials Compatible HR/payroll platforms include BambooHR, Rippling, Paylocity, Time Track Plus, ADP, Paychex, Gusto, and most other modern systems with an open API."
+                        "text": "CastLogic doesn't run payroll directly. Certified payroll, Davis-Bacon, prevailing wage, WH-347 generation, and fringe benefit tracking all live in your HR/payroll platform. CastLogic integrates with that platform via its open API and brings the data into the ERP, so you get: Hours from your time/HR system tagged to ERP jobs and operations Certified payroll data surfaced inside ERP project reports Prevailing wage context tied to government-job costing Labor cost reconciled to payroll provider totals One audit trail spanning HR platform → ERP → financials Compatible HR/payroll platforms include TimeClock Plus, Paylocity, BambooHR, Rippling, ADP, Paychex, Gusto, and most other modern systems with an open API."
                   }
             },
             {
@@ -126,7 +130,7 @@
                   "name": "What kind of support does IntraSync provide?",
                   "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Comprehensive support package included with all subscriptions: Technical Support (6am-6pm PST, Mon-Fri): Phone, email, and chat support with a 1-hour response target for critical issues Dedicated Account Manager: Single point of contact who knows your operation Regular Training: Quarterly webinars and on-demand video library Software Updates: Automatic updates with new features and improvements Knowledge Base: Searchable documentation and how-to guides Community Forum: Connect with other CastLogic users Our support team has deep expertise in both the software and precast manufacturing operations."
+                        "text": "Comprehensive support package included with all subscriptions: Technical Support (6am-6pm PST, Mon-Fri): Phone, email, and chat support with a 1-hour response target for critical issues Dedicated Project Manager: Your own project manager throughout implementation Ongoing Training: New training material posted regularly to your shared knowledge base Software Updates: Automatic updates with new features and improvements Knowledge Base: Searchable documentation and how-to guides Our support team has deep expertise in both the software and precast manufacturing operations."
                   }
             },
             {
@@ -134,7 +138,7 @@
                   "name": "What training is provided?",
                   "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Comprehensive training program includes: Role-based training sessions (admin, production, accounting, etc.) On-site training during implementation Video tutorials and documentation Live webinars for new features Train-the-trainer sessions for your super users Ongoing refresher training Training is customized to your workflows and processes, not generic software training."
+                        "text": "Comprehensive training program includes: Role-based training sessions (admin, production, accounting, etc.) On-site training during implementation Video tutorials and documentation New training material posted regularly to your shared knowledge base Train-the-trainer sessions for your super users Ongoing refresher training Training is customized to your workflows and processes, not generic software training."
                   }
             },
             {
@@ -252,7 +256,7 @@
     </script>
 
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="tailwind.css?v=73bcabcf">
+    <link rel="stylesheet" href="tailwind.css?v=d347a02f">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="site.css?v=a9ce9325">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -446,6 +450,54 @@ document.head.appendChild(o)}initApollo();</script>
 
                 <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
                     <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8 faq-question">What is ISA?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>ISA is the AI built into CastLogic. It reads site plans, civil sets, and piece tickets, drafts takeoffs, proposes production schedules around your limits, and starts the install sequence on your drawings. Your team reviews its work, and anything placed by ISA is labeled.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8 faq-question">Can CastLogic read site plans and civil sets?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Yes. Upload a site plan, civil set, or piece tickets and ISA finds the structure callouts and piece marks, then drafts the takeoff for your review. PDFs with real text read directly and scanned sets go through OCR. A set takes minutes, not days.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8 faq-question">Can my customers track their jobs?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Yes. The customer portal gives your customer a read-only view with a stage-by-stage tracker, the status of each structure, deliveries, and job documents.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-semibold text-gray-900 pr-8 faq-question">Does CastLogic plan installation on the jobsite?</h3>
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600">
+                        <p>Site Install is built and targeted for platform-wide availability in the coming weeks. It lays out the sequence on your PDF drawings, on the site plan, and in 3D, with pick numbers, crane pads, truck routes, and laydown. It exports a marked-up PDF and pick schedule. Critical-pick figures are estimates that support your lift plan and do not replace it.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item py-6 cursor-pointer" onclick="toggleFAQ(this)">
+                    <div class="flex justify-between items-start">
                         <h3 class="text-xl font-semibold text-gray-900 pr-8 faq-question">Does CastLogic integrate with BIM and CAD software?</h3>
                         <svg class="w-6 h-6 text-blue-600 flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -543,7 +595,7 @@ document.head.appendChild(o)}initApollo();</script>
                             <li>Labor cost reconciled to payroll provider totals</li>
                             <li>One audit trail spanning HR platform → ERP → financials</li>
                         </ul>
-                        <p class="mt-2">Compatible HR/payroll platforms include BambooHR, Rippling, Paylocity, Time Track Plus, ADP, Paychex, Gusto, and most other modern systems with an open API.</p>
+                        <p class="mt-2">Compatible HR/payroll platforms include TimeClock Plus, Paylocity, BambooHR, Rippling, ADP, Paychex, Gusto, and most other modern systems with an open API.</p>
                     </div>
                 </div>
 
@@ -608,11 +660,10 @@ document.head.appendChild(o)}initApollo();</script>
                         <p>Comprehensive support package included with all subscriptions:</p>
                         <ul class="list-disc ml-6 mt-2 space-y-1">
                             <li><strong>Technical Support (6am-6pm PST, Mon-Fri):</strong> Phone, email, and chat support with a 1-hour response target for critical issues</li>
-                            <li><strong>Dedicated Account Manager:</strong> Single point of contact who knows your operation</li>
-                            <li><strong>Regular Training:</strong> Quarterly webinars and on-demand video library</li>
+                            <li><strong>Dedicated Project Manager:</strong> Your own project manager throughout implementation</li>
+                            <li><strong>Ongoing Training:</strong> New training material posted regularly to your shared knowledge base</li>
                             <li><strong>Software Updates:</strong> Automatic updates with new features and improvements</li>
                             <li><strong>Knowledge Base:</strong> Searchable documentation and how-to guides</li>
-                            <li><strong>Community Forum:</strong> Connect with other CastLogic users</li>
                         </ul>
                         <p class="mt-2">Our support team has deep expertise in both the software and precast manufacturing operations.</p>
                     </div>
@@ -631,7 +682,7 @@ document.head.appendChild(o)}initApollo();</script>
                             <li>Role-based training sessions (admin, production, accounting, etc.)</li>
                             <li>On-site training during implementation</li>
                             <li>Video tutorials and documentation</li>
-                            <li>Live webinars for new features</li>
+                            <li>New training material posted regularly to your shared knowledge base</li>
                             <li>Train-the-trainer sessions for your super users</li>
                             <li>Ongoing refresher training</li>
                         </ul>

@@ -86,7 +86,9 @@
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../tailwind.css?v=73bcabcf">
+    <link rel="stylesheet" href="../tailwind.css?v=d347a02f">
+    <link rel="stylesheet" href="../site.css?v=a9ce9325">
+    <script src="../site.js?v=306ded71" defer></script>
 <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
 o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
 o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
@@ -103,15 +105,29 @@ document.head.appendChild(o)}initApollo();</script>
 <script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"MpxMVXsN7DvMJJ7okxvWBZ"});</script>
 </head>
 <body class="bg-white text-gray-800">
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex items-center">
-            <img src="../intrasync-logo.jpg" alt="Intrasync Industrial Logo" class="h-14 w-auto mr-6" style="max-height:56px;">
-            <nav class="flex gap-8 text-lg font-semibold">
-                <a href="../index.html" class="hover:text-blue-700">Home</a>
-                <a href="../modules.html" class="hover:text-blue-700">Products</a>
-                <a href="../blog.html" class="text-blue-700">Blog</a>
-                <a href="../contact.html" class="hover:text-blue-700">Contact</a>
-            </nav>
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-12">
+                    <a href="../index.html" aria-label="IntraSync CastLogic Home">
+                        <img src="../intrasync-logo.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                    </a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="../modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Products</a>
+                        <a href="../robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="../compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="../blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="../about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="../contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="../contact.html" class="hidden md:inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition">
+                        Get Started
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
     <main class="py-16">
