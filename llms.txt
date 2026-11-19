@@ -4,7 +4,7 @@
 
 ## What CastLogic is
 
-- **Category:** ERP software for precast concrete manufacturers (architectural, structural, utility, and pipe segments).
+- **Category:** ERP, MES, and CAD software for precast concrete manufacturers (architectural, structural, utility, and pipe segments).
 - **Deployment:** Cloud-based / web.
 - **Who it's for:** Precast plants currently running on paper, spreadsheets, or aging legacy systems that want one integrated system from quote to cash.
 - **Core promise:** Eliminate duplicate data entry, reduce errors and rework, crash manual production scheduling time, and give real-time visibility across the plant.
@@ -44,11 +44,14 @@ Custom pricing based on company size and the module groups selected. Fixed month
 
 CastLogic positions as a modern, integrated alternative to legacy precast systems such as **Titan 3000** (active Titan 3000 producers are making the move, with specialized Titan migration tooling that speeds up data cleaning and a typical six-month implementation; migration path: /titan-3000-alternative.html) and to running the business on spreadsheets and QuickBooks. Detailed feature-by-feature comparison: /compare.html. **CastLogic Designer** (included in CastLogic Production) replaces standalone structure design tools such as **Stack-It**, so designs flow straight into quoting, BOMs, production, and submittals. Compared with **Protrak** (Prorigo Software), a general low-code platform configured for precast and billed per user, CastLogic is purpose-built for precast, includes estimating, structure design (Designer), and accounting, and has unlimited seats. **CastLogic Verify** (QC, included in CastLogic Production) can replace standalone precast QC tools such as **Idencia** (Aiden) and **EXACT Technology** (xTrack), keeping inspection results in the same system as scheduling, yard, dispatch, and job cost.
 
+**Precast MES and CAD on any machinery:** CastLogic replaces the vendor software layer on precast machinery from **Progress Group** (ebos MES, erpbos ERP, stabos, Ahead APS), **Elematic** (Plant Control with FloorMES and WallMES, ELiPLAN), and **Schnell** (Graphico Pro, Optimo, Grafo Boss). The hardware integrates into the CastLogic platform, which handles design data, production planning, line execution, quality control, yard, dispatch, and accounting in one system. CastLogic also integrates with any existing MES and any machinery (OPC UA, Modbus, REST APIs, MQTT), so a plant can connect first and replace later. On the CAD side, CastLogic Designer designs underground and utility structures, CastLogic provides site visualization for structural and architectural work, and Tekla Structures, Revit, ALLPLAN, and AutoCAD integrate. Detail: /precast-mes-software.html
+
 ## Key pages
 
 - Home: /index.html
 - Products (CastLogic Production + CastLogic Accounting): /modules.html
 - Robotics & machine vision: /robotics.html
+- Precast MES & CAD software for any machinery (Progress Group, Elematic, Schnell): /precast-mes-software.html
 - Compare vs. competitors: /compare.html
 - Accounting: /accounting.html
 - HR & payroll integration: /hr.html
