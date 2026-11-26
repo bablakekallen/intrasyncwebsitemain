@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <title>Moving From Concrete Vision to a New Precast ERP: A Practical Plan | IntraSync Blog</title>
+    <meta name="description" content="A step-by-step plan for precast producers moving off Concrete Vision: what data to bring, which integrations to keep, how to handle accounting, and how to cut over.">
+    <meta name="keywords" content="migrating from Concrete Vision, Concrete Vision migration, Concrete Vision replacement, replace Concrete Vision, Concrete Vision data migration, switching precast ERP, precast ERP migration, precast ERP implementation">
+    <link rel="canonical" href="https://intrasyncindustrial.com/blog/migrating-from-concrete-vision.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://intrasyncindustrial.com/blog/migrating-from-concrete-vision.html">
+    <meta property="og:title" content="Moving From Concrete Vision to a New Precast ERP: A Practical Plan">
+    <meta property="og:description" content="A step-by-step plan for precast producers moving off Concrete Vision: what data to bring, which integrations to keep, how to handle accounting, and how to cut over.">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
+    <meta property="og:site_name" content="IntraSync Industrial">
+    <meta property="article:published_time" content="2026-11-25">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Moving From Concrete Vision to a New Precast ERP: A Practical Plan",
+  "description": "A step-by-step plan for precast producers moving off Concrete Vision: what data to bring, which integrations to keep, how to handle accounting, and how to cut over.",
+  "image": "https://intrasyncindustrial.com/intrasync-logo.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Zachary Frye",
+    "jobTitle": "CTO & Founder",
+    "url": "https://intrasyncindustrial.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "IntraSync Industrial",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://intrasyncindustrial.com/intrasync-logo.jpg"
+    }
+  },
+  "datePublished": "2026-11-25",
+  "dateModified": "2026-11-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://intrasyncindustrial.com/blog/migrating-from-concrete-vision.html"
+  },
+  "keywords": "migrating from Concrete Vision, Concrete Vision migration, Concrete Vision replacement, replace Concrete Vision, Concrete Vision data migration, switching precast ERP, precast ERP migration, precast ERP implementation",
+  "articleSection": "ERP & Software",
+  "inLanguage": "en-US"
+}
+    </script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does it take to move from Concrete Vision to CastLogic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plan on six months for a CastLogic implementation, from data preparation through go-live. The plant keeps producing throughout, and the old system stays live until the new one is proven on real jobs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can data be migrated out of Concrete Vision?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Concrete Vision's FAQ states that its data is stored in a Microsoft SQL Server database, a standard format that can be read and mapped. Confirm who holds the database and how you obtain a full copy before setting a migration date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we have to change accounting systems when we leave Concrete Vision?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. CastLogic Production integrates with modern accounting systems including QuickBooks, Sage, NetSuite, SAP, and Oracle. Producers who want production and financials on one platform can add CastLogic Accounting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will our detailers have to change tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. CastLogic integrates with Tekla Structures, Revit, ALLPLAN, and AutoCAD today, so existing detailing workflows carry over."
+      }
+    }
+  ]
+}
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tailwind.css?v=d347a02f">
+    <link rel="stylesheet" href="../site.css?v=a9ce9325">
+    <script src="../site.js?v=306ded71" defer></script>
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18479283499"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18479283499');
+</script>
+<!-- OpenAI Ads measurement pixel -->
+<script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"MpxMVXsN7DvMJJ7okxvWBZ"});</script>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-12">
+                    <a href="../index.html" aria-label="IntraSync CastLogic Home">
+                        <img src="../intrasync-logo.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                    </a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="../modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Products</a>
+                        <a href="../robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="../compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="../blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="../about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="../contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="../contact.html" class="hidden md:inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-8">
+                <a href="../blog.html" class="text-blue-600 font-semibold hover:underline mb-4 inline-block">← Back to Blog</a>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">ERP &amp; Software</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Moving From Concrete Vision to a New Precast ERP: A Practical Plan</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <time datetime="2026-11-25">November 25, 2026</time>
+                    <span>•</span>
+                    <span>5 min read</span>
+                    <span>•</span>
+                    <span>By Zachary Frye</span>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">Changing the system a precast plant runs on is a real project, and the plants that do it well treat it as one. If you are on Concrete Vision and planning a move, most of the work is deciding what comes with you, what stays connected, and when the switch happens. Here is a practical order to do it in.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 1: List What You Actually Use</h2>
+                <p class="mb-6">Concrete Vision covers a lot of ground: contacts, quoting, engineering data, scheduling, project management, QC, safety, yard, dispatch, and field. Few plants use all of it the same way. Write down which modules each department opens every day, which custom fields and custom reports people depend on, and which were set up years ago and forgotten. The new system should be sized to how you work now.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 2: Map the Systems Around It</h2>
+                <p class="mb-6">Concrete Vision's site lists integrations with Tekla Structures, Revit, ALLPLAN, Stack-It, ForneyVault, Idencia OneSource, and Constant Contact. Its module list does not include accounting, so your books are almost certainly in a separate system. Draw the whole picture before you move one piece of it:</p>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Detailing tools</strong>: Tekla Structures, Revit, ALLPLAN, and AutoCAD integrate with CastLogic today, so these stay as they are.</li>
+                    <li><strong>Stack-It</strong>: structure design moves into <a href="../designer.html" class="text-blue-600 font-semibold hover:underline">CastLogic Designer</a>, which is included with Production.</li>
+                    <li><strong>QC tools</strong>: inspections and quality records move into CastLogic Verify, also included.</li>
+                    <li><strong>Accounting</strong>: decide early. Keep your current accounting system and integrate it, or move financials into CastLogic Accounting so production and the general ledger share one set of data.</li>
+                </ul>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 3: Get a Full Copy of Your Data</h2>
+                <p class="mb-6">Concrete Vision's FAQ states that its data is stored in a Microsoft SQL Server database. That is good news for a migration: SQL Server is a standard format that can be read and mapped completely. Establish who holds the database and how you obtain a full copy, and get that in writing before you set a date.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 4: Decide What Comes Across</h2>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li><strong>Always</strong>: customers and contacts, product and piece definitions, open quotes, active jobs with their pieces and statuses, yard inventory, and open loads.</li>
+                    <li><strong>Usually</strong>: closed jobs for the past several years, NCR and inspection history, and bill of material data.</li>
+                    <li><strong>Rarely worth it</strong>: abandoned quotes, duplicate contacts, and fields nobody has filled in for years.</li>
+                </ul>
+                <p class="mb-6">Migration is the one chance you get to clean house. Take it.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 5: Check the Result Against the Source</h2>
+                <p class="mb-6">Before anyone trusts the new system, count. Active jobs, pieces per job, pieces in the yard, and open loads should match between the old system and the new one. Spot-check a few jobs end to end with the people who run them.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 6: Train by Department and Run in Parallel</h2>
+                <p class="mb-6">Estimators, schedulers, QC, yard, dispatch, and the office each need to see their own day in the new system. A short parallel period, with both systems live on real jobs, catches the gaps that testing misses.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Step 7: Cut Over on a Clean Boundary</h2>
+                <p class="mb-6">Pick a boundary that makes sense for both production and the books, such as a month-end. New jobs start in the new system from that date. If accounting is moving too, a month-end or year-end cutover keeps the financials clean.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">How Long Should It Take?</h2>
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+                    <h4 class="font-bold text-lg mb-2">What to Plan For</h4>
+                    <p class="text-gray-700">Plan on six months for a CastLogic implementation, from data preparation through go-live. Implementation is included, and a dedicated project manager runs it with you.</p>
+                </div>
+                <p class="mb-6">The plant keeps producing throughout. The old system stays live until the new one has proven itself on real jobs.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">What You Gain on the Other Side</h2>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>Operations and accounting on one platform, if you choose to bring financials across.</li>
+                    <li>Structure design and quality control included, without separate products for each.</li>
+                    <li>Scheduling that ISA can propose for your planner to review.</li>
+                    <li>Unlimited seats, so the yard, the field, and the office are all in the system.</li>
+                </ul>
+                <p class="mb-6">For a side-by-side view, see <a href="concrete-vision-vs-castlogic.html" class="text-blue-600 font-semibold hover:underline">Concrete Vision vs CastLogic</a> and the <a href="../compare.html" class="text-blue-600 font-semibold hover:underline">comparison page</a>. To talk through your own plant, <a href="../contact.html" class="text-blue-600 font-semibold hover:underline">get in touch</a>.</p>
+                <p class="text-sm text-gray-500 mb-6">Concrete Vision product names and descriptions are taken from its published module, integration, mobile, and FAQ pages (concretevision.com) as of November 2026. Where this article says a capability is not listed, it means the capability does not appear on those pages. All product names are trademarks of their respective owners. IntraSync Industrial is not affiliated with or endorsed by the companies named.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Frequently Asked Questions</h2>
+                <h3 class="text-xl font-bold mt-6 mb-2">How long does it take to move from Concrete Vision to CastLogic?</h3>
+                <p class="mb-6">Plan on six months for a CastLogic implementation, from data preparation through go-live. The plant keeps producing throughout, and the old system stays live until the new one is proven on real jobs.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">Can data be migrated out of Concrete Vision?</h3>
+                <p class="mb-6">Concrete Vision's FAQ states that its data is stored in a Microsoft SQL Server database, a standard format that can be read and mapped. Confirm who holds the database and how you obtain a full copy before setting a migration date.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">Do we have to change accounting systems when we leave Concrete Vision?</h3>
+                <p class="mb-6">No. CastLogic Production integrates with modern accounting systems including QuickBooks, Sage, NetSuite, SAP, and Oracle. Producers who want production and financials on one platform can add CastLogic Accounting.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">Will our detailers have to change tools?</h3>
+                <p class="mb-6">No. CastLogic integrates with Tekla Structures, Revit, ALLPLAN, and AutoCAD today, so existing detailing workflows carry over.</p>
+            </div>
+
+            <div class="border-t border-b border-gray-200 py-8 my-12">
+                <div class="flex items-start gap-6">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold flex-shrink-0">ZF</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">Zachary Frye</h4>
+                        <p class="text-gray-600">CTO &amp; Founder of IntraSync Industrial. Zachary builds ERP software purpose-built for precast concrete manufacturing, drawing on a decade in precast.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="concrete-vision-vs-castlogic.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">ERP &amp; Software</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Concrete Vision vs CastLogic: A Module-by-Module Comparison</h4>
+                        <p class="text-gray-600 text-sm">Each Concrete Vision module next to its CastLogic counterpart, plus what CastLogic adds on top.</p>
+                    </a>
+                    <a href="data-migration-best-practices-erp.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">ERP &amp; Software</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">ERP Data Migration Best Practices</h4>
+                        <p class="text-gray-600 text-sm">How to plan, clean, and validate data when changing precast ERP systems.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 mt-12 text-center text-white">
+                <h3 class="text-2xl font-bold mb-3">Planning a Move Off Concrete Vision?</h3>
+                <p class="mb-6 text-blue-100">Tell us what you run today and we will map it with you.</p>
+                <a href="../contact.html" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Talk to Us</a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            &copy; 2026 IntraSync Industrial. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

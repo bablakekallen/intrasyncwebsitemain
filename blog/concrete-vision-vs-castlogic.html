@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <title>Concrete Vision vs CastLogic: A Module-by-Module Comparison | IntraSync Blog</title>
+    <meta name="description" content="A module-by-module look at Concrete Vision and CastLogic for precast producers: estimating, design, scheduling, QC, yard, dispatch, field, accounting, and AI.">
+    <meta name="keywords" content="Concrete Vision vs CastLogic, CastLogic vs Concrete Vision, Concrete Vision comparison, Concrete Vision alternative, precast software comparison, precast ERP comparison, precast scheduling software, precast accounting software">
+    <link rel="canonical" href="https://intrasyncindustrial.com/blog/concrete-vision-vs-castlogic.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://intrasyncindustrial.com/blog/concrete-vision-vs-castlogic.html">
+    <meta property="og:title" content="Concrete Vision vs CastLogic: A Module-by-Module Comparison">
+    <meta property="og:description" content="A module-by-module look at Concrete Vision and CastLogic for precast producers: estimating, design, scheduling, QC, yard, dispatch, field, accounting, and AI.">
+    <meta property="og:image" content="https://intrasyncindustrial.com/intrasync-logo.jpg">
+    <meta property="og:site_name" content="IntraSync Industrial">
+    <meta property="article:published_time" content="2026-11-24">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Concrete Vision vs CastLogic: A Module-by-Module Comparison",
+  "description": "A module-by-module look at Concrete Vision and CastLogic for precast producers: estimating, design, scheduling, QC, yard, dispatch, field, accounting, and AI.",
+  "image": "https://intrasyncindustrial.com/intrasync-logo.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Zachary Frye",
+    "jobTitle": "CTO & Founder",
+    "url": "https://intrasyncindustrial.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "IntraSync Industrial",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://intrasyncindustrial.com/intrasync-logo.jpg"
+    }
+  },
+  "datePublished": "2026-11-24",
+  "dateModified": "2026-11-24",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://intrasyncindustrial.com/blog/concrete-vision-vs-castlogic.html"
+  },
+  "keywords": "Concrete Vision vs CastLogic, CastLogic vs Concrete Vision, Concrete Vision comparison, Concrete Vision alternative, precast software comparison, precast ERP comparison, precast scheduling software, precast accounting software",
+  "articleSection": "ERP & Software",
+  "inLanguage": "en-US"
+}
+    </script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between Concrete Vision and CastLogic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both are built for precast producers and cover estimating, scheduling, yard, dispatch, and the field. CastLogic also includes a structure Designer, Verify quality control, AI scheduling, and an accounting product on the same platform. Concrete Vision's published modules do not list accounting or AI, as of November 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does CastLogic replace Stack-It?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CastLogic Designer is included with CastLogic Production and handles parametric structure design with auto-stacking, rebar detailing, and submittal packages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does CastLogic replace Idencia for a Concrete Vision plant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CastLogic Verify is included with CastLogic Production and records inspections and quality results against each piece, so a separate QC tracking tool is not required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do both systems work with Tekla, Revit, and ALLPLAN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Concrete Vision lists all three as engineering integrations, and CastLogic integrates with Tekla Structures, Revit, ALLPLAN, and AutoCAD today."
+      }
+    }
+  ]
+}
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tailwind.css?v=d347a02f">
+    <link rel="stylesheet" href="../site.css?v=a9ce9325">
+    <script src="../site.js?v=306ded71" defer></script>
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"69745f8ed879fd0021136415"})},
+document.head.appendChild(o)}initApollo();</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18479283499"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18479283499');
+</script>
+<!-- OpenAI Ads measurement pixel -->
+<script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"MpxMVXsN7DvMJJ7okxvWBZ"});</script>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="site-header bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-12">
+                    <a href="../index.html" aria-label="IntraSync CastLogic Home">
+                        <img src="../intrasync-logo.jpg" alt="IntraSync CastLogic" class="h-12 w-auto">
+                    </a>
+                    <nav class="hidden md:flex gap-8 text-base font-semibold" aria-label="Main navigation">
+                        <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Home</a>
+                        <a href="../modules.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Products</a>
+                        <a href="../robotics.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Robotics &amp; Vision</a>
+                        <a href="../compare.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Compare</a>
+                        <a href="../blog.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Blog</a>
+                        <a href="../about.html" class="nav-link text-gray-700 hover:text-blue-700 transition">About</a>
+                        <a href="../contact.html" class="nav-link text-gray-700 hover:text-blue-700 transition">Contact</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="../contact.html" class="hidden md:inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="py-16">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-8">
+                <a href="../blog.html" class="text-blue-600 font-semibold hover:underline mb-4 inline-block">← Back to Blog</a>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">ERP &amp; Software</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Concrete Vision vs CastLogic: A Module-by-Module Comparison</h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <time datetime="2026-11-24">November 24, 2026</time>
+                    <span>•</span>
+                    <span>5 min read</span>
+                    <span>•</span>
+                    <span>By Zachary Frye</span>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">Concrete Vision and CastLogic are both built for precast, and they overlap across most of the plant. This comparison goes module by module, using what Concrete Vision publishes on its own site, so you can see where the two line up and where they differ.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">The Short Version</h2>
+                <p class="mb-6">Concrete Vision is precast operations software: contacts and quoting through production, yard, dispatch, and the field. CastLogic covers the same operations and adds the pieces Concrete Vision's site assigns to other products or does not list: structure design, accounting, and AI.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Module by Module</h2>
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full text-sm text-gray-700">
+                        <thead><tr class="bg-gray-100"><th class="p-3 text-left font-bold">Area</th><th class="p-3 text-left font-bold">Concrete Vision (as published)</th><th class="p-3 text-left font-bold">CastLogic</th></tr></thead>
+                        <tbody>
+                        <tr class="border-b border-gray-200"><td class="p-3">Contacts and CRM</td><td class="p-3">Contact Management module, with a Constant Contact integration</td><td class="p-3">Part of Bidding &amp; Estimating; one customer record from quote to invoice</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Estimating and quoting</td><td class="p-3">Estimating and Quoting module with templates, takeoffs, and bid tracking</td><td class="p-3">Bidding &amp; Estimating with AI-powered takeoffs from drawings and one-click quote-to-production</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Structure design</td><td class="p-3">Stack-It listed as a sales integration</td><td class="p-3">Designer, included with Production</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Engineering data</td><td class="p-3">Imports from Tekla Structures, Revit, ALLPLAN, AutoCAD, and Excel</td><td class="p-3">Engage, with live Tekla Structures, Revit, ALLPLAN, and AutoCAD integrations</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Production scheduling</td><td class="p-3">Drag-and-drop scheduling with bed layouts</td><td class="p-3">Schedule: manual planning or ISA automated scheduling around mold, crew, and material limits</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Production tracking</td><td class="p-3">Production visibility and reporting</td><td class="p-3">Flow: real-time tracking that updates WIP and job cost as work progresses</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Quality control</td><td class="p-3">NCRs and post-pour quality work; ForneyVault and Idencia OneSource integrations</td><td class="p-3">Verify, included with Production</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Safety</td><td class="p-3">Safety module with near-miss and incident reports</td><td class="p-3">Ask us how your current safety forms would be handled</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Yard</td><td class="p-3">Finished goods, raw materials, storage plans, piece labeling</td><td class="p-3">Stock: GPS yard mapping, QR yard tags with camera scan-in</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Dispatch</td><td class="p-3">Load planning, ticketing, weight tracking, trucking cost reports</td><td class="p-3">Dispatch: load and route optimization; the bill of lading triggers final billing</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Field</td><td class="p-3">Erection sequences, field NCRs, daily reports</td><td class="p-3">Site: mobile field reporting, issue tracking, customer portal</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Mobile</td><td class="p-3">App for inspections, NCRs, yard updates, and trailer loading scans</td><td class="p-3">Mobile progress reporting, field reporting, and camera scan-in</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">Accounting</td><td class="p-3">Not listed</td><td class="p-3">CastLogic Accounting: GL, AP/AR, project accounting, real-time job costing</td></tr>
+                        <tr class="border-b border-gray-200"><td class="p-3">AI and machine vision</td><td class="p-3">Not listed</td><td class="p-3">AI scheduling, plan reads, and machine vision takeoffs, included</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Where the Two Are Close</h2>
+                <p class="mb-6">Both systems are web-based and built around the precast piece. Both schedule production against beds, track pieces through the yard, plan loads, and follow the job into the field. Both bring design data in from Tekla Structures, Revit, and ALLPLAN. A plant moving from one to the other will recognize the workflow.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Where They Differ</h2>
+                <p class="mb-6"><strong>Accounting.</strong> Concrete Vision's module list stops at operations. CastLogic Accounting sits on the same data as production, so pours update WIP, shipments trigger billing, and job cost is current without a second system. Plants that want to keep their accounting system can: CastLogic integrates with QuickBooks, Sage, NetSuite, SAP, and Oracle.</p>
+                <p class="mb-6"><strong>Design.</strong> Concrete Vision lists Stack-It as an integration. <a href="../designer.html" class="text-blue-600 font-semibold hover:underline">CastLogic Designer</a> is part of the platform, so a manhole or vault configured for a quote is the same record that gets scheduled and poured.</p>
+                <p class="mb-6"><strong>Quality control.</strong> Concrete Vision tracks NCRs and post-pour work and lists outside tools for testing and product tracking. CastLogic Verify is included with Production and records inspections against the piece.</p>
+                <p class="mb-6"><strong>Scheduling.</strong> Concrete Vision describes drag-and-drop scheduling. CastLogic Schedule offers the same hands-on planning, and ISA can propose the schedule for a planner to review.</p>
+                <p class="mb-6"><strong>Pricing.</strong> Concrete Vision does not publish pricing; its FAQ says it depends on factors including the number of user licenses. CastLogic is priced with unlimited seats.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Which Fits</h2>
+                <ul class="list-disc pl-6 mb-6 text-gray-700">
+                    <li>If your operations run well and accounting, design, and QC already live comfortably in other tools, the difference will feel smaller.</li>
+                    <li>If month-end depends on re-keying production into the books, or you are paying for several products to cover one job, a single platform changes the math.</li>
+                    <li>If planners spend their mornings rebuilding the schedule by hand, look closely at automated scheduling.</li>
+                </ul>
+                <p class="mb-6">The <a href="../compare.html" class="text-blue-600 font-semibold hover:underline">comparison page</a> has the row-by-row table, and <a href="concrete-vision-alternative.html" class="text-blue-600 font-semibold hover:underline">this overview</a> covers what to ask any vendor.</p>
+                <p class="text-sm text-gray-500 mb-6">Concrete Vision product names and descriptions are taken from its published module, integration, mobile, and FAQ pages (concretevision.com) as of November 2026. Where this article says a capability is not listed, it means the capability does not appear on those pages. All product names are trademarks of their respective owners. IntraSync Industrial is not affiliated with or endorsed by the companies named.</p>
+                <h2 class="text-3xl font-bold mt-10 mb-4">Frequently Asked Questions</h2>
+                <h3 class="text-xl font-bold mt-6 mb-2">What is the difference between Concrete Vision and CastLogic?</h3>
+                <p class="mb-6">Both are built for precast producers and cover estimating, scheduling, yard, dispatch, and the field. CastLogic also includes a structure Designer, Verify quality control, AI scheduling, and an accounting product on the same platform. Concrete Vision's published modules do not list accounting or AI, as of November 2026.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">Does CastLogic replace Stack-It?</h3>
+                <p class="mb-6">Yes. CastLogic Designer is included with CastLogic Production and handles parametric structure design with auto-stacking, rebar detailing, and submittal packages.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">Does CastLogic replace Idencia for a Concrete Vision plant?</h3>
+                <p class="mb-6">CastLogic Verify is included with CastLogic Production and records inspections and quality results against each piece, so a separate QC tracking tool is not required.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2">Do both systems work with Tekla, Revit, and ALLPLAN?</h3>
+                <p class="mb-6">Yes. Concrete Vision lists all three as engineering integrations, and CastLogic integrates with Tekla Structures, Revit, ALLPLAN, and AutoCAD today.</p>
+            </div>
+
+            <div class="border-t border-b border-gray-200 py-8 my-12">
+                <div class="flex items-start gap-6">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold flex-shrink-0">ZF</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">Zachary Frye</h4>
+                        <p class="text-gray-600">CTO &amp; Founder of IntraSync Industrial. Zachary builds ERP software purpose-built for precast concrete manufacturing, drawing on a decade in precast.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="concrete-vision-alternative.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">ERP &amp; Software</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">A Concrete Vision Alternative for Precast Producers: What to Compare</h4>
+                        <p class="text-gray-600 text-sm">What Concrete Vision's published modules cover, what they leave to other systems, and what to compare.</p>
+                    </a>
+                    <a href="migrating-from-concrete-vision.html" class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <span class="text-blue-600 font-semibold text-sm">ERP &amp; Software</span>
+                        <h4 class="text-xl font-bold mt-2 mb-2">Moving From Concrete Vision to a New Precast ERP: A Practical Plan</h4>
+                        <p class="text-gray-600 text-sm">What data to bring, which integrations to keep, and how to cut over without stopping production.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 mt-12 text-center text-white">
+                <h3 class="text-2xl font-bold mb-3">Comparing Precast Software?</h3>
+                <p class="mb-6 text-blue-100">See CastLogic next to Concrete Vision, Titan 3000, and the rest, row by row.</p>
+                <a href="../compare.html" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">See the Full Comparison</a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            &copy; 2026 IntraSync Industrial. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

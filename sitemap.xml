@@ -848,6 +848,24 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://intrasyncindustrial.com/blog/concrete-vision-alternative.html</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/concrete-vision-vs-castlogic.html</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intrasyncindustrial.com/blog/migrating-from-concrete-vision.html</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://intrasyncindustrial.com/blog/elematic-plant-control-alternative.html</loc>
         <lastmod>2026-11-17</lastmod>
         <changefreq>monthly</changefreq>
